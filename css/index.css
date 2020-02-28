@@ -1,0 +1,66 @@
+.primary {
+	background-color: #29b6f6; !important
+}
+
+.logo {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	height: 100px;
+	width: 100px;
+	margin-bottom: -20px
+}
+.sub-head {
+	font-size: 20px
+}
+.textt {
+	font-size: 54px
+	margin-bottom: -20px
+}
+.header {
+	font-size: 30px
+}
+.ss-title {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 35px;
+}
+.main-font {
+  font-family: 'Montserrat', sans-serif;
+}
+.primary-color {
+	color: #29b6f6 !important
+}
+.text3 {
+	font-size: 21px
+}
+.block {
+  margin: 20px 0;
+  padding-left: 1.5rem;
+  border-left: 5px solid #29b6f6;
+}
+.btn {
+	border-radius: 18px;
+	width: 205px
+}
+.teamm {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.card-title {
+	text-align: center;
+}
+.position {
+	text-align: center;
+}
+.card {
+	border-radius: 8px;
+}
+.footer-center {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
