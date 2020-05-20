@@ -1,138 +1,385 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Project Sakura</title>
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Project Sakura</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Project Sakura">
-    <meta name="author" content="Direwolf Inc.">
-    <link rel="shortcut icon" href="favicon.ico">
+		<!-- CSS here -->
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="assets/css/flaticon.css">
+            <link rel="stylesheet" href="assets/css/slicknav.css">
+            <link rel="stylesheet" href="assets/css/animate.min.css">
+            <link rel="stylesheet" href="assets/css/magnific-popup.css">
+            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="assets/css/themify-icons.css">
+            <link rel="stylesheet" href="assets/css/slick.css">
+            <link rel="stylesheet" href="assets/css/nice-select.css">
+            <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- FontAwesome JS-->
-    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+   </head>
 
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/jquery-flipster/dist/jquery.flipster.min.css">
+   <body>
+       
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
 
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
-    <link id="font-style" rel="stylesheet" href="assets/css/font.css">
+    <header>
+        <!-- Header Start -->
+       <div class="header-area header-transparrent ">
+            <div class="main-header header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-3 col-lg-3 col-md-3">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a> <span>SAKURA</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-9">
+                            <!-- Main-menu -->
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">    
+                                        <li class="active"><a href="index.html">Home</a></li>
+                                        <li><a href="#id_features">Features</a></li>
+                                        <li><a href="#id_screenshot">ScreenShot</a></li>
+                                        <li><a href="#id_download">Download & Blog</a></li>
+                                        <li><a href="#id_contact">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!-- Slider Area Start-->
+        <div class="slider-area ">
+            <div class="slider-active">
+                <div class="single-slider slider-height slider-padding sky-blue d-flex align-items-center">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-6 col-md-9 ">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInUp" data-delay=".6s">A Customised Lineage OS<br>with much more functionality.</h1>
+                                    <!-- Slider btn -->
+                                   <div class="slider-btns">
+                                        <!-- Hero-btn -->
+                                        <a data-animation="fadeInLeft" data-delay="1.0s" href="#id_features" class="btn radius-btn">Get Started</a>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="hero__img d-none d-lg-block f-right" data-animation="fadeInRight" data-delay="1s">
+                                    <img src="assets/img/hero/hero_right.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- Slider Area End -->
+        <!-- Best Features Start -->
+        <section class="best-features-area section-padd4" id="id_features">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-xl-8 col-lg-10">
+                        <!-- Section Tittle -->
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10">
+                                <div class="section-tittle">
+                                    <h2>Some features of sakura!</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section caption -->
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="single-features mb-70">
+                                    <div class="features-icon">
+                                        <span class="flaticon-support"></span>
+                                    </div>
+                                    <div class="features-caption">
+                                        <h3>Moar customizable </h3>
+                                        <p>Sakura is more customizable than Original Lineage OS.</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="single-features mb-70">
+                                    <div class="features-icon">
+                                        <span class="flaticon-support"></span>
+                                    </div>
+                                    <div class="features-caption">
+                                        <h3>Secure</h3>
+                                        <p>Latest security patches and timely updates make Sakura a secure choice.</p>
+                                    </div>
+                                </div>
+                            </div> 
+                             <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="single-features mb-70">
+                                    <div class="features-icon">
+                                        <span class="flaticon-support"></span>
+                                    </div>
+                                    <div class="features-caption">
+                                        <h3>Stability</h3>
+                                        <p>Sakura goes through multiple tests for each official device ensuring stability.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="single-features mb-70">
+                                    <div class="features-icon">
+                                        <span class="flaticon-support"></span>
+                                    </div>
+                                    <div class="features-caption">
+                                        <h3>Quick support</h3>
+                                        <p>You can provide suggestions or ask queries on the XDA thread or Telegram group.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shpe -->
+            <div class="features-shpae d-none d-lg-block">
+                <img src="assets/img/shape/best-features.png" alt="">
+            </div>
+        </section>
+        <!-- Best Features End -->
+        <!-- Applic App Start -->
+        <div class="applic-apps section-padding2" id="id_screenshot">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- slider Heading -->
+                    <div class="col-xl-4 col-lg-4 col-md-8">
+                        <div class="single-cases-info mb-30">
+                            <h3>Project Sakura's<br> Screenshot</h3>
+                            <p>Project sakura have lots of usefull festures.</p>
+                        </div>
+                    </div>
+                    <!-- OwL -->
+                    <div class="col-xl-8 col-lg-8 col-md-col-md-7">
+                        <div class="app-active owl-carousel"> 
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/App1.jpg" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/App2.jpg" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/App3.jpg" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/App4.jpg" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/App5.jpg" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/App6.jpg" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/App7.jpg" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/App8.jpg" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/App9.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Applic App End -->
+        
+        <!--Download-->
+        <section class="section-tittle section-tittle2 text-center" data-background="assets/img/gallery/best_pricingbg.jpg" id="id_download">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="section-tittle section-tittle2 text-center">
+                               <div class="download-area py-4">
+		                       <div class="section-tittle section-tittle2 text-center" id="download">
+			                        <h2 class="mb-3">Download</h2>
+		                            <div class="section-tittle section-tittle2 text-center">
+										<h3>Download Sakura for your Android Device now.</h3></div>
+		                            </div>
+		                            <div class="pt-3 text-center">
+			                        <a class="btn btn-primary theme-btn theme-btn-ghost font-weight-bold" href="download.html">Get your Build</a>
+		                            </div>
+	                           </div>
+                          </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+        
+        <!--Blog-->
+        <section class="download-area py-4" data-background="assets/img/gallery/best_pricingbg.jpg" id="id_download">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="section-tittle section-tittle2 text-center">
+                               <div class="download-area py-4">
+		                       <div class="section-tittle section-tittle2 text-center" id="download">
+			                        <h2 class="mb-3">Project Sakura Blog</h2>
+		                            <div class="section-tittle section-tittle2 text-center">
+										<h3>Read about what's going with the development.</h3></div>
+		                            </div>
+		                            <div class="pt-3 text-center">
+			                        <a class="btn btn-primary theme-btn theme-btn-ghost font-weight-bold" href="https://projectsakura.github.io/blog/">Read Sakura blog</a>
+		                            </div>
+	                           </div>
+                          </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+        
+        <!-- Say Something Start -->
+        <div class="say-something-aera pt-90 pb-90 fix" id="id_contact">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="offset-xl-1 offset-lg-1 col-xl-5 col-lg-5">
+                        <div class="say-something-cap">
+                            <h2>Want to collaborate or Sponsor?</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3">
+                        <div class="say-btn">
+                            <a href="https://telegram.me/EquinoxProject" target="_blank" class="btn radius-btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- shape -->
+            <div class="say-shape">
+                <img src="assets/img/shape/say-shape-left.png" alt="" class="say-shape1 rotateme d-none d-xl-block">
+                <img src="assets/img/shape/say-shape-right.png" alt="" class="say-shape2 d-none d-lg-block">
+            </div>
+        </div>
+        <!-- Say Something End -->
+     
+    </main>
+   <footer>
 
-</head>
+       <!-- Footer Start-->
+      <div class="footer-main">
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row  justify-content-between">
+                    <div class="col-lg-3 col-md-4 col-sm-8">
+                         <div class="single-footer-caption mb-30">
+                              <!-- logo -->
+                             <div class="footer-logo">
+                                 <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a> <span>SAKURA</span>
+                             </div>
+                             <div class="footer-tittle">
+                                 <div class="footer-pera">
+                                     <p class="info1">Project Sakura is a customized Lineage OS, providing much more extended functionality on top of it.</p>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="https://github.com/ProjectSakura">Github</a></li>
+                                    <li><a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a></li>
+                                    <li><a href="https://t.me/ProjectSakura" target="_blank">Telegram Chat</a></li>
+                                    <li><a href="https://t.me/ProjectSakuraUpdates" target="_blank">Telegram Channel</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copy-Right -->
+                <center>
+                <div class="row align-items-center">
+                    <div class="col-xl-12 ">
+                        <div class="footer-copy-right">
+                           <p>
+                            Copyright &copy; 2020 Direwolf Inc.
+                            <p>All rights reserved | This website is designed with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </center>
+      </div>
+       <!-- Footer End-->
 
-<body>
-    <header class="header">
+   </footer>
+   
+	<!-- JS here -->
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="./assets/js/jquery.slicknav.min.js"></script>
 
-        <div class="branding">
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <!-- Date Picker -->
+        <script src="./assets/js/gijgo.min.js"></script>
+		<!-- One Page, Animated-HeadLin -->
+        <script src="./assets/js/wow.min.js"></script>
+		<script src="./assets/js/animated.headline.js"></script>
+        <script src="./assets/js/jquery.magnific-popup.js"></script>
 
-            <div class="container position-relative">
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="./assets/js/jquery.scrollUp.min.js"></script>
+        <script src="./assets/js/jquery.nice-select.min.js"></script>
+		<script src="./assets/js/jquery.sticky.js"></script>
+        
+        <!-- contact js -->
+        <script src="./assets/js/contact.js"></script>
+        <script src="./assets/js/jquery.form.js"></script>
+        <script src="./assets/js/jquery.validate.min.js"></script>
+        <script src="./assets/js/mail-script.js"></script>
+        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="./assets/js/plugins.js"></script>
+        <script src="./assets/js/main.js"></script>
 
-				<nav class="navbar navbar-expand-lg" >
-                    <h1 class="site-logo"><a class="navbar-brand" href=""><span class="logo-text">Project Sakura</span></a></h1>
-				</nav>
-
-				<!-- // Free Version ONLY -->
-				<ul class="social-list list-inline mb-0 position-absolute">
-<!--					<li class="list-inline-item"><a class="text-dark" href=""><i class="fas fa-language fa-lg fa-fw"></i></a></li>-->
-					<li class="list-inline-item"><a class="text-dark" href="https://twitter.com/LordShen0"><i class="fab fa-twitter fa-fw"></i></a></li>
-	                <li class="list-inline-item"><a class="text-dark" href="https://github.com/ProjectSakura"><i class="fab fa-github fa-fw"></i></a></li>
-
-	                 </ul><!--//social-list-->
-
-            </div><!--//container-->
-
-        </div><!--//branding-->
-
-    </header><!--//header-->
-
-    <section class="hero-section">
-	    <div class="container">
-		    <div class="row figure-holder">
-			    <div class="col-12 col-md-6 pt-3 pt-md-4">
-				    <h2 class="site-headline font-weight-bold mt-lg-5 pt-lg-5">A Customised Lineage OS with more features.</h2>
-				    <div class="site-tagline mb-3">Project Sakura is Lineage OS with more features and UI changes from other ROMs.</div>
-				    <div class="cta-btns">
-					    <div class="mb-4"><a class="btn btn-primary font-weight-bold theme-btn" href="download.html">Download</a></div>
-					    <div class="mb-4"><a class="btn btn-primary font-weight-bold theme-btn" href="https://projectsakura.github.io/blog/">Read Blog</a></div>
-				    </div>
-			    </div>
-		    </div><!--//row-->
-	    </div>
-    </section><!--//hero-section-->
-
-    <section class="benefits-section py-5">
-
-	    <div class="container py-lg-5">
-		    <h3 class="mb-5 text-center font-weight-bold">Sakura is secure and user-friendly</h3>
-		    <div class="row">
-		        <div class="item col-12 col-lg-4">
-				    <div class="item-inner text-center p-3 p-lg-5">
-					    <img class="mb-3" src="assets/images/icon-palette.svg" alt="" style="width: 80px"/>
-					    <h5>Powered by Lineage OS 17.1</h5>
-					    <div>User-friendly and rock-solid base loved by many users. </div>
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-lg-4">
-				    <div class="item-inner text-center p-3 p-lg-5">
-					    <img class="mb-3" src="assets/images/icon-shield.svg" alt="" style="width: 80px"/>
-					    <h5>Secure</h5>
-					    <div>Open source, anybody can audit the code.</div>
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-lg-4">
-				    <div class="item-inner text-center p-3 p-lg-5">
-					    <img class="mb-3" src="assets/images/icon-cogs.svg" alt="" style="width: 80px"/>
-					    <h5>Quick Updates</h5>
-					    <div>Latest security patches on time.</div>
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-		    </div><!--//row-->
-	    </div>
-
-    </section><!--//benefits-section-->
-
-			    </div><!--//footer-col-->
-		    </div><!--//row-->
-	    </div><!--//container-->
-	    <div class="container">
-		    <hr>
-	    </div>
-	    <div class="download-area py-4">
-		    <div class="container text-center" id="download">
-			    <h3 class="mb-3">Download Now</h3>
-		    <div class="section-intro mb-4 single-col-max-width mx-auto">Download Sakura for your Android Device now. </div>
-		    </div><!--//container-->
-		    <div class="pt-3 text-center">
-			    <a class="btn btn-primary theme-btn theme-btn-ghost font-weight-bold" href="download.html">Get Your Build Now!</a>
-			    <a class="btn btn-primary theme-btn theme-btn-ghost font-weight-bold" href="https://projectsakura.github.io/blog/">Read Sakura Blog</a>
-		    </div>
-	    </div><!--//download-area-->
-	    <div class="footer-bottom text-center pb-5">
-	        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) */-->
-                <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="https://github.com/xriley" target="_blank">Xiaoying Riley</a> for Direwolf Inc.</small>
-	    </div>
-
-    </footer>
-
-    <!-- Javascript -->
-    
-    <!--Adsense code -->
-    <script data-ad-client="ca-pub-1277633863266032" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    
-    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Page Specific JS -->
-    <script type="text/javascript" src="assets/plugins/jquery-flipster/dist/jquery.flipster.min.js"></script>
-    <script type="text/javascript" src="assets/js/flipster-custom.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
-    <script>
-    new Darkmode().showWidget();
-    </script>
-</body>
-</html> 
-
+    </body>
+</html>
