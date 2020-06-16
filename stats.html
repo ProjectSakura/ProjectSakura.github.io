@@ -1,7 +1,12 @@
 <!DOCTYPE html>
+<!--Copyright By Project Sakura 
+This page is designed by members of Project Sakura and all the code belongs to them, thanks to W3schools for CSS.
+Don't remove this if you intent to use this page for your website.
+-->
 <html>
 <title>Sakura Stats</title>
 <meta charset="UTF-8">
+<meta name="description" content="You can see all the stats related to project sakura here :)">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -85,8 +90,10 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="container" style="margin-top:40px">
             <!-- Blog entry -->
             <div class="w3-card-4 w3-margin w3-dark-grey" style="align-items: center">
+				<br>
                 <h3 class="summary" style="text-align:center; color:white;">Project Sakura got downloaded <span
                         class="totaldownload"></span> times in total</h3>
+                        <br>
             </div>
         </div>
 
@@ -98,15 +105,16 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <div class="container">
                     <div class="w3-card-4 w3-margin"
                         style="align-items: center; color:white; background: linear-gradient(to right, #2C5364, #203A43, #0F2027);">
-                        <h2>DEVICE SPECIFIC DOWNLOADS</h2>
                         <br>
-                        <h3>Total Asus builds got downloaded <span class="x00tdownload"></span> times</h3>
-                        <h3>Total Samsung builds got downloaded <span class="samsungdownload"></span> times</h3>
-                        <h3>Total Mi builds got downloaded <span class="midownload"></span> times</h3>
-                        <h3>Total Google builds got downloaded <span class="googledownload"></span> times</h3>
-
-                        <!-- <h3>Galaxy S8+ builds got downloaded <span class="s8plusdownload"></span> times</h3> -->
-                        <!-- <h3>Galaxy Note 8 builds got downloaded <span class="greatdownload"></span> times</h3> -->
+                        <h2>BRAND SPECIFIC DOWNLOADS</h2>
+                        <br>
+                        <br>
+                        <h3>Nexus builds got downloaded <span class="googledownload"></span> times</h3>
+                        <h3 style="margin-top:20px">Motorola builds got downloaded <span class="motodownload"></span> times</h3>                                                                        
+                        <h3 style="margin-top:20px">Asus builds got downloaded <span class="x00tdownload"></span> times</h3>
+                        <h3 style="margin-top:20px">Xiaomi builds got downloaded <span class="midownload"></span> times</h3>
+                        <h3 style="margin-top:20px">Samsung builds got downloaded <span class="samsungdownload"></span> times</h3>
+                        <br>
                     </div>
                 </div>
 
@@ -158,7 +166,6 @@ and is wrapped around the whole page content, except for the footer in this exam
         <!-- END GRID -->
         </><br>
 
-        <!-- END w3-content -->
     </div>
 
     <script>
@@ -248,11 +255,11 @@ and is wrapped around the whole page content, except for the footer in this exam
         }
         getSamsungData();
         let googledownload = 0;
-        // <!--Samsung-->
-
-        const url9 = "https://sourceforge.net/projects/projectsakura/files/angler/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+        
+        // <!--Nexus-->
+        const url10 = "https://sourceforge.net/projects/projectsakura/files/angler/stats/json?start_date=2020-01-01&end_date=2021-01-01";
         async function getGoogleData() {
-            const response2 = await fetch(url9);
+            const response2 = await fetch(url10);
             const data2 = await response2.json();
             let total = data2.total;
             const span = document.querySelector(".googledownload")
@@ -261,23 +268,42 @@ and is wrapped around the whole page content, except for the footer in this exam
         }
         getGoogleData();
         let Midownload = 0;
-        // <!--Samsung-->
+        
+        // <!--Xiaomi-->
         const url5 = "https://sourceforge.net/projects/projectsakura/files/Wayne/stats/json?start_date=2020-01-01&end_date=2021-01-01";
         const url6 = "https://sourceforge.net/projects/projectsakura/files/Mido/stats/json?start_date=2020-01-01&end_date=2021-01-01";
         const url7 = "https://sourceforge.net/projects/projectsakura/files/riva/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+        const url9 = "https://sourceforge.net/projects/projectsakura/files/beryllium/stats/json?start_date=2020-01-01&end_date=2021-01-01";                
         async function getMiData() {
             const response2 = await fetch(url5);
             const response3 = await fetch(url6);
             const response4 = await fetch(url7);
+            const response6 = await fetch(url9);            
             const data2 = await response2.json();
             const data3 = await response3.json();
             const data4 = await response4.json();
-            let total = data2.total + data3.total + data4.total;
+            const data6 = await response6.json();            
+            let total = data2.total + data3.total + data4.total + data6.total;
             const span = document.querySelector(".midownload")
             span.innerHTML = `${(total)}`;
 
         }
         getMiData();
+        
+        let MotoDownload = 0;
+        
+        <!--Moto-->
+        const url8 = "https://sourceforge.net/projects/projectsakura/files/ocean/stats/json?start_date=2020-01-01&end_date=2021-01-01"; 
+        async function getMotoData() {
+            const response5 = await fetch(url8);
+            const data5 = await response5.json();
+            let total = data5.total;
+            const span = document.querySelector(".motodownload")
+            span.innerHTML = `${(total)}`;
+
+        }
+        getMotoData();            
+        
     </script>
 
 
