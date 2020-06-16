@@ -1,18 +1,312 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
+<html>
+<title>Sakura Stats</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    @media (min-width: 993px) {
+        .w3-col.l8 {
+            width: 100.%;
+
+        }
+    }
+</style>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        text-align: center;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background: #0F2027;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    th {
+        background: #000000;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #434343, #000000);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #434343, #000000);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: white;
+    }
+
+    body {
+        background: #141E30;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+</style>
+
 <body>
-	<h1>Hello World</h1>
-	<script>
-		const body = document.querySelector("body")
-		fetch("https://sourceforge.net/projects/projectsakura/files/X00T/stats/json?start_date=2020-01-01&end_date=2021-01-01")
-			.then(data => data.json())
-			.then(data => JSON.stringify(data))
-			.then(data => body.textContent = data)
-	</script>
+
+    <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+    <div>
+
+        <!-- Header -->
+        <header class="container ">
+            <h1 style="text-align:center; color:white;">PROJECT SAKURA STATS</h1>
+        </header>
+
+        <!-- Grid -->
+        <div class="container" style="margin-top:40px">
+            <!-- Blog entry -->
+            <div class="w3-card-4 w3-margin w3-dark-grey" style="align-items: center">
+                <h3 class="summary" style="text-align:center; color:white;">Project Sakura got downloaded <span
+                        class="totaldownload"></span> times in total</h3>
+            </div>
+        </div>
+
+
+        <!-- Blog entries -->
+        <center>
+            <div style="margin-top:60px">
+
+                <div class="container">
+                    <div class="w3-card-4 w3-margin"
+                        style="align-items: center; color:white; background: linear-gradient(to right, #2C5364, #203A43, #0F2027);">
+                        <h2>DEVICE SPECIFIC DOWNLOADS</h2>
+                        <br>
+                        <h3>Total Asus builds got downloaded <span class="x00tdownload"></span> times</h3>
+                        <h3>Total Samsung builds got downloaded <span class="samsungdownload"></span> times</h3>
+                        <h3>Total Mi builds got downloaded <span class="midownload"></span> times</h3>
+                        <h3>Total Google builds got downloaded <span class="googledownload"></span> times</h3>
+
+                        <!-- <h3>Galaxy S8+ builds got downloaded <span class="s8plusdownload"></span> times</h3> -->
+                        <!-- <h3>Galaxy Note 8 builds got downloaded <span class="greatdownload"></span> times</h3> -->
+                    </div>
+                </div>
+
+                <div style="margin-top:40px">
+                    <div class="container">
+                        <!-- Blog entry -->
+
+                        <div style="align-items: center; color:white;">
+                            <h2>TOP COUNTRIES</h2>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center">SNo</th>
+                                        <th style="text-align:center">Country Name</th>
+                                        <th style="text-align:center">Downloads</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="countries">
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+                    <div style="margin-top:40px">
+                        <!-- Blog entry -->
+                        <div class="container">
+                            <div style="align-items: center; color:white;">
+                                <h2>OS USED TO DOWNLOAD SAKURA</h2>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th style="text-align:center">SNo</th>
+                                            <th style="text-align:center">Country Name</th>
+                                            <th style="text-align:center">Downloads</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="oses">
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+        </center>
+
+        <!-- END GRID -->
+        </><br>
+
+        <!-- END w3-content -->
+    </div>
+
+    <script>
+        const NUMBER_OF_COUNTRIES = 50;
+        function createNode(element) {
+            return document.createElement(element);
+        }
+
+        function append(parent, el) {
+            return parent.appendChild(el);
+        }
+
+        const url = "https://sourceforge.net/projects/projectsakura/files/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+        async function getData() {
+            const response = await fetch(url);
+            const data = await response.json();
+            const { countries, oses_with_downloads, oses, total } = data;
+
+            for (let i = 0; i < NUMBER_OF_COUNTRIES; i++) {
+                const tbody = document.querySelector(".countries")
+                // console.log(country);
+                let tr = createNode('tr');
+                let td1 = createNode('td');
+                let td2 = createNode('td');
+                let td3 = createNode('td');
+                let span1 = createNode('span');
+                td1.innerHTML = '#' + (i + 1);
+                td2.innerHTML = `${countries[i][0]}`;
+                td3.innerHTML = `${countries[i][1]}`;
+                td1.style += "text-align:center";
+                td2.style += "text-align:center";
+                td3.style += "text-align:center";
+                append(tbody, tr)
+                append(tr, td1)
+                append(tr, td2)
+                append(tr, td3)
+            }
+            for (let i = 0; i < 5; i++) {
+                const tbody = document.querySelector(".oses")
+                // console.log(country);
+                let tr = createNode('tr');
+                let td1 = createNode('td');
+                let td2 = createNode('td');
+                let td3 = createNode('td');
+                let span1 = createNode('span');
+                td1.innerHTML = '#' + (i + 1);
+                td2.innerHTML = `${oses[i][0]}`;
+                td3.innerHTML = `${oses[i][1]}`;
+                append(tbody, tr)
+                append(tr, td1)
+                append(tr, td2)
+                append(tr, td3)
+            }
+            const span = document.querySelector(".totaldownload")
+            span.innerHTML = `${total}`
+        }
+        getData();
+
+        // <!--X00T-->        
+        const url1 = "https://sourceforge.net/projects/projectsakura/files/X00T/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+        async function getAsusData() {
+            const response = await fetch(url1);
+            const data1 = await response.json();
+            const { total } = data1;
+
+            const span = document.querySelector(".x00tdownload")
+            span.innerHTML = `${total}`
+        }
+        getAsusData();
+
+        let samsungdownload = 0;
+        // <!--Samsung-->
+        const url2 = "https://sourceforge.net/projects/projectsakura/files/dreamlte/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+        const url3 = "https://sourceforge.net/projects/projectsakura/files/dream2lte/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+        const url4 = "https://sourceforge.net/projects/projectsakura/files/greatlte/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+        async function getSamsungData() {
+            const response2 = await fetch(url2);
+            const response3 = await fetch(url3);
+            const response4 = await fetch(url4);
+            const data2 = await response2.json();
+            const data3 = await response3.json();
+            const data4 = await response4.json();
+            let total = data2.total + data3.total + data4.total;
+            const span = document.querySelector(".samsungdownload")
+            span.innerHTML = `${(total)}`;
+
+        }
+        getSamsungData();
+        let googledownload = 0;
+        // <!--Samsung-->
+
+        const url9 = "https://sourceforge.net/projects/projectsakura/files/angler/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+        async function getGoogleData() {
+            const response2 = await fetch(url9);
+            const data2 = await response2.json();
+            let total = data2.total;
+            const span = document.querySelector(".googledownload")
+            span.innerHTML = `${(total)}`;
+
+        }
+        getGoogleData();
+        let Midownload = 0;
+        // <!--Samsung-->
+        const url5 = "https://sourceforge.net/projects/projectsakura/files/Wayne/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+        const url6 = "https://sourceforge.net/projects/projectsakura/files/Mido/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+        const url7 = "https://sourceforge.net/projects/projectsakura/files/riva/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+        async function getMiData() {
+            const response2 = await fetch(url5);
+            const response3 = await fetch(url6);
+            const response4 = await fetch(url7);
+            const data2 = await response2.json();
+            const data3 = await response3.json();
+            const data4 = await response4.json();
+            let total = data2.total + data3.total + data4.total;
+            const span = document.querySelector(".midownload")
+            span.innerHTML = `${(total)}`;
+
+        }
+        getMiData();
+    </script>
+
+
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+        <div class="container">
+
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="https://twitter.com/LordShen0" class="btn-floating btn-fb mx-1">
+                        <i class="fa fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.github.com/ProjectSakura" class="btn-floating btn-tw mx-1">
+                        <i class="fa fa-github"> </i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="footer-copyright text-center py-3" style="color:white;">Designed by Project Sakura
+            <p>Stats are fetched from Sourceforge.</p>
+        </div>
+
+    </footer>
+
+
 </body>
+
 </html>
