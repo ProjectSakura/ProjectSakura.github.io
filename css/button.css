@@ -1,0 +1,123 @@
+@keyframes blur{
+	0%{
+		filter: blur(30px);
+	}50%{
+		filter: blur(40px);
+	}100%{
+		filter: blur(30px);
+	}
+}
+.popup{
+	position:absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background-color: #262626;
+	padding: 30px 40px;
+	border-radius: 15px;
+	height: max-content;
+}
+.button{
+	border: none;
+	background-color: #35658c;
+	color: white;
+	padding: 10px 30px;
+	font-family: inherit;
+	font-size: 20px;
+	border-radius: 10px;
+
+	transition: all 0.2s;
+	margin-left: 25px;
+	line-height: 1.2;
+}
+.button2{
+	border: none;
+	color: white;
+	background-color: transparent;
+	padding: 10px;
+	font-size: 20px;
+	transition: all 0.2s;
+	font-family: inherit;
+}
+.buttons{
+	margin-left: auto;
+	display: block;
+	width: max-content;
+	margin-top: 20px;
+}
+.title{
+	margin: 0;
+	font-size: 2em;
+	color: white;
+	line-height: 1.2;
+	text-align: center;
+	padding-bottom: 20px;
+	width: 100%;
+}
+.description{
+	font-size: 16px;
+	color: #AAA;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.button:hover{
+	transform: translateY(-15%);
+	background-color: #4176a2;
+	box-shadow: 0px 10px 18px #0088ff;
+}
+.button:active{
+	transform: translateY(0%);
+	box-shadow: 0px 3px 18px #0088ff;
+}
+.button2:hover{
+	text-decoration: underline;
+}
+.cazeip{
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	color:white !important;
+}
+@media (max-width: 576px) {
+	.button{
+		width:100%;
+		margin: 0;
+		font-size: 18px;
+		margin-top: 10%;
+		padding:15px;
+		height: 70px;
+		box-shadow: 0px 6px 0px 0px #284054;
+	}.button2{
+		width:100%;
+		font-size: 18px;
+		padding:15px;
+	}.buttons{
+		margin: 0;
+		margin-right: 0;
+		margin-top: 200px;
+		width: 100%;
+	}.popup{
+		box-sizing: border-box;
+		border-radius: 0;
+		height: 100%;
+		width: 100%;
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.cazeip{
+		display:none;
+	}
+	.title{
+		margin-top:20%;
+	}
+	.button:hover{
+		transform: translateY(0);
+		background-color: #4176a2;
+		box-shadow: 0px 6px 0px 0px #253f54;
+	}
+	.button:active{
+		transform: translateY(3px);
+		background-color: #4176a2;
+		box-shadow: 0px 0px 0px 0px #253f54;
+	}
+}

@@ -1,0 +1,350 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="XX30bJnIFltL8pol27GFYQ/gTxwgK3zX7kfBYDq5lokSChjRf4V3gdaeHgSKmYbC20AwcVfEXKukZZz6g8JTlA==" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Sakura</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2FBooligoosh%2Fpen%2FmKPpQp&format=json" title="Project Sakura" />
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+    <script>
+    /* Firefox needs this to prevent FOUC. Wow. */
+    </script>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
+    :root {
+        --color: #3c3163;
+        --transition-time: 0.5s;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #212112;
+        display: flex;
+        flex-direction: column;
+        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 7%;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: all 200ms linear;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    .cards-wrapper {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 4rem;
+        padding: 4rem;
+        margin: 0 auto;
+        width: max-content;
+    }
+
+    .card {
+        font-family: 'Heebo';
+        --bg-filter-opacity: 0.5;
+        background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+        height: 20em;
+        width: 15em;
+        font-size: 1.5em;
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        /*margin: 2em;*/
+        display: flex;
+        align-items: flex-end;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 0 5em -1em black;
+        transition: all, var(--transition-time);
+        position: relative;
+        overflow: hidden;
+        border: 10px solid #ccc;
+        text-decoration: none;
+    }
+
+    .card:hover {
+        transform: rotate(0);
+    }
+
+    .card h1 {
+        margin: 0;
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+
+    .card p {
+        font-size: 0.75em;
+        font-family: 'Open Sans';
+        margin-top: 0.5em;
+        line-height: 2em;
+    }
+
+    .card .tags {
+        display: flex;
+    }
+
+    .card .tags .tag {
+        font-size: 0.75em;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 0.3rem;
+        padding: 0 0.5em;
+        margin-right: 0.5em;
+        line-height: 1.5em;
+        transition: all, var(--transition-time);
+    }
+
+    .card:hover .tags .tag {
+        background: var(--color);
+        color: white;
+    }
+
+    .card .date {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 0.75em;
+        padding: 1em;
+        line-height: 1em;
+        opacity: .8;
+    }
+
+    .card:before,
+    .card:after {
+        content: '';
+        transform: scale(0);
+        transform-origin: top left;
+        border-radius: 50%;
+        position: absolute;
+        left: -50%;
+        top: -50%;
+        z-index: -5;
+        transition: all, var(--transition-time);
+        transition-timing-function: ease-in-out;
+    }
+
+    .card:before {
+        background: #ddd;
+        width: 250%;
+        height: 250%;
+    }
+
+    .card:after {
+        background: white;
+        width: 200%;
+        height: 200%;
+    }
+
+    .card:hover {
+        color: var(--color);
+    }
+
+    .card:hover:before,
+    .card:hover:after {
+        transform: scale(1);
+    }
+
+    .card-grid-space .num {
+        font-size: 3em;
+        margin-bottom: 1.2rem;
+        margin-left: 1rem;
+    }
+
+    .info {
+        font-size: 1.2em;
+        display: flex;
+        padding: 1em 3em;
+        height: 3em;
+    }
+
+    .info img {
+        height: 3em;
+        margin-right: 0.5em;
+    }
+
+    .info h1 {
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+    /* MEDIA QUERIES */
+    @media screen and (max-width: 1285px) {
+        .cards-wrapper {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .cards-wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        .info {
+            justify-content: center;
+        }
+
+        .card-grid-space .num {
+            /margin-left: 0;
+            /text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .cards-wrapper {
+            padding: 4rem 2rem;
+        }
+
+        .card {
+            max-width: calc(100vw - 4rem);
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .info {
+            display: block;
+            text-align: center;
+        }
+
+        .info h1 {
+            margin: 0;
+        }
+    }
+
+    footer {
+        background-color: #222;
+        color: #fff;
+        font-size: 14px;
+        bottom: 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 999;
+    }
+
+    footer p {
+        margin: 10px 0;
+    }
+
+    footer i {
+        color: red;
+    }
+
+    footer a {
+        color: #3c97bf;
+        text-decoration: none;
+    }
+
+    @media (max-width: 940px) {
+        .container2 {
+            grid-template-columns: 1fr;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <section class="info">
+            <img src="image/logo.png">
+            <h1>Blog&mdash; <a href="htps://Projectsakura.github.io" target="_blank">Project Sakura</a></h1>
+        </section>
+        <section class="cards-wrapper">
+            <div class="card-grid-space" id="1">
+                <div class="num">01</div>
+                <a class="card" href="posts/maintainership.html" style="--bg-img: url(https://c4.wallpaperflare.com/wallpaper/760/955/638/artwork-landscape-sky-mountains-wallpaper-preview.jpg)">
+                    <div>
+                        <h1>Maintainership Form</h1>
+                        <p>Apply for maintainership of project sakura. Check the post for more...</p>
+                        <div class="date">14 May 2020</div>
+                        <div class="tags">
+                            <div class="tag">HTML</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space" id="2">
+                <div class="num">02</div>
+                <a class="card" href="posts/oursponsor.html" style="--bg-img: url('https://c4.wallpaperflare.com/wallpaper/912/256/892/landscape-forest-deer-artwork-wallpaper-preview.jpg')">
+                    <div>
+                        <h1>XSLTEL Sponsoring Project Sakura</h1>
+                        <p>Learn about the sponsor thats helping project sakura..</p>
+                        <div class="date">7 June 2020</div>
+                        <div class="tags">
+                            <div class="tag">HTML</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space" id="4">
+                <div class="num">03</div>
+                <a class="card" href="posts/second-update-of-june-2020.html" style="--bg-img: url('https://c4.wallpaperflare.com/wallpaper/339/179/774/digital-art-low-poly-artwork-minimalism-wallpaper-preview.jpg')">
+                    <div>
+                        <h1>Second Update of June 2020</h1>
+                        <p>Yes we are here with a bag full of new stuff..</p>
+                        <div class="date">29 June 2020</div>
+                        <div class="tags">
+                            <div class="tag">HTML</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space" id="3">
+                <div class="num">04</div>
+                <a class="card" href="posts/june-2020-update.html" style="--bg-img: url('https://c4.wallpaperflare.com/wallpaper/267/779/729/mark-kirkpatrick-illustration-mountains-minimalism-wallpaper-preview.jpg')">
+                    <div>
+                        <h1>June 2020 Update </h1>
+                        <p>See whats new in the june update of project sakura..</p>
+                        <div class="date">10 June 2020</div>
+                        <div class="tags">
+                            <div class="tag">HTML</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space" id="4">
+                <div class="num">05</div>
+                <a class="card" href="posts/may-2020-update.html" style="--bg-img: url('https://c4.wallpaperflare.com/wallpaper/339/179/774/digital-art-low-poly-artwork-minimalism-wallpaper-preview.jpg')">
+                    <div>
+                        <h1>May 2020 Update </h1>
+                        <p>See whats new in the May update of project sakura..</p>
+                        <div class="date">15 May 2020</div>
+                        <div class="tags">
+                            <div class="tag">HTML</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+    <diV>
+        <footer style="width:100vw">
+            <p>
+                Created with <i class="fa fa-heart"></i> by
+                <a target="_blank" href="https://github.com/ProjectSakura">Project Sakura</a>
+                - Read about the credits
+                <a target="_blank" href="">here</a>
+            </p>
+        </footer>
+    </diV>
+</body>
+
+</html>
