@@ -1,588 +1,545 @@
-<!doctype html>
-<html class="no-js best-pricing" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Project Sakura</title>
-        <meta name="description" content="Website where you can download Project Sakura for officially supported devices">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+<html>
 
-		<!-- CSS here -->
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-            <link rel="stylesheet" href="assets/css/flaticon.css">
-            <link rel="stylesheet" href="assets/css/slicknav.css">
-            <link rel="stylesheet" href="assets/css/animate.min.css">
-            <link rel="stylesheet" href="assets/css/magnific-popup.css">
-            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-            <link rel="stylesheet" href="assets/css/themify-icons.css">
-            <link rel="stylesheet" href="assets/css/slick.css">
-            <link rel="stylesheet" href="assets/css/nice-select.css">
-            <link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true">
+    <title>Project Sakura</title>
+    <link rel="icon" type="gif" href="loading.gif">
+    <link rel="stylesheet" href="css/download.css" />
+</head>
 
-   </head>
-
-   <body class="best-pricing">
-       
-    <!-- Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/logo.png" alt="">
+<body class="hero-anime dark">
+    <div id="loading323">
+    </div>
+    <script>
+        var preloader = document.getElementById('loading323');
+        const myFunction = () => {
+            setInterval(() => {
+                preloader.style.display = "none";
+            }, 2000)
+        }
+    </script>
+    <!-- <div style="width: 100vw;"> -->
+    <div class="navigation-wrap bg-light start-header start-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="https://projectsakura.github.io" target="_blank"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="https://github.com/ProjectSakura">Github</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="https://projectsakura.github.io/blog/">Blog</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="https://projectsakura.github.io/stats.html">Stats</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="https://t.me/ProjectSakura">Telegram</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Preloader Start -->
-
-    <header>
-        <!-- Header Start -->
-       <div class="header-area header-transparrent ">
-            <div class="main-header header-sticky">
+    <div class="section" style="margin-top: 200px">
+        <div class="absolute-center">
+            <div class="section">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <!-- Logo -->
-                        <div class="col-xl-3 col-lg-3 col-md-3">
-                            <div class="logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a> <span>SAKURA</span>
-                            </div>
-                        </div>
-                        <div class="col-xl-9 col-lg-9 col-md-9">
-                            <!-- Main-menu -->
-                            <div class="main-menu f-right d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">    
-                                        <li class="active"><a href="index.html">Home</a></li>
-                                        <li><a href="https://projectsakura.github.io/blog">Blog</a></li>
-                                        <li><a href="https://projectsakura.github.io/stats.html">Stats</a></li>                           
-                                        <li><a href="https://github.com/ProjectSakura">Github</a></li>
-
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <!-- Mobile Menu -->
+                    <div class="row">
                         <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-       </div>
-        <!-- Header End -->
-    </header>
-    <main>        
-
-<!--Download section-->
-        <section class="best-pricing pricing-padding" data-background="assets/img/gallery/best_pricingbg.jpg" id="id_download">
-            <div class="container">
-                <!-- Section Tittle -->
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-6 col-md-8">
-                        <div class="section-tittle section-tittle2 text-center">
-                            <h2>Select the device.</h2>
-                            <h4 style="color:white";>Announcement: Help us by answering a question at the bottom of the page.</h4>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--Download -->
-        <div class="pricing-card-area" >
-            <div class="container">
-                <div class="row">
-					
-		            <!--X00t-->
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-card text-center mb-30">
-                            <div class="card-top">
-                                <h4>Asus Zenfone Max Pro M1</h4>
-                            </div>
-                            <div class="card-bottom">
-                                <a type="button" data-toggle="modal" data-target="#x00t" class="btn card-btn1" style="color: #fff;">Download</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--Riva-->
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-card  text-center mb-30">
-                            <div class="card-top">
-                                <h4>Xiaomi Redmi 5A </h4>
-                                <br>
-                                <br>
-                            </div>
-                            
-                            <div class="card-bottom">
-                                <a type="button" class="btn card-btn1" data-toggle="modal" data-target="#riva" style="color: #fff;">Download</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Wayne-->
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-card text-center mb-30">
-                            <div class="card-top">
-                                <h4>Xiaomi Mi 6X Wayne</h4>
-                                <br>
-                                <br>
-                            </div>
-                            <div class="card-bottom">
-                                <a type="button" data-toggle="modal" data-target="#wayne" class="btn card-btn1" style="color: #fff;">Download</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--Mido-->
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-card text-center mb-30">
-                            <div class="card-top">
-                                <h4>Xiaomi Redmi Note 4</h4>
-                            </div>
-                            <div class="card-bottom">
-                                <a type="button" class="btn card-btn1" data-toggle="modal" data-target="#mido" style="color: #fff;">Download</a>
-                            </div>
-                        </div>
-                    </div>
-          
-                    <!--beryllium-->
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-card text-center mb-30">
-                            <div class="card-top">
-                                <h4>Xiaomi Pocofone F1</h4>
-                                <br>
-                                <br>
-                            </div>
-                            <div class="card-bottom">
-                                <a type="button" class="btn card-btn1" data-toggle="modal" data-target="#beryllium" style="color: #fff;">Download</a>
-                            </div>
-                        </div>
-                    </div>
-          
-                   <!--Ocean-->
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-card text-center mb-30">
-                            <div class="card-top">
-                                <h4>Motorola G7 Power</h4>
-                                <br>
-                                <br>
-                            </div>
-                            <div class="card-bottom">
-                                <a type="button" class="btn card-btn1" data-toggle="modal" data-target="#ocean" style="color: #fff;">Download</a>
-                            </div>
-                        </div>
-                    </div>
-                              
-                    <!--dreamlte-->
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-card text-center mb-30">
-                            <div class="card-top">
-                                <h4>Samsung Galaxy S8</h4>
-                                <br>
-                                <br>
-                            </div>
-                            <div class="card-bottom">
-                                <a type="button" class="btn card-btn1" data-toggle="modal" data-target="#dreamlte" style="color: #fff;">Download</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--dream2lte-->
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-card text-center mb-30">
-                            <div class="card-top">
-                                <h4>Samsung Galaxy S8 Plus</h4>
-                            </div>
-                            <div class="card-bottom">
-                                <a type="button" class="btn card-btn1" data-toggle="modal" data-target="#dream2lte" style="color: #fff;">Download</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--greatlte-->
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-card text-center mb-30">
-                            <div class="card-top">
-                                <h4>Samsung Galaxy Note 8</h4>
-                            </div>
-                            <div class="card-bottom">
-                                <a type="button" class="btn card-btn1" data-toggle="modal" data-target="#greatlte" style="color: #fff;">Download</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--angler-->
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-card text-center mb-30">
-                            <div class="card-top">
-                                <h4>Huawei Nexus 6P</h4>
-                                <br>
-                                <br>
-                            </div>
-                            <div class="card-bottom">
-                                <a type="button" class="btn card-btn1" data-toggle="modal" data-target="#angler" style="color: #fff;">Download</a>
-                            </div>
+                            <h1><span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><br>
+                                <span>S</span><span>A</span><span>K</span><span>U</span><span>R</span><span>A</span>
+                            </h1>
+                            <p>SELECT YOUR DEVICE TO DOWNLOAD</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Modal- X00T -->
-        <div class="modal fade" id="x00t" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-				<div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Zenfone Max Pro M1</h5>
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Maintainer: LordShenron</h5>             
+    </div>
+    <div class="container2 half-height" style="margin-top: 150px;">
+        <center>
+            <div class="container2">
+                <!--ASUS-->
+                <!-- <div clas="containerr"> -->
+                <div class="card-container" id="x00t">
+                    <span class="pro">ASUS</span>
+                    <br style="line-height: 50px">
+                    <h3>ZENFONE MAX PRO M1</h3>
+                    <h6>Maintainer: LordShenron</h6>
+                    <div class="buttons">
+                        <button class="primary download">
+                            <a class="buttton1" href="">Download</a>
+                        </button>
+                        <button class="primary ghost">
+                            <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
+                        </button>
+                    </div>
+                    <div class="skills" id="li2">
+                        <h6>Build Information</h6>
+                        <ul>
+                            <li id="ans4">Zip-name</li>
+                            <li id="ans5">Zip-Size</li>
+                            <li id="ans6">MD5</li>
+                        </ul>
+                    </div>
                 </div>
-                <center><p>Please Consider Donating, It helps us a lot!</p>
-                <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB" target="_blank" class="btn card-btn1">Paypal</a>
-                <br>
-                <br>
-                <p>Select the build you want to download.</p>
-                <a href="https://sourceforge.net/projects/projectsakura/files/X00T/GAPPS/ProjectSakura-GAPPS-1.Q-20200612-1353-X00T-OFFICIAL.zip/download" target="_blank" class="btn card-btn1">GAPPS</a>
-                <a href="https://sourceforge.net/projects/projectsakura/files/X00T/ProjectSakura-VANILLA-1.Q-20200612-1817-X00T-OFFICIAL.zip/download" target="_blank" class="btn card-btn1">VANILLA</a>
-                <br>
-                <br>
-                </center>		
-                <div class="modal-footer">
-				<center>
-                <button type="button" class="btn card-btn1" data-dismiss="modal">Close</button>
-                </center>
+                <!--Huawei-->
+                <div class="card-container" id="x00t">
+                    <span class="pro">Huawei</span>
+                    <br style="line-height: 50px">
+                    <h3>NEXUS 6P</h3>
+                    <h6>Maintainer: Amartya</h6>
+                    <div class="buttons">
+                        <button class="primary">
+                            <a class="buttton2" href=""> Download</a>
+                        </button>
+                        <button class="primary ghost">
+                            <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
+                        </button>
+                    </div>
+                    <div class="skills">
+                        <h6>Build Information</h6>
+                        <ul>
+                            <li id="ans7">Zip-name</li>
+                            <li id="ans8">Zip-Size</li>
+                            <li id="ans9">MD5</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            </div>
-        </div>
-        
-        <!-- Modal- riva -->
-        <div class="modal fade" id="riva" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-				<div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Redmi 5A</h5>
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Maintainer: Sunny Raj</h5>                
-                </div>
-                <center><p>Please Consider Donating, It helps us a lot!</p>
-                <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB" target="_blank" class="btn card-btn1">Paypal</a>
-                <br>
-                <br>
-                <p>Select the build you want to download.</p>
-                <a href="https://sourceforge.net/projects/projectsakura/files/riva/GAPPS/ProjectSakura-GAPPS-1.Q-20200611-0704-riva-OFFICIAL.zip/download" target="_blank" class="btn card-btn1">GAPPS</a>
-                <a href="https://sourceforge.net/projects/projectsakura/files/riva/ProjectSakura-VANILLA-1.Q-20200610-1619-riva-OFFICIAL.zip/download" target="_blank" class="btn card-btn1">VANILLA</a>
-                <br>
-                <br>
-                </center>		
-                <div class="modal-footer">
-				<center>
-                <button type="button" class="btn card-btn1" data-dismiss="modal">Close</button>
-                </center>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <!-- Modal- wayne -->
-        <div class="modal fade" id="wayne" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-		<div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Xiaomi Mi 6x</h5>
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Maintainer: Roger W.</h5>                
-                </div>
-                <center><p>Please Consider Donating, It helps us a lot!</p>
-                <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB" target="_blank" class="btn card-btn1">Paypal</a>
-                <br>
-                <br>
-                <p>Select the build you want to download.</p>
-                <a href="404" target="_blank" class="btn card-btn1">-SOON-</a>
-                <a href="https://sourceforge.net/projects/projectsakura/files/Wayne/ProjectSakura-VANILLA-1.Q-20200609-1616-wayne-OFFICIAL.zip/download" target="_blank" class="btn card-btn1">VANILLA</a>
-                <br>
-                <br>
-                </center>		
-                <div class="modal-footer">
-				<center>
-                <button type="button" class="btn card-btn1" data-dismiss="modal">Close</button>
-                </center>
-                </div>
-            </div>
-            </div>
-        </div>
-        
-        <!-- Modal- mido -->
-        <div class="modal fade" id="mido" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-				<div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Xiaomi Redmi Note 4</h5>
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Maintainer: Jigen</h5>                
-                </div>
-                <center><p>Please Consider Donating, It helps us a lot!</p>
-                <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB" target="_blank" class="btn card-btn1">Paypal</a>
-                <br>
-                <br>
-                <p>Select the build you want to download.</p>
-                <a href="404" target="_blank" class="btn card-btn1">-SOON-</a>
-                <a href="https://sourceforge.net/projects/projectsakura/files/Mido/ProjectSakura-VANILLA-1.Q-20200520-1255-mido-OFFICIAL.zip/download" target="_blank" class="btn card-btn1">VANILLA</a>
-                <br>
-                <br>
-                </center>		
-                <div class="modal-footer">
-				<center>
-                <button type="button" class="btn card-btn1" data-dismiss="modal">Close</button>
-                </center>
-                </div>
-            </div>
-            </div>
-        </div>
-     
-        <!-- Modal- dreamlte -->
-        <div class="modal fade" id="dreamlte" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-				<div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Samsung Galaxy S8</h5>
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Maintainer: Haridhayal</h5>                
-                </div>
-                <center><p>Please Consider Donating, It helps us a lot!</p>
-                <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB" target="_blank" class="btn card-btn1">Paypal</a>
-                <br>
-                <br>
-                <p>Download your build.</p>
-                <a href="https://sourceforge.net/projects/projectsakura/files/dreamlte/ProjectSakura-GAPPS-1.Q-20200611-1037-dreamlte-OFFICIAL.zip/download" target="_blank" class="btn card-btn1">GAPPS BUILD</a>
-                <br>
-                <br>
-                </center>		
-                <div class="modal-footer">
-				<center>
-                <button type="button" class="btn card-btn1" data-dismiss="modal">Close</button>
-                </center>
-                </div>
-            </div>
-            </div>
-        </div>
-        
-        <!-- Modal- dream2lte-->
-        <div class="modal fade" id="dream2lte" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-				<div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Samsung Galaxy S8 Plus</h5>
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Maintainer: Haridhayal</h5>                
-                </div>
-                <center><p>Please Consider Donating, It helps us a lot!</p>
-                <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB" target="_blank" class="btn card-btn1">Paypal</a>
-                <br>
-                <br>
-                <p>Download your build from below.</p>
-                <a href="https://sourceforge.net/projects/projectsakura/files/dream2lte/ProjectSakura-GAPPS-1.Q-20200611-1221-dream2lte-OFFICIAL.zip/download" target="_blank" class="btn card-btn1">GAPPS BUILD</a>
-                <br>
-                <br>
-                </center>		
-                <div class="modal-footer">
-				<center>
-                <button type="button" class="btn card-btn1" data-dismiss="modal">Close</button>
-                </center>
-                </div>
-            </div>
-            </div>
-        </div>
-        
-        <!-- Modal- greatlte-->
-        <div class="modal fade" id="greatlte" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-				<div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Samsung Galaxy Note 8</h5>
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Maintainer: Haridhayal</h5>                
-                </div>
-                <center><p>Please Consider Donating, It helps us a lot!</p>
-                <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB" target="_blank" class="btn card-btn1">Paypal</a>
-                <br>
-                <br>
-                <p>Download your build from below.</p>
-                <a href="https://sourceforge.net/projects/projectsakura/files/greatlte/ProjectSakura-GAPPS-1.Q-20200611-1353-greatlte-OFFICIAL.zip/download" target="_blank" class="btn card-btn1">GAPPS BUILD</a>
-                <br>
-                <br>
-                </center>		
-                <div class="modal-footer">
-				<center>
-                <button type="button" class="btn card-btn1" data-dismiss="modal">Close</button>
-                </center>
-                </div>
-            </div>
-            </div>
-        </div>
-     
-        <!-- Modal- angler-->
-        <div class="modal fade" id="angler" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-				<div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Huawei Nexus 6P</h5>
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Maintainer: Amartya</h5>                
-                </div>
-                <center><p>Please Consider Donating, It helps us a lot!</p>
-                <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB" target="_blank" class="btn card-btn1">Paypal</a>
-                <br>
-                <br>
-                <p>Select the build you want to download.</p>
-                <a href="404" target="_blank" class="btn card-btn1">-SOON-</a>
-                <a href="https://sourceforge.net/projects/projectsakura/files/angler/ProjectSakura-VANILLA-1.Q-20200609-0752-angler-OFFICIAL.zip/download" target="_blank" class="btn card-btn1">VANILLA</a>
-                <br>
-                <br>
-                </center>		
-                <div class="modal-footer">
-				<center>
-                <button type="button" class="btn card-btn1" data-dismiss="modal">Close</button>
-                </center>
-                </div>
-            </div>
-            </div>
-        </div>     
-     
-        <!-- Modal- ocean-->
-        <div class="modal fade" id="ocean" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-				<div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Motorola G7 Power</h5>
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Maintainer: Vitor</h5>
-                </div>
-                <center><p>Please Consider Donating, It helps us a lot!</p>
-                <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB" target="_blank" class="btn card-btn1">Paypal</a>
-                <br>
-                <br>
-                <p>Select the build you want to download.</p>
-                <a href="https://sourceforge.net/projects/projectsakura/files/ocean/ProjectSakura-VANILLA-1.Q-20200616-1523-ocean-OFFICIAL.zip/download" target="_blank" class="btn card-btn1">VANILLA</a>
-                <br>
-                <br>
-                </center>		
-                <div class="modal-footer">
-				<center>
-                <button type="button" class="btn card-btn1" data-dismiss="modal">Close</button>
-                </center>
-                </div>
-            </div>
-            </div>
-        </div>      
-
-        <!-- Modal- beryllium-->
-        <div class="modal fade" id="beryllium" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-				<div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Xiaomi Pocofone F1</h5>
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Maintainer: HumanGlitch</h5>                
-                </div>
-                <center><p>Please Consider Donating, It helps us a lot!</p>
-                <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB" target="_blank" class="btn card-btn1">Paypal</a>
-                <br>
-                <br>
-                <p>Select the build you want to download.</p>
-                <a href="404" target="_blank" class="btn card-btn1">-SOON-</a>
-                <a href="404" target="_blank" class="btn card-btn1">-SOON-</a>
-                <br>
-                <br>
-                </center>		
-                <div class="modal-footer">
-				<center>
-                <button type="button" class="btn card-btn1" data-dismiss="modal">Close</button>
-                </center>
-                </div>
-            </div>
-            </div>
-        </div> 
-  
-    </main>
-
-    
-    <footer>
-    <!-- Footer Start-->
-      <div class="footer-main">
-        <div class="footer-area footer-padding">
-            <div class="container">
-		   
-		    <script type="text/javascript">
-(function(d,s,id,u){
-  if (d.getElementById(id)) return;
-  var js, sjs = d.getElementsByTagName(s)[0],
-      t = Math.floor(new Date().getTime() / 1000000);
-  js=d.createElement(s); js.id=id; js.async=1; js.src=u+'?'+t;
-  sjs.parentNode.insertBefore(js, sjs);
-}(document, 'script', 'os-widget-jssdk', 'https://www.opinionstage.com/assets/loader.js'));
-</script><div class="os_widget" data-of="shen2" data-path="/shen2/will-you-be-willing-to-see-few-ads-on-the-website" id="os-widget-697450"></div>
-           
-           		
-				
-                <!-- Copy-Right -->
-                <center>                        
-                <div class="row align-items-center">
-                    <div class="col-xl-12 ">
-                        <div class="footer-copy-right">
-					       <br>  
-					       <br>		
-						   <p>Sponsored by</p>
-					       <a href="https://my.xsl.tel/"><img src="assets/img/hero/spon-white.png" alt="xsltel"></a>
-					       <br>
-					       <br>
-					       <p>    
-                            Copyright &copy; 2020 Direwolf Inc.
-                            <p>Originally built with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-                        </div>
+                <!--Motorola-->
+                <div class="card-container" id="x00t">
+                    <span class="pro">Motorola</span>
+                    <br style="line-height: 50px">
+                    <h3>MOTO G7 POWER</h3>
+                    <h6>Maintainer: Viter</h6>
+                    <div class="buttons">
+                        <button class="primary">
+                            <a class="buttton3" href="">Download</a>
+                        </button>
+                        <button class="primary ghost">
+                            <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
+                        </button>
+                    </div>
+                    <div class="skills">
+                        <h6>Build Information</h6>
+                        <ul>
+                            <li id="ans10">Zip-name</li>
+                            <li id="ans11">Zip-Size</li>
+                            <li id="ans12">MD5</li>
+                        </ul>
+                        <!-- </div> -->
                     </div>
                 </div>
             </div>
-        </div>        
-      </center>
-      </div>
-       <!-- Footer End-->
+    </div>
+    </center>
+    <div class="container2 half-height" style="margin-top: 100px;">
+        <div class="container2">
+            <!--Xiaomi-->
+            <div class="card-container" id="x00t">
+                <span class="pro">Xiaomi</span>
+                <br style="line-height: 50px">
+                <h3>REDMI 5A</h3>
+                <h6>Maintainer: SunnyRaj</h6>
+                <div class="buttons">
+                    <button class="primary">
+                        <a class="buttton4" href="">Download</a>
+                    </button>
+                    <button class="primary ghost">
+                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
+                    </button>
+                </div>
+                <div class="skills">
+                    <h6>Build Information</h6>
+                    <ul>
+                        <li id="ans13">Zip-name</li>
+                        <li id="ans14">Zip-Size</li>
+                        <li id="ans15">MD5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-container" id="x00t">
+                <span class="pro">Xiaomi</span>
+                <br style="line-height: 50px">
+                <h3>REDMI NOTE 4</h3>
+                <h6>Maintainer: Jigen</h6>
+                <div class="buttons">
+                    <button class="primary">
+                        <a class="buttton5" href="">Download</a>
+                    </button>
+                    <button class="primary ghost">
+                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
+                    </button>
+                </div>
+                <div class="skills">
+                    <h6>Build Information</h6>
+                    <ul>
+                        <li id="ans16">Zip-name</li>
+                        <li id="ans17">Zip-Size</li>
+                        <li id="ans18">MD5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-container" id="x00t">
+                <span class="pro">Xiaomi</span>
+                <br style="line-height: 50px">
+                <h3>MI 6X</h3>
+                <h6>Maintainer: Roger W.</h6>
+                <div class="buttons">
+                    <button class="primary">
+                        <a class="buttton6" href="">Download</a>
+                    </button>
+                    <button class="primary ghost">
+                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
+                    </button>
+                </div>
+                <div class="skills">
+                    <h6>Build Information</h6>
+                    <ul>
+                        <li id="ans19">Zip-name</li>
+                        <li id="ans20">Zip-Size</li>
+                        <li id="ans21">MD5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-container" id="x00t">
+                <span class="pro">Xiaomi</span>
+                <br style="line-height: 50px">
+                <h3>POCOFONE F1</h3>
+                <h6>Maintainer: Human Glitch</h6>
+                <div class="buttons">
+                    <button class="primary">
+                        <a class="buttton7" href="">Download</a>
+                    </button>
+                    <button class="primary ghost">
+                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
+                    </button>
+                </div>
+                <div class="skills">
+                    <h6>Build Information</h6>
+                    <ul>
+                        <li id="ans22">Zip-name</li>
+                        <li id="ans23">Zip-Size</li>
+                        <li id="asn24">MD5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2 half-height" style="margin-top: 100px;">
+        <div class="container2">
+            <!--Samsung-->
+            <div class="card-container" id="x00t">
+                <span class="pro">Samsung</span>
+                <br style="line-height: 50px">
+                <h3>GALAXY S8</h3>
+                <h6>Maintainer: Haridhayal</h6>
+                <div class="buttons">
+                    <button class="primary">
+                        <a class="buttton8" href="">Download</a>
+                    </button>
+                    <button class="primary ghost">
+                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
+                    </button>
+                </div>
+                <div class="skills">
+                    <h6>Build Information</h6>
+                    <ul>
+                        <li id="ans25">Zip-name</li>
+                        <li id="ans26">Zip-Size</li>
+                        <li id="ans27">MD5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-container" id="x00t">
+                <span class="pro">Samsung</span>
+                <br style="line-height: 50px">
+                <h3>GALAXY S8 PLUS</h3>
+                <h6>Maintainer: Haridhayal</h6>
+                <div class="buttons">
+                    <button class="primary">
+                        <a class="buttton9" href="">Download</a>
+                    </button>
+                    <button class="primary ghost">
+                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
+                    </button>
+                </div>
+                <div class="skills">
+                    <h6>Build Information</h6>
+                    <ul>
+                        <li id="ans28">Zip-name</li>
+                        <li id="ans29">Zip-Size</li>
+                        <li id="ans30">MD5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-container" id="x00t">
+                <span class="pro">Samsung</span>
+                <br style="line-height: 50px">
+                <h3>GALAXY NOTE 8</h3>
+                <h6>Maintainer: Haridhayal</h6>
+                <div class="buttons">
+                    <button class="primary">
+                        <a class="buttton10" href="">Download</a>
+                    </button>
+                    <button class="primary ghost">
+                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
+                    </button>
+                </div>
+                <div class="skills">
+                    <h6>Build Information</h6>
+                    <ul>
+                        <li id="ans31">Zip-name</li>
+                        <li id="ans32">Zip-Size</li>
+                        <li id="ans33">MD5</li>
+                    </ul>
+                </div>
+            </div>
+            <!--Footer-->
+            <footer style="width:100vw">
+                <p>
+                    Created with <i class="fa fa-heart"></i> by
+                    <a target="_blank" href="https://github.com/ProjectSakura">Project Sakura</a>
+                    - Read about the credits
+                    <a target="_blank" href="https://github.com/ProjectSakura/ProjectSakura.github.io/blob/master/README.md">here</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+    <div class="my-5 py-5">
+    </div>
+    <!-- </div> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+<script type="text/javascript">
+const url1 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/X00T.json";
+async function getData1() {
+    const response = await fetch(url1);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans4');
+    const li2 = document.querySelector('#ans5');
+    const li3 = document.querySelector('#ans6');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton1');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+}
+getData1();
+const url2 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/angler.json";
+async function getData2() {
+    const response = await fetch(url2);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans7');
+    const li2 = document.querySelector('#ans8');
+    const li3 = document.querySelector('#ans9');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton2');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+}
+getData2();
+const url3 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/ocean.json";
+async function getData3() {
+    const response = await fetch(url3);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans10');
+    const li2 = document.querySelector('#ans11');
+    const li3 = document.querySelector('#ans12');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton3');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+}
+getData3();
+const url4 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/riva.json";
+async function getData4() {
+    const response = await fetch(url4);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans13');
+    const li2 = document.querySelector('#ans14');
+    const li3 = document.querySelector('#ans15');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton4');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
 
-   </footer>
-   
-	<!-- JS here -->
-		<!-- All JS Custom Plugins Link Here here -->
-        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-		
-		<!-- Jquery, Popper, Bootstrap -->
-		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="./assets/js/popper.min.js"></script>
-        <script src="./assets/js/bootstrap.min.js"></script>
-	    <!-- Jquery Mobile Menu -->
-        <script src="./assets/js/jquery.slicknav.min.js"></script>
 
-		<!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="./assets/js/owl.carousel.min.js"></script>
-        <script src="./assets/js/slick.min.js"></script>
-        <!-- Date Picker -->
-        <script src="./assets/js/gijgo.min.js"></script>
-		<!-- One Page, Animated-HeadLin -->
-        <script src="./assets/js/wow.min.js"></script>
-		<script src="./assets/js/animated.headline.js"></script>
-        <script src="./assets/js/jquery.magnific-popup.js"></script>
+}
+getData4();
 
-		<!-- Scrollup, nice-select, sticky -->
-        <script src="./assets/js/jquery.scrollUp.min.js"></script>
-        <script src="./assets/js/jquery.nice-select.min.js"></script>
-		<script src="./assets/js/jquery.sticky.js"></script>
-        
-        <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
-        <script src="./assets/js/jquery.form.js"></script>
-        <script src="./assets/js/jquery.validate.min.js"></script>
-        <script src="./assets/js/mail-script.js"></script>
-        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-        
-		<!-- Jquery Plugins, main Jquery -->	
-        <script src="./assets/js/plugins.js"></script>
-        <script src="./assets/js/main.js"></script>
+const url5 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/mido.json";
+async function getData5() {
+    const response = await fetch(url5);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans16');
+    const li2 = document.querySelector('#ans17');
+    const li3 = document.querySelector('#ans18');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton5');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
 
-    </body>
+
+}
+getData5();
+
+const url6 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/wayne.json";
+async function getData6() {
+    const response = await fetch(url6);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans19');
+    const li2 = document.querySelector('#ans20');
+    const li3 = document.querySelector('#ans21');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton6');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+
+}
+getData6();
+
+// const url7 = "";
+// async function getData7() {
+//     const response = await fetch(url7);
+//     const data = await response.json();
+//     console.log(data.response[0]);
+//     const li1 = document.querySelector('#ans22');
+//     const li2 = document.querySelector('#ans23');
+//     const li3 = document.querySelector('#ans24');
+//     // console.log(li1);
+//     const button1 = document.querySelector('.buttton7');
+//     li1.innerHTML = data.response[0].filename;
+//     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+//     li3.innerHTML = data.response[0].id;
+// button1.href = data.response[0].url;
+
+
+// }
+// getData7();
+
+const url8 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/dreamlte.json";
+async function getData8() {
+    const response = await fetch(url8);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans25');
+    const li2 = document.querySelector('#ans26');
+    const li3 = document.querySelector('#ans27');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton8');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+
+}
+getData8();
+
+const url9 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/dream2lte.json";
+async function getData9() {
+    const response = await fetch(url9);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans28');
+    const li2 = document.querySelector('#ans29');
+    const li3 = document.querySelector('#ans30');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton9');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+
+}
+getData9();
+
+const url10 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/greatlte.json";
+async function getData10() {
+    const response = await fetch(url10);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans31');
+    const li2 = document.querySelector('#ans32');
+    const li3 = document.querySelector('#ans33');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton10');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+
+}
+getData10();
+</script>
+<script>
+(function($) {
+    "use strict";
+
+    $(function() {
+        var header = $(".start-style");
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 10) {
+                header.removeClass('start-style').addClass("scroll-on");
+            } else {
+                header.removeClass("scroll-on").addClass('start-style');
+            }
+        });
+    });
+
+    //Animation
+
+    $(document).ready(function() {
+        $('body.hero-anime').removeClass('hero-anime');
+    });
+
+    //Menu On Hover
+
+    $('body').on('mouseenter mouseleave', '.nav-item', function(e) {
+        if ($(window).width() > 750) {
+            var _d = $(e.target).closest('.nav-item');
+            _d.addClass('show');
+            setTimeout(function() {
+                _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+            }, 1);
+        }
+    });
+
+})(jQuery);
+</script>
+
 </html>
-
