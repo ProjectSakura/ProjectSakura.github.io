@@ -12,14 +12,6 @@
 <body class="hero-anime dark">
     <div id="loading323">
     </div>
-    <script>
-        var preloader = document.getElementById('loading323');
-        const myFunction = () => {
-            setInterval(() => {
-                preloader.style.display = "none";
-            }, 2000)
-        }
-    </script>
     <!-- <div style="width: 100vw;"> -->
     <div class="navigation-wrap bg-light start-header start-style">
         <div class="container">
@@ -143,7 +135,6 @@
                     </div>
                 </div>
             </div>
-            <script data-cfasync="false" type="text/javascript" src="https://www.linkonclick.com/a/display.php?r=3467155"></script>
     </div>
     </center>
     <div class="container2 half-height" style="margin-top: 100px;">
@@ -233,13 +224,35 @@
                     <ul>
                         <li id="ans22">Zip-name</li>
                         <li id="ans23">Zip-Size</li>
-                        <li id="asn24">MD5</li>
+                        <li id="ans24">MD5</li>
                     </ul>
                 </div>
             </div>
-            <div class="card-container" id="ad1">
-                <script data-cfasync="false" type="text/javascript" src="https://www.linkonclick.com/a/display.php?r=3467335"></script>
-            </div>
+
+            <!--Violet 
+            <div class="card-container" id="beryllium">
+                <span class="pro">Xiaomi</span>
+                <br style="line-height: 50px">
+                <h3>POCOFONE F1</h3>
+                <h6>Maintainer: Human Glitch</h6>
+                <div class="buttons">
+                    <button class="primary">
+                        <a class="buttton11" href="">Download</a>
+                    </button>
+                    <button class="primary ghost">
+                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
+                    </button>
+                </div>
+                <div class="skills">
+                    <h6>Build Information</h6>
+                    <ul>
+                        <li id="ans34">Zip-name</li>
+                        <li id="ans35">Zip-Size</li>
+                        <li id="ans36">MD5</li>
+                    </ul>
+                </div>
+            </div> -->
+
         </div>
     </div>
     <div class="container2 half-height" style="margin-top: 100px;">
@@ -311,14 +324,13 @@
                     </ul>
                 </div>
             </div>
-            <script data-cfasync="false" type="text/javascript" src="https://www.linkonclick.com/a/display.php?r=3467343"></script>
             <!--Footer-->
             <footer style="width:100vw">
                 <p>
                     Created with <i class="fa fa-heart"></i> by
                     <a target="_blank" href="https://github.com/ProjectSakura">Project Sakura</a>
-                    - Read about the credits
-                    <a target="_blank" href="https://github.com/ProjectSakura/ProjectSakura.github.io/blob/master/README.md">here</a>
+                    - SPONSORED BY
+                    <a target="_blank" href="https://my.xsl.tel/">XSLTEL OU</a>
                 </p>
             </footer>
         </div>
@@ -332,6 +344,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+
 <script type="text/javascript">
 const url1 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/X00T.json";
 async function getData1() {
@@ -437,24 +450,43 @@ async function getData6() {
 }
 getData6();
 
-// const url7 = "";
-// async function getData7() {
-//     const response = await fetch(url7);
-//     const data = await response.json();
-//     console.log(data.response[0]);
-//     const li1 = document.querySelector('#ans22');
-//     const li2 = document.querySelector('#ans23');
-//     const li3 = document.querySelector('#ans24');
-//     // console.log(li1);
-//     const button1 = document.querySelector('.buttton7');
-//     li1.innerHTML = data.response[0].filename;
-//     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-//     li3.innerHTML = data.response[0].id;
-// button1.href = data.response[0].url;
+const url7 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/beryllium.json";
+async function getData7() {
+    const response = await fetch(url7);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans22');
+    const li2 = document.querySelector('#ans23');
+    const li3 = document.querySelector('#ans24');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton7');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
 
 
-// }
-// getData7();
+}
+getData7();
+
+//const url7 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/violet.json";
+//async function getData7() {
+//    const response = await fetch(url7);
+//    const data = await response.json();
+//    console.log(data.response[0]);
+//    const li1 = document.querySelector('#ans34');
+//    const li2 = document.querySelector('#ans35');
+//    const li3 = document.querySelector('#ans36');
+    // console.log(li1);
+//    const button1 = document.querySelector('.buttton11');
+//    li1.innerHTML = data.response[0].filename;
+//    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+//    li3.innerHTML = data.response[0].id;
+//    button1.href = data.response[0].url;
+
+
+//}
+//getData7();
 
 const url8 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/dreamlte.json";
 async function getData8() {
