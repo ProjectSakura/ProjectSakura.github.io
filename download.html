@@ -156,6 +156,28 @@
                         </ul>
                     </div>
                 </div>
+                <div class="card-container" id="x00t">
+                    <span class="pro">Meizu</span>
+                    <br style="line-height: 50px">
+                    <h3>MEIZU 16T</h3>
+                    <h6>Maintainer: Abdibekov Dauren</h6>
+                    <div class="buttons">
+                        <button class="primary">
+                            <a class="buttton20" href=""> Download</a>
+                        </button>
+                        <button class="primary ghost">
+                            <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
+                        </button>
+                    </div>
+                    <div class="skills">
+                        <h6>Build Information</h6>
+                        <ul>
+                            <li id="ans60">Zip-name</li>
+                            <li id="ans61">Zip-Size</li>
+                            <li id="ans62">MD5</li>
+                        </ul>
+                    </div>
+                </div>
                 <!--Motorola-->
                 <div class="card-container" id="x00t">
                     <span class="pro">Motorola</span>
@@ -649,6 +671,25 @@ async function getData11() {
 
 }
 getData11();
+
+// leeco
+const url12 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/s2.json";
+async function getData12() {
+    const response = await fetch(url12);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans46');
+    const li2 = document.querySelector('#ans47');
+    const li3 = document.querySelector('#ans48');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton17');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+
+}
+getData12();
 </script>
 <script>
 (function($) {
