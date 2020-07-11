@@ -1,460 +1,583 @@
 <html>
 
 <head>
+    <!-- Page related info -->
+    <title>Project Sakura | Downloads</title>
     <meta charset="UTF-8" />
+    <meta name="title" content="ProjectSakura | Downloads">
+    <meta property="og:title" content="ProjectSakura | Downloads">
+    <meta property="twitter:title" content="ProjectSakura | Downloads">
+    <!-- Descriptions -->
+    <meta name="description" content="This is the download page for all officially supported devices by Project Sakura.">
+    <meta property="og:description" content="Get the build for your officially supported device by Project Sakura.">
+    <meta property="twitter:description" content="This is the download page for all officially supported devices by Project Sakura.">
+    <!-- Extra props -->
+    <meta property="og:site_name" content="ProjectSakura | Downloads">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="twitter:url" content="">
+    <meta name="theme-color" content="#1c1c24">
+    <!-- favicon data generated on favicon-generator.org -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="image/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/logo.png">
+    <link rel="manifest" href="/img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#1c1c24">
+    <meta name="msapplication-TileImage" content="/img/icon/ms-icon-144x144.png">
+    <!-- Style importing -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="HandheldFriendly" content="true">
-    <title>Project Sakura</title>
-    <link rel="icon" type="gif" href="loading.gif">
-    <link rel="stylesheet" href="css/download.css" />
+    <!-- Adding Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
-<body class="hero-anime dark">
-    <div id="loading323">
+<body class="sakura">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper sakura-light-bg">
+                <a href="https://ProjectSakura.github.io/" class="brand-logo"><img src="image/logo.png" style="color: #64b1f3" class="responsive-img circle avatar" alt="SAKURA"></a>
+                <a href="#" data-target="btlg-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="text-uppercase"><a href="https://ProjectSakura.github.io/">Home</a></li>
+                    <li class="text-uppercase"><a href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
+                    <li class="text-uppercase"><a href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
+                    <li class="text-uppercase"><a href="https://t.me/ProjectSakura">Telegram</a></li>
+                    <li class="text-uppercase"><a href="https://www.patreon.com/ProjectSakura">Patreon</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
-    <!-- <div style="width: 100vw;"> -->
-    <div class="navigation-wrap bg-light start-header start-style">
+    <ul class="sakura-midlight-bg sidenav" id="btlg-menu">
+        <li class="text-uppercase"><a href="https://ProjectSakura.github.io/">Home</a></li>
+        <li class="text-uppercase"><a href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
+        <li class="text-uppercase"><a href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
+        <li class="text-uppercase"><a href="https://t.me/ProjectSakura">Telegram</a></li>
+        <li class="text-uppercase"><a href="https://www.patreon.com/ProjectSakura">Patreon</a></li>
+    </ul>
+
+    <body>
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="https://projectsakura.github.io" target="_blank"><img src="image/logo.png" alt=""></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="https://github.com/ProjectSakura">Github</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="https://projectsakura.github.io/blog/">Blog</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="https://projectsakura.github.io/stats.html">Stats</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="https://t.me/ProjectSakura">Telegram</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                <div class="card sakura-light-bg z-depth-3">
+                    <div class="card-content">
+                        <span class="card-title">Project Sakura Officially Supported Devices</span>
+                        <p>Please locate you device from the list below. If you find any problems or mistakes or any device missing please report to your maintainer or to us in our Telegram chat. We DON'T show any ads, so please consider donating.</p>
+                    </div>
+                </div>
+                <div class="card sakura-light-bg z-depth-3">
+                    <div class="card-content">
+                        <span class="card-title">OFFICIAL DEVICES</span>
+                        <ul class="collapsible sakura-lighter-bg collapsible-noborder">
+                            <!--X00T-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    ASUS ZENFONE MAX PRO M1 | X00T</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">LordShenron</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans1">Zip-name</li>
+                                            <li class="skills" id="ans2">Zip-Size</li>
+                                            <li class="skills" id="ans3">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton1" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--angler-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    HUAWEI NEXUS 6P | ANGLER</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">Amartya</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans4">Zip-name</li>
+                                            <li class="skills" id="ans5">Zip-Size</li>
+                                            <li class="skills" id="ans6">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton2" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--leeco-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    LEECO LE 2 | S2</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">CakesTwix</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans7">Zip-name</li>
+                                            <li class="skills" id="ans8">Zip-Size</li>
+                                            <li class="skills" id="ans9">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton3" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--meizu-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    MEIZU 16TH | M1882</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">Abdibekov Dauren</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans10">Zip-name</li>
+                                            <li class="skills" id="ans11">Zip-Size</li>
+                                            <li class="skills" id="ans12">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton4" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--meizu-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    MEIZU 16T | M1928</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">Abdibekov Dauren</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans13">Zip-name</li>
+                                            <li class="skills" id="ans14">Zip-Size</li>
+                                            <li class="skills" id="ans15">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton5" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--Motorola-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    MOTOROLA G7 POWER | OCEAN</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">Vitor</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans16">Zip-name</li>
+                                            <li class="skills" id="ans17">Zip-Size</li>
+                                            <li class="skills" id="ans18">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton6" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--motorola-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    MOTOROLA G5S PLUS | SANDERS</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">ARMSM</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans19">Zip-name</li>
+                                            <li class="skills" id="ans20">Zip-Size</li>
+                                            <li class="skills" id="ans21">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton7" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--realme-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    REALME 1 | CPH1859</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">MrMobTech</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans22">Zip-name</li>
+                                            <li class="skills" id="ans23">Zip-Size</li>
+                                            <li class="skills" id="ans24">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton8" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--samsung-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    SAMSUNG GALAXY S8 | DREAMLTE</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">Haridhayal</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans25">Zip-name</li>
+                                            <li class="skills" id="ans26">Zip-Size</li>
+                                            <li class="skills" id="ans27">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton9" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--samsung-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    SAMSUNG GALAXY S8 PLUS | DREAM2LTE</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">Haridhayal</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans28">Zip-name</li>
+                                            <li class="skills" id="ans29">Zip-Size</li>
+                                            <li class="skills" id="ans30">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton10" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--samsung-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    SAMSUNG GALAXY NOTE 8 | GREATLTE</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">Haridhayal</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans31">Zip-name</li>
+                                            <li class="skills" id="ans32">Zip-Size</li>
+                                            <li class="skills" id="ans33">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton11" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--xiaomi-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    XIAOMI MI 6X | WAYNE</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">Roger W.</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans34">Zip-name</li>
+                                            <li class="skills" id="ans35">Zip-Size</li>
+                                            <li class="skills" id="ans36">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton12" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--xiaomi-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    XIAOMI POCOFONE F1 | BERYLLIUM</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">HumanGlitch</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans37">Zip-name</li>
+                                            <li class="skills" id="ans38">Zip-Size</li>
+                                            <li class="skills" id="ans39">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton13" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--xiaomi-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    XIAOMI REDMI 5A | RIVA</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">SunnyRaj</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans40">Zip-name</li>
+                                            <li class="skills" id="ans41">Zip-Size</li>
+                                            <li class="skills" id="ans42">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton14" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--xiaomi-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    XIAOMI REDMI NOTE 4 | MIDO</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainer:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">ThatisJigen</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans43">Zip-name</li>
+                                            <li class="skills" id="ans44">Zip-Size</li>
+                                            <li class="skills" id="ans45">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton15" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <!--xiaomi-->
+                            <li>
+                                <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
+                                    <i class="material-icons">phone_android</i>
+                                    XIAOMI REDMI NOTE 7 PRO | VIOLET</div>
+                                <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
+                                    <span>Maintainers:</span>
+                                    <div class="chip sakura-lighter-bg" style="margin-left:4px">Prajwal & Nitish</div><br />
+                                    <div class="skills" id="li2">
+                                        <h6>Build Information</h6>
+                                        <ul>
+                                            <li class="skills" id="ans46">Zip-name</li>
+                                            <li class="skills" id="ans47">Zip-Size</li>
+                                            <li class="skills" id="ans48">MD5</li>
+                                        </ul>
+                                    </div>
+                                    <button class="primary download">
+                                        <a id="buttton1" class="buttton16" href="">Download</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
+                                    </button>
+                                    <button class="primary download">
+                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section" style="margin-top: 200px">
-        <div class="absolute-center">
-            <div class="section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1><span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><br>
-                                <span>S</span><span>A</span><span>K</span><span>U</span><span>R</span><span>A</span>
-                            </h1>
-                            <p>SELECT YOUR DEVICE TO DOWNLOAD</p>
-                        </div>
-                    </div>
+    </body>
+    <footer class="page-footer sakura-light-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">PROJECT SAKURA</h5>
+                    <p class="grey-text text-lighten-4">Feels Like Spring</p>
+                    <h5>SPONSORED BY XSLTEL OU</h5>
                 </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="container2 half-height" style="margin-top: 150px;">
-        <center>
-            <div class="container2">
-                <!--ASUS-->
-                <!-- <div clas="containerr"> -->
-                <div class="card-container" id="x00t">
-                    <span class="pro">ASUS</span>
-                    <br style="line-height: 50px">
-                    <h3>ZENFONE MAX PRO M1</h3>
-                    <h6>Maintainer: LordShenron</h6>
-                    <div class="buttons">
-                        <button class="primary download">
-                            <a class="buttton1" href="">Download</a>
-                        </button>
-                        <button class="primary ghost">
-                            <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                        </button>
-                    </div>
-                    <div class="skills" id="li2">
-                        <h6>Build Information</h6>
-                        <ul>
-                            <li id="ans4">Zip-name</li>
-                            <li id="ans5">Zip-Size</li>
-                            <li id="ans6">MD5</li>
-                        </ul>
-                    </div>
-                </div>
-                <!--Huawei-->
-                <div class="card-container" id="x00t">
-                    <span class="pro">Huawei</span>
-                    <br style="line-height: 50px">
-                    <h3>NEXUS 6P</h3>
-                    <h6>Maintainer: Amartya</h6>
-                    <div class="buttons">
-                        <button class="primary">
-                            <a class="buttton2" href=""> Download</a>
-                        </button>
-                        <button class="primary ghost">
-                            <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                        </button>
-                    </div>
-                    <div class="skills">
-                        <h6>Build Information</h6>
-                        <ul>
-                            <li id="ans7">Zip-name</li>
-                            <li id="ans8">Zip-Size</li>
-                            <li id="ans9">MD5</li>
-                        </ul>
-                    </div>
-                </div>
-                <!--LeEco-->
-                <div class="card-container" id="x00t">
-                    <span class="pro">LeEco</span>
-                    <br style="line-height: 50px">
-                    <h3>LEECO LE 2</h3>
-                    <h6>Maintainer: Cakes Twix</h6>
-                    <div class="buttons">
-                        <button class="primary">
-                            <a class="buttton17" href=""> Download</a>
-                        </button>
-                        <button class="primary ghost">
-                            <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                        </button>
-                    </div>
-                    <div class="skills">
-                        <h6>Build Information</h6>
-                        <ul>
-                            <li id="ans46">Zip-name</li>
-                            <li id="ans47">Zip-Size</li>
-                            <li id="ans48">MD5</li>
-                        </ul>
-                    </div>
-                </div>                
-                <!--Meizu-->
-                <div class="card-container" id="x00t">
-                    <span class="pro">Meizu</span>
-                    <br style="line-height: 50px">
-                    <h3>MEIZU 16TH</h3>
-                    <h6>Maintainer: Abdibekov Dauren</h6>
-                    <div class="buttons">
-                        <button class="primary">
-                            <a class="buttton15" href=""> Download</a>
-                        </button>
-                        <button class="primary ghost">
-                            <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                        </button>
-                    </div>
-                    <div class="skills">
-                        <h6>Build Information</h6>
-                        <ul>
-                            <li id="ans40">Zip-name</li>
-                            <li id="ans41">Zip-Size</li>
-                            <li id="ans42">MD5</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card-container" id="x00t">
-                    <span class="pro">Meizu</span>
-                    <br style="line-height: 50px">
-                    <h3>MEIZU 16T</h3>
-                    <h6>Maintainer: Abdibekov Dauren</h6>
-                    <div class="buttons">
-                        <button class="primary">
-                            <a class="buttton20" href=""> Download</a>
-                        </button>
-                        <button class="primary ghost">
-                            <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                        </button>
-                    </div>
-                    <div class="skills">
-                        <h6>Build Information</h6>
-                        <ul>
-                            <li id="ans60">Zip-name</li>
-                            <li id="ans61">Zip-Size</li>
-                            <li id="ans62">MD5</li>
-                        </ul>
-                    </div>
-                </div>
-                <!--Motorola-->
-                <div class="card-container" id="x00t">
-                    <span class="pro">Motorola</span>
-                    <br style="line-height: 50px">
-                    <h3>MOTO G7 POWER</h3>
-                    <h6>Maintainer: Vitor</h6>
-                    <div class="buttons">
-                        <button class="primary">
-                            <a class="buttton3" href="">Download</a>
-                        </button>
-                        <button class="primary ghost">
-                            <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                        </button>
-                    </div>
-                    <div class="skills">
-                        <h6>Build Information</h6>
-                        <ul>
-                            <li id="ans10">Zip-name</li>
-                            <li id="ans11">Zip-Size</li>
-                            <li id="ans12">MD5</li>
-                        </ul>
-                        <!-- </div> -->
-                    </div>
-                </div>
-                <div class="card-container" id="x00t">
-                    <span class="pro">Motorola</span>
-                    <br style="line-height: 50px">
-                    <h3>MOTO G5S PLUS</h3>
-                    <h6>Maintainer: ArmSM</h6>
-                    <div class="buttons">
-                        <button class="primary">
-                            <a class="buttton16" href="">Download</a>
-                        </button>
-                        <button class="primary ghost">
-                            <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                        </button>
-                    </div>
-                    <div class="skills">
-                        <h6>Build Information</h6>
-                        <ul>
-                            <li id="ans43">Zip-name</li>
-                            <li id="ans44">Zip-Size</li>
-                            <li id="ans45">MD5</li>
-                        </ul>
-                        <!-- </div> -->
-                    </div>
-                </div>
-                <div class="card-container" id="x00t">
-                    <span class="pro">Realme</span>
-                    <br style="line-height: 50px">
-                    <h3>REALME 1</h3>
-                    <h6>Maintainer: MrMobTech</h6>
-                    <div class="buttons">
-                        <button class="primary">
-                            <a class="buttton18" href="">Download</a>
-                        </button>
-                        <button class="primary ghost">
-                            <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                        </button>
-                    </div>
-                    <div class="skills">
-                        <h6>Build Information</h6>
-                        <ul>
-                            <li id="ans52">Zip-name</li>
-                            <li id="ans53">Zip-Size</li>
-                            <li id="ans54">MD5</li>
-                        </ul>
-                        <!-- </div> -->
-                    </div>
-                </div>                
-            </div>
-    </div>
-    </center>
-    <div class="container2 half-height" style="margin-top: 100px;">
-        <div class="container2">
-            <!--Xiaomi-->
-            <div class="card-container" id="x00t">
-                <span class="pro">Xiaomi</span>
-                <br style="line-height: 50px">
-                <h3>REDMI 5A</h3>
-                <h6>Maintainer: SunnyRaj</h6>
-                <div class="buttons">
-                    <button class="primary">
-                        <a class="buttton4" href="">Download</a>
-                    </button>
-                    <button class="primary ghost">
-                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                    </button>
-                </div>
-                <div class="skills">
-                    <h6>Build Information</h6>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
                     <ul>
-                        <li id="ans13">Zip-name</li>
-                        <li id="ans14">Zip-Size</li>
-                        <li id="ans15">MD5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card-container" id="x00t">
-                <span class="pro">Xiaomi</span>
-                <br style="line-height: 50px">
-                <h3>REDMI NOTE 4</h3>
-                <h6>Maintainer: Jigen</h6>
-                <div class="buttons">
-                    <button class="primary">
-                        <a class="buttton5" href="">Download</a>
-                    </button>
-                    <button class="primary ghost">
-                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                    </button>
-                </div>
-                <div class="skills">
-                    <h6>Build Information</h6>
-                    <ul>
-                        <li id="ans16">Zip-name</li>
-                        <li id="ans17">Zip-Size</li>
-                        <li id="ans18">MD5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card-container" id="x00t">
-                <span class="pro">Xiaomi</span>
-                <br style="line-height: 50px">
-                <h3>MI 6X</h3>
-                <h6>Maintainer: Roger W.</h6>
-                <div class="buttons">
-                    <button class="primary">
-                        <a class="buttton6" href="">Download</a>
-                    </button>
-                    <button class="primary ghost">
-                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                    </button>
-                </div>
-                <div class="skills">
-                    <h6>Build Information</h6>
-                    <ul>
-                        <li id="ans19">Zip-name</li>
-                        <li id="ans20">Zip-Size</li>
-                        <li id="ans21">MD5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card-container" id="beryllium">
-                <span class="pro">Xiaomi</span>
-                <br style="line-height: 50px">
-                <h3>POCOFONE F1</h3>
-                <h6>Maintainer: Human Glitch</h6>
-                <div class="buttons">
-                    <button class="primary">
-                        <a class="buttton7" href="">Download</a>
-                    </button>
-                    <button class="primary ghost">
-                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                    </button>
-                </div>
-                <div class="skills">
-                    <h6>Build Information</h6>
-                    <ul>
-                        <li id="ans22">Zip-name</li>
-                        <li id="ans23">Zip-Size</li>
-                        <li id="ans24">MD5</li>
-                    </ul>
-                </div>
-            </div>
-            <!--Violet-->
-            <div class="card-container" id="beryllium">
-                <span class="pro">Xiaomi</span>
-                <br style="line-height: 50px">
-                <h3>REDMI NOTE 7 PRO</h3>
-                <h6>Maintainer: Prajwal and Nitish</h6>
-                <div class="buttons">
-                    <button class="primary">
-                        <a class="buttton18" href="">Download</a>
-                    </button>
-                    <button class="primary ghost">
-                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                    </button>
-                </div>
-                <div class="skills">
-                    <h6>Build Information</h6>
-                    <ul>
-                        <li id="ans49">Zip-name</li>
-                        <li id="ans50">Zip-Size</li>
-                        <li id="ans51">MD5</li>
+                        <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/">Home</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://t.me/ProjectSakura">Telegram</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.patreon.com/ProjectSakura">Patreon</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container2 half-height" style="margin-top: 100px;">
-        <div class="container2">
-            <!--Samsung-->
-            <div class="card-container" id="x00t">
-                <span class="pro">Samsung</span>
-                <br style="line-height: 50px">
-                <h3>GALAXY S8</h3>
-                <h6>Maintainer: Haridhayal</h6>
-                <div class="buttons">
-                    <button class="primary">
-                        <a class="buttton8" href="">Download</a>
-                    </button>
-                    <button class="primary ghost">
-                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                    </button>
-                </div>
-                <div class="skills">
-                    <h6>Build Information</h6>
-                    <ul>
-                        <li id="ans25">Zip-name</li>
-                        <li id="ans26">Zip-Size</li>
-                        <li id="ans27">MD5</li>
-                    </ul>
-                </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 | Project Sakura
+                <a class="grey-text text-lighten-4 right" href="https://materializecss.com">Made with Materialize</a>
             </div>
-            <div class="card-container" id="x00t">
-                <span class="pro">Samsung</span>
-                <br style="line-height: 50px">
-                <h3>GALAXY S8 PLUS</h3>
-                <h6>Maintainer: Haridhayal</h6>
-                <div class="buttons">
-                    <button class="primary">
-                        <a class="buttton9" href="">Download</a>
-                    </button>
-                    <button class="primary ghost">
-                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                    </button>
-                </div>
-                <div class="skills">
-                    <h6>Build Information</h6>
-                    <ul>
-                        <li id="ans28">Zip-name</li>
-                        <li id="ans29">Zip-Size</li>
-                        <li id="ans30">MD5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card-container" id="x00t">
-                <span class="pro">Samsung</span>
-                <br style="line-height: 50px">
-                <h3>GALAXY NOTE 8</h3>
-                <h6>Maintainer: Haridhayal</h6>
-                <div class="buttons">
-                    <button class="primary">
-                        <a class="buttton10" href="">Download</a>
-                    </button>
-                    <button class="primary ghost">
-                        <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">Donate</a>
-                    </button>
-                </div>
-                <div class="skills">
-                    <h6>Build Information</h6>
-                    <ul>
-                        <li id="ans31">Zip-name</li>
-                        <li id="ans32">Zip-Size</li>
-                        <li id="ans33">MD5</li>
-                    </ul>
-                </div>
-            </div>
-            <!--Footer-->
-            <footer style="width:100vw">
-                <p>
-                    Created with <i class="fa fa-heart"></i> by
-                    <a target="_blank" href="https://github.com/ProjectSakura">Project Sakura</a>
-                    - SPONSORED BY
-                    <a target="_blank" href="https://my.xsl.tel/">XSLTEL OU</a>
-                </p>
-            </footer>
         </div>
-    </div>
-    <div class="my-5 py-5">
-    </div>
-    <!-- </div> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </footer>
+    <!-- Extra code -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.sidenav').sidenav();
+        $('.fixed-action-btn').floatingActionButton();
+        $('.collapsible').collapsible();
+        $('.tooltipped').tooltip();
+        $('.parallax').parallax();
+        $('.modal').modal();
+    });
+
+    function getChangelog(deviceCd) {
+        var deviceName = deviceCd
+        var runTheCL = jQuery.get('https://raw.githubusercontent.com/ProjectSakura-Devices/ProjectSakura-Devices.github.io/master/_changelog/' + deviceName + '.md', function(data) {
+            var clLines = [];
+            var clText = data.split(/\n/);
+            var finalSlice = 4;
+
+            for (var i = 3; i < clText.length; i++) {
+                $('.cl-code-' + deviceCd).append('<p>' + clText[i] + '</p>')
+            }
+        }).fail(function() {
+            $('.cl-code-' + deviceCd).html('<p>Sorry, the changelog for this device couldn\'t be found.</p>');
+        });
+    };
+    </script>
 </body>
 <script type="text/javascript">
 const url1 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/X00T.json";
@@ -462,9 +585,9 @@ async function getData1() {
     const response = await fetch(url1);
     const data = await response.json();
     console.log(data.response[0]);
-    const li1 = document.querySelector('#ans4');
-    const li2 = document.querySelector('#ans5');
-    const li3 = document.querySelector('#ans6');
+    const li1 = document.querySelector('#ans1');
+    const li2 = document.querySelector('#ans2');
+    const li3 = document.querySelector('#ans3');
     // console.log(li1);
     const button1 = document.querySelector('.buttton1');
     li1.innerHTML = data.response[0].filename;
@@ -478,9 +601,9 @@ async function getData2() {
     const response = await fetch(url2);
     const data = await response.json();
     console.log(data.response[0]);
-    const li1 = document.querySelector('#ans7');
-    const li2 = document.querySelector('#ans8');
-    const li3 = document.querySelector('#ans9');
+    const li1 = document.querySelector('#ans4');
+    const li2 = document.querySelector('#ans5');
+    const li3 = document.querySelector('#ans6');
     // console.log(li1);
     const button1 = document.querySelector('.buttton2');
     li1.innerHTML = data.response[0].filename;
@@ -494,27 +617,64 @@ async function getData3() {
     const response = await fetch(url3);
     const data = await response.json();
     console.log(data.response[0]);
-    const li1 = document.querySelector('#ans10');
-    const li2 = document.querySelector('#ans11');
-    const li3 = document.querySelector('#ans12');
+    const li1 = document.querySelector('#ans16');
+    const li2 = document.querySelector('#ans17');
+    const li3 = document.querySelector('#ans18');
     // console.log(li1);
-    const button1 = document.querySelector('.buttton3');
+    const button1 = document.querySelector('.buttton6');
     li1.innerHTML = data.response[0].filename;
     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
     li3.innerHTML = data.response[0].id;
     button1.href = data.response[0].url;
 }
 getData3();
+
+//getData14();
+//const url14 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/sanders.json";
+//async function getData3() {
+//    const response = await fetch(url3);
+//    const data = await response.json();
+//    console.log(data.response[0]);
+//    const li1 = document.querySelector('#ans19');
+//    const li2 = document.querySelector('#ans20');
+//    const li3 = document.querySelector('#ans21');
+// console.log(li1);
+//    const button1 = document.querySelector('.buttton7');
+//    li1.innerHTML = data.response[0].filename;
+//    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+//    li3.innerHTML = data.response[0].id;
+//    button1.href = data.response[0].url;
+//}
+//getData14();
+
+//getData15();
+//const url15 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/sanders.json";
+//async function getData3() {
+//    const response = await fetch(url3);
+//    const data = await response.json();
+//    console.log(data.response[0]);
+//    const li1 = document.querySelector('#ans22');
+//    const li2 = document.querySelector('#ans23');
+//    const li3 = document.querySelector('#ans24');
+// console.log(li1);
+//    const button1 = document.querySelector('.buttton8');
+//    li1.innerHTML = data.response[0].filename;
+//    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+//    li3.innerHTML = data.response[0].id;
+//    button1.href = data.response[0].url;
+//}
+//getData15();
+
 const url4 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/riva.json";
 async function getData4() {
     const response = await fetch(url4);
     const data = await response.json();
     console.log(data.response[0]);
-    const li1 = document.querySelector('#ans13');
-    const li2 = document.querySelector('#ans14');
-    const li3 = document.querySelector('#ans15');
+    const li1 = document.querySelector('#ans40');
+    const li2 = document.querySelector('#ans41');
+    const li3 = document.querySelector('#ans42');
     // console.log(li1);
-    const button1 = document.querySelector('.buttton4');
+    const button1 = document.querySelector('.buttton14');
     li1.innerHTML = data.response[0].filename;
     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
     li3.innerHTML = data.response[0].id;
@@ -529,11 +689,11 @@ async function getData5() {
     const response = await fetch(url5);
     const data = await response.json();
     console.log(data.response[0]);
-    const li1 = document.querySelector('#ans16');
-    const li2 = document.querySelector('#ans17');
-    const li3 = document.querySelector('#ans18');
+    const li1 = document.querySelector('#ans43');
+    const li2 = document.querySelector('#ans44');
+    const li3 = document.querySelector('#ans45');
     // console.log(li1);
-    const button1 = document.querySelector('.buttton5');
+    const button1 = document.querySelector('.buttton15');
     li1.innerHTML = data.response[0].filename;
     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
     li3.innerHTML = data.response[0].id;
@@ -548,11 +708,11 @@ async function getData6() {
     const response = await fetch(url6);
     const data = await response.json();
     console.log(data.response[0]);
-    const li1 = document.querySelector('#ans19');
-    const li2 = document.querySelector('#ans20');
-    const li3 = document.querySelector('#ans21');
+    const li1 = document.querySelector('#ans34');
+    const li2 = document.querySelector('#ans35');
+    const li3 = document.querySelector('#ans36');
     // console.log(li1);
-    const button1 = document.querySelector('.buttton6');
+    const button1 = document.querySelector('.buttton12');
     li1.innerHTML = data.response[0].filename;
     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
     li3.innerHTML = data.response[0].id;
@@ -566,11 +726,11 @@ async function getData7() {
     const response = await fetch(url7);
     const data = await response.json();
     console.log(data.response[0]);
-    const li1 = document.querySelector('#ans22');
-    const li2 = document.querySelector('#ans23');
-    const li3 = document.querySelector('#ans24');
+    const li1 = document.querySelector('#ans37');
+    const li2 = document.querySelector('#ans38');
+    const li3 = document.querySelector('#ans39');
     // console.log(li1);
-    const button1 = document.querySelector('.buttton7');
+    const button1 = document.querySelector('.buttton13');
     li1.innerHTML = data.response[0].filename;
     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
     li3.innerHTML = data.response[0].id;
@@ -585,11 +745,11 @@ getData7();
 //    const response = await fetch(url7);
 //    const data = await response.json();
 //    console.log(data.response[0]);
-//    const li1 = document.querySelector('#ans34');
-//    const li2 = document.querySelector('#ans35');
-//    const li3 = document.querySelector('#ans36');
+//    const li1 = document.querySelector('#ans46');
+//    const li2 = document.querySelector('#ans47');
+//    const li3 = document.querySelector('#ans48');
 // console.log(li1);
-//    const button1 = document.querySelector('.buttton11');
+//    const button1 = document.querySelector('.buttton16');
 //    li1.innerHTML = data.response[0].filename;
 //    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
 //    li3.innerHTML = data.response[0].id;
@@ -608,7 +768,7 @@ async function getData8() {
     const li2 = document.querySelector('#ans26');
     const li3 = document.querySelector('#ans27');
     // console.log(li1);
-    const button1 = document.querySelector('.buttton8');
+    const button1 = document.querySelector('.buttton9');
     li1.innerHTML = data.response[0].filename;
     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
     li3.innerHTML = data.response[0].id;
@@ -626,7 +786,7 @@ async function getData9() {
     const li2 = document.querySelector('#ans29');
     const li3 = document.querySelector('#ans30');
     // console.log(li1);
-    const button1 = document.querySelector('.buttton9');
+    const button1 = document.querySelector('.buttton10');
     li1.innerHTML = data.response[0].filename;
     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
     li3.innerHTML = data.response[0].id;
@@ -644,7 +804,7 @@ async function getData10() {
     const li2 = document.querySelector('#ans32');
     const li3 = document.querySelector('#ans33');
     // console.log(li1);
-    const button1 = document.querySelector('.buttton10');
+    const button1 = document.querySelector('.buttton11');
     li1.innerHTML = data.response[0].filename;
     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
     li3.innerHTML = data.response[0].id;
@@ -659,11 +819,11 @@ async function getData11() {
     const response = await fetch(url11);
     const data = await response.json();
     console.log(data.response[0]);
-    const li1 = document.querySelector('#ans40');
-    const li2 = document.querySelector('#ans41');
-    const li3 = document.querySelector('#ans42');
+    const li1 = document.querySelector('#ans10');
+    const li2 = document.querySelector('#ans11');
+    const li3 = document.querySelector('#ans12');
     // console.log(li1);
-    const button1 = document.querySelector('.buttton15');
+    const button1 = document.querySelector('.buttton4');
     li1.innerHTML = data.response[0].filename;
     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
     li3.innerHTML = data.response[0].id;
@@ -678,11 +838,11 @@ async function getData12() {
     const response = await fetch(url12);
     const data = await response.json();
     console.log(data.response[0]);
-    const li1 = document.querySelector('#ans46');
-    const li2 = document.querySelector('#ans47');
-    const li3 = document.querySelector('#ans48');
+    const li1 = document.querySelector('#ans7');
+    const li2 = document.querySelector('#ans8');
+    const li3 = document.querySelector('#ans9');
     // console.log(li1);
-    const button1 = document.querySelector('.buttton17');
+    const button1 = document.querySelector('.buttton3');
     li1.innerHTML = data.response[0].filename;
     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
     li3.innerHTML = data.response[0].id;
@@ -697,11 +857,11 @@ async function getData13() {
     const response = await fetch(url13);
     const data = await response.json();
     console.log(data.response[0]);
-    const li1 = document.querySelector('#ans60');
-    const li2 = document.querySelector('#ans61');
-    const li3 = document.querySelector('#ans62');
+    const li1 = document.querySelector('#ans13');
+    const li2 = document.querySelector('#ans14');
+    const li3 = document.querySelector('#ans15');
     // console.log(li1);
-    const button1 = document.querySelector('.buttton20');
+    const button1 = document.querySelector('.buttton5');
     li1.innerHTML = data.response[0].filename;
     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
     li3.innerHTML = data.response[0].id;
@@ -709,7 +869,6 @@ async function getData13() {
 
 }
 getData13();
-
 </script>
 <script>
 (function($) {
