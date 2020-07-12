@@ -1034,6 +1034,21 @@ footer p {
     height: auto;
 }
 
+.row123{
+    display:grid;
+    width: 100%;
+    /* align-items: center; */
+    justify-content:center;
+}
+.sakura123{
+    margin-left: 10%;
+}
+@media (max-width: 568px) {
+
+    .sakura123{
+        margin-left:0%
+    }
+}
 
 /* ----------------------------------------------------------------------------------------------------------
 09 Media queries --------------------------------------------------------------------------------------------
@@ -1325,6 +1340,7 @@ footer p {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     /* Styles */
+    
 }
 
 
@@ -1333,3 +1349,4 @@ footer p {
 @media only screen and (min-width: 1224px) {
     /* Styles */
 }
+
