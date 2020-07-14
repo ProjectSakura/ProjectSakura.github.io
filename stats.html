@@ -148,6 +148,10 @@ and is wrapped around the whole page content, except for the footer in this exam
                                 <td class="s2download">Loading..</td>
                             </tr>
                             <tr>
+                                <td>MEIZU 16T</td>
+                                <td class="m1928download">Loading..</td>
+                            </tr>
+                            <tr>
                                 <td>MEIZU 16TH</td>
                                 <td class="m1882download">Loading..</td>
                             </tr>
@@ -176,20 +180,20 @@ and is wrapped around the whole page content, except for the footer in this exam
                                 <td class="note8download">Loading..</td>
                             </tr>
                             <tr>
-                                <td>XIAOMI REDMI 5A</td>
-                                <td class="rivadownload">Loading..</td>
-                            </tr>
-                            <tr>
-                                <td>XIAOMI REDMI NOTE 4</td>
-                                <td class="midodownload">Loading..</td>
-                            </tr>
-                            <tr>
                                 <td>XIAOMI MI 6X</td>
                                 <td class="mi6xdownload">Loading..</td>
                             </tr>
                             <tr>
                                 <td>XIAOMI POCOPHONE F1</td>
                                 <td class="pocof1download">Loading..</td>
+                            </tr>
+                            <tr>
+                                <td>XIAOMI REDMI 5A</td>
+                                <td class="rivadownload">Loading..</td>
+                            </tr>
+                            <tr>
+                                <td>XIAOMI REDMI NOTE 4</td>
+                                <td class="midodownload">Loading..</td>
                             </tr>
                             <tr>
                                 <td>XIAOMI REDMI NOTE 7 PRO</td>
@@ -510,7 +514,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     // leeco
     const url14 =
-        "https://sourceforge.net/projects/projectsakura/files/S2/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+        "https://sourceforge.net/projects/projectsakura/files/s2/stats/json?start_date=2020-01-01&end_date=2021-01-01";
     async function getleecoData() {
         const response5 = await fetch(url14);
         const data5 = await response5.json();
@@ -533,6 +537,19 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     }
     getcph1859Data();
+
+    //meizu16t
+    const url16 =
+        "https://sourceforge.net/projects/projectsakura/files/M1928/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+    async function getm1928Data() {
+        const response5 = await fetch(url16);
+        const data5 = await response5.json();
+        let total = data5.total;
+        const span = document.querySelector(".m1928download")
+        span.innerHTML = `${(total)}`;
+
+    }
+    getm1928Data();
     </script>
     <script>
     const myFunction = setInterval(() => {
