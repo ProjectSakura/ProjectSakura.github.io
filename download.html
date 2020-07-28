@@ -8,11 +8,9 @@
     <meta property="og:title" content="ProjectSakura | Downloads">
     <meta property="twitter:title" content="ProjectSakura | Downloads">
     <!-- Descriptions -->
-    <meta name="description"
-        content="This is the download page for all officially supported devices by Project Sakura.">
+    <meta name="description" content="This is the download page for all officially supported devices by Project Sakura.">
     <meta property="og:description" content="Get the build for your officially supported device by Project Sakura.">
-    <meta property="twitter:description"
-        content="This is the download page for all officially supported devices by Project Sakura.">
+    <meta property="twitter:description" content="This is the download page for all officially supported devices by Project Sakura.">
     <!-- Extra props -->
     <meta property="og:site_name" content="ProjectSakura | Downloads">
     <meta property="og:type" content="website">
@@ -35,7 +33,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="image/logo.png">
     <link rel="manifest" href="/img/icon/manifest.json">
     <meta name="msapplication-TileColor" content="#1c1c24">
-
     <meta name="msapplication-TileImage" content="/img/icon/ms-icon-144x144.png">
     <!-- Style importing -->
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css">
@@ -43,8 +40,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-        media="screen,projection">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <!--Let browser know website is optimized for mobile-->
@@ -59,16 +55,22 @@
             text-align: center
         }
     </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-
+  gtag('config', 'UA-173637831-1');
+</script>
 </head>
 
 <body class="sakura">
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper sakura-light-bg">
-                <a href="https://ProjectSakura.github.io/" class="brand-logo"><img src="image/logo.png"
-                        style="color: #64b1f3" class="responsive-img circle avatar" alt="SAKURA"></a>
+                <a href="https://ProjectSakura.github.io/" class="brand-logo"><img src="image/logo.png" style="color: #64b1f3" class="responsive-img circle avatar" alt="SAKURA"></a>
                 <a href="#" data-target="btlg-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li class="text-uppercase"><a href="https://ProjectSakura.github.io/">Home</a></li>
@@ -102,9 +104,7 @@
                 <div class="card sakura-light-bg z-depth-3">
                     <div class="card-content">
                         <span class="card-title">OFFICIAL DEVICES</span>
-
                         <input onkeyup="filter()" id="search123" type="text" placeholder="Search ...">
-
                         <ul id="search-ul" class="collapsible sakura-lighter-bg collapsible-noborder">
                             <!--X00T-->
                             <li class="search-li">
@@ -559,10 +559,8 @@
                     <h5 class="white-text">Links</h5>
                     <ul>
                         <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/">Home</a></li>
-                        <li><a class="grey-text text-lighten-3"
-                                href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
-                        <li><a class="grey-text text-lighten-3"
-                                href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
                         <li><a class="grey-text text-lighten-3" href="https://t.me/ProjectSakura">Telegram</a></li>
                         <li><a class="grey-text text-lighten-3" href="https://www.patreon.com/ProjectSakura">Patreon</a>
                         </li>
@@ -580,325 +578,361 @@
     <!-- Extra code -->
     <script type="text/javascript" src="filter.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-            $('.fixed-action-btn').floatingActionButton();
-            $('.collapsible').collapsible();
-            $('.tooltipped').tooltip();
-            $('.parallax').parallax();
-            $('.modal').modal();
+    $(document).ready(function() {
+        $('.sidenav').sidenav();
+        $('.fixed-action-btn').floatingActionButton();
+        $('.collapsible').collapsible();
+        $('.tooltipped').tooltip();
+        $('.parallax').parallax();
+        $('.modal').modal();
+    });
+
+    function getChangelog(deviceCd) {
+        var deviceName = deviceCd
+        var runTheCL = jQuery.get('https://raw.githubusercontent.com/ProjectSakura-Devices/ProjectSakura-Devices.github.io/master/_changelog/' + deviceName + '.md', function(data) {
+            var clLines = [];
+            var clText = data.split(/\n/);
+            var finalSlice = 4;
+
+            for (var i = 3; i < clText.length; i++) {
+                $('.cl-code-' + deviceCd).append('<p>' + clText[i] + '</p>')
+            }
+        }).fail(function() {
+            $('.cl-code-' + deviceCd).html('<p>Sorry, the changelog for this device couldn\'t be found.</p>');
         });
-
-        function getChangelog(deviceCd) {
-            var deviceName = deviceCd
-            var runTheCL = jQuery.get('https://raw.githubusercontent.com/ProjectSakura-Devices/ProjectSakura-Devices.github.io/master/_changelog/' + deviceName + '.md', function (data) {
-                var clLines = [];
-                var clText = data.split(/\n/);
-                var finalSlice = 4;
-
-                for (var i = 3; i < clText.length; i++) {
-                    $('.cl-code-' + deviceCd).append('<p>' + clText[i] + '</p>')
-                }
-            }).fail(function () {
-                $('.cl-code-' + deviceCd).html('<p>Sorry, the changelog for this device couldn\'t be found.</p>');
-            });
-        };
+    };
     </script>
     <script type="text/javascript">
-        console.log("hello");
-        const url1 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/X00T.json";
-        async function getData1() {
-            const response = await fetch(url1);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans1');
-            const li2 = document.querySelector('#ans2');
-            const li3 = document.querySelector('#ans3');
-            // console.log(li1);
-            const button1 = document.querySelector('.buttton1');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
-        }
-        getData1();
-        const url2 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/angler.json";
-        async function getData2() {
-            const response = await fetch(url2);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans4');
-            const li2 = document.querySelector('#ans5');
-            const li3 = document.querySelector('#ans6');
-            // console.log(li1);
-            const button1 = document.querySelector('.buttton2');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
-        }
-        getData2();
-        const url3 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/ocean.json";
-        async function getData3() {
-            const response = await fetch(url3);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans16');
-            const li2 = document.querySelector('#ans17');
-            const li3 = document.querySelector('#ans18');
-            // console.log(li1);
-            const button1 = document.querySelector('.buttton6');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
-        }
-        getData3();
+    console.log("##########  PROJECT SAKURA DOWNLOAD PAGE, IDK WHY YOU CAME TO THE CONSOLE BUT HAVE FUN. ##########");
+    const url1 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/X00T.json";
+    async function getData1() {
+        const response = await fetch(url1);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans1');
+        const li2 = document.querySelector('#ans2');
+        const li3 = document.querySelector('#ans3');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton1');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
+    }
+    getData1();
+    const url2 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/angler.json";
+    async function getData2() {
+        const response = await fetch(url2);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans4');
+        const li2 = document.querySelector('#ans5');
+        const li3 = document.querySelector('#ans6');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton2');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
+    }
+    getData2();
+    const url3 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/ocean.json";
+    async function getData3() {
+        const response = await fetch(url3);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans16');
+        const li2 = document.querySelector('#ans17');
+        const li3 = document.querySelector('#ans18');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton6');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
+    }
+    getData3();
 
-        const url4 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/riva.json";
-        async function getData4() {
-            const response = await fetch(url4);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans40');
-            const li2 = document.querySelector('#ans41');
-            const li3 = document.querySelector('#ans42');
-            // console.log(li1);
-            const button1 = document.querySelector('.buttton14');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
-
-
-        }
-        getData4();
-
-        const url5 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/mido.json";
-        async function getData5() {
-            const response = await fetch(url5);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans43');
-            const li2 = document.querySelector('#ans44');
-            const li3 = document.querySelector('#ans45');
-            // console.log(li1);
-            const button1 = document.querySelector('.buttton15');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
+    const url4 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/riva.json";
+    async function getData4() {
+        const response = await fetch(url4);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans40');
+        const li2 = document.querySelector('#ans41');
+        const li3 = document.querySelector('#ans42');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton14');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
 
 
-        }
-        getData5();
+    }
+    getData4();
 
-        const url6 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/wayne.json";
-        async function getData6() {
-            const response = await fetch(url6);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans34');
-            const li2 = document.querySelector('#ans35');
-            const li3 = document.querySelector('#ans36');
-            // console.log(li1);
-            const button1 = document.querySelector('.buttton12');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
-
-        }
-        getData6();
-
-        const url7 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/beryllium.json";
-        async function getData7() {
-            const response = await fetch(url7);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans37');
-            const li2 = document.querySelector('#ans38');
-            const li3 = document.querySelector('#ans39');
-            // console.log(li1);
-            const button1 = document.querySelector('.buttton13');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
+    const url5 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/mido.json";
+    async function getData5() {
+        const response = await fetch(url5);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans43');
+        const li2 = document.querySelector('#ans44');
+        const li3 = document.querySelector('#ans45');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton15');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
 
 
-        }
-        getData7();
+    }
+    getData5();
 
-        const url16 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/violet.json";
-        async function getData16() {
-            const response = await fetch(url16);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans46');
-            const li2 = document.querySelector('#ans47');
-            const li3 = document.querySelector('#ans48');
-         console.log(li1);
-            const button1 = document.querySelector('.buttton16');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
+    const url6 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/wayne.json";
+    async function getData6() {
+        const response = await fetch(url6);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans34');
+        const li2 = document.querySelector('#ans35');
+        const li3 = document.querySelector('#ans36');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton12');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
+
+    }
+    getData6();
+
+    const url7 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/beryllium.json";
+    async function getData7() {
+        const response = await fetch(url7);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans37');
+        const li2 = document.querySelector('#ans38');
+        const li3 = document.querySelector('#ans39');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton13');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
 
 
-        }
-        getData16();
+    }
+    getData7();
 
-        const url8 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/dreamlte.json";
-        async function getData8() {
-            const response = await fetch(url8);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans25');
-            const li2 = document.querySelector('#ans26');
-            const li3 = document.querySelector('#ans27');
-            // console.log(li1);
-            const button1 = document.querySelector('.buttton9');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
+    const url16 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/violet.json";
+    async function getData16() {
+        const response = await fetch(url16);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans46');
+        const li2 = document.querySelector('#ans47');
+        const li3 = document.querySelector('#ans48');
+        console.log(li1);
+        const button1 = document.querySelector('.buttton16');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
 
-        }
-        getData8();
 
-        const url9 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/dream2lte.json";
-        async function getData9() {
-            const response = await fetch(url9);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans28');
-            const li2 = document.querySelector('#ans29');
-            const li3 = document.querySelector('#ans30');
-            // console.log(li1);
-            const button1 = document.querySelector('.buttton10');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
+    }
+    getData16();
 
-        }
-        getData9();
+    const url8 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/dreamlte.json";
+    async function getData8() {
+        const response = await fetch(url8);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans25');
+        const li2 = document.querySelector('#ans26');
+        const li3 = document.querySelector('#ans27');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton9');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
 
-        const url10 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/greatlte.json";
-        async function getData10() {
-            const response = await fetch(url10);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans31');
-            const li2 = document.querySelector('#ans32');
-            const li3 = document.querySelector('#ans33');
-            // console.log(li1);
-            const button1 = document.querySelector('.buttton11');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
+    }
+    getData8();
 
-        }
-        getData10();
+    const url9 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/dream2lte.json";
+    async function getData9() {
+        const response = await fetch(url9);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans28');
+        const li2 = document.querySelector('#ans29');
+        const li3 = document.querySelector('#ans30');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton10');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
 
-        // meizu
-        const url11 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/m1882.json";
-        async function getData11() {
-            const response = await fetch(url11);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans10');
-            const li2 = document.querySelector('#ans11');
-            const li3 = document.querySelector('#ans12');
-            // console.log(li1);
-            const button1 = document.querySelector('.buttton4');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
+    }
+    getData9();
 
-        }
-        getData11();
+    const url10 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/greatlte.json";
+    async function getData10() {
+        const response = await fetch(url10);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans31');
+        const li2 = document.querySelector('#ans32');
+        const li3 = document.querySelector('#ans33');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton11');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
 
-        // leeco
-        const url12 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/s2.json";
-        async function getData12() {
-            const response = await fetch(url12);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans7');
-            const li2 = document.querySelector('#ans8');
-            const li3 = document.querySelector('#ans9');
-            // console.log(li1);
-            const button1 = document.querySelector('.buttton3');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
+    }
+    getData10();
 
-        }
-        getData12();
+    // meizu
+    const url11 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/m1882.json";
+    async function getData11() {
+        const response = await fetch(url11);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans10');
+        const li2 = document.querySelector('#ans11');
+        const li3 = document.querySelector('#ans12');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton4');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
 
-        // meizu
-        const url13 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/m1928.json";
-        async function getData13() {
-            const response = await fetch(url13);
-            const data = await response.json();
-            console.log(data.response[0]);
-            const li1 = document.querySelector('#ans13');
-            const li2 = document.querySelector('#ans14');
-            const li3 = document.querySelector('#ans15');
-            // console.log(li1);
-            const button1 = document.querySelector('.buttton5');
-            li1.innerHTML = data.response[0].filename;
-            li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
-            li3.innerHTML = data.response[0].id;
-            button1.href = data.response[0].url;
+    }
+    getData11();
 
-        }
-        getData13();
+    // leeco
+    const url12 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/s2.json";
+    async function getData12() {
+        const response = await fetch(url12);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans7');
+        const li2 = document.querySelector('#ans8');
+        const li3 = document.querySelector('#ans9');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton3');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
+
+    }
+    getData12();
+
+    // meizu
+    const url13 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/m1928.json";
+    async function getData13() {
+        const response = await fetch(url13);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans13');
+        const li2 = document.querySelector('#ans14');
+        const li3 = document.querySelector('#ans15');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton5');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
+
+    }
+    getData13();
+
+    // realme
+    const url14 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/CPH1859.json";
+    async function getData14() {
+        const response = await fetch(url14);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans22');
+        const li2 = document.querySelector('#ans23');
+        const li3 = document.querySelector('#ans24');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton8');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
+
+    }
+    getData14();
+
+    // sanders
+    const url15 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/sanders.json";
+    async function getData15() {
+        const response = await fetch(url15);
+        const data = await response.json();
+        console.log(data.response[0]);
+        const li1 = document.querySelector('#ans19');
+        const li2 = document.querySelector('#ans20');
+        const li3 = document.querySelector('#ans21');
+        // console.log(li1);
+        const button1 = document.querySelector('.buttton7');
+        li1.innerHTML = data.response[0].filename;
+        li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+        li3.innerHTML = data.response[0].id;
+        button1.href = data.response[0].url;
+
+    }
+    getData15();
     </script>
     <script>
-        (function ($) {
-            "use strict";
+    (function($) {
+        "use strict";
 
-            $(function () {
-                var header = $(".start-style");
-                $(window).scroll(function () {
-                    var scroll = $(window).scrollTop();
+        $(function() {
+            var header = $(".start-style");
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
 
-                    if (scroll >= 10) {
-                        header.removeClass('start-style').addClass("scroll-on");
-                    } else {
-                        header.removeClass("scroll-on").addClass('start-style');
-                    }
-                });
-            });
-
-            //Animation
-
-            $(document).ready(function () {
-                $('body.hero-anime').removeClass('hero-anime');
-            });
-
-            //Menu On Hover
-
-            $('body').on('mouseenter mouseleave', '.nav-item', function (e) {
-                if ($(window).width() > 750) {
-                    var _d = $(e.target).closest('.nav-item');
-                    _d.addClass('show');
-                    setTimeout(function () {
-                        _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
-                    }, 1);
+                if (scroll >= 10) {
+                    header.removeClass('start-style').addClass("scroll-on");
+                } else {
+                    header.removeClass("scroll-on").addClass('start-style');
                 }
             });
+        });
 
-        })(jQuery);
+        //Animation
+
+        $(document).ready(function() {
+            $('body.hero-anime').removeClass('hero-anime');
+        });
+
+        //Menu On Hover
+
+        $('body').on('mouseenter mouseleave', '.nav-item', function(e) {
+            if ($(window).width() > 750) {
+                var _d = $(e.target).closest('.nav-item');
+                _d.addClass('show');
+                setTimeout(function() {
+                    _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+                }, 1);
+            }
+        });
+
+    })(jQuery);
     </script>
 </body>
-
-
 
 </html>

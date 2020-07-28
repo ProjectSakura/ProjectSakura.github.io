@@ -1,0 +1,207 @@
+.sakura {
+    background-color: #121217 !important;
+    color: #f3f3f3;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 7%;
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+button.primary {
+    background-color: transparent;
+    border: 1px solid #03bfcb;
+    border-radius: 10px;
+    color: #00ff15;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    padding: 10px 30px;
+}
+
+button.primary.ghost {
+    /* background-color: transparent; */
+    color: #02899c;
+}
+
+.primary:hover {
+    background-color: #121217;
+    color: white;
+    border: 1px solid #231e39;
+}
+
+.ghost:hover {
+    background-color: #121217;
+    color: white;
+    border: 1px solid #231e39;
+}
+
+.skills {
+    text-align: left;
+    padding: 15px;
+}
+
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills ul li {
+    border: 1px solid #2d2747;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0;
+    padding: 7px;
+}
+
+.text-sakura-muted {
+    color: #e1e1e1;
+}
+
+.sakura-light-bg {
+    background-color: #1c1c24 !important;
+    color: #d3d3d3;
+}
+
+.sakura-midlight-bg {
+    background-color: #24242f !important;
+    color: #d3d3d3;
+}
+
+.sakura-lighter-bg {
+    background-color: #2d2d3a !important;
+    color: #d3d3d3;
+}
+
+.text-sakura-light-muted {
+    color: #c1c1c1;
+}
+
+.sakura-accent {
+    color: #64b1f3 !important;
+}
+
+a {
+    color: #64b1f3 !important;
+}
+
+.sakura-accent-btn {
+    color: #64b1f3 !important;
+    background-color: #64b1f3;
+}
+
+.sakura-accent-btn:hover {
+    color: #f3f3f3 !important;
+    background-color: #ea567e;
+}
+
+nav .brand-logo>img {
+    display: block;
+    height: 60px;
+    padding: 6px 15px;
+}
+
+@media (min-width: 768px) {
+
+    .navbar>.container .brand-logo,
+    .navbar>.container-fluid .brand-logo {
+        margin-left: -15px;
+    }
+}
+
+.card .card-action:last-child,
+.card .card-content {
+    border-radius: 0 0 10px 10px !important;
+}
+
+.card-nopadding {
+    padding: 0px !important;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card .card-image img {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.collapsible-noborder {
+    border-top: 0px solid #000;
+    border-right: 0px solid #000;
+    border-left: 0px solid #000;
+    border-bottom: 0px solid #000;
+}
+
+.collapsible-header {
+    display:flex;
+    width:100%;
+    border-radius: 10px 10px 10px 10px !important;
+}
+
+.collapsible-header:focus {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-muted {
+    opacity: 0.64;
+}
+
+.parallax-container {
+    height: 450px;
+}
+
+.parallax-container .parallax img {
+    opacity: 0.60;
+}
+
+.overlay-parallax {
+    position: absolute;
+    display: inline;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.parallax-main-holder {
+    position: relative;
+    margin-top: 18vh;
+}
+
+.btlg-intro {
+    height: 450px;
+}
+
+.chlg-code {
+    font-family: monospace, monospace !important;
+}
+.spacer{
+    flex:1;
+}
+.search-li{
+    width:100%;
+}
+.search-ul{
+    width:100%;
+}
+.right-button{
+    color:purple;
+
+}
+button:focus{
+    background: white;
+}
+
+.modal{
+    width:40%
+}
+@media (max-width: 767px) {
+    .modal{
+        width:60%
+    }
+}
