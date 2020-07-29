@@ -198,7 +198,8 @@ button:focus{
 }
 
 .modal{
-    width:40%
+    width:40%;
+    height:600px;
 }
 @media (max-width: 767px) {
     .modal{

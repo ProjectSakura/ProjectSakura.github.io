@@ -8,9 +8,11 @@
     <meta property="og:title" content="ProjectSakura | Downloads">
     <meta property="twitter:title" content="ProjectSakura | Downloads">
     <!-- Descriptions -->
-    <meta name="description" content="This is the download page for all officially supported devices by Project Sakura.">
+    <meta name="description"
+        content="This is the download page for all officially supported devices by Project Sakura.">
     <meta property="og:description" content="Get the build for your officially supported device by Project Sakura.">
-    <meta property="twitter:description" content="This is the download page for all officially supported devices by Project Sakura.">
+    <meta property="twitter:description"
+        content="This is the download page for all officially supported devices by Project Sakura.">
     <!-- Extra props -->
     <meta property="og:site_name" content="ProjectSakura | Downloads">
     <meta property="og:type" content="website">
@@ -40,7 +42,8 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        media="screen,projection">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <!--Let browser know website is optimized for mobile-->
@@ -59,18 +62,57 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-173637831-1');
-</script>
+        gtag('config', 'UA-173637831-1');
+    </script>
+    <style>
+        #testmodal {
+            border-radius: 20px;
+
+        }
+
+        .around {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .mobile_name {
+            font-size: 25px;
+        }
+
+        .data-modal {
+            margin-top: 20px;
+        }
+
+        .modal {
+            /* padding: 50px; */
+            border-right: 20px;
+            width: 60%;
+            height: 400px;
+            background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+            font: 25px;
+            /* left: 0; */
+            /* right: 0; */
+            margin: -200px auto;
+        }
+
+
+        @media (max-width: 767px) {
+            .modal {
+                width: 80%
+            }
+        }
+    </style>
 </head>
 
 <body class="sakura">
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper sakura-light-bg">
-                <a href="https://ProjectSakura.github.io/" class="brand-logo"><img src="image/logo.png" style="color: #64b1f3" class="responsive-img circle avatar" alt="SAKURA"></a>
+                <a href="https://ProjectSakura.github.io/" class="brand-logo"><img src="image/logo.png"
+                        style="color: #64b1f3" class="responsive-img circle avatar" alt="SAKURA"></a>
                 <a href="#" data-target="btlg-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li class="text-uppercase"><a href="https://ProjectSakura.github.io/">Home</a></li>
@@ -104,6 +146,20 @@
                 <div class="card sakura-light-bg z-depth-3">
                     <div class="card-content">
                         <span class="card-title">OFFICIAL DEVICES</span>
+                        <div id="testmodal" class="modal fade">
+                            <div class="around">
+                                <div class="mobile_name"> 
+                                </div>
+                                <div class="modal-body">
+                                    <div class="data-modal" style="font-size:17px">
+                                    </div>
+                                </div>
+                                <center>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </center>
+                            </div>
+
+                        </div>
                         <input onkeyup="filter()" id="search123" type="text" placeholder="Search ...">
                         <ul id="search-ul" class="collapsible sakura-lighter-bg collapsible-noborder">
                             <!--X00T-->
@@ -128,9 +184,11 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal1">
+                                        ChangeLog
                                     </button>
+
                                 </div>
                             </li>
                             <!--angler-->
@@ -155,9 +213,11 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal2">
+                                        ChangeLog
                                     </button>
+
                                 </div>
                             </li>
                             <!--leeco-->
@@ -182,9 +242,11 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal3">
+                                        ChangeLog
                                     </button>
+
                                 </div>
                             </li>
                             <!--meizu-->
@@ -210,9 +272,11 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal4">
+                                        ChangeLog
                                     </button>
+
                                 </div>
                             </li>
                             <!--meizu-->
@@ -238,8 +302,9 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal5">
+                                        ChangeLog
                                     </button>
                                 </div>
                             </li>
@@ -265,8 +330,9 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal6">
+                                        ChangeLog
                                     </button>
                                 </div>
                             </li>
@@ -292,8 +358,9 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal7">
+                                        ChangeLog
                                     </button>
                                 </div>
                             </li>
@@ -319,8 +386,11 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
+                                    <button class="primary download show-modal17">
+                                        ChangeLog
+                                    </button>
                                 </div>
-                            </li>                            
+                            </li>
                             <!--realme-->
                             <li class="search-li">
                                 <div class="collapsible-header collapsible-noborder sakura-lighter-bg">
@@ -343,8 +413,9 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal8">
+                                        ChangeLog
                                     </button>
                                 </div>
                             </li>
@@ -370,8 +441,9 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal9">
+                                        ChangeLog
                                     </button>
                                 </div>
                             </li>
@@ -397,8 +469,9 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal10">
+                                        ChangeLog
                                     </button>
                                 </div>
                             </li>
@@ -424,8 +497,9 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal11">
+                                        ChangeLog
                                     </button>
                                 </div>
                             </li>
@@ -451,8 +525,9 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal12">
+                                        ChangeLog
                                     </button>
                                 </div>
                             </li>
@@ -478,8 +553,9 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal13">
+                                        ChangeLog
                                     </button>
                                 </div>
                             </li>
@@ -505,8 +581,9 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal14">
+                                        ChangeLog
                                     </button>
                                 </div>
                             </li>
@@ -532,9 +609,12 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal15">
+                                        ChangeLog
                                     </button>
+
+
                                 </div>
                             </li>
                             <!--xiaomi-->
@@ -560,17 +640,21 @@
                                     <button class="primary download">
                                         <a href="https://www.paypal.me/PriyanshuPandey?locale.x=en_GB">PayPal</a>
                                     </button>
-                                    <button class="primary download">
-                                        <a href="https://www.patreon.com/ProjectSakura">Patreon</a>
+
+                                    <button class="primary download show-modal16">
+                                        ChangeLog
                                     </button>
                                 </div>
                             </li>
                         </ul>
+
                     </div>
                 </div>
             </div>
         </div>
+
     </body>
+
     <footer class="page-footer sakura-light-bg">
         <div class="container">
             <div class="row">
@@ -583,8 +667,10 @@
                     <h5 class="white-text">Links</h5>
                     <ul>
                         <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/">Home</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
                         <li><a class="grey-text text-lighten-3" href="https://t.me/ProjectSakura">Telegram</a></li>
                         <li><a class="grey-text text-lighten-3" href="https://www.patreon.com/ProjectSakura">Patreon</a>
                         </li>
@@ -599,56 +685,64 @@
             </div>
         </div>
     </footer>
-    <!-- Extra code -->
     <script type="text/javascript" src="filter.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-        $('.sidenav').sidenav();
-        $('.fixed-action-btn').floatingActionButton();
-        $('.collapsible').collapsible();
-        $('.tooltipped').tooltip();
-        $('.parallax').parallax();
-        $('.modal').modal();
-    });
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.fixed-action-btn').floatingActionButton();
+            $('.collapsible').collapsible();
+            $('.tooltipped').tooltip();
+            $('.parallax').parallax();
+            // $('.modal').modal();
+        });
     </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
     <script type="text/javascript" src="download.js"></script>
+    <script type="text/javascript" src="changelog.js"></script>
+
     <script type="text/javascript">
-    (function($) {
-        "use strict";
+        (function ($) {
+            "use strict";
 
-        $(function() {
-            var header = $(".start-style");
-            $(window).scroll(function() {
-                var scroll = $(window).scrollTop();
+            $(function () {
+                var header = $(".start-style");
+                $(window).scroll(function () {
+                    var scroll = $(window).scrollTop();
 
-                if (scroll >= 10) {
-                    header.removeClass('start-style').addClass("scroll-on");
-                } else {
-                    header.removeClass("scroll-on").addClass('start-style');
+                    if (scroll >= 10) {
+                        header.removeClass('start-style').addClass("scroll-on");
+                    } else {
+                        header.removeClass("scroll-on").addClass('start-style');
+                    }
+                });
+            });
+
+            //Animation
+
+            $(document).ready(function () {
+                $('body.hero-anime').removeClass('hero-anime');
+            });
+
+            //Menu On Hover
+
+            $('body').on('mouseenter mouseleave', '.nav-item', function (e) {
+                if ($(window).width() > 750) {
+                    var _d = $(e.target).closest('.nav-item');
+                    _d.addClass('show');
+                    setTimeout(function () {
+                        _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+                    }, 1);
                 }
             });
-        });
 
-        //Animation
-
-        $(document).ready(function() {
-            $('body.hero-anime').removeClass('hero-anime');
-        });
-
-        //Menu On Hover
-
-        $('body').on('mouseenter mouseleave', '.nav-item', function(e) {
-            if ($(window).width() > 750) {
-                var _d = $(e.target).closest('.nav-item');
-                _d.addClass('show');
-                setTimeout(function() {
-                    _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
-                }, 1);
-            }
-        });
-
-    })(jQuery);
+        })(jQuery);
     </script>
+
+
+
+
 </body>
 
 </html>
