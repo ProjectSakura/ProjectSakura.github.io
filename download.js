@@ -1,4 +1,5 @@
 console.log("##########  PROJECT SAKURA DOWNLOAD PAGE, IDK WHY YOU CAME TO THE CONSOLE BUT HAVE FUN. ##########");
+
 const url1 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/X00T.json";
 async function getData1() {
     const response = await fetch(url1);
