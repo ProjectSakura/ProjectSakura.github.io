@@ -1,350 +1,296 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name="csrf-param" content="authenticity_token" />
-    <meta name="csrf-token" content="XX30bJnIFltL8pol27GFYQ/gTxwgK3zX7kfBYDq5lokSChjRf4V3gdaeHgSKmYbC20AwcVfEXKukZZz6g8JTlA==" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project Sakura</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet" />
-    <link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2FBooligoosh%2Fpen%2FmKPpQp&format=json" title="Project Sakura" />
-    <meta name="apple-mobile-web-app-title" content="CodePen">
-    <script>
-    /* Firefox needs this to prevent FOUC. Wow. */
-    </script>
+    <!-- Page related info -->
+    <title>Project Sakura | Blog</title>
+    <meta charset="UTF-8" />
+    <meta name="title" content="ProjectSakura | Downloads">
+    <meta property="og:title" content="ProjectSakura | Downloads">
+    <meta property="twitter:title" content="ProjectSakura | Downloads">
+    <!-- Descriptions -->
+    <meta name="description" content="Read about what's going on with the development of Project Sakura">
+    <meta property="og:description" content="Project sakura's official blog where you can remain updated with everything.">
+    <meta property="twitter:description" content="Project sakura's official blog where you can remain updated with everything.">
+    <!-- Extra props -->
+    <meta property="og:site_name" content="ProjectSakura | Downloads">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="twitter:url" content="">
+    <meta name="theme-color" content="#1c1c24">
+    <!-- favicon data generated on favicon-generator.org -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="image/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/logo.png">
+    <link rel="manifest" href="/img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#1c1c24">
+    <meta name="msapplication-TileImage" content="/img/icon/ms-icon-144x144.png">
+    <!-- Style importing -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel='stylesheet' id='primer-fonts-css' href='https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C700&#038;subset=latin&#038;ver=1.8.9' type='text/css' media='all' />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Adding Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <style>
-    @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
-
-    :root {
-        --color: #3c3163;
-        --transition-time: 0.5s;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 400;
-        color: #212112;
-        display: flex;
-        flex-direction: column;
-        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
-        background-position: center;
-        background-repeat: repeat;
-        background-size: 7%;
-        background-color: #fff;
-        overflow-x: hidden;
-        transition: all 200ms linear;
-    }
-
-    a {
-        color: inherit;
-    }
-
-    .cards-wrapper {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 4rem;
-        padding: 4rem;
-        margin: 0 auto;
-        width: max-content;
-    }
-
-    .card {
-        font-family: 'Heebo';
-        --bg-filter-opacity: 0.5;
-        background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
-        height: 20em;
-        width: 15em;
-        font-size: 1.5em;
-        color: white;
-        border-radius: 1em;
-        padding: 1em;
-        /*margin: 2em;*/
-        display: flex;
-        align-items: flex-end;
-        background-size: cover;
-        background-position: center;
-        box-shadow: 0 0 5em -1em black;
-        transition: all, var(--transition-time);
-        position: relative;
-        overflow: hidden;
-        border: 10px solid #ccc;
-        text-decoration: none;
-    }
-
-    .card:hover {
-        transform: rotate(0);
-    }
-
-    .card h1 {
-        margin: 0;
-        font-size: 1.5em;
-        line-height: 1.2em;
-    }
-
-    .card p {
-        font-size: 0.75em;
-        font-family: 'Open Sans';
-        margin-top: 0.5em;
-        line-height: 2em;
-    }
-
-    .card .tags {
-        display: flex;
-    }
-
-    .card .tags .tag {
-        font-size: 0.75em;
-        background: rgba(255, 255, 255, 0.5);
-        border-radius: 0.3rem;
-        padding: 0 0.5em;
-        margin-right: 0.5em;
-        line-height: 1.5em;
-        transition: all, var(--transition-time);
-    }
-
-    .card:hover .tags .tag {
-        background: var(--color);
-        color: white;
-    }
-
-    .card .date {
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 0.75em;
-        padding: 1em;
-        line-height: 1em;
-        opacity: .8;
-    }
-
-    .card:before,
-    .card:after {
-        content: '';
-        transform: scale(0);
-        transform-origin: top left;
-        border-radius: 50%;
-        position: absolute;
-        left: -50%;
-        top: -50%;
-        z-index: -5;
-        transition: all, var(--transition-time);
-        transition-timing-function: ease-in-out;
-    }
-
-    .card:before {
-        background: #ddd;
-        width: 250%;
-        height: 250%;
-    }
-
-    .card:after {
-        background: white;
-        width: 200%;
-        height: 200%;
-    }
-
-    .card:hover {
-        color: var(--color);
-    }
-
-    .card:hover:before,
-    .card:hover:after {
-        transform: scale(1);
-    }
-
-    .card-grid-space .num {
-        font-size: 3em;
-        margin-bottom: 1.2rem;
-        margin-left: 1rem;
-    }
-
-    .info {
-        font-size: 1.2em;
-        display: flex;
-        padding: 1em 3em;
-        height: 3em;
-    }
-
-    .info img {
-        height: 3em;
-        margin-right: 0.5em;
-    }
-
-    .info h1 {
-        font-size: 1em;
-        font-weight: normal;
-    }
-
-    /* MEDIA QUERIES */
-    @media screen and (max-width: 1285px) {
-        .cards-wrapper {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-
-    @media screen and (max-width: 900px) {
-        .cards-wrapper {
-            grid-template-columns: 1fr;
-        }
-
-        .info {
-            justify-content: center;
-        }
-
-        .card-grid-space .num {
-            /margin-left: 0;
-            /text-align: center;
-        }
-    }
-
-    @media screen and (max-width: 500px) {
-        .cards-wrapper {
-            padding: 4rem 2rem;
-        }
-
-        .card {
-            max-width: calc(100vw - 4rem);
-        }
-    }
-
-    @media screen and (max-width: 450px) {
-        .info {
-            display: block;
-            text-align: center;
-        }
-
-        .info h1 {
-            margin: 0;
-        }
-    }
-
-    footer {
-        background-color: #222;
-        color: #fff;
-        font-size: 14px;
-        bottom: 0;
-        position: fixed;
-        left: 0;
-        right: 0;
-        text-align: center;
-        z-index: 999;
-    }
-
-    footer p {
-        margin: 10px 0;
-    }
-
-    footer i {
-        color: red;
-    }
-
-    footer a {
-        color: #3c97bf;
-        text-decoration: none;
-    }
-
-    @media (max-width: 940px) {
-        .container2 {
-            grid-template-columns: 1fr;
-            flex-direction: row;
-            justify-content: center;
+        input {
+            color: white;
+            text-align: center
         }
     </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173637831-1');
+    </script>
 </head>
 
-<body>
-    <div>
-        <section class="info">
-            <img src="image/logo.png">
-            <h1>Blog&mdash; <a href="https://Projectsakura.github.io" target="_blank">Project Sakura</a></h1>
-        </section>
-        <section class="cards-wrapper">
-            <div class="card-grid-space" id="1">
-                <div class="num">01</div>
-                <a class="card" href="posts/maintainership.html" style="--bg-img: url(https://c4.wallpaperflare.com/wallpaper/760/955/638/artwork-landscape-sky-mountains-wallpaper-preview.jpg)">
-                    <div>
-                        <h1>Maintainership Form</h1>
-                        <p>Apply for maintainership of project sakura. Check the post for more...</p>
-                        <div class="date">14 May 2020</div>
-                        <div class="tags">
-                            <div class="tag">HTML</div>
-                        </div>
-                    </div>
-                </a>
+<body class="sakura">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper sakura-light-bg">
+                <a href="https://ProjectSakura.github.io/" class="brand-logo"><img src="image/logo.png" style="color: #64b1f3" class="responsive-img circle avatar" alt="SAKURA"></a>
+                <a href="#" data-target="btlg-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="text-uppercase"><a href="https://ProjectSakura.github.io/">Home</a></li>
+                    <li class="text-uppercase"><a href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
+                    <li class="text-uppercase"><a href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
+                    <li class="text-uppercase"><a href="https://twitter.com/ProjectSakura_">Twitter</a></li>
+                    <li class="text-uppercase"><a href="https://t.me/ProjectSakura">Telegram</a></li>
+                </ul>
             </div>
-            <div class="card-grid-space" id="2">
-                <div class="num">02</div>
-                <a class="card" href="posts/oursponsor.html" style="--bg-img: url('https://c4.wallpaperflare.com/wallpaper/912/256/892/landscape-forest-deer-artwork-wallpaper-preview.jpg')">
-                    <div>
-                        <h1>XSLTEL Sponsoring Project Sakura</h1>
-                        <p>Learn about the sponsor thats helping project sakura..</p>
-                        <div class="date">7 June 2020</div>
-                        <div class="tags">
-                            <div class="tag">HTML</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card-grid-space" id="4">
-                <div class="num">03</div>
-                <a class="card" href="posts/second-update-of-june-2020.html" style="--bg-img: url('https://c4.wallpaperflare.com/wallpaper/339/179/774/digital-art-low-poly-artwork-minimalism-wallpaper-preview.jpg')">
-                    <div>
-                        <h1>Second Update of June 2020</h1>
-                        <p>Yes we are here with a bag full of new stuff..</p>
-                        <div class="date">29 June 2020</div>
-                        <div class="tags">
-                            <div class="tag">HTML</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card-grid-space" id="3">
-                <div class="num">04</div>
-                <a class="card" href="posts/june-2020-update.html" style="--bg-img: url('https://c4.wallpaperflare.com/wallpaper/267/779/729/mark-kirkpatrick-illustration-mountains-minimalism-wallpaper-preview.jpg')">
-                    <div>
-                        <h1>June 2020 Update </h1>
-                        <p>See whats new in the june update of project sakura..</p>
-                        <div class="date">10 June 2020</div>
-                        <div class="tags">
-                            <div class="tag">HTML</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card-grid-space" id="4">
-                <div class="num">05</div>
-                <a class="card" href="posts/may-2020-update.html" style="--bg-img: url('https://c4.wallpaperflare.com/wallpaper/339/179/774/digital-art-low-poly-artwork-minimalism-wallpaper-preview.jpg')">
-                    <div>
-                        <h1>May 2020 Update </h1>
-                        <p>See whats new in the May update of project sakura..</p>
-                        <div class="date">15 May 2020</div>
-                        <div class="tags">
-                            <div class="tag">HTML</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
+        </nav>
     </div>
-    <diV>
-        <footer style="width:100vw">
-            <p>
-                Created with <i class="fa fa-heart"></i> by
-                <a target="_blank" href="https://github.com/ProjectSakura">Project Sakura</a>
-                - Sponsored by 
-                <a target="_blank" href="">XSLTEL OU.</a>
-            </p>
-        </footer>
-    </diV>
+    <ul class="sakura-midlight-bg sidenav" id="btlg-menu">
+        <li class="text-uppercase"><a href="https://ProjectSakura.github.io/">Home</a></li>
+        <li class="text-uppercase"><a href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
+        <li class="text-uppercase"><a href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
+        <li class="text-uppercase"><a href="https://twitter.com/ProjectSakura_">Twitter</a></li>
+        <li class="text-uppercase"><a href="https://t.me/ProjectSakura">Telegram</a></li>
+    </ul>
+
+    <body>
+        <div class="container site-main site-content">
+            <div class="row">
+                <!--5-->
+                <article class="hentry">
+                    <header class="entry-header">
+                        <div class="entry-header-row">
+                            <div class="entry-header-column">
+                                <h2 class="entry-title"><a href="posts/july-2020-update.html">July patch, ultra thicc gesture handle and more</a></h2>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="entry-meta">
+                        <span>July 13, 2020</span>
+                        <br>
+                        <span><a href="" rel="author">Amartya</a></span>
+                    </div>
+                    <div class="entry-summary">
+                        <p>Everyone likes thicc *ahem*, Yes the thicc gesture handle and a new shining tiny security patch..</p>
+                        <p><a class="button" href="posts/july-2020-update.html">Read More.. &rarr;</a></p>
+                    </div>
+                    <footer class="entry-footer">
+                        <div class="entry-footer-right">
+                        </div>
+                    </footer>
+                </article>
+                <!--4-->
+                <article class="hentry">
+                    <header class="entry-header">
+                        <div class="entry-header-row">
+                            <div class="entry-header-column">
+                                <h2 class="entry-title"><a href="posts/second-update-of-june-2020.html">We are updating for the second time this june.</a></h2>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="entry-meta">
+                        <span>June 29, 2020</span>
+                        <br>
+                        <span><a href="" rel="author">Shen</a></span>
+                    </div>
+                    <div class="entry-summary">
+                        <p>our updates are getting hotter just like the weather, so we should cool down now..</p>
+                        <p><a class="button" href="posts/second-update-of-june-2020.html">Read More.. &rarr;</a></p>
+                    </div>
+                    <footer class="entry-footer">
+                        <div class="entry-footer-right">
+                        </div>
+                    </footer>
+                </article>                
+                <!--3-->
+                <article class="hentry">
+                    <header class="entry-header">
+                        <div class="entry-header-row">
+                            <div class="entry-header-column">
+                                <h2 class="entry-title"><a href="posts/maintainership.html">Apply for Project Sakura Maintainership!</a></h2>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="entry-meta">
+                        <span>May 14, 2020</span>
+                        <br>
+                        <span><a href="" rel="author">Shen</a></span>
+                    </div>
+                    <div class="entry-summary">
+                        <p>Want to make a official sakura build for your device? check this post..</p>
+                        <p><a class="button" href="posts/maintainership.html">Read More.. &rarr;</a></p>
+                    </div>
+                    <footer class="entry-footer">
+                        <div class="entry-footer-right">
+                        </div>
+                    </footer>
+                </article>
+                <!--2-->
+                <article class="hentry">
+                    <header class="entry-header">
+                        <div class="entry-header-row">
+                            <div class="entry-header-column">
+                                <h2 class="entry-title"><a href="posts/may-2020-update.html">Its summer and spring is almost gone, but we came with the May update.</a></h2>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="entry-meta">
+                        <span>May 15, 2020</span>
+                        <br>
+                        <span><a href="" rel="author">Shen</a></span>
+                    </div>
+                    <div class="entry-summary">
+                        <p>See whats new and good this may..</p>
+                        <p><a class="button" href="posts/may-2020-update.html">Read More.. &rarr;</a></p>
+                    </div>
+                    <footer class="entry-footer">
+                        <div class="entry-footer-right">
+                        </div>
+                    </footer>
+                </article>
+                <!--1-->
+                <article class="hentry">
+                    <header class="entry-header">
+                        <div class="entry-header-row">
+                            <div class="entry-header-column">
+                                <h2 class="entry-title"><a href="posts/oursponsor.html">XSLTEL decided to sponsor Project Sakura</a></h2>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="entry-meta">
+                        <span>May 1, 2020</span>
+                        <br>
+                        <span><a href="" rel="author">Manish</a></span>
+                    </div>
+                    <div class="entry-summary">
+                        <p>XSLTEL OU is a european company that have decided to sponsor Project Sakura with servers..</p>
+                        <p><a class="button" href="posts/oursponsor.html">Read More.. &rarr;</a></p>
+                    </div>
+                    <footer class="entry-footer">
+                        <div class="entry-footer-right">
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </body>
+    <footer class="page-footer sakura-light-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">PROJECT SAKURA</h5>
+                    <p class="grey-text text-lighten-4">Feels Like Spring</p>
+                    <h5>SPONSORED BY XSLTEL OU</h5>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/">Home</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://twitter.com/ProjectSakura_">Twitter</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://t.me/ProjectSakura">Telegram</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 | Project Sakura
+                <a class="grey-text text-lighten-4 right" href="https://materializecss.com">Made with Materialize</a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="filter.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.sidenav').sidenav();
+        $('.fixed-action-btn').floatingActionButton();
+        $('.collapsible').collapsible();
+        $('.tooltipped').tooltip();
+        $('.parallax').parallax();
+        // $('.modal').modal();
+    });
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        "use strict";
+
+        $(function() {
+            var header = $(".start-style");
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 10) {
+                    header.removeClass('start-style').addClass("scroll-on");
+                } else {
+                    header.removeClass("scroll-on").addClass('start-style');
+                }
+            });
+        });
+
+        //Animation
+
+        $(document).ready(function() {
+            $('body.hero-anime').removeClass('hero-anime');
+        });
+
+        //Menu On Hover
+
+        $('body').on('mouseenter mouseleave', '.nav-item', function(e) {
+            if ($(window).width() > 750) {
+                var _d = $(e.target).closest('.nav-item');
+                _d.addClass('show');
+                setTimeout(function() {
+                    _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+                }, 1);
+            }
+        });
+
+    })(jQuery);
+    </script>
 </body>
 
 </html>
