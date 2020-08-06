@@ -60,10 +60,33 @@
 
         .official-devices {
             display: flex;
-            gap: 20px;
+            /* gap: 20px; */
             justify-content: space-between;
             align-items: center;
             padding: 10px;
+        }
+
+        .close-button {
+            position: fixed;
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 40px;
+            width: 60%;
+            z-index: 1;
+            background-color: black;
+        }
+
+        @media (max-width: 767px) {
+            .close-button {
+                width: 80%;
+            }
+
+        }
+
+        .modal_body {
+            margin-top: 60px;
         }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -135,16 +158,19 @@
                         </div>
                         <!--Modal -->
                         <div id="testmodal" class="modal fade">
-                            <div class="around">
-                                <div class="mobile_name">
+
+                            <div class="close-button ">
+                                <div class="mobile_name" style="width: 90%;">
                                 </div>
-                                <div>
+                                <button type="button" style="width:5%;" class="btn btn-default"
+                                    data-dismiss="modal">X</button>
+
+                            </div>
+                            <div class="around">
+                                <div class="modal_body">
                                     <div class="data-modal" style="font-size:17px">
                                     </div>
                                 </div>
-                                <center>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </center>
                             </div>
                         </div>
                         <input onkeyup="filter()" id="search123" type="text" placeholder="Search ...">
