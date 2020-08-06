@@ -8,11 +8,12 @@
     <meta property="og:title" content="ProjectSakura | Downloads">
     <meta property="twitter:title" content="ProjectSakura | Downloads">
     <!-- Descriptions -->
-    <meta name="description"
-        content="This is the download page for all officially supported devices by Project Sakura.">
+    <meta name="description" content="This is the download page for all officially supported devices by Project Sakura.">
     <meta property="og:description" content="Get the build for your officially supported device by Project Sakura.">
-    <meta property="twitter:description"
-        content="This is the download page for all officially supported devices by Project Sakura.">
+    <meta property="twitter:description" content="This is the download page for all officially supported devices by Project Sakura.">
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <!-- Extra props -->
     <meta property="og:site_name" content="ProjectSakura | Downloads">
     <meta property="og:type" content="website">
@@ -42,8 +43,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-        media="screen,projection">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <!--Let browser know website is optimized for mobile-->
@@ -76,6 +76,8 @@
             width: 60%;
             z-index: 1;
             background-color: black;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;            
         }
 
         @media (max-width: 767px) {
@@ -104,8 +106,7 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper sakura-light-bg">
-                <a href="https://ProjectSakura.github.io/" class="brand-logo"><img src="image/logo.png"
-                        style="color: #64b1f3" class="responsive-img circle avatar" alt="SAKURA"></a>
+                <a href="https://ProjectSakura.github.io/" class="brand-logo"><img src="image/logo.png" style="color: #64b1f3" class="responsive-img circle avatar" alt="SAKURA"></a>
                 <a href="#" data-target="btlg-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li class="text-uppercase"><a href="https://ProjectSakura.github.io/">Home</a></li>
@@ -136,13 +137,11 @@
                         <br>
                         <center>
                             <a href="https://liberapay.com/ProjectSakura/">
-                                <img
-                                    src="https://img.shields.io/liberapay/receives/ProjectSakura.svg?logo=liberapay&style=for-the-badge">
+                                <img src="https://img.shields.io/liberapay/receives/ProjectSakura.svg?logo=liberapay&style=for-the-badge">
                             </a>
                             <p>Or</p>
                             <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/lBUDKgM">
-                                <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-                                    alt="Buy me a coffee">
+                                <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee">
                                 <span style="margin-left:5px;font-size:15px !important;">Buy me a coffee</span>
                             </a>
                         </center>
@@ -158,13 +157,10 @@
                         </div>
                         <!--Modal -->
                         <div id="testmodal" class="modal fade">
-
                             <div class="close-button ">
                                 <div class="mobile_name" style="width: 90%;">
                                 </div>
-                                <button type="button" style="width:5%;" class="btn btn-default"
-                                    data-dismiss="modal">X</button>
-
+                                <button type="button" style="width:5%;" class="btn btn-default" data-dismiss="modal">X</button>
                             </div>
                             <div class="around">
                                 <div class="modal_body">
@@ -653,10 +649,8 @@
                     <h5 class="white-text">Links</h5>
                     <ul>
                         <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/">Home</a></li>
-                        <li><a class="grey-text text-lighten-3"
-                                href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
-                        <li><a class="grey-text text-lighten-3"
-                                href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
                         <li><a class="grey-text text-lighten-3" href="https://twitter.com/ProjectSakura_">Twitter</a>
                         </li>
                         <li><a class="grey-text text-lighten-3" href="https://t.me/ProjectSakura">Telegram</a></li>
@@ -674,54 +668,54 @@
     </footer>
     <script type="text/javascript" src="filter.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-            $('.fixed-action-btn').floatingActionButton();
-            $('.collapsible').collapsible();
-            $('.tooltipped').tooltip();
-            $('.parallax').parallax();
-            // $('.modal').modal();
-        });
+    $(document).ready(function() {
+        $('.sidenav').sidenav();
+        $('.fixed-action-btn').floatingActionButton();
+        $('.collapsible').collapsible();
+        $('.tooltipped').tooltip();
+        $('.parallax').parallax();
+        // $('.modal').modal();
+    });
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="download.js"></script>
     <script type="text/javascript" src="changelog.js"></script>
     <script type="text/javascript">
-        (function ($) {
-            "use strict";
+    (function($) {
+        "use strict";
 
-            $(function () {
-                var header = $(".start-style");
-                $(window).scroll(function () {
-                    var scroll = $(window).scrollTop();
+        $(function() {
+            var header = $(".start-style");
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
 
-                    if (scroll >= 10) {
-                        header.removeClass('start-style').addClass("scroll-on");
-                    } else {
-                        header.removeClass("scroll-on").addClass('start-style');
-                    }
-                });
-            });
-
-            //Animation
-
-            $(document).ready(function () {
-                $('body.hero-anime').removeClass('hero-anime');
-            });
-
-            //Menu On Hover
-
-            $('body').on('mouseenter mouseleave', '.nav-item', function (e) {
-                if ($(window).width() > 750) {
-                    var _d = $(e.target).closest('.nav-item');
-                    _d.addClass('show');
-                    setTimeout(function () {
-                        _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
-                    }, 1);
+                if (scroll >= 10) {
+                    header.removeClass('start-style').addClass("scroll-on");
+                } else {
+                    header.removeClass("scroll-on").addClass('start-style');
                 }
             });
+        });
 
-        })(jQuery);
+        //Animation
+
+        $(document).ready(function() {
+            $('body.hero-anime').removeClass('hero-anime');
+        });
+
+        //Menu On Hover
+
+        $('body').on('mouseenter mouseleave', '.nav-item', function(e) {
+            if ($(window).width() > 750) {
+                var _d = $(e.target).closest('.nav-item');
+                _d.addClass('show');
+                setTimeout(function() {
+                    _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+                }, 1);
+            }
+        });
+
+    })(jQuery);
     </script>
 </body>
 
