@@ -15,7 +15,27 @@ var btn14 = $(".show-modal14")
 var btn15 = $(".show-modal15")
 var btn16 = $(".show-modal16")
 var btn17 = $(".show-modal17")
+var mainbutton= $(".mainbutton")
 
+mainbutton.click(async () => {
+
+    async function showmodal1() {
+        $("#testmodal").modal('show');
+        const mobile_name = document.querySelector(".mobile_name");
+        mobile_name.innerText = "SOURCE CHANGELOG";
+        // console.log("hello")
+        const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog.txt'
+        const response = await fetch(url1);
+
+        const data = await response.text();
+        console.log(data);
+        const para = document.querySelector(".data-modal");
+        para.innerText = data
+        // console.log($("#testmodal"))
+
+    }
+    await showmodal1()
+})
 
 
 btn1.click(async () => {
