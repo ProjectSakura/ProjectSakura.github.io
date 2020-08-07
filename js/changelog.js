@@ -15,6 +15,7 @@ var btn14 = $(".show-modal14")
 var btn15 = $(".show-modal15")
 var btn16 = $(".show-modal16")
 var btn17 = $(".show-modal17")
+var btn19 = $(".show-modal19")
 var mainbutton= $(".mainbutton")
 
 mainbutton.click(async () => {
@@ -353,6 +354,25 @@ btn17.click(async () => {
         mobile_name.innerText = "MOTOROLA G3 TURBO";
         console.log("hello")
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_merlin.txt'
+        const response = await fetch(url1);
+
+        const data = await response.text();
+        console.log(data);
+        const para = document.querySelector(".data-modal");
+        para.innerText = data
+
+    }
+    await showmodal1()
+})
+
+btn19.click(async () => {
+
+    async function showmodal1() {
+        $("#testmodal").modal('show');
+        const mobile_name = document.querySelector(".mobile_name");
+        mobile_name.innerText = "MOTOROLA G7 RIVER";
+        console.log("hello")
+        const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_river.txt'
         const response = await fetch(url1);
 
         const data = await response.text();
