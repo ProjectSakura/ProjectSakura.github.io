@@ -53,43 +53,7 @@
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <style>
-        input {
-            color: white;
-            text-align: center
-        }
-
-        .official-devices {
-            display: flex;
-            /* gap: 20px; */
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-
-        .close-button {
-            position: fixed;
-            display: flex;
-            /* justify-content: space-between; */
-            align-items: center;
-            padding: 10px;
-            margin-bottom: 40px;
-            width: 60%;
-            z-index: 1;
-            background-color: black;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;            
-        }
-
-        @media (max-width: 767px) {
-            .close-button {
-                width: 80%;
-            }
-
-        }
-
-        .modal_body {
-            margin-top: 60px;
-        }
+        
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
@@ -666,7 +630,7 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="filter.js"></script>
+    <script type="text/javascript" src="js/filter.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
         $('.sidenav').sidenav();
@@ -674,49 +638,12 @@
         $('.collapsible').collapsible();
         $('.tooltipped').tooltip();
         $('.parallax').parallax();
-        // $('.modal').modal();
     });
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="download.js"></script>
-    <script type="text/javascript" src="changelog.js"></script>
-    <script type="text/javascript">
-    (function($) {
-        "use strict";
-
-        $(function() {
-            var header = $(".start-style");
-            $(window).scroll(function() {
-                var scroll = $(window).scrollTop();
-
-                if (scroll >= 10) {
-                    header.removeClass('start-style').addClass("scroll-on");
-                } else {
-                    header.removeClass("scroll-on").addClass('start-style');
-                }
-            });
-        });
-
-        //Animation
-
-        $(document).ready(function() {
-            $('body.hero-anime').removeClass('hero-anime');
-        });
-
-        //Menu On Hover
-
-        $('body').on('mouseenter mouseleave', '.nav-item', function(e) {
-            if ($(window).width() > 750) {
-                var _d = $(e.target).closest('.nav-item');
-                _d.addClass('show');
-                setTimeout(function() {
-                    _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
-                }, 1);
-            }
-        });
-
-    })(jQuery);
-    </script>
+    <script type="text/javascript" src="js/download.js"></script>
+    <script type="text/javascript" src="js/changelog.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
 </body>
 
 </html>

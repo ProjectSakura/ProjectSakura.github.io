@@ -48,7 +48,7 @@
     /* padding: 50px; */
     border-right: 20px;
     width: 60%;
-    height: 400px;
+    height: 500px;
     background-color: #121217 !important;
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
     background-position: center;
@@ -57,7 +57,7 @@
     font: 25px;
     /* left: 0; */
     /* right: 0; */
-    margin: -200px auto;
+    margin: -300px auto;
 }
 
 
@@ -246,4 +246,41 @@ nav .brand-logo>img {
 
 .chlg-code {
     font-family: monospace, monospace !important;
+}
+input {
+    color: white;
+    text-align: center
+}
+
+.official-devices {
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.close-button {
+    position: fixed;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 40px;
+    width: 60%;
+    z-index: 1;
+    background-color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;            
+}
+
+@media (max-width: 767px) {
+    .close-button {
+        width: 80%;
+    }
+
+}
+
+.modal_body {
+    margin-top: 60px;
 }
