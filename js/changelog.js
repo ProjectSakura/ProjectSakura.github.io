@@ -19,10 +19,6 @@ var btn18 = $(".show-modal18")
 var btn19 = $(".show-modal19")
 
 var mainbutton = $(".mainbutton")
-
-
-
-
 mainbutton.click(async () => {
 
     async function showmodal1() {
