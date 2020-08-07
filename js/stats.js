@@ -25,7 +25,7 @@
 
         for (let i = 0; i < NUMBER_OF_COUNTRIES; i++) {
             const tbody = document.querySelector(".countries")
-            // console.log(country);
+            
             let tr = createNode('tr');
             let td1 = createNode('td');
             let td2 = createNode('td');
@@ -44,7 +44,6 @@
         }
         for (let i = 0; i < 5; i++) {
             const tbody = document.querySelector(".oses")
-            // console.log(country);
             let tr = createNode('tr');
             let td1 = createNode('td');
             let td2 = createNode('td');

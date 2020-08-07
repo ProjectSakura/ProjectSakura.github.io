@@ -273,14 +273,56 @@ input {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;            
 }
-
+.mobile_name{
+    width:90%;
+}
+.button-X{
+    width:5%;
+}
 @media (max-width: 767px) {
     .close-button {
-        width: 80%;
-    }
+        width: 70%;
 
+    }
+    .mobile_name{
+        width:80%
+    }
+    .button-X{
+        width:20%;
+    }
+    
 }
 
 .modal_body {
-    margin-top: 60px;
+    margin-top: 70px;
 }
+#containerDiv {
+    position: absolute;
+    display:grid;
+    width:99%;
+    justify-content: center;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#tableGame,
+td {
+    /* height:5px; */
+    /* border-spacing: 1px; */
+    border: 1px solid silver;
+    border-collapse: collapse;
+    padding:0px;
+}
+
+#butReset {
+    float: left;
+    margin: 15px;
+    padding :10px;
+}
+
+#divScore {
+    text-align: center;
+    /* margin: 5px; */
+    /* padding: 10px; */
+}
+
