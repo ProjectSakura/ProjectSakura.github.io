@@ -279,9 +279,9 @@ async function getData17() {
 getData17();
 
 // River
-const url19 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/river.json";
+const url18 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/river.json";
 async function getData18() {
-    const response = await fetch(url19);
+    const response = await fetch(url18);
     const data = await response.json();
     console.log(data.response[0]);
     const li1 = document.querySelector('#ans53');
@@ -296,3 +296,41 @@ async function getData18() {
 
 }
 getData18(); 
+
+// M1882
+const url19 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/m1882.json";
+async function getData19() {
+    const response = await fetch(url19);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans56');
+    const li2 = document.querySelector('#ans57');
+    const li3 = document.querySelector('#ans58');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton19');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+
+}
+getData19(); 
+
+const url20 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/m1872.json";
+async function getData20() {
+    const response = await fetch(url20);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans60');
+    const li2 = document.querySelector('#ans61');
+    const li3 = document.querySelector('#ans62');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton19');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+
+}
+getData20(); 
+
