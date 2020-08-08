@@ -45,7 +45,7 @@ btn1.click(async () => {
         $("#testmodal").modal('show');
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "ASUS ZENFONE MAX PRO M1";
-        const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_x00t.txt'
+        const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_X00T.txt'
         const response = await fetch(url1);
 
         const data = await response.text();
@@ -165,7 +165,7 @@ btn8.click(async () => {
         $("#testmodal").modal('show');
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "REALME 1";
-        const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_cph1859.txt'
+        const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_CPH1859.txt'
         const response = await fetch(url1);
 
         const data = await response.text();
