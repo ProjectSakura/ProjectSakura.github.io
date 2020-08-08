@@ -130,8 +130,7 @@
                             <div class="close-button ">
                                 <div class="mobile_name">
                                 </div>
-                                <button type="button"  class="btn btn-default button-X"
-                                    data-dismiss="modal">X</button>
+                                <button type="button" class="btn btn-default button-X" data-dismiss="modal">X</button>
                             </div>
                             <div class="around">
                                 <div class="modal_body">
@@ -666,7 +665,7 @@
                 const para = document.querySelector(".data-modal");
                 para.innerHTML = `
                     <center>
-                    <div class="minisweeper">While you are at it,why dont you play minesweeper...Press reset to start</div>
+                    <div class="minisweeper">While you are at it,why dont you play minesweeper...</div>
                     <div id="containerDiv">
                         <button id="butReset" onclick="SetupBoard()">Reset</button>
                         <div id="divScore">Score: 0</div>
@@ -675,7 +674,7 @@
                     </center>
 
                 `
-
+                SetupBoard();
             }
             await showmodal1()
         }
