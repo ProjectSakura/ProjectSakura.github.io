@@ -315,3 +315,21 @@ async function getData19() {
 
 }
 getData19(); 
+
+const url20 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/m1872.json";
+async function getData20() {
+    const response = await fetch(url20);
+    const data = await response.json();
+    console.log(data.response[0]);
+    const li1 = document.querySelector('#ans60');
+    const li2 = document.querySelector('#ans61');
+    const li3 = document.querySelector('#ans62');
+    // console.log(li1);
+    const button1 = document.querySelector('.buttton19');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+
+}
+getData20(); 
