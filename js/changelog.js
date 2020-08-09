@@ -23,6 +23,8 @@ mainbutton.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "SOURCE CHANGELOG";
 
@@ -32,6 +34,7 @@ mainbutton.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -43,6 +46,8 @@ btn1.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "ASUS ZENFONE MAX PRO M1";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_X00T.txt'
@@ -51,6 +56,7 @@ btn1.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -60,6 +66,8 @@ btn2.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "HUAWEI NEXUS 6P";
 
@@ -70,6 +78,7 @@ btn2.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
     }
     await showmodal1()
@@ -78,6 +87,8 @@ btn3.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "LEECO LE 2";
 
@@ -87,6 +98,7 @@ btn3.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -96,6 +108,8 @@ btn4.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "MEIZU 16TH";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_m1882.txt'
@@ -104,6 +118,7 @@ btn4.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
     }
     await showmodal1()
@@ -112,6 +127,8 @@ btn5.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "MEIZU 16T";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_m1928.txt'
@@ -120,6 +137,7 @@ btn5.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -129,6 +147,8 @@ btn6.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "MOTOROLA G7 POWER";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_ocean.txt'
@@ -137,6 +157,7 @@ btn6.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -146,6 +167,8 @@ btn7.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "MOTOROLA G5S PlUS";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_sanders.txt'
@@ -154,6 +177,7 @@ btn7.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -163,6 +187,8 @@ btn8.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "REALME 1";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_CPH1859.txt'
@@ -171,6 +197,7 @@ btn8.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -180,6 +207,8 @@ btn9.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "SAMSUNG GALAXY S8";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_dreamlte.txt'
@@ -188,6 +217,7 @@ btn9.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -197,6 +227,8 @@ btn10.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "SAMSUNG GALAXY S8 PLUS";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_dream2lte.txt'
@@ -205,6 +237,7 @@ btn10.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -214,6 +247,8 @@ btn11.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "SAMSUNG GALAXY NOTE 8";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_greatlte.txt'
@@ -222,6 +257,7 @@ btn11.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -231,6 +267,8 @@ btn12.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "XIAOMI MI 6X";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_wayne.txt'
@@ -239,6 +277,7 @@ btn12.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -248,6 +287,8 @@ btn13.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "XIAOMI POCOFONE F1";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_beryllium.txt'
@@ -256,6 +297,7 @@ btn13.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -266,6 +308,8 @@ btn14.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "XIAOMI REDMI 5A";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_riva.txt'
@@ -274,6 +318,7 @@ btn14.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -283,6 +328,8 @@ btn15.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "XIAOMI REDMI NOTE 4 ";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_mido.txt'
@@ -291,6 +338,7 @@ btn15.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
 
     }
@@ -300,6 +348,8 @@ btn16.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "XIAOMI REDMI NOTE 7 PRO";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_violet.txt'
@@ -308,6 +358,7 @@ btn16.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
     }
     await showmodal1()
@@ -316,6 +367,8 @@ btn17.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "MOTOROLA G3 TURBO";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_merlin.txt'
@@ -324,6 +377,7 @@ btn17.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
     }
     await showmodal1()
@@ -332,6 +386,8 @@ btn18.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "MEIZU 16X";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_m1872.txt'
@@ -340,6 +396,7 @@ btn18.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
     }
     await showmodal1()
@@ -348,6 +405,8 @@ btn19.click(async () => {
 
     async function showmodal1() {
         $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "MOTOROLA G7";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_river.txt'
@@ -356,6 +415,7 @@ btn19.click(async () => {
         const data = await response.text();
         const para = document.querySelector(".data-modal");
         para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
 
     }
     await showmodal1()
