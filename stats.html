@@ -8,109 +8,114 @@ Don't remove this if you intent to use this page for your website.
 <meta charset="UTF-8">
 <meta name="description" content="You can see all the stats related to project sakura here :)">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="image/logo.png">
+<link rel="icon" type="image/png" sizes="96x96" href="image/logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="image/logo.png">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
 
-function gtag() { dataLayer.push(arguments); }
-gtag('js', new Date());
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-gtag('config', 'UA-173637831-1');
+    gtag('config', 'UA-173637831-1');
 </script>
 <style>
     h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: "Raleway", sans-serif;
-    align-items: center;
-    margin: auto;
-}
-
-@media (min-width: 993px) {
-    .w3-col.l8 {
-        width: 100.%;
-
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif;
+        align-items: center;
+        margin: auto;
     }
-}
+
+    @media (min-width: 993px) {
+        .w3-col.l8 {
+            width: 100.%;
+
+        }
+    }
 </style>
 <style>
     table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th,
-td {
-    text-align: center;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background: #0F2027;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-th {
-    background: #000000;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
-}
-
-body {
-    background: linear-gradient(-45deg, #283048, #859398, #203A43, #203A43);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
+        border-collapse: collapse;
+        width: 100%;
     }
 
-    50% {
-        background-position: 100% 50%;
+    th,
+    td {
+        text-align: center;
+        padding: 8px;
     }
 
-    100% {
-        background-position: 0% 50%;
+    tr:nth-child(even) {
+        background: #0F2027;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
-}
 
-.card-container {
-    background-color: #231e39;
-    border-radius: 20px;
-    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
-    color: #b3b8cd;
-    padding-top: 30px;
-    position: relative;
-    width: 80%;
-    max-width: 100%;
-    text-align: center;
-}
+    th {
+        background: #000000;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #434343, #000000);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #434343, #000000);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: white;
+    }
 
-#loading {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: black url(loading.gif) no-repeat center;
+    body {
+        background: linear-gradient(-45deg, #283048, #859398, #203A43, #203A43);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
 
-    z-index: 9999;
-}
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .card-container {
+        background-color: #231e39;
+        border-radius: 20px;
+        box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+        color: #b3b8cd;
+        padding-top: 30px;
+        position: relative;
+        width: 80%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #loading {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black url(loading.gif) no-repeat center;
+
+        z-index: 9999;
+    }
 </style>
 
 <body onload="myFunction()">
@@ -129,7 +134,8 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <div class="container" style="margin-top:40px">
                     <!-- Blog entry -->
                     <div class="card-container w3-margin w3&#169;-dark-grey" style="align-items: center">
-                        <h3 class="summary" style="text-align:center; color:white;">Project Sakura got downloaded <span class="totaldownload"></span> times in total</h3>
+                        <h3 class="summary" style="text-align:center; color:white;">Project Sakura got downloaded <span
+                                class="totaldownload"></span> times in total</h3>
                         <br>
                     </div>
                 </div>
@@ -142,8 +148,12 @@ and is wrapped around the whole page content, except for the footer in this exam
                         <br>
                         <table class="table table-striped" style="color: white; font-weight: 600">
                             <tr>
-                                <th><center>DEVICE (Alphabetically arranged)</center></th>
-                                <th><center>DOWNLOADS</center></th>
+                                <th>
+                                    <center>DEVICE (Alphabetically arranged)</center>
+                                </th>
+                                <th>
+                                    <center>DOWNLOADS</center>
+                                </th>
                             </tr>
                             <tr>
                                 <td>ASUS ZENFONE MAX PRO M1</td>
@@ -287,9 +297,9 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
     <script type="text/javascript" src="js/stats.js"></script>
     <script>
-    const myFunction = setInterval(() => {
-        preloader.style.display = "none";
-    }, 2000);
+        const myFunction = setInterval(() => {
+            preloader.style.display = "none";
+        }, 2000);
     </script>
 </body>
 

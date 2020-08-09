@@ -181,10 +181,11 @@ const url11 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/m1882.json
 async function getData11() {
     const response = await fetch(url11);
     const data = await response.json();
-    const li1 = document.querySelector('#ans10');
-    const li2 = document.querySelector('#ans11');
-    const li3 = document.querySelector('#ans12');
+    const li1 = document.querySelector('#ans56');
+    const li2 = document.querySelector('#ans57');
+    const li3 = document.querySelector('#ans58');
     const button1 = document.querySelector('.buttton4');
+    console.log(data.response[0].filename)
     li1.innerHTML = data.response[0].filename;
     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
     li3.innerHTML = data.response[0].id;
@@ -301,12 +302,13 @@ const url20 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/m1872.json
 async function getData20() {
     const response = await fetch(url20);
     const data = await response.json();
-    console.log(data.response[0]);
+    // console.log(data.response[0]);
     const li1 = document.querySelector('#ans60');
     const li2 = document.querySelector('#ans61');
     const li3 = document.querySelector('#ans62');
     // console.log(li1);
-    const button1 = document.querySelector('.buttton20');
+    console.log(data.response[0].url)
+    const button1 = document.querySelector('.buttton18');
     li1.innerHTML = data.response[0].filename;
     li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
     li3.innerHTML = data.response[0].id;
