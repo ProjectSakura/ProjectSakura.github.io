@@ -273,7 +273,7 @@ input {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;            
 }
-.mobile_name{
+.mobile_rating{
     width:90%;
 }
 .button-X{
@@ -284,7 +284,7 @@ input {
         width: 80%;
 
     }
-    .mobile_name{
+    .mobile_rating{
         width:80%
     }
     .button-X{
@@ -294,7 +294,7 @@ input {
 }
 
 .modal_body {
-    margin-top: 70px;
+    margin-top: 90px;
 }
 #containerDiv {
     position: absolute;
@@ -326,10 +326,13 @@ td {
 }
 @media (max-width: 567px) {
     .modal_body {
-        margin-top: 130px;
+        margin-top: 160px;
     }
     .modal{
         margin: -400px auto;
+    }
+    .mobile_name {
+        font-size: 20px;
     }
 }
 

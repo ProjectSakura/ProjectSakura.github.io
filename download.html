@@ -128,7 +128,12 @@
                         <!--Modal -->
                         <div id="testmodal" class="modal fade">
                             <div class="close-button ">
-                                <div class="mobile_name">
+                                <div class="mobile_rating">
+                                    <div class="mobile_name">
+                                    </div>
+                                    <div class="rating">
+                                        
+                                    </div>
                                 </div>
                                 <button type="button" class="btn btn-default button-X" data-dismiss="modal">X</button>
                             </div>
@@ -226,9 +231,9 @@
                                     <div class="skills" id="li2">
                                         <h6>Build Information</h6>
                                         <ul>
-                                            <li class="skills" id="ans10">Zip-name</li>
-                                            <li class="skills" id="ans11">Zip-Size</li>
-                                            <li class="skills" id="ans12">MD5</li>
+                                            <li class="skills" id="ans56">Zip-name</li>
+                                            <li class="skills" id="ans57">Zip-Size</li>
+                                            <li class="skills" id="ans58">MD5</li>
                                         </ul>
                                     </div>
                                     <button class="primary download">
@@ -282,7 +287,7 @@
                                         </ul>
                                     </div>
                                     <button class="primary download">
-                                        <a id="buttton1" class="buttton20" href="" onClick="helllo()">Download</a>
+                                        <a id="buttton1" class="buttton18" href="" onClick="helllo()">Download</a>
                                     </button>
                                     <button class="primary download show-modal18">
                                         ChangeLog
@@ -663,9 +668,10 @@
 
 
                 const para = document.querySelector(".data-modal");
+                const rating =document.querySelector(".rating");
+                rating.innerHTML = `<div class="rating">Please dont forget to leave 5 star rating at sourceforge</div>`
                 para.innerHTML = `
                     <center>
-                        <div class="rating">Please leave a 5 star rating at sourceforge</div>
                     <div class="minisweeper">While you are at it,why dont you play minesweeper...</div>
                     <div id="containerDiv">
                         <button id="butReset" onclick="SetupBoard()">Reset</button>
