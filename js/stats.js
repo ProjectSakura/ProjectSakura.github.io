@@ -166,7 +166,7 @@
     getmidoData();
 
     const url7 =
-        "https://sourceforge.net/projects/projectsakura/files/Wayne/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+        "https://sourceforge.net/projects/projectsakura/files/wayne/stats/json?start_date=2020-01-01&end_date=2021-01-01";
     async function getmi6xData() {
         const response = await fetch(url7);
         const data4 = await response.json();
