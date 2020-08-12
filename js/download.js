@@ -317,3 +317,22 @@ async function getData20() {
 }
 getData20(); 
 
+const url21 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/whyred.json";
+async function getData21() {
+    const response = await fetch(url21);
+    const data = await response.json();
+    // console.log(data.response[0]);
+    const li1 = document.querySelector('#ans70');
+    const li2 = document.querySelector('#ans71');
+    const li3 = document.querySelector('#ans72');
+    // console.log(li1);
+    console.log(data.response[0].url)
+    const button1 = document.querySelector('.buttton21');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+
+}
+getData21();
+
