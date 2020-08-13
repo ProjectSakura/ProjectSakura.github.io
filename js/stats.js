@@ -321,3 +321,16 @@
 
     }
     getriverData();
+
+    //whyred
+    const url20 =
+        "https://sourceforge.net/projects/projectsakura/files/whyred/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+    async function getwhyredData() {
+        const response5 = await fetch(url20);
+        const data5 = await response5.json();
+        let total = data5.total;
+        const span = document.querySelector(".whyreddownload")
+        span.innerHTML = `${(total)}`;
+
+    }
+    getwhyredData();
