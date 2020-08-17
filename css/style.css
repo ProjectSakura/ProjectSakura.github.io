@@ -123,7 +123,7 @@ ul, ol {
     margin: 0 0 1.5em 0;
 }
 
-body, input, textarea {}
+
 
 a:link, a:visited {
     color: #F1505A;
@@ -273,10 +273,10 @@ em {
 04 Navbar ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
-.navbar-fixed-top .container {
+/* .navbar-fixed-top .container { */
     /* Uncomment to make nav expand full width */
     /*	width: auto; */
-}
+/* } */
 
 .navbar .brand {
     margin-left: 0;
@@ -637,8 +637,6 @@ section#testimonials .blockquote-wrapper {
     height: 647px;
 }
 
-blockquote.mega {}
-
 blockquote.mega p {
     font-size: 45px;
     line-height: 50px;
@@ -985,11 +983,6 @@ footer p {
     font-size: 0.65em;
 }
 
-#banner.carousel .item {}
-
-#banner.carousel img {}
-
-#banner.carousel .carousel-control {}
 
 
 /* ----------------------------------------------------------------------------------------------------------
@@ -1036,12 +1029,12 @@ footer p {
 
 .row123{
     display:grid;
-    width: 100%;
+    width: 103%;
     /* align-items: center; */
     justify-content:center;
 }
 .sakura123{
-    /* margin-left: 10%; */
+    margin-left: 8%;
 }
 @media (max-width: 568px) {
 
@@ -1129,7 +1122,7 @@ footer p {
         margin-left: -20px;
         margin-right: -20px;
     }
-    .carousel .container {}
+   
     .carousel-caption {
         width: 65%;
         padding: 0 70px;
@@ -1202,16 +1195,12 @@ footer p {
     #navbar-inner {
         margin: 0;
     }
-    #banner {
-        /*display: none;*/
-    }
+  
     section.single-page {
         padding: 1em 0;
     }
     /* Feature */
-    #feature-badge {
-        /*	display: none; */
-    }
+    
     /* Screenshots & Downloads */
     #downloads h1 {
         background: transparent;
@@ -1258,9 +1247,7 @@ footer p {
         text-align: center;
     }
     /* Testimonials */
-    section#testimonials {
-        /*display: none;*/
-    }
+    
     /* team */
     #team .team-thumb {
         margin-right: auto;
@@ -1269,7 +1256,7 @@ footer p {
         display: block;
         text-align: center
     }
-    .job-position: {
+    .job-position {
         margin-bottom: 1.5em;
     }
     .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
