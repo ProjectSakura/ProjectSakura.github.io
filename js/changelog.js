@@ -17,6 +17,9 @@ var btn16 = $(".show-modal16")
 var btn17 = $(".show-modal17")
 var btn18 = $(".show-modal18")
 var btn19 = $(".show-modal19")
+var btn20 = $(".show-modal20")
+var btn21 = $(".show-modal21")
+
 
 var mainbutton = $(".mainbutton")
 mainbutton.click(async () => {
@@ -401,6 +404,7 @@ btn18.click(async () => {
     }
     await showmodal1()
 })
+
 btn19.click(async () => {
 
     async function showmodal1() {
@@ -410,6 +414,46 @@ btn19.click(async () => {
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "MOTOROLA G7";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_river.txt'
+        const response = await fetch(url1);
+
+        const data = await response.text();
+        const para = document.querySelector(".data-modal");
+        para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
+
+    }
+    await showmodal1()
+})
+
+btn20.click(async () => {
+
+    async function showmodal1() {
+        $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
+        const mobile_name = document.querySelector(".mobile_name");
+        mobile_name.innerText = "ONEPLUS 3 AND 3T";
+        const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_oneplus3.txt'
+        const response = await fetch(url1);
+
+        const data = await response.text();
+        const para = document.querySelector(".data-modal");
+        para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
+
+    }
+    await showmodal1()
+})
+
+btn21.click(async () => {
+
+    async function showmodal1() {
+        $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
+        const mobile_name = document.querySelector(".mobile_name");
+        mobile_name.innerText = "XIAOMI REDMI NOTE 5 PRO";
+        const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_whyred.txt'
         const response = await fetch(url1);
 
         const data = await response.text();
