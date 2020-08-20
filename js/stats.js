@@ -334,3 +334,16 @@
 
     }
     getwhyredData();
+
+    //oneplus3
+    const url21 =
+        "https://sourceforge.net/projects/projectsakura/files/oneplus3/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+    async function getoneplus3Data() {
+        const response5 = await fetch(url21);
+        const data5 = await response5.json();
+        let total = data5.total;
+        const span = document.querySelector(".oneplus3download")
+        span.innerHTML = `${(total)}`;
+
+    }
+    getoneplus3Data();
