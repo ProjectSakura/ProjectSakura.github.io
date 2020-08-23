@@ -1032,12 +1032,15 @@ footer p {
     width: 103%;
     /* align-items: center; */
     justify-content:center;
+    margin-left:-3%;
 }
 .sakura123{
     margin-left: 0%;
 }
 @media (max-width: 568px) {
-
+    .row123{
+        margin-left:0%;
+    }
     .sakura123{
         margin-left:0%
     }

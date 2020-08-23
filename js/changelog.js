@@ -19,6 +19,8 @@ var btn18 = $(".show-modal18")
 var btn19 = $(".show-modal19")
 var btn20 = $(".show-modal20")
 var btn21 = $(".show-modal21")
+var btn22 = $(".show-modal22")
+
 
 
 var mainbutton = $(".mainbutton")
@@ -454,6 +456,25 @@ btn21.click(async () => {
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "XIAOMI REDMI NOTE 5 PRO";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_whyred.txt'
+        const response = await fetch(url1);
+
+        const data = await response.text();
+        const para = document.querySelector(".data-modal");
+        para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
+
+    }
+    await showmodal1()
+})
+btn22.click(async () => {
+
+    async function showmodal1() {
+        $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
+        const mobile_name = document.querySelector(".mobile_name");
+        mobile_name.innerText = "XIAOMI REDMI NOTE 8/8T";
+        const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_ginkgo.txt'
         const response = await fetch(url1);
 
         const data = await response.text();
