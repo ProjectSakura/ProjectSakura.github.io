@@ -347,3 +347,14 @@
 
     }
     getoneplus3Data();
+    const url22 =
+        "https://sourceforge.net/projects/projectsakura/files/ginkgo/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+    async function getredmiNote8Data() {
+        const response5 = await fetch(url22);
+        const data5 = await response5.json();
+        let total = data5.total;
+        const span = document.querySelector(".note8tdownload")
+        span.innerHTML = `${(total)}`;
+
+    }
+    getredmiNote8Data();

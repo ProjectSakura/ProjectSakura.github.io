@@ -14,16 +14,17 @@ Don't remove this if you intent to use this page for your website.
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
 
-function gtag() { dataLayer.push(arguments); }
-gtag('js', new Date());
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-gtag('config', 'UA-173637831-1');
+    gtag('config', 'UA-173637831-1');
 </script>
 <style>
     h1,
@@ -61,28 +62,28 @@ gtag('config', 'UA-173637831-1');
     }
 
     th {
-            font-family: 'Poppins', sans-serif;
-            color: #fff;
-            background-color: #2d2d2d;
-            overflow-x: hidden;
-            transition: all 200ms linear;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        background-color: #2d2d2d;
+        overflow-x: hidden;
+        transition: all 200ms linear;
     }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            font-size: 16px;
-            line-height: 24px;
-            color: #212112;
-            display: flex;
-            flex-direction: column;
-            background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
-            background-position: center;
-            background-repeat: repeat;
-            background-size: 7%;
-            background-color: #2d2d2d;
-            overflow-x: hidden;
-            transition: all 200ms linear;
-        }
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #212112;
+        display: flex;
+        flex-direction: column;
+        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 7%;
+        background-color: #2d2d2d;
+        overflow-x: hidden;
+        transition: all 200ms linear;
+    }
 
     .card-container {
         background-color: #2196f3;
@@ -122,7 +123,8 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <div class="container" style="margin-top:40px">
                     <!-- Blog entry -->
                     <div class="card-container w3-margin w3&#169;-dark-grey" style="align-items: center">
-                        <h3 class="summary" style="text-align:center; color:white;">Project Sakura got downloaded <span class="totaldownload"></span> times.</h3><br>
+                        <h3 class="summary" style="text-align:center; color:white;">Project Sakura got downloaded <span
+                                class="totaldownload"></span> times.</h3><br>
                         <h6>Note: These stats are only for official downloads, unofficial numbers are unknown.</h6>
                         <br>
                     </div>
@@ -198,7 +200,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                                 <td>ONEPLUS 3 AND 3T</td>
                                 <td class="oneplus3download">Loading..</td>
                                 <td class="percentageoneplus3">NaN</td>
-                            </tr>                            
+                            </tr>
                             <tr>
                                 <td>REALME 1</td>
                                 <td class="cph1859download">Loading..</td>
@@ -248,6 +250,11 @@ and is wrapped around the whole page content, except for the footer in this exam
                                 <td>XIAOMI REDMI NOTE 7 PRO</td>
                                 <td class="violetdownload">Loading..</td>
                                 <td class="percentageviolet">Percentage</td>
+                            </tr>
+                            <tr>
+                                <td>XIAOMI REDMI NOTE 8/8T</td>
+                                <td class="note8tdownload">Loading..</td>
+                                <td class="percentagenote8t">Percentage</td>
                             </tr>
                         </table>
                     </div>
@@ -315,82 +322,89 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
     <script type="text/javascript" src="js/stats.js"></script>
     <script>
-    const myFunction = setInterval(() => {
-        preloader.style.display = "none";
+        const myFunction = setInterval(() => {
+            preloader.style.display = "none";
 
-        const totaldownload = +document.querySelector(".totaldownload").innerText;
-        console.log(totaldownload);
-        //devices
-        const x00tdownload = +document.querySelector(".x00tdownload").innerText;
-        const nexusdownload = +document.querySelector(".nexusdownload").innerText;
-        const s2download = +document.querySelector(".s2download").innerText;
-        const m1928download = +document.querySelector(".m1928download").innerText;
-        const m1882download = +document.querySelector(".m1882download").innerText;
-        const m1872download = +document.querySelector(".m1872download").innerText;
-        const oceandownload = +document.querySelector(".oceandownload").innerText;
-        const riverdownload = +document.querySelector(".riverdownload").innerText;
-        const sandersdownload = +document.querySelector(".sandersdownload").innerText;
-        const merlindownload = +document.querySelector(".merlindownload").innerText;
-        const cph1859download = +document.querySelector(".cph1859download").innerText;
-        const s8download = +document.querySelector(".s8download").innerText;
-        const s8pdownload = +document.querySelector(".s8pdownload").innerText;
-        const note8download = +document.querySelector(".note8download").innerText;
-        const mi6xdownload = +document.querySelector(".mi6xdownload").innerText;
-        const pocof1download = +document.querySelector(".pocof1download").innerText;
-        const rivadownload = +document.querySelector(".rivadownload").innerText;
-        const midodownload = +document.querySelector(".midodownload").innerText;
-        const whyreddownload = +document.querySelector(".whyreddownload").innerText;
-        const violetdownload = +document.querySelector(".violetdownload").innerText;
-        console.log(violetdownload);
+            const totaldownload = +document.querySelector(".totaldownload").innerText;
+            console.log(totaldownload);
+            //devices
+            const x00tdownload = +document.querySelector(".x00tdownload").innerText;
+            const nexusdownload = +document.querySelector(".nexusdownload").innerText;
+            const s2download = +document.querySelector(".s2download").innerText;
+            const m1928download = +document.querySelector(".m1928download").innerText;
+            const m1882download = +document.querySelector(".m1882download").innerText;
+            const m1872download = +document.querySelector(".m1872download").innerText;
+            const oceandownload = +document.querySelector(".oceandownload").innerText;
+            const riverdownload = +document.querySelector(".riverdownload").innerText;
+            const sandersdownload = +document.querySelector(".sandersdownload").innerText;
+            const merlindownload = +document.querySelector(".merlindownload").innerText;
+            const oneplus3download = +document.querySelector(".oneplus3download").innerText;
+            const cph1859download = +document.querySelector(".cph1859download").innerText;
+            const s8download = +document.querySelector(".s8download").innerText;
+            const s8pdownload = +document.querySelector(".s8pdownload").innerText;
+            const note8download = +document.querySelector(".note8download").innerText;
+            const mi6xdownload = +document.querySelector(".mi6xdownload").innerText;
+            const pocof1download = +document.querySelector(".pocof1download").innerText;
+            const rivadownload = +document.querySelector(".rivadownload").innerText;
+            const midodownload = +document.querySelector(".midodownload").innerText;
+            const whyreddownload = +document.querySelector(".whyreddownload").innerText;
+            const violetdownload = +document.querySelector(".violetdownload").innerText;
+            const note8tdownload = +document.querySelector(".note8tdownload").innerText;
 
-        // percentage devices
-        const percentagex00t = document.querySelector(".percentagex00t");
-        const percentagenexus = document.querySelector(".percentagenexus");
-        const percentages2 = document.querySelector(".percentages2");
-        const percentagem1928 = document.querySelector(".percentagem1928");
-        const percentagem1882 = document.querySelector(".percentagem1882");
-        const percentagem1872 = document.querySelector(".percentagem1872");
-        const percentageocean = document.querySelector(".percentageocean");
-        const percentageriver = document.querySelector(".percentageriver");
-        const percentagesanders = document.querySelector(".percentagesanders");
-        const percentagemerlin = document.querySelector(".percentagemerlin");
-        const percentagecph1859 = document.querySelector(".percentagecph1859");
-        const percentages8 = document.querySelector(".percentages8");
-        const percentages8p = document.querySelector(".percentages8p");
-        const percentagenote8 = document.querySelector(".percentagenote8");
-        const percentagemi6x = document.querySelector(".percentagemi6x");
-        const percentagepocof1 = document.querySelector(".percentagepocof1");
-        const percentageriva = document.querySelector(".percentageriva");
-        const percentagemido = document.querySelector(".percentagemido");
-        const percentagewhyred = document.querySelector(".percentagewhyred");
-        const percentageviolet = document.querySelector(".percentageviolet");
+            console.log(violetdownload);
 
-        // console.log(+totaldownload.innerText)
-        console.log((x00tdownload / totaldownload) * 100)
-        // console.log(totaldownload.innerText)
-        // percentagex00t.innerHTML = `${(x00tdownload / totaldownload) * 100}`
-        percentagex00t.innerHTML = `${((x00tdownload / totaldownload) * 100).toFixed(3)}`
-        percentagenexus.innerHTML = `${((nexusdownload / totaldownload) * 100).toFixed(3)}`
-        percentages2.innerHTML = `${((s2download / totaldownload) * 100).toFixed(3)}`
-        percentagem1928.innerHTML = `${((m1928download / totaldownload) * 100).toFixed(3)}`
-        percentagem1882.innerHTML = `${((m1882download / totaldownload) * 100).toFixed(3)}`
-        percentagem1872.innerHTML = `${((m1872download / totaldownload) * 100).toFixed(3)}`
-        percentageocean.innerHTML = `${((oceandownload / totaldownload) * 100).toFixed(3)}`
-        percentageriver.innerHTML = `${((riverdownload / totaldownload) * 100).toFixed(3)}`
-        percentagesanders.innerHTML = `${((sandersdownload / totaldownload) * 100).toFixed(3)}`
-        percentagemerlin.innerHTML = `${((merlindownload / totaldownload) * 100).toFixed(3)}`
-        percentagecph1859.innerHTML = `${((cph1859download / totaldownload) * 100).toFixed(3)}`
-        percentages8.innerHTML = `${((s8download / totaldownload) * 100).toFixed(3)}`
-        percentages8p.innerHTML = `${((s8pdownload / totaldownload) * 100).toFixed(3)}`
-        percentagenote8.innerHTML = `${((note8download / totaldownload) * 100).toFixed(3)}`
-        percentagemi6x.innerHTML = `${((mi6xdownload / totaldownload) * 100).toFixed(3)}`
-        percentagepocof1.innerHTML = `${((pocof1download / totaldownload) * 100).toFixed(3)}`
-        percentageriva.innerHTML = `${((rivadownload / totaldownload) * 100).toFixed(3)}`
-        percentagemido.innerHTML = `${((midodownload / totaldownload) * 100).toFixed(3)}`
-        percentagewhyred.innerHTML = `${((whyreddownload / totaldownload) * 100).toFixed(3)}`
-        percentageviolet.innerHTML = `${((violetdownload / totaldownload) * 100).toFixed(3)}`
+            // percentage devices
+            const percentagex00t = document.querySelector(".percentagex00t");
+            const percentagenexus = document.querySelector(".percentagenexus");
+            const percentages2 = document.querySelector(".percentages2");
+            const percentagem1928 = document.querySelector(".percentagem1928");
+            const percentagem1882 = document.querySelector(".percentagem1882");
+            const percentagem1872 = document.querySelector(".percentagem1872");
+            const percentageocean = document.querySelector(".percentageocean");
+            const percentageriver = document.querySelector(".percentageriver");
+            const percentagesanders = document.querySelector(".percentagesanders");
+            const percentagemerlin = document.querySelector(".percentagemerlin");
+            const percentageoneplus3 = document.querySelector(".percentageoneplus3");
+            const percentagecph1859 = document.querySelector(".percentagecph1859");
+            const percentages8 = document.querySelector(".percentages8");
+            const percentages8p = document.querySelector(".percentages8p");
+            const percentagenote8 = document.querySelector(".percentagenote8");
+            const percentagemi6x = document.querySelector(".percentagemi6x");
+            const percentagepocof1 = document.querySelector(".percentagepocof1");
+            const percentageriva = document.querySelector(".percentageriva");
+            const percentagemido = document.querySelector(".percentagemido");
+            const percentagewhyred = document.querySelector(".percentagewhyred");
+            const percentageviolet = document.querySelector(".percentageviolet");
+            const percentagenote8t = document.querySelector(".percentagenote8t");
 
-    }, 3000);
+            // console.log(+totaldownload.innerText)
+            console.log((x00tdownload / totaldownload) * 100)
+            // console.log(totaldownload.innerText)
+            // percentagex00t.innerHTML = `${(x00tdownload / totaldownload) * 100}`
+            percentagex00t.innerHTML = `${((x00tdownload / totaldownload) * 100).toFixed(3)}`
+            percentagenexus.innerHTML = `${((nexusdownload / totaldownload) * 100).toFixed(3)}`
+            percentages2.innerHTML = `${((s2download / totaldownload) * 100).toFixed(3)}`
+            percentagem1928.innerHTML = `${((m1928download / totaldownload) * 100).toFixed(3)}`
+            percentagem1882.innerHTML = `${((m1882download / totaldownload) * 100).toFixed(3)}`
+            percentagem1872.innerHTML = `${((m1872download / totaldownload) * 100).toFixed(3)}`
+            percentageocean.innerHTML = `${((oceandownload / totaldownload) * 100).toFixed(3)}`
+            percentageriver.innerHTML = `${((riverdownload / totaldownload) * 100).toFixed(3)}`
+            percentagesanders.innerHTML = `${((sandersdownload / totaldownload) * 100).toFixed(3)}`
+            percentagemerlin.innerHTML = `${((merlindownload / totaldownload) * 100).toFixed(3)}`
+            percentageoneplus3.innerHTML = `${((oneplus3download / totaldownload) * 100).toFixed(3)}`
+            percentagecph1859.innerHTML = `${((cph1859download / totaldownload) * 100).toFixed(3)}`
+            percentages8.innerHTML = `${((s8download / totaldownload) * 100).toFixed(3)}`
+            percentages8p.innerHTML = `${((s8pdownload / totaldownload) * 100).toFixed(3)}`
+            percentagenote8.innerHTML = `${((note8download / totaldownload) * 100).toFixed(3)}`
+            percentagemi6x.innerHTML = `${((mi6xdownload / totaldownload) * 100).toFixed(3)}`
+            percentagepocof1.innerHTML = `${((pocof1download / totaldownload) * 100).toFixed(3)}`
+            percentageriva.innerHTML = `${((rivadownload / totaldownload) * 100).toFixed(3)}`
+            percentagemido.innerHTML = `${((midodownload / totaldownload) * 100).toFixed(3)}`
+            percentagewhyred.innerHTML = `${((whyreddownload / totaldownload) * 100).toFixed(3)}`
+            percentageviolet.innerHTML = `${((violetdownload / totaldownload) * 100).toFixed(3)}`
+            percentagenote8t.innerHTML = `${((note8tdownload / totaldownload) * 100).toFixed(3)}`
+
+        }, 3000);
     </script>
     <script>
     </script>
