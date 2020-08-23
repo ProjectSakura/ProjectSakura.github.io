@@ -355,3 +355,21 @@ async function getData22() {
 }
 getData22();
 
+const url23 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/ginkgo.json";
+async function getData23() {
+    const response = await fetch(url23);
+    const data = await response.json();
+    // console.log(data.response[0]);
+    const li1 = document.querySelector('#ans76');
+    const li2 = document.querySelector('#ans77');
+    const li3 = document.querySelector('#ans78');
+    // console.log(li1);
+    console.log(data.response[0].url)
+    const button1 = document.querySelector('.buttton23');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+
+}
+getData23();
