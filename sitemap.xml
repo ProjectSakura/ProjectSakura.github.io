@@ -6,50 +6,54 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://projectsakura.xyz/</loc>
-  <lastmod>2020-08-06T15:36:40+00:00</lastmod>
+  <lastmod>2020-08-23T11:16:21+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/download.html</loc>
-  <lastmod>2020-08-06T15:36:40+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2020-08-23T11:16:21+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/blog.html</loc>
-  <lastmod>2020-08-06T15:36:40+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2020-08-23T11:16:21+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/stats.html</loc>
-  <lastmod>2020-08-06T15:36:40+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2020-08-23T11:16:21+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://projectsakura.xyz/posts/august-2020-update.html</loc>
+  <lastmod>2020-08-23T11:16:21+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/july-2020-update.html</loc>
-  <lastmod>2020-08-06T15:36:40+00:00</lastmod>
+  <lastmod>2020-08-23T11:16:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/second-update-of-june-2020.html</loc>
-  <lastmod>2020-08-06T15:36:40+00:00</lastmod>
+  <lastmod>2020-08-23T11:16:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/maintainership.html</loc>
-  <lastmod>2020-08-06T15:36:40+00:00</lastmod>
+  <lastmod>2020-08-23T11:16:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/may-2020-update.html</loc>
-  <lastmod>2020-08-06T15:36:40+00:00</lastmod>
+  <lastmod>2020-08-23T11:16:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/oursponsor.html</loc>
-  <lastmod>2020-08-06T15:36:40+00:00</lastmod>
+  <lastmod>2020-08-23T11:16:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
