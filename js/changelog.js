@@ -20,7 +20,8 @@ var btn19 = $(".show-modal19")
 var btn20 = $(".show-modal20")
 var btn21 = $(".show-modal21")
 var btn22 = $(".show-modal22")
-
+var btn23 = $(".show-modal23")
+var btn24 = $(".show-modal24")
 
 
 var mainbutton = $(".mainbutton")
@@ -475,6 +476,46 @@ btn22.click(async () => {
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "XIAOMI REDMI NOTE 8/8T";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_ginkgo.txt'
+        const response = await fetch(url1);
+
+        const data = await response.text();
+        const para = document.querySelector(".data-modal");
+        para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
+
+    }
+    await showmodal1()
+})
+
+btn23.click(async () => {
+
+    async function showmodal1() {
+        $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
+        const mobile_name = document.querySelector(".mobile_name");
+        mobile_name.innerText = "GOOGLE PIXEL";
+        const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_sailfish.txt'
+        const response = await fetch(url1);
+
+        const data = await response.text();
+        const para = document.querySelector(".data-modal");
+        para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
+
+    }
+    await showmodal1()
+})
+
+btn24.click(async () => {
+
+    async function showmodal1() {
+        $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
+        const mobile_name = document.querySelector(".mobile_name");
+        mobile_name.innerText = "GOOGLE PIXEL XL";
+        const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_marlin.txt'
         const response = await fetch(url1);
 
         const data = await response.text();

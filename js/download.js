@@ -373,3 +373,41 @@ async function getData23() {
 
 }
 getData23();
+
+const url24 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/sailfish.json";
+async function getData24() {
+    const response = await fetch(url24);
+    const data = await response.json();
+    // console.log(data.response[0]);
+    const li1 = document.querySelector('#ans79');
+    const li2 = document.querySelector('#ans80');
+    const li3 = document.querySelector('#ans81');
+    // console.log(li1);
+    console.log(data.response[0].url)
+    const button1 = document.querySelector('.buttton24');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+
+}
+getData24();
+
+const url25 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/marlin.json";
+async function getData25() {
+    const response = await fetch(url25);
+    const data = await response.json();
+    // console.log(data.response[0]);
+    const li1 = document.querySelector('#ans82');
+    const li2 = document.querySelector('#ans83');
+    const li3 = document.querySelector('#ans84');
+    // console.log(li1);
+    console.log(data.response[0].url)
+    const button1 = document.querySelector('.buttton25');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+
+}
+getData25();
