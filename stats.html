@@ -152,6 +152,11 @@ and is wrapped around the whole page content, except for the footer in this exam
                                 <td class="percentagex00t">Percentage</td>
                             </tr>
                             <tr>
+                                <td>GOOGLE PIXEL</td>
+                                <td class="pixeldownload">Loading..</td>
+                                <td class="percentagepixel">Percentage</td>
+                            </tr>
+                            <tr>
                                 <td>HUAWEI NEXUS 6P</td>
                                 <td class="nexusdownload">Loading..</td>
                                 <td class="percentagenexus">Percentage</td>
@@ -326,9 +331,10 @@ and is wrapped around the whole page content, except for the footer in this exam
             preloader.style.display = "none";
 
             const totaldownload = +document.querySelector(".totaldownload").innerText;
-            console.log(totaldownload);
+            // console.log(totaldownload);
             //devices
             const x00tdownload = +document.querySelector(".x00tdownload").innerText;
+            const pixeldownload = +document.querySelector(".pixeldownload").innerText;
             const nexusdownload = +document.querySelector(".nexusdownload").innerText;
             const s2download = +document.querySelector(".s2download").innerText;
             const m1928download = +document.querySelector(".m1928download").innerText;
@@ -351,10 +357,11 @@ and is wrapped around the whole page content, except for the footer in this exam
             const violetdownload = +document.querySelector(".violetdownload").innerText;
             const note8tdownload = +document.querySelector(".note8tdownload").innerText;
 
-            console.log(violetdownload);
-
+            // console.log(violetdownload);
+            // 
             // percentage devices
             const percentagex00t = document.querySelector(".percentagex00t");
+            const percentagepixel = document.querySelector(".percentagepixel");
             const percentagenexus = document.querySelector(".percentagenexus");
             const percentages2 = document.querySelector(".percentages2");
             const percentagem1928 = document.querySelector(".percentagem1928");
@@ -377,11 +384,9 @@ and is wrapped around the whole page content, except for the footer in this exam
             const percentageviolet = document.querySelector(".percentageviolet");
             const percentagenote8t = document.querySelector(".percentagenote8t");
 
-            // console.log(+totaldownload.innerText)
-            console.log((x00tdownload / totaldownload) * 100)
-            // console.log(totaldownload.innerText)
-            // percentagex00t.innerHTML = `${(x00tdownload / totaldownload) * 100}`
+
             percentagex00t.innerHTML = `${((x00tdownload / totaldownload) * 100).toFixed(3)}`
+            percentagepixel.innerHTML = `${((pixeldownload / totaldownload) * 100).toFixed(3)}`
             percentagenexus.innerHTML = `${((nexusdownload / totaldownload) * 100).toFixed(3)}`
             percentages2.innerHTML = `${((s2download / totaldownload) * 100).toFixed(3)}`
             percentagem1928.innerHTML = `${((m1928download / totaldownload) * 100).toFixed(3)}`
@@ -403,7 +408,6 @@ and is wrapped around the whole page content, except for the footer in this exam
             percentagewhyred.innerHTML = `${((whyreddownload / totaldownload) * 100).toFixed(3)}`
             percentageviolet.innerHTML = `${((violetdownload / totaldownload) * 100).toFixed(3)}`
             percentagenote8t.innerHTML = `${((note8tdownload / totaldownload) * 100).toFixed(3)}`
-
         }, 3000);
     </script>
     <script>
