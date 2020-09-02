@@ -369,3 +369,14 @@ async function getPixelData() {
 
 }
 getPixelData();
+const url24 =
+    "https://sourceforge.net/projects/projectsakura/files/jasmine/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+async function getA2Data() {
+    const response5 = await fetch(url23);
+    const data5 = await response5.json();
+    let total = data5.total;
+    const span = document.querySelector(".jasminedownload")
+    span.innerHTML = `${(total)}`;
+
+}
+getA2Data();

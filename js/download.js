@@ -411,3 +411,23 @@ async function getData25() {
 
 }
 getData25();
+
+
+const url27 = "https://raw.githubusercontent.com/ProjectSakura/OTA/10/jasmine.json";
+async function getData27() {
+    const response = await fetch(url27);
+    const data = await response.json();
+    // console.log(data.response[0]);
+    const li1 = document.querySelector('#ans85');
+    const li2 = document.querySelector('#ans86');
+    const li3 = document.querySelector('#ans87');
+    // console.log(li1);
+    console.log(data.response[0].url)
+    const button1 = document.querySelector('.buttton27');
+    li1.innerHTML = data.response[0].filename;
+    li2.innerHTML = Math.ceil(data.response[0].size / 1024 / 1024) + "MB";
+    li3.innerHTML = data.response[0].id;
+    button1.href = data.response[0].url;
+
+}
+getData27();

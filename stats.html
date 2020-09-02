@@ -242,6 +242,11 @@ and is wrapped around the whole page content, except for the footer in this exam
                                 <td class="percentageriva">Percentage</td>
                             </tr>
                             <tr>
+                                <td>XIAOMI REDMI A2</td>
+                                <td class="jasminedownload">Loading..</td>
+                                <td class="percentagejasmine">Percentage</td>
+                            </tr>
+                            <tr>
                                 <td>XIAOMI REDMI NOTE 4</td>
                                 <td class="midodownload">Loading..</td>
                                 <td class="percentagemido">Percentage</td>
@@ -352,6 +357,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             const mi6xdownload = +document.querySelector(".mi6xdownload").innerText;
             const pocof1download = +document.querySelector(".pocof1download").innerText;
             const rivadownload = +document.querySelector(".rivadownload").innerText;
+            const jasminedownload = +document.querySelector(".jasminedownload").innerText;
             const midodownload = +document.querySelector(".midodownload").innerText;
             const whyreddownload = +document.querySelector(".whyreddownload").innerText;
             const violetdownload = +document.querySelector(".violetdownload").innerText;
@@ -379,6 +385,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             const percentagemi6x = document.querySelector(".percentagemi6x");
             const percentagepocof1 = document.querySelector(".percentagepocof1");
             const percentageriva = document.querySelector(".percentageriva");
+            const percentagejasmine = document.querySelector(".percentagejasmine");
             const percentagemido = document.querySelector(".percentagemido");
             const percentagewhyred = document.querySelector(".percentagewhyred");
             const percentageviolet = document.querySelector(".percentageviolet");
@@ -404,6 +411,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             percentagemi6x.innerHTML = `${((mi6xdownload / totaldownload) * 100).toFixed(3)}`
             percentagepocof1.innerHTML = `${((pocof1download / totaldownload) * 100).toFixed(3)}`
             percentageriva.innerHTML = `${((rivadownload / totaldownload) * 100).toFixed(3)}`
+            percentagejasmine.innerHTML = `${((jasminedownload / totaldownload) * 100).toFixed(3)}`
             percentagemido.innerHTML = `${((midodownload / totaldownload) * 100).toFixed(3)}`
             percentagewhyred.innerHTML = `${((whyreddownload / totaldownload) * 100).toFixed(3)}`
             percentageviolet.innerHTML = `${((violetdownload / totaldownload) * 100).toFixed(3)}`
