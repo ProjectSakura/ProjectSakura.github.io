@@ -22,6 +22,8 @@ var btn21 = $(".show-modal21")
 var btn22 = $(".show-modal22")
 var btn23 = $(".show-modal23")
 var btn24 = $(".show-modal24")
+var btn27 = $(".show-modal27")
+
 
 
 var mainbutton = $(".mainbutton")
@@ -516,6 +518,25 @@ btn24.click(async () => {
         const mobile_name = document.querySelector(".mobile_name");
         mobile_name.innerText = "GOOGLE PIXEL XL";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_marlin.txt'
+        const response = await fetch(url1);
+
+        const data = await response.text();
+        const para = document.querySelector(".data-modal");
+        para.innerText = data
+        document.querySelector(".modal_body").style.marginTop = '80px'
+
+    }
+    await showmodal1()
+})
+btn27.click(async () => {
+
+    async function showmodal1() {
+        $("#testmodal").modal('show');
+        const rating = document.querySelector(".rating");
+        rating.innerText = ``;
+        const mobile_name = document.querySelector(".mobile_name");
+        mobile_name.innerText = "XIAOMI REDMI A2";
+        const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_jasmine.txt'
         const response = await fetch(url1);
 
         const data = await response.text();
