@@ -535,7 +535,7 @@ btn27.click(async () => {
         const rating = document.querySelector(".rating");
         rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name");
-        mobile_name.innerText = "XIAOMI REDMI A2";
+        mobile_name.innerText = "XIAOMI MI A2";
         const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_jasmine.txt'
         const response = await fetch(url1);
 
