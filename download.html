@@ -68,6 +68,52 @@
         .paypal_us:focus {
             background-color: white;
         }
+
+        .progressbar {
+            display: flex;
+            /* position: relative; */
+            height: 10px;
+            width: 30%;
+            background: linear-gradient(90deg, red 20%, #e7edf4 0%);
+            border-radius: 20px;
+            margin: 0 0;
+            gap: 0px;
+        }
+
+        /* .tag {
+
+            height: 30px;
+            width: 30px;
+            background-color: white;
+            margin-bottom: -10px;
+        } */
+
+        .reached {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0px;
+        }
+
+        .target_box {
+            /* z-index: 1000; */
+            display: flex;
+            height: 40px;
+            width: 60px;
+            border-radius: 5px;
+            background-color: #525961;
+            gap: 0px;
+            margin-left: -10px;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        @media (max-width: 568px) {
+            .progressbar {
+                width: 80%;
+            }
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
@@ -110,11 +156,12 @@
             <div class="row">
                 <div class="card sakura-light-bg z-depth-3">
                     <div class="card-content">
-                        <span class="card-title">Please consider donating! 🙏</span>
-                        <h6>We don't show any ads or shorten any links. Last month Project Sakura got $3 in donations,
-                            We are grateful to everyone who donated. You can use liberapay or Buy Me a Coffee.☕️</h6>
-                        <br>
                         <center>
+                            <span class="card-title">Please consider donating! 🙏</span>
+                            <h6>Project Sakura got $6 of donation this month but its not enough to help us sustain.
+                                Please donate us.</h6>
+                            <br>
+
                             <!-- <a class="bmc-button btn44" target="_blank" href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">
                                 <img style="height:30px;"
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/186px-PayPal.svg.png"
@@ -132,6 +179,15 @@
                                     alt="Buy me a coffee">
                                 <span style="margin-left:5px;font-size:15px !important;">Buy me a coffee</span>
                             </a>
+                            <h6>Please donate us to reach our goal
+                            </h6>
+                            <div class="donation_box">
+                                <div class="tag"></div>
+                                <div class="reached">
+                                    <div class="progressbar"></div>
+                                    <div class="target_box">30$</div>
+                                </div>
+                            </div>
                         </center>
                     </div>
                 </div>
