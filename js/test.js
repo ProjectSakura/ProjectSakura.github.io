@@ -32,8 +32,6 @@ const fifty = data.devices.map(async (device) => {
 
         const response = await fetch("https://raw.githubusercontent.com/ProjectSakura/OTA/10/" + device.alternate_name + ".json");
         const jsonData = await response.json();
-        // console.log(jsonData)
-
         li.innerHTML = `
     
     <div class="collapsible-header collapsible-noborder sakura-lighter-bg" style="width:100%;">
@@ -97,7 +95,6 @@ const fifty = data.devices.map(async (device) => {
 Promise.allSettled(fifty).
     then((results) => results.forEach((result) => {
         try {
-            // console.log(result.value)
             ul.appendChild(result.value)
         } catch (e) {
             console.log(error);
@@ -106,7 +103,7 @@ Promise.allSettled(fifty).
 
 const myFunction = setInterval(() => {
     var btn2 = document.querySelectorAll(".show-modal");
-    console.log(btn2)
+    
     btn2.forEach(async (item, index) => {
         item.addEventListener("click", async () => {
             async function showmodal1() {
