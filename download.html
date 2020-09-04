@@ -114,6 +114,14 @@
                 width: 80%;
             }
         }
+
+        #loading {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: black url(./image/loader1.gif) no-repeat center;
+            z-index: 9999;
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
@@ -126,8 +134,11 @@
     </script>
 </head>
 
-<body class="sakura">
-    <div class="navbar-fixed">
+<body class="sakura" onload="myFunction23()">
+    <div id="loading">
+    </div>
+
+    <div class=" navbar-fixed">
         <nav>
             <div class="nav-wrapper sakura-light-bg">
                 <a href="https://ProjectSakura.github.io/" class="brand-logo"><img src="image/logo.png"
@@ -151,85 +162,83 @@
         <li class="text-uppercase"><a href="https://t.me/ProjectSakura">Telegram</a></li>
     </ul>
 
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="card sakura-light-bg z-depth-3">
-                    <div class="card-content">
-                        <center>
-                            <span class="card-title">Please consider donating! 🙏</span>
-                            <h6>Project Sakura got $6 of donation this month but its not enough to help us sustain.
-                                Please donate us.</h6>
-                            <br>
 
-                            <!-- <a class="bmc-button btn44" target="_blank" href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">
+    <div class="container">
+        <div class="row">
+            <div class="card sakura-light-bg z-depth-3">
+                <div class="card-content">
+                    <center>
+                        <span class="card-title">Please consider donating! 🙏</span>
+                        <h6>Project Sakura got $6 of donation this month but its not enough to help us sustain.
+                            Please donate us.</h6>
+                        <br>
+
+                        <!-- <a class="bmc-button btn44" target="_blank" href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">
                                 <img style="height:30px;"
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/186px-PayPal.svg.png"
                                     alt="Support us via PayPal">
                                 <span style="margin-left:5px;font-size:15px !important;">Support us via PayPal</span>
                             </a> -->
-                            <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">
-                                <button class="paypal_us" href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg">
-                                </button>
-                            </a>
-                            <p>Or</p>
-                            <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/lBUDKgM">
-                                <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-                                    alt="Buy me a coffee">
-                                <span style="margin-left:5px;font-size:15px !important;">Buy me a coffee</span>
-                            </a>
-                            <h6>Please donate us to reach our goal
-                            </h6>
-                            <div class="donation_box">
-                                <div class="tag"></div>
-                                <div class="reached">
-                                    <div class="progressbar"></div>
-                                    <div class="target_box">30$</div>
-                                </div>
-                            </div>
-                        </center>
-                    </div>
-                </div>
-                <div class="card sakura-light-bg z-depth-3">
-                    <div class="card-content">
-                        <div class="official-devices">
-                            <span class="card-title" style="margin-bottom:0px;">OFFICIAL DEVICES</span>
-                            <button class="primary download mainbutton" style="border:0px;">
-                                CHANGE LOG >>
+                        <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">
+                            <button class="paypal_us" href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg">
                             </button>
+                        </a>
+                        <p>Or</p>
+                        <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/lBUDKgM">
+                            <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee">
+                            <span style="margin-left:5px;font-size:15px !important;">Buy me a coffee</span>
+                        </a>
+                        <h6>Please donate us to reach our goal
+                        </h6>
+                        <div class="donation_box">
+                            <div class="tag"></div>
+                            <div class="reached">
+                                <div class="progressbar"></div>
+                                <div class="target_box">$30</div>
+                            </div>
                         </div>
-                        <!--Modal -->
-                        <div class="main_modal123">
-                            <div id="testmodal" class="modal fade">
-                                <div class="close-button ">
-                                    <div class="mobile_rating">
-                                        <div class="mobile_name">
-                                        </div>
-                                        <div class="rating">
-
-                                        </div>
+                    </center>
+                </div>
+            </div>
+            <div class="card sakura-light-bg z-depth-3">
+                <div class="card-content">
+                    <div class="official-devices">
+                        <span class="card-title" style="margin-bottom:0px;">OFFICIAL DEVICES</span>
+                        <button class="primary download mainbutton" style="border:0px;">
+                            CHANGE LOG >>
+                        </button>
+                    </div>
+                    <!--Modal -->
+                    <div class="main_modal123">
+                        <div id="testmodal" class="modal fade">
+                            <div class="close-button ">
+                                <div class="mobile_rating">
+                                    <div class="mobile_name">
                                     </div>
-                                    <button type="button" class="btn btn-default button-X"
-                                        data-dismiss="modal">X</button>
+                                    <div class="rating">
+
+                                    </div>
                                 </div>
-                                <div class="around">
-                                    <div class="modal_body">
-                                        <div class="data-modal" style="font-size:17px">
-                                        </div>
+                                <button type="button" class="btn btn-default button-X" data-dismiss="modal">X</button>
+                            </div>
+                            <div class="around">
+                                <div class="modal_body">
+                                    <div class="data-modal" style="font-size:17px">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <input onkeyup="filter()" id="search123" type="text" placeholder="Search ...">
-                        <ul id="search-ul" class="collapsible sakura-lighter-bg collapsible-noborder">
-
-                        </ul>
                     </div>
+                    <input onkeyup="filter()" id="search123" type="text" placeholder="Search ...">
+                    <ul id="search-ul" class="collapsible sakura-lighter-bg collapsible-noborder">
+
+                    </ul>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+
     <footer class="page-footer sakura-light-bg">
         <div class="container">
             <div class="row">
@@ -302,6 +311,12 @@
             }
             await showmodal1()
         }
+    </script>
+    <script>
+        var preloader = document.getElementById('loading');
+        const myFunction23 = setInterval(() => {
+            preloader.style.display = "none";
+        }, 2000)
     </script>
 </body>
 
