@@ -73,7 +73,7 @@ const fifty = data.devices.map(async (device) => {
     <div class="collapsible-body collapsible-noborder sakura-midlight-bg">
         <span>Maintainer:</span>
         <div class="chip sakura-lighter-bg" style="margin-left:4px">${device.name}</div><br />
-        <h1>Not available right now,We are working on it</h1>
+        <h3>Not available right now,We are working on it</h3>
         <button class="primary download">
             <a href="" onClick="helllo()">Download</a>
 
@@ -88,8 +88,11 @@ const fifty = data.devices.map(async (device) => {
 })
 
 
-
-
+var preloader = document.getElementById('loading');
+const myFunction23 = setInterval(() => {
+    preloader.style.display = "none";
+}, 1)
+fifty.push(myFunction23)
 
 
 Promise.allSettled(fifty).
@@ -97,13 +100,15 @@ Promise.allSettled(fifty).
         try {
             ul.appendChild(result.value)
         } catch (e) {
-            console.log(error);
+            console.log(e);
         }
     }));
 
+
+
 const myFunction = setInterval(() => {
     var btn2 = document.querySelectorAll(".show-modal");
-    
+
     btn2.forEach(async (item, index) => {
         item.addEventListener("click", async () => {
             async function showmodal1() {
