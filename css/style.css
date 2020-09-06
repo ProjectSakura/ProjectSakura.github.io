@@ -1,47 +1,3 @@
-/*!
- *
- *   Project Sakura && Resurrection Remix Website
- *
- *   Copyright (C) 2013 Inbetwin Network
- *   Copyright (C) 2014 Shubhang Rathore
- *   Copyright (C) 2020 Project Sakura
- *
- *   This program is free software: you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation, either version 3 of the License, or
- *   any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- *  */
-
-
-/*
-===========================
-CONTENTS:
-
-01 Sensible defaults
-02 Typography
-03 Non-semantic
-04 Navbar
-05 Single-Page Sections
-06 Footer
-07 Bootstrap Carousel
-08 Buttons
-09 Media queries
-===========================
-*/
-
-
-/* ----------------------------------------------------------------------------------------------------------
-01 Sensible defaults ----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
 
 div, article, section, header, footer, nav, li {
     position: relative;
@@ -90,23 +46,6 @@ input, button, select, textarea {
     font-family: 'Roboto Condensed', monospace;
 }
 
-
-/* ----------------------------------------------------------------------------------------------------------
-02 Typography -----------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-
-
-/*
-
-14 / 16	= 		0.875em 		(14px equivalent)
-16 / 16	= 		1em 			(16px equivalent)
-18 / 16 = 		1.125em 		(18px equivalent)
-21 / 16 = 		1.3125em 		(21px equivalent)
-24 / 16 = 		1.5em 			(24px equivalent)
-30 / 16 = 		1.875em 		(30px equivalent)
-
-*/
-
 p {
     font-size: 1em;
     /* 16px */
@@ -122,7 +61,6 @@ ul, ol {
     /* 24px */
     margin: 0 0 1.5em 0;
 }
-
 
 
 a:link, a:visited {
@@ -272,11 +210,6 @@ em {
 /* ----------------------------------------------------------------------------------------------------------
 04 Navbar ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
-
-/* .navbar-fixed-top .container { */
-    /* Uncomment to make nav expand full width */
-    /*	width: auto; */
-/* } */
 
 .navbar .brand {
     margin-left: 0;
@@ -637,6 +570,8 @@ section#testimonials .blockquote-wrapper {
     height: 647px;
 }
 
+blockquote.mega {}
+
 blockquote.mega p {
     font-size: 45px;
     line-height: 50px;
@@ -983,6 +918,11 @@ footer p {
     font-size: 0.65em;
 }
 
+#banner.carousel .item {}
+
+#banner.carousel img {}
+
+#banner.carousel .carousel-control {}
 
 
 /* ----------------------------------------------------------------------------------------------------------
@@ -1029,18 +969,15 @@ footer p {
 
 .row123{
     display:grid;
-    width: 103%;
+    width: 100%;
     /* align-items: center; */
     justify-content:center;
-    margin-left:-3%;
 }
 .sakura123{
-    margin-left: 0%;
+    margin-left: 10%;
 }
 @media (max-width: 568px) {
-    .row123{
-        margin-left:0%;
-    }
+
     .sakura123{
         margin-left:0%
     }
@@ -1125,7 +1062,7 @@ footer p {
         margin-left: -20px;
         margin-right: -20px;
     }
-   
+    .carousel .container {}
     .carousel-caption {
         width: 65%;
         padding: 0 70px;
@@ -1166,7 +1103,6 @@ footer p {
         margin-top: 1em;
         width: 135px;
     }
-    
     #team .team-thumb {
         margin-right: auto;
         margin-left: auto;
@@ -1198,12 +1134,16 @@ footer p {
     #navbar-inner {
         margin: 0;
     }
-  
+    #banner {
+        /*display: none;*/
+    }
     section.single-page {
         padding: 1em 0;
     }
     /* Feature */
-    
+    #feature-badge {
+        /*	display: none; */
+    }
     /* Screenshots & Downloads */
     #downloads h1 {
         background: transparent;
@@ -1250,7 +1190,7 @@ footer p {
         text-align: center;
     }
     /* Testimonials */
-    
+  
     /* team */
     #team .team-thumb {
         margin-right: auto;
@@ -1337,4 +1277,3 @@ footer p {
 @media only screen and (min-width: 1224px) {
     /* Styles */
 }
-
