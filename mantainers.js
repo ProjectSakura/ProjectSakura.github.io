@@ -205,7 +205,7 @@ const data = {
         ,
         {
             "name": "A9ito",
-            "device_name": "Xiaomi Redmi Note 9 Pro",
+            "device_name": "XIAOMI REDMI NOTE 9 PRO (GLOBAL ONLY)",
             "alternate_name": "joyeuse",
             "IsDropped": "",
             "droppedMessage": ""

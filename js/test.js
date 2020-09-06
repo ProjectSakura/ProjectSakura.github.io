@@ -122,7 +122,9 @@ const myFunction = setInterval(() => {
                 const data1 = await response1.text();
                 const para = document.querySelector(".data-modal");
                 para.innerText = data1
-                document.querySelector(".modal_body").style.marginTop = '80px'
+                document.querySelector(".modal_body").style.marginTop = '80px';
+                
+
             }
             await showmodal1()
         })
