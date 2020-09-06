@@ -49,7 +49,7 @@
         }
 
         .paypal_us {
-            width: 200px;
+            width: 150px;
             outline: 0;
             border-radius: 20px;
             height: 40px;
@@ -122,6 +122,34 @@
             background: black url(./image/loader1.gif) no-repeat center;
             z-index: 9999;
         }
+
+        .donation_div {
+            display: flex;
+            width: 350px;
+            margin: 0 auto;
+
+        }
+
+        .donation_or {
+            /* width: 1%; */
+            display: flex;
+            align-items: center;
+            padding-left: 7px
+        }
+
+        @media (max-width: 568px) {
+            .donation_div {
+                width: 175px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .donation_or {
+                text-align: center;
+                display: flex;
+                margin: 0 auto;
+            }
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
@@ -172,23 +200,22 @@
                         <h6>Project Sakura got $6 of donation this month but its not enough to help us sustain.
                             Please donate us.</h6>
                         <br>
+                        <div class="donation_div">
+                            <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB" class="paypal">
+                                <button class="paypal_us" href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg">
+                                </button>
+                            </a>
+                            <div class="donation_or">Or</div>
+                            <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/lBUDKgM"
+                                class="coffee">
+                                <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+                                    alt="Buy me a coffee">
+                                <span style="margin-left:5px;font-size:15px !important;">Buy me a coffee</span>
+                            </a>
 
-                        <!-- <a class="bmc-button btn44" target="_blank" href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">
-                                <img style="height:30px;"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/186px-PayPal.svg.png"
-                                    alt="Support us via PayPal">
-                                <span style="margin-left:5px;font-size:15px !important;">Support us via PayPal</span>
-                            </a> -->
-                        <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">
-                            <button class="paypal_us" href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg">
-                            </button>
-                        </a>
-                        <p>Or</p>
-                        <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/lBUDKgM">
-                            <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee">
-                            <span style="margin-left:5px;font-size:15px !important;">Buy me a coffee</span>
-                        </a>
+                        </div>
+
                         <h6>Please donate us to reach our goal
                         </h6>
                         <div class="donation_box">
