@@ -88,11 +88,8 @@ const fifty = data.devices.map(async (device) => {
 })
 
 
-var preloader = document.getElementById('loading');
-const myFunction23 = setInterval(() => {
-    preloader.style.display = "none";
-}, 1)
-fifty.push(myFunction23)
+
+
 
 
 Promise.allSettled(fifty).
@@ -103,7 +100,10 @@ Promise.allSettled(fifty).
             console.log(e);
         }
     }));
-
+var preloader = document.getElementById('loading');
+const myFunction23 = setInterval(() => {
+    preloader.style.display = "none";
+}, 3000)
 
 
 const myFunction = setInterval(() => {
@@ -123,7 +123,7 @@ const myFunction = setInterval(() => {
                 const para = document.querySelector(".data-modal");
                 para.innerText = data1
                 document.querySelector(".modal_body").style.marginTop = '80px';
-                
+
 
             }
             await showmodal1()
