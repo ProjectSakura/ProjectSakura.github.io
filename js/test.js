@@ -100,10 +100,7 @@ Promise.allSettled(fifty).
             console.log(e);
         }
     }));
-var preloader = document.getElementById('loading');
-const myFunction23 = setInterval(() => {
-    preloader.style.display = "none";
-}, 3000)
+
 
 
 const myFunction = setInterval(() => {
