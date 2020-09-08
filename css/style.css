@@ -149,9 +149,7 @@ em {
 
 .impressed {
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5),
-    /* shadow */
     1px 1px 0 rgba(255, 255, 255, 0.9);
-    /* highlight */
 }
 
 .more-link {
@@ -281,9 +279,7 @@ ul#menu-main>li>a:hover {
 /* ----------------------------------------------------------------------------------------------------------
 05 Single-Page Sections ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
-/* #headerwrap{
-    background:url(../image/bg4.jpg) #000000 no-repeat center center;
-} */
+
 
 ul.icon {
     font-size: 54px;
@@ -489,7 +485,6 @@ section#testimonials .blockquote-wrapper {
     height: 647px;
 }
 
-blockquote.mega {}
 
 blockquote.mega p {
     font-size: 45px;
@@ -837,12 +832,6 @@ footer p {
     font-size: 0.65em;
 }
 
-#banner.carousel .item {}
-
-#banner.carousel img {}
-
-#banner.carousel .carousel-control {}
-
 
 /* ----------------------------------------------------------------------------------------------------------
 08 Buttons ------------------------------------------------------------
@@ -981,7 +970,7 @@ footer p {
         margin-left: -20px;
         margin-right: -20px;
     }
-    .carousel .container {}
+
     .carousel-caption {
         width: 65%;
         padding: 0 70px;
@@ -1053,16 +1042,11 @@ footer p {
     #navbar-inner {
         margin: 0;
     }
-    #banner {
-        /*display: none;*/
-    }
+    
     section.single-page {
         padding: 1em 0;
     }
     /* Feature */
-    #feature-badge {
-        /*	display: none; */
-    }
     /* Screenshots & Downloads */
     #downloads h1 {
         background: transparent;
