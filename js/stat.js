@@ -100,11 +100,8 @@ const fifty = data.devices.map(async (device) => {
         return tr;
     }
 })
-var preloader = document.getElementById('loading');
-const myFunction23 = setInterval(() => {
-    preloader.style.display = "none";
-}, 1)
-fifty.push(myFunction23)
+
+
 
 Promise.allSettled(fifty).
     then((results) => results.forEach((result) => {
@@ -114,3 +111,7 @@ Promise.allSettled(fifty).
             console.log(e);
         }
     }));
+var preloader = document.getElementById('loading');
+const myFunction23 = setInterval(() => {
+    preloader.style.display = "none";
+}, 4000) 
