@@ -41,17 +41,7 @@
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <style>
-        body {
-            padding-top: 35px;
-            /* 60px to make the container go all the way to the bottom of the topbar */
-        }
 
-
-        .mask2 img {
-            opacity: 1;
-        }
-    </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <!-- Favicon -->
     <link href="image/logo.png" rel="shortcut icon">
@@ -86,6 +76,30 @@
 
         gtag('config', 'UA-173637831-1');
     </script>
+    <style>
+        body {
+            padding-top: 35px;
+            /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+
+
+        .mask2 img {
+            opacity: 1;
+        }
+
+        @media (max-width: 580px) {
+            body {
+                padding-right: 0px;
+                padding-left: 0px;
+                padding-top: 0px;
+
+            }
+
+            .navbar-inner {
+                min-height: 0em;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -94,8 +108,8 @@
     <!--******************** NAVBAR ********************-->
     <div class="navbar-wrapper">
         <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
+            <div class="navbar-inner" style="padding:25px; padding-bottom: 0px;">
+                <div class="container align_nav">
                     <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
                     <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
                         <span class="icon-bar">
@@ -154,7 +168,7 @@
     <div id="top">
     </div>
     <!-- ******************** HeaderWrap ********************-->
-    <div id="headerwrap">
+    <div id="headerwrap" style="margin-top:50px;">
         <header class="clearfix">
             <h1>
                 <img src="image/sakura.png" />
@@ -164,30 +178,32 @@
                     <div class="span12">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="span12">
-                        <ul class="icon">
-                            <li>
-                                <a href="https://t.me/ProjectSakura" target="_blank">
-                                    <i class="fa fa-telegram">
-                                    </i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/ProjectSakura_" target="_blank">
-                                    <i class="fa fa-twitter">
-                                    </i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/ProjectSakura" target="_blank">
-                                    <i class="fa fa-github">
-                                    </i>
-                                </a>
-                            </li>
-                        </ul>
+                <center>
+                    <div class="row">
+                        <div class="span12">
+                            <ul class="icon">
+                                <li>
+                                    <a href="https://t.me/ProjectSakura" target="_blank">
+                                        <i class="fa fa-telegram">
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/ProjectSakura_" target="_blank">
+                                        <i class="fa fa-twitter">
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/ProjectSakura" target="_blank">
+                                        <i class="fa fa-github">
+                                        </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                </center>
             </div>
         </header>
     </div>
