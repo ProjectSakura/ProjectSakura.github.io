@@ -1,7 +1,7 @@
 //size of game
 var Cols = 15;
 var Rows = 15;
-var BombPct = 2; // % of spaces that are bombs
+var BombPct = 1; // % of spaces that are bombs
 var GameOver = 0;
 var Score = 0;
 
