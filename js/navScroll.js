@@ -1,6 +1,4 @@
-alert("working"); 
-      
-        let anchorList = document.querySelectorAll("a.scrolltolink"); 
+              let anchorList = document.querySelectorAll("a.scrolltolink"); 
         anchorList.forEach(link => { 
             link.onclick = function (event) {
                 event.preventDefault(); 
