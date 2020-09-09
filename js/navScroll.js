@@ -1,11 +1,12 @@
-$("a.scrolltolink").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
+alert("working"); 
+      
+        let anchorList = document.querySelectorAll("a.scrolltolink"); 
+        anchorList.forEach(link => { 
+            link.onclick = function (event) {
+                event.preventDefault(); 
+                let destination = document.querySelector(this.hash);  
+                destination.scrollIntoView({ 
+                    behavior: 'smooth' 
+                }); 
+            } 
+        }); 
