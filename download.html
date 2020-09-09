@@ -154,7 +154,7 @@
             padding: 25px 30px;
             margin: 40px 30px;
             ;
-            color: blue;
+            color: #03e9f4;
             font-size: 24px;
             text-decoration: none;
             text-transform: uppercase;
@@ -165,12 +165,12 @@
         }
 
         .neon_button:hover {
-            background-color: blue;
+            background-color: #03e9f4;
             color: #050801;
-            box-shadow: 0 0 5px blue,
-                0 0 25px blue,
-                0 0 50px blue,
-                0 0 200px blue;
+            box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
         }
 
         .neon_button span {
@@ -191,7 +191,7 @@
             left: -100%;
             width: 100%;
             height: 2px;
-            background: linear-gradient(90deg, transparent, blue);
+            background: linear-gradient(90deg, transparent, #03e9f4);
             animation: animate1 1s linear infinite;
         }
 
@@ -211,7 +211,7 @@
             right: 0;
             width: 2px;
             height: 100%;
-            background: linear-gradient(180deg, transparent, blue);
+            background: linear-gradient(180deg, transparent, #03e9f4);
             animation: animate2 1s linear infinite;
             animation-delay: 0.25s;
         }
@@ -232,7 +232,7 @@
             right: -100%;
             width: 100%;
             height: 2px;
-            background: linear-gradient(270deg, transparent, blue);
+            background: linear-gradient(270deg, transparent, #03e9f4);
             animation: animate3 1s linear infinite;
             animation-delay: 0.5s;
         }
@@ -253,7 +253,7 @@
             left: 0;
             width: 2px;
             height: 100%;
-            background: linear-gradient(360deg, transparent, blue);
+            background: linear-gradient(360deg, transparent, #03e9f4);
             animation: animate4 1s linear infinite;
             animation-delay: 0.75s;
         }
@@ -301,9 +301,8 @@
     </script>
 </head>
 
-<body class="sakura" onload="myFunction23()">
-    <div id="loading">
-    </div>
+<body class="sakura">
+
 
     <div class=" navbar-fixed">
         <nav>
@@ -502,12 +501,7 @@
     <script type="text/javascript" src="js/test.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
     <script type="text/javascript" src="js/game.js"></script>
-    <script>
-        var preloader = document.getElementById('loading');
-        const myFunction23 = setInterval(() => {
-            preloader.style.display = "none";
-        }, 3000)
-    </script>
+
     <script>
         async function helllo() {
             async function showmodal1() {
