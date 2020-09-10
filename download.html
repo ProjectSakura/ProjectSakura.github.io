@@ -115,7 +115,7 @@
             position: fixed;
             width: 100%;
             height: 100vh;
-            background: black url(./image/loader1.gif) no-repeat center;
+            background: black;
             z-index: 9999;
         }
 
@@ -289,6 +289,13 @@
         .modal {
             margin: -500px auto !important;
         }
+
+        .loader_animation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
@@ -301,8 +308,14 @@
     </script>
 </head>
 
-<body class="sakura">
-
+<body class="sakura" onload="myFunction23()">
+    <div id="loading">
+        <div class="loader_animation">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="image/7646-loading-project3.json" background="transparent" speed="1"
+                style="width: 250px; height: 250px;" loop autoplay></lottie-player>
+        </div>
+    </div>
 
     <div class=" navbar-fixed">
         <nav>
@@ -501,7 +514,12 @@
     <script type="text/javascript" src="js/test.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
     <script type="text/javascript" src="js/game.js"></script>
-
+    <script>
+        var preloader = document.getElementById('loading');
+        const myFunction23 = setInterval(() => {
+            preloader.style.display = "none";
+        }, 3000)
+    </script>
     <script>
         async function helllo() {
             async function showmodal1() {
