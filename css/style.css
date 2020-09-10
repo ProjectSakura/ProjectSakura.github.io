@@ -319,7 +319,7 @@ section.single-page h1 {
 }
 
 #feature {
-    background: url("../img/yellow.png") repeat-x 0 0;
+    /* background: url("../img/yellow.png") repeat-x 0 0; */
     height: 406px;
     z-index: 500;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
@@ -511,7 +511,7 @@ blockquote.mega .cite {
 /* Downloads */
 
 section#downloads {
-    background: url("../img/grey-cardboard-bg.png") repeat 0 0;
+    /* background: url("../img/grey-cardboard-bg.png") repeat 0 0; */
 }
 
 section#downloads .align {
@@ -540,7 +540,7 @@ article .inside {
     margin: 18px 24px 24px;
     padding-top: 1em;
     padding-bottom: 1em;
-    background: url("../img/dot-row-2.png") repeat-x scroll 0 0 transparent !important;
+    /* background: url("../img/dot-row-2.png") repeat-x scroll 0 0 transparent !important; */
 }
 
 .post-date {
@@ -740,7 +740,7 @@ hr.featurette-divider {
     margin: 3em 0;
     border-width: 0;
     height: 9px;
-    background: url("../img/dot-row-3-lt.png") repeat-x;
+    /* background: url("../img/dot-row-3-lt.png") repeat-x; */
 }
 
 
