@@ -1,7 +1,7 @@
 var preloader = document.getElementById('loading');
 
 
-const NUMBER_OF_COUNTRIES = 50;
+const NUMBER_OF_COUNTRIES = 20;
 let Total__Download;
 
 function createNode(element) {
@@ -111,7 +111,3 @@ Promise.allSettled(fifty).
             console.log(e);
         }
     }));
-var preloader = document.getElementById('loading');
-const myFunction23 = setInterval(() => {
-    preloader.style.display = "none";
-}, 4000) 
