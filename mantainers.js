@@ -124,6 +124,14 @@ const data = {
         ,
         {
             "name": "Haridhayal",
+            "device_name": "SAMSUNG GALAXY M20",
+            "alternate_name": "m20lte",
+            "IsDropped": "",
+            "droppedMessage": ""
+        }
+        ,
+        {
+            "name": "Haridhayal",
             "device_name": "SAMSUNG GALAXY S8 PLUS",
             "alternate_name": "dream2lte",
             "IsDropped": "",
