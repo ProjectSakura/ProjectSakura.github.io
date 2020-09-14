@@ -92,7 +92,7 @@ const fifty = data.devices.map(async (device) => {
 
 
 
-Promise.allSettled(fifty).
+Promise.all(fifty).
     then((results) => results.forEach((result) => {
         try {
             ul.appendChild(result.value)
