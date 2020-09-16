@@ -158,7 +158,7 @@ const data = {
         {
             "name": "Roger W.",
             "device_name": "XIAOMI MI A2",
-            "alternate_name": "jasmine",
+            "alternate_name": "jasmine_sprout",
             "IsDropped": "",
             "droppedMessage": ""
         }
