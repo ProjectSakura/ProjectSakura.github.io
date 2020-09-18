@@ -90,7 +90,16 @@ const fifty = data.devices.map(async (device) => {
 
 
 
-
+Promise.allSettled = Promise.allSettled || ((promises) => Promise.all(promises.map(p => p
+    .then(v => ({
+        status: 'fulfilled',
+        value: v,
+    }))
+    .catch(e => ({
+        status: 'rejected',
+        reason: e,
+    }))
+)));
 
 Promise.allSettled(fifty).
     then((results) => results.forEach((result) => {
