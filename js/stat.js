@@ -102,12 +102,23 @@ const fifty = data.devices.map(async (device) => {
 })
 
 
-
+const data123 = [];
 Promise.allSettled(fifty).
     then((results) => results.forEach((result) => {
         try {
-            tbody.appendChild(result.value)
+            data123.push(result.value);
+            if (fifty.length == data123.length) {
+                data123.sort((a, b) => {
+
+                    return (+ b.childNodes[3].innerHTML - (+a.childNodes[3].innerHTML));
+                });
+                for (let i = 0; i < data123.length; i++) {
+                    tbody.appendChild(data123[i]);
+                }
+            }
         } catch (e) {
             console.log(e);
         }
-    }));
+    })).then();
+
+
