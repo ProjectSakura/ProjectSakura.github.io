@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: projectsakura.xyz
+Token: c8b0178cc871529d011de70c9e20424167f90845bbde2c2cf4e8b1d09d11bcf1
