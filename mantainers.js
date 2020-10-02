@@ -167,8 +167,8 @@ const data = {
             "name": "HumanGlitch",
             "device_name": "XIAOMI POCOFONE F1",
             "alternate_name": "beryllium",
-            "IsDropped": "",
-            "droppedMessage": ""
+            "IsDropped": "(SUPPORT DROPPED)",
+            "droppedMessage": "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK."
         }
         ,
         {
@@ -207,8 +207,8 @@ const data = {
             "name": "Amartya",
             "device_name": "XIAOMI REDMI NOTE 8/8T",
             "alternate_name": "ginkgo",
-            "IsDropped": "",
-            "droppedMessage": ""
+            "IsDropped": "(SUPPORT DROPPED)",
+            "droppedMessage": "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK."
 
         }
         ,
