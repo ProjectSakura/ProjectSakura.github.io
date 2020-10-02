@@ -21,6 +21,9 @@ body {
     color: #333;
 }
 
+.color_animation{
+    animation: animate 6s linear infinite;
+}
 
 /*---------- FORMS ----------*/
 
@@ -337,7 +340,7 @@ section#screenshots .align {
     display: block;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     filter: alpha(opacity=80);
-    opacity: 0.8;
+    opacity: 1;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -834,6 +837,16 @@ footer p {
         line-height: 30px;
         font-weight: bold;
         color: #fff;
+    }
+}
+
+
+@keyframes animate{
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
     }
 }
 
