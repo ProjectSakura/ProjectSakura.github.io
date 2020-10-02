@@ -90,6 +90,12 @@
                 min-height: 0em;
             }
         }
+        @media (max-width: 979px){
+            .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+                padding: 25px;
+                padding-bottom: 0px;
+            }
+        }
     </style>
 </head>
 
@@ -99,7 +105,7 @@
     <!--******************** NAVBAR ********************-->
     <div class="navbar-wrapper">
         <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner" style="padding:25px; padding-bottom: 0px;">
+            <div class="navbar-inner">
                 <div class="container align_nav">
                     <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
                     <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
