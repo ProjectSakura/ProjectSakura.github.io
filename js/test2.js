@@ -61,7 +61,7 @@ const sixty = data2.devices.map(async (device) => {
         <button class="primary download">
             <a href="${
               jsonData.response[0].url
-            }" onClick="helllo()">Download</a>
+            }" onClick="helllo1()">Download</a>
 
         </button>
         <button class="primary download show-modal1 show-modal__${
@@ -90,7 +90,7 @@ const sixty = data2.devices.map(async (device) => {
         }</div><br />
         <h3>Not available right now,We are working on it</h3>
         <button class="primary download">
-            <a href="" onClick="helllo()">Download</a>
+            <a href="" onClick="helllo1()">Download</a>
 
         </button>
         <button class="primary download show-modal1 show-modal__${

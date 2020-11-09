@@ -3,7 +3,7 @@ const data2 = {
     {
       name: "LordShenron",
       device_name: "ASUS ZENFONE MAX PRO M1",
-      alternate_name: "",
+      alternate_name: "X00T",
       IsDropped: "",
       droppedMessage: "",
     },
