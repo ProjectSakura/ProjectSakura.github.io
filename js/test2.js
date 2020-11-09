@@ -1,33 +1,34 @@
-const ul = document.querySelector("#search-ul");
-ul.innerHTML = "";
+const ul1 = document.querySelector("#search-ul1");
+ul1.innerHTML = "";
 
-var mainbutton = $(".mainbutton");
-mainbutton.click(async () => {
-  async function showmodal1() {
-    $("#testmodal").modal("show");
-    const rating = document.querySelector(".rating");
+var mainbutton1 = $(".mainbutton123");
+mainbutton1.click(async () => {
+  console.log(123);
+  async function showmodal12() {
+    $("#testmodal1").modal("show");
+    const rating = document.querySelector(".rating1");
     rating.innerText = ``;
-    const mobile_name = document.querySelector(".mobile_name");
+    const mobile_name = document.querySelector(".mobile_name1");
     mobile_name.innerText = "SOURCE CHANGELOG";
 
     const url1 =
-      "https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog.txt";
+      "https://raw.githubusercontent.com/ProjectSakura/OTA/11/changelog/changelog.txt";
     const response = await fetch(url1);
 
     const data = await response.text();
-    const para = document.querySelector(".data-modal");
+    const para = document.querySelector(".data-modal1");
     para.innerText = data;
-    document.querySelector(".modal_body").style.marginTop = "80px";
+    document.querySelector(".modal_body1").style.marginTop = "80px";
   }
-  await showmodal1();
+  await showmodal12();
 });
 
-const fifty = data.devices.map(async (device) => {
+const sixty = data2.devices.map(async (device) => {
   var li = document.createElement("li");
   li.setAttribute("class", "search-li");
   try {
     const response = await fetch(
-      "https://raw.githubusercontent.com/ProjectSakura/OTA/10/" +
+      "https://raw.githubusercontent.com/ProjectSakura/OTA/11/" +
         device.alternate_name +
         ".json"
     );
@@ -63,7 +64,7 @@ const fifty = data.devices.map(async (device) => {
             }" onClick="helllo()">Download</a>
 
         </button>
-        <button class="primary download show-modal show-modal__${
+        <button class="primary download show-modal1 show-modal__${
           device.alternate_name
         }" >
             ChangeLog
@@ -92,7 +93,7 @@ const fifty = data.devices.map(async (device) => {
             <a href="" onClick="helllo()">Download</a>
 
         </button>
-        <button class="primary download show-modal show-modal__${
+        <button class="primary download show-modal1 show-modal__${
           device.alternate_name
         }" >
             ChangeLog
@@ -120,37 +121,37 @@ Promise.allSettled =
       )
     ));
 
-Promise.allSettled(fifty).then((results) =>
+Promise.allSettled(sixty).then((results) =>
   results.forEach((result) => {
     try {
-      ul.appendChild(result.value);
+      ul1.appendChild(result.value);
     } catch (e) {
       console.log(e);
     }
   })
 );
 
-const myFunction = setInterval(() => {
-  var btn2 = document.querySelectorAll(".show-modal");
+const myFunction2 = setInterval(() => {
+  var btn2 = document.querySelectorAll(".show-modal1");
 
   btn2.forEach(async (item, index) => {
     item.addEventListener("click", async () => {
       async function showmodal1() {
-        $("#testmodal").modal("show");
+        $("#testmodal1").modal("show");
 
-        const rating = document.querySelector(".rating");
+        const rating = document.querySelector(".rating1");
         rating.innerText = ``;
-        const mobile_name = document.querySelector(".mobile_name");
+        const mobile_name = document.querySelector(".mobile_name1");
         mobile_name.innerText = data.devices[index].device_name;
         const response1 = await fetch(
-          "https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_" +
+          "https://raw.githubusercontent.com/ProjectSakura/OTA/11/changelog/changelog_" +
             data.devices[index].alternate_name +
             ".txt"
         );
         const data1 = await response1.text();
-        const para = document.querySelector(".data-modal");
+        const para = document.querySelector(".data-modal1");
         para.innerText = data1;
-        document.querySelector(".modal_body").style.marginTop = "80px";
+        document.querySelector(".modal_body1").style.marginTop = "80px";
       }
       await showmodal1();
     });
