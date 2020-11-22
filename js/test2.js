@@ -142,10 +142,10 @@ const myFunction2 = setInterval(() => {
         const rating = document.querySelector(".rating1");
         rating.innerText = ``;
         const mobile_name = document.querySelector(".mobile_name1");
-        mobile_name.innerText = data.devices[index].device_name;
+        mobile_name.innerText = data2.devices[index].device_name;
         const response1 = await fetch(
           "https://raw.githubusercontent.com/ProjectSakura/OTA/11/changelog/changelog_" +
-            data.devices[index].alternate_name +
+            data2.devices[index].alternate_name +
             ".txt"
         );
         const data1 = await response1.text();
