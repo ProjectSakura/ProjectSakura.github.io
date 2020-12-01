@@ -6,6 +6,7 @@ const data = {
       alternate_name: "X00T",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 2,
     },
     {
       name: "Andrzej",
@@ -13,6 +14,7 @@ const data = {
       alternate_name: "sailfish",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "Andrzej",
@@ -20,6 +22,7 @@ const data = {
       alternate_name: "marlin",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "Amartya",
@@ -28,6 +31,7 @@ const data = {
       IsDropped: "(SUPPORT DROPPED)",
       droppedMessage:
         "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK.",
+      isSupported: 0,
     },
     {
       name: "CakesTwix",
@@ -35,6 +39,7 @@ const data = {
       alternate_name: "s2",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 2,
     },
     {
       name: "Abdibekov Dauren",
@@ -42,6 +47,7 @@ const data = {
       alternate_name: "m1882",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "Abdibekov Dauren",
@@ -49,6 +55,7 @@ const data = {
       alternate_name: "m1928",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "Alex",
@@ -56,6 +63,7 @@ const data = {
       alternate_name: "m1872",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "Vitor",
@@ -63,6 +71,7 @@ const data = {
       alternate_name: "ocean",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "Vitor",
@@ -70,6 +79,7 @@ const data = {
       alternate_name: "river",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "ARMSM",
@@ -77,6 +87,7 @@ const data = {
       alternate_name: "sanders",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "CHARLIE-117",
@@ -85,6 +96,7 @@ const data = {
       IsDropped: "(SUPPORT DROPPED)",
       droppedMessage:
         "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK.",
+      isSupported: 0,
     },
     {
       name: "AQUARIUSJR10",
@@ -92,6 +104,7 @@ const data = {
       alternate_name: "oneplus3",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "MrMobTech",
@@ -99,6 +112,7 @@ const data = {
       alternate_name: "CPH1859",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "Haridhayal",
@@ -106,6 +120,7 @@ const data = {
       alternate_name: "m20lte",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 2,
     },
     {
       name: "Haridhayal",
@@ -113,6 +128,7 @@ const data = {
       alternate_name: "dreamlte",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
 
     {
@@ -121,6 +137,7 @@ const data = {
       alternate_name: "dream2lte",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "Haridhayal",
@@ -128,6 +145,7 @@ const data = {
       alternate_name: "greatlte",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "Roger W.",
@@ -135,6 +153,7 @@ const data = {
       alternate_name: "wayne",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "Roger W.",
@@ -142,6 +161,7 @@ const data = {
       alternate_name: "jasmine_sprout",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "HumanGlitch",
@@ -150,6 +170,7 @@ const data = {
       IsDropped: "(SUPPORT DROPPED)",
       droppedMessage:
         "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK.",
+      isSupported: 0,
     },
     {
       name: "SunnyRaj",
@@ -157,6 +178,7 @@ const data = {
       alternate_name: "riva",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "ThatisJigen",
@@ -164,6 +186,7 @@ const data = {
       alternate_name: "mido",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "Darkstar",
@@ -171,6 +194,7 @@ const data = {
       alternate_name: "whyred",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 0,
     },
     {
       name: "Prajwal & Nitish",
@@ -178,6 +202,7 @@ const data = {
       alternate_name: "violet",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 2,
     },
     {
       name: "Amartya",
@@ -186,6 +211,7 @@ const data = {
       IsDropped: "(SUPPORT DROPPED)",
       droppedMessage:
         "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK.",
+      isSupported: 0,
     },
     {
       name: "A9ito",
@@ -193,6 +219,7 @@ const data = {
       alternate_name: "joyeuse",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 2,
     },
   ],
 };
