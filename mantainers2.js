@@ -6,6 +6,7 @@ const data2 = {
       alternate_name: "X00T",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 1,
     },
     {
       name: "CakesTwix",
@@ -13,6 +14,7 @@ const data2 = {
       alternate_name: "s2",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 1,
     },
     {
       name: "Haridhayal",
@@ -20,6 +22,15 @@ const data2 = {
       alternate_name: "a30",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 1,
+    },
+    {
+      name: "Haridhayal",
+      device_name: "SAMSUNG GALAXY A30S",
+      alternate_name: "a30s",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
     },
     {
       name: "Haridhayal",
@@ -27,6 +38,7 @@ const data2 = {
       alternate_name: "a40",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 1,
     },
     {
       name: "Haridhayal",
@@ -34,6 +46,7 @@ const data2 = {
       alternate_name: "m20lte",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 1,
     },
     {
       name: "Haridhayal",
@@ -41,6 +54,7 @@ const data2 = {
       alternate_name: "m30lte",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 1,
     },
     {
       name: "Wally & Nitish",
@@ -48,6 +62,15 @@ const data2 = {
       alternate_name: "violet",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 1,
+    },
+    {
+      name: "Himanshu",
+      device_name: "XIAOMI REDMI NOTE 8 PRO",
+      alternate_name: "begonia",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
     },
     {
       name: "A9ito",
@@ -55,6 +78,7 @@ const data2 = {
       alternate_name: "joyeuse",
       IsDropped: "",
       droppedMessage: "",
+      isSupported: 1,
     },
   ],
 };
