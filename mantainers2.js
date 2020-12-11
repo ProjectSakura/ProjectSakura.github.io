@@ -24,14 +24,7 @@ const data2 = {
       droppedMessage: "",
       isSupported: 1,
     },
-    {
-      name: "Haridhayal",
-      device_name: "SAMSUNG GALAXY A30S",
-      alternate_name: "a30s",
-      IsDropped: "",
-      droppedMessage: "",
-      isSupported: 1,
-    },
+
     {
       name: "Haridhayal",
       device_name: "SAMSUNG GALAXY A40",
@@ -52,6 +45,14 @@ const data2 = {
       name: "Haridhayal",
       device_name: "SAMSUNG GALAXY M30",
       alternate_name: "m30lte",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
+      name: "Nightstar Sakura",
+      device_name: "XIAOMI MI 8",
+      alternate_name: "dipper",
       IsDropped: "",
       droppedMessage: "",
       isSupported: 1,
