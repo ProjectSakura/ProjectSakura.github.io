@@ -17,6 +17,22 @@ const data2 = {
       isSupported: 1,
     },
     {
+      name: "AQUARIUSJR10",
+      device_name: "ONEPLUS 3 AND 3T ",
+      alternate_name: "oneplus3",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
+      name: "JAISHNAVPRASAD",
+      device_name: "REALME 1",
+      alternate_name: "CPH1859",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
       name: "Haridhayal",
       device_name: "SAMSUNG GALAXY A30",
       alternate_name: "a30",
@@ -49,14 +65,7 @@ const data2 = {
       droppedMessage: "",
       isSupported: 1,
     },
-    {
-      name: "Nightstar Sakura",
-      device_name: "XIAOMI MI 8",
-      alternate_name: "dipper",
-      IsDropped: "",
-      droppedMessage: "",
-      isSupported: 1,
-    },
+
     {
       name: "Wally & Nitish",
       device_name: "XIAOMI REDMI NOTE 7 PRO",
