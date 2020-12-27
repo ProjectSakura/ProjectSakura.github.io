@@ -104,7 +104,7 @@ const data = {
       alternate_name: "oneplus3",
       IsDropped: "",
       droppedMessage: "",
-      isSupported: 0,
+      isSupported: 2,
     },
     {
       name: "MrMobTech",
@@ -112,7 +112,7 @@ const data = {
       alternate_name: "CPH1859",
       IsDropped: "",
       droppedMessage: "",
-      isSupported: 0,
+      isSupported: 2,
     },
     {
       name: "Haridhayal",
