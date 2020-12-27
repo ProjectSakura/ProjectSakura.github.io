@@ -17,16 +17,8 @@ const data2 = {
       isSupported: 1,
     },
     {
-      name: "Alexander",
-      device_name: "Mi Note 10",
-      alternate_name: "tucana",
-      IsDropped: "",
-      droppedMessage: "",
-      isSupported: 1,
-    },
-    {
       name: "ARM SM",
-      device_name: "Moto G5S Plus",
+      device_name: "MOTO G5S PLUS",
       alternate_name: "sanders",
       IsDropped: "",
       droppedMessage: "",
@@ -89,7 +81,14 @@ const data2 = {
       droppedMessage: "",
       isSupported: 1,
     },
-
+    {
+      name: "Alexander",
+      device_name: "XIAOMI MI NOTE 10",
+      alternate_name: "tucana",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
     {
       name: "Wally & Nitish",
       device_name: "XIAOMI REDMI NOTE 7 PRO",
