@@ -33,14 +33,6 @@ const data2 = {
       isSupported: 1,
     },
     {
-      name: "Jack",
-      device_name: "ONEPLUS 8 ",
-      alternate_name: "instantnoodles",
-      IsDropped: "",
-      droppedMessage: "",
-      isSupported: 1,
-    },
-    {
       name: "JAISHNAVPRASAD",
       device_name: "REALME 1",
       alternate_name: "CPH1859",
