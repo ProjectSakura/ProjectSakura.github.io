@@ -87,7 +87,7 @@ const data = {
       alternate_name: "sanders",
       IsDropped: "",
       droppedMessage: "",
-      isSupported: 0,
+      isSupported: 2,
     },
     {
       name: "CHARLIE-117",

@@ -17,7 +17,7 @@ const data2 = {
       isSupported: 1,
     },
     {
-      name: "ARM SM",
+      name: "ARMSM",
       device_name: "MOTO G5S PLUS",
       alternate_name: "sanders",
       IsDropped: "",
