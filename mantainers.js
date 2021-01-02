@@ -161,7 +161,7 @@ const data = {
       alternate_name: "jasmine_sprout",
       IsDropped: "",
       droppedMessage: "",
-      isSupported: 2,
+      isSupported: 0,
     },
     {
       name: "HumanGlitch",
