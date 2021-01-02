@@ -153,7 +153,7 @@ const data = {
       alternate_name: "wayne",
       IsDropped: "",
       droppedMessage: "",
-      isSupported: 0,
+      isSupported: 2,
     },
     {
       name: "Roger W.",
@@ -161,7 +161,7 @@ const data = {
       alternate_name: "jasmine_sprout",
       IsDropped: "",
       droppedMessage: "",
-      isSupported: 0,
+      isSupported: 2,
     },
     {
       name: "HumanGlitch",
