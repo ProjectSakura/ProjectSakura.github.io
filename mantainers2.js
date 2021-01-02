@@ -74,6 +74,22 @@ const data2 = {
       isSupported: 1,
     },
     {
+      name: "Roger W.",
+      device_name: "XIAOMI MI 6X",
+      alternate_name: "wayne",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
+      name: "Roger W.",
+      device_name: "XIAOMI MI A2",
+      alternate_name: "jasmine_sprout",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
       name: "Alexander",
       device_name: "XIAOMI MI NOTE 10",
       alternate_name: "tucana",
