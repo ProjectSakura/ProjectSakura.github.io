@@ -76,7 +76,7 @@ const data2 = {
     {
       name: "Roger W.",
       device_name: "XIAOMI MI A1",
-      alternate_name: "wayne",
+      alternate_name: "tissot",
       IsDropped: "",
       droppedMessage: "",
       isSupported: 1,
@@ -98,14 +98,6 @@ const data2 = {
       isSupported: 1,
     },
     {
-      name: "DarkStar",
-      device_name: "XIAOMI REDMI NOTE 5 PRO",
-      alternate_name: "whyred",
-      IsDropped: "",
-      droppedMessage: "",
-      isSupported: 1,
-    },
-    {
       name: "Alex",
       device_name: "XIAOMI REDMI 6 PRO",
       alternate_name: "sakura",
@@ -113,6 +105,15 @@ const data2 = {
       droppedMessage: "",
       isSupported: 1,
     },
+    {
+      name: "DarkStar",
+      device_name: "XIAOMI REDMI NOTE 5 PRO",
+      alternate_name: "whyred",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    
     {
       name: "Wally & Nitish",
       device_name: "XIAOMI REDMI NOTE 7 PRO",
