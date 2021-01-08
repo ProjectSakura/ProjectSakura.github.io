@@ -90,6 +90,14 @@ const data2 = {
       isSupported: 1,
     },
     {
+      name: "Shivam",
+      device_name: "XIAOMI POCO X2",
+      alternate_name: "phoenix",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
       name: "DarkStar",
       device_name: "XIAOMI REDMI NOTE 5 PRO",
       alternate_name: "whyred",
