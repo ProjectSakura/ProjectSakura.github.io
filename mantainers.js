@@ -189,7 +189,7 @@ const data = {
       isSupported: 0,
     },
     {
-      name: "Darkstar",
+      name: "Sipun Ku Mahanta",
       device_name: "XIAOMI REDMI NOTE 5 PRO",
       alternate_name: "whyred",
       IsDropped: "",
