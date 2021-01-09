@@ -87,7 +87,7 @@ const data = {
       alternate_name: "sanders",
       IsDropped: "",
       droppedMessage: "",
-      isSupported: 0,
+      isSupported: 2,
     },
     {
       name: "CHARLIE-117",
@@ -194,7 +194,7 @@ const data = {
       alternate_name: "whyred",
       IsDropped: "",
       droppedMessage: "",
-      isSupported: 0,
+      isSupported: 2,
     },
     {
       name: "Prajwal & Nitish",
@@ -219,7 +219,7 @@ const data = {
       alternate_name: "joyeuse",
       IsDropped: "",
       droppedMessage: "",
-      isSupported: 2,
+      isSupported: 0,
     },
   ],
 };

@@ -17,7 +17,7 @@ const data2 = {
       isSupported: 1,
     },
     {
-      name: "ARM SM",
+      name: "ARMSM",
       device_name: "MOTO G5S PLUS",
       alternate_name: "sanders",
       IsDropped: "",
@@ -74,6 +74,14 @@ const data2 = {
       isSupported: 1,
     },
     {
+      name: "Roger W.",
+      device_name: "XIAOMI MI A1",
+      alternate_name: "tissot",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
       name: "Alexander",
       device_name: "XIAOMI MI NOTE 10",
       alternate_name: "tucana",
@@ -81,6 +89,31 @@ const data2 = {
       droppedMessage: "",
       isSupported: 1,
     },
+    {
+      name: "Shivam",
+      device_name: "XIAOMI POCO X2",
+      alternate_name: "phoenix",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
+      name: "Alex",
+      device_name: "XIAOMI REDMI 6 PRO",
+      alternate_name: "sakura",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
+      name: "DarkStar",
+      device_name: "XIAOMI REDMI NOTE 5 PRO",
+      alternate_name: "whyred",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    
     {
       name: "Wally & Nitish",
       device_name: "XIAOMI REDMI NOTE 7 PRO",
@@ -99,8 +132,8 @@ const data2 = {
     },
     {
       name: "A9ito",
-      device_name: "XIAOMI REDMI NOTE 9 PRO (GLOBAL ONLY)",
-      alternate_name: "joyeuse",
+      device_name: "XIAOMI REDMI NOTE 9 PRO",
+      alternate_name: "miatoll",
       IsDropped: "",
       droppedMessage: "",
       isSupported: 1,
