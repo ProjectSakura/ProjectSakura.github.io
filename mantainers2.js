@@ -98,6 +98,14 @@ const data2 = {
       isSupported: 1,
     },
     {
+      name: "Shriiyansh210",
+      device_name: "XIAOMI REDMI 5",
+      alternate_name: "rosy",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
       name: "Alex",
       device_name: "XIAOMI REDMI 6 PRO",
       alternate_name: "sakura",
