@@ -153,15 +153,7 @@ const data = {
       alternate_name: "wayne",
       IsDropped: "",
       droppedMessage: "",
-      isSupported: 0,
-    },
-    {
-      name: "Roger W.",
-      device_name: "XIAOMI MI A2",
-      alternate_name: "jasmine_sprout",
-      IsDropped: "",
-      droppedMessage: "",
-      isSupported: 0,
+      isSupported: 2,
     },
     {
       name: "HumanGlitch",
