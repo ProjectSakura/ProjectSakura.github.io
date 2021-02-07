@@ -33,6 +33,14 @@ const data2 = {
       isSupported: 1,
     },
     {
+      name: "Zahidmgsk",
+      device_name: "ONEPLUS 6",
+      alternate_name: "enchilada",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
       name: "JAISHNAVPRASAD",
       device_name: "REALME 1",
       alternate_name: "CPH1859",
@@ -40,9 +48,14 @@ const data2 = {
       droppedMessage: "",
       isSupported: 1,
     },
-  
-
-
+    {
+      name: "Chatur",
+      device_name: "SAMSUNG GALAXY A10",
+      alternate_name: "a10",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
     {
       name: "Haridhayal",
       device_name: "SAMSUNG GALAXY M20",
@@ -51,7 +64,7 @@ const data2 = {
       droppedMessage: "",
       isSupported: 1,
     },
-   
+
     {
       name: "Gabriel",
       device_name: "XIAOMI REDMI K20",
@@ -124,7 +137,7 @@ const data2 = {
       droppedMessage: "",
       isSupported: 1,
     },
-    
+
     {
       name: "Wally & Nitish",
       device_name: "XIAOMI REDMI NOTE 7 PRO",
@@ -133,7 +146,7 @@ const data2 = {
       droppedMessage: "",
       isSupported: 1,
     },
-    
+
     {
       name: "A9ito",
       device_name: "XIAOMI REDMI NOTE 9 PRO",
@@ -143,13 +156,13 @@ const data2 = {
       isSupported: 1,
     },
 
-
     {
       name: "Haridhayal",
       device_name: "SAMSUNG GALAXY A30",
       alternate_name: "a30",
       IsDropped: "(SUPPORT DROPPED)",
-      droppedMessage: "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK.",
+      droppedMessage:
+        "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK.",
       isSupported: 0,
     },
 
@@ -158,7 +171,8 @@ const data2 = {
       device_name: "SAMSUNG GALAXY A40",
       alternate_name: "a40",
       IsDropped: "(SUPPORT DROPPED)",
-      droppedMessage: "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK.",
+      droppedMessage:
+        "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK.",
       isSupported: 0,
     },
     {
@@ -166,7 +180,8 @@ const data2 = {
       device_name: "SAMSUNG GALAXY M30",
       alternate_name: "m30lte",
       IsDropped: "(SUPPORT DROPPED)",
-      droppedMessage: "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK.",
+      droppedMessage:
+        "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK.",
       isSupported: 0,
     },
     {
@@ -174,7 +189,8 @@ const data2 = {
       device_name: "XIAOMI REDMI NOTE 8 PRO",
       alternate_name: "begonia",
       IsDropped: "(SUPPORT DROPPED)",
-      droppedMessage: "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK.",
+      droppedMessage:
+        "THE SUPPORT FOR THIS DEVICE IS DROPPED, DOWNLOAD AT YOUR OWN RISK.",
       isSupported: 0,
     },
   ],
