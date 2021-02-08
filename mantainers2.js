@@ -68,7 +68,7 @@ const data2 = {
     {
       name: "Gabriel",
       device_name: "XIAOMI REDMI K20",
-      alternate_name: "davici",
+      alternate_name: "davinci",
       IsDropped: "",
       droppedMessage: "",
       isSupported: 1,
