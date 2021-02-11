@@ -49,6 +49,14 @@ const data2 = {
       isSupported: 1,
     },
     {
+      name: "Tanmay",
+      device_name: "REALME 6",
+      alternate_name: "RMX2001",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
       name: "Chatur",
       device_name: "SAMSUNG GALAXY A10",
       alternate_name: "a10",
@@ -139,7 +147,7 @@ const data2 = {
     },
 
     {
-      name: "Wally & Nitish",
+      name: "Spicydoughnut",
       device_name: "XIAOMI REDMI NOTE 7 PRO",
       alternate_name: "violet",
       IsDropped: "",
