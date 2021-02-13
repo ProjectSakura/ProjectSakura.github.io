@@ -17,6 +17,22 @@ const data2 = {
       isSupported: 1,
     },
     {
+      name: "Abdibekov Dauren",
+      device_name: "MEIZU 16TH",
+      alternate_name: "m1882",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
+      name: "Abdibekov Dauren",
+      device_name: "MEIZU 16TH PLUS",
+      alternate_name: "m1892",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
       name: "ARMSM",
       device_name: "MOTO G5S PLUS",
       alternate_name: "sanders",
