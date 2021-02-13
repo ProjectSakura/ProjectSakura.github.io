@@ -47,7 +47,7 @@ const data = {
       alternate_name: "m1882",
       IsDropped: "",
       droppedMessage: "",
-      isSupported: 0,
+      isSupported: 2,
     },
     {
       name: "Abdibekov Dauren",
@@ -55,7 +55,7 @@ const data = {
       alternate_name: "m1928",
       IsDropped: "",
       droppedMessage: "",
-      isSupported: 0,
+      isSupported: 2,
     },
     {
       name: "Alex",
