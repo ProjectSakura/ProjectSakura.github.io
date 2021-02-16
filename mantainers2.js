@@ -49,7 +49,7 @@ const data2 = {
       isSupported: 1,
     },
     {
-      name: "Zahidmgsk",
+      name: "Eduardo",
       device_name: "ONEPLUS 6",
       alternate_name: "enchilada",
       IsDropped: "",
@@ -76,6 +76,14 @@ const data2 = {
       name: "Chatur",
       device_name: "SAMSUNG GALAXY A10",
       alternate_name: "a10",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
+      name: "Gabriel",
+      device_name: "SAMSUNG GALAXY J4+",
+      alternate_name: "j4primelte",
       IsDropped: "",
       droppedMessage: "",
       isSupported: 1,
