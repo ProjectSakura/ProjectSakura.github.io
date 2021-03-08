@@ -12,7 +12,7 @@ function append(parent, el) {
 }
 
 const url =
-  "https://sourceforge.net/projects/projectsakura/files/stats/json?start_date=2020-01-01&end_date=2021-01-01";
+  "https://sourceforge.net/projects/projectsakura/files/stats/json?start_date=2020-01-01&end_date=2022-01-01";
 async function getData() {
   const response = await fetch(url);
   const data = await response.json();
@@ -70,7 +70,7 @@ const fifty = fulldata.map(async (device) => {
     const response = await fetch(
       "https://sourceforge.net/projects/projectsakura/files/" +
         device.alternate_name +
-        "/stats/json?start_date=2020-01-01&end_date=2021-01-01"
+        "/stats/json?start_date=2020-01-01&end_date=2022-01-01"
     );
     const jsonData = await response.json();
     const percent = ((jsonData.total * 100) / Total__Download).toFixed(3);
@@ -139,7 +139,7 @@ const fetched = data2.devices.map(async (device) => {
     const response = await fetch(
       "https://sourceforge.net/projects/projectsakura/files/" +
         device.alternate_name +
-        "/stats/json?start_date=2020-01-01&end_date=2021-01-01"
+        "/stats/json?start_date=2020-01-01&end_date=2022-01-01"
     );
     const jsonData = await response.json();
     const percent = ((jsonData.total * 100) / Total__Download).toFixed(3);
