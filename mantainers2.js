@@ -81,6 +81,14 @@ const data2 = {
       isSupported: 1,
     },
     {
+      name: "Chatur",
+      device_name: "SAMSUNG GALAXY A20",
+      alternate_name: "a20",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
       name: "Gabriel",
       device_name: "SAMSUNG GALAXY J4+",
       alternate_name: "j4primelte",
