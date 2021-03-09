@@ -154,7 +154,7 @@ const data2 = {
       isSupported: 1,
     },
     {
-      name: "Agus",
+      name: "Agus & ArmSM",
       device_name: "XIAOMI POCO X3",
       alternate_name: "surya",
       IsDropped: "",
