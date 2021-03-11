@@ -410,7 +410,9 @@ section#features .span3 {
 section#features .span3:hover {
   color: #ffffff;
   background: #212121;
-  box-shadow: 1px 1px 6px #000000;
+  -webkit-box-shadow: 0px 10px 13px -7px #FFF, -6px 1px 6px 8px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #FFF, -6px 1px 6px 8px rgba(0,0,0,0);
+  cursor: pointer;
 }
 
 /* Downloads */
