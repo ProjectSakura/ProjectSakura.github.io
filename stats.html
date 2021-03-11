@@ -14,8 +14,11 @@ Don't remove this if you intent to use this page for your website.
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- New UI -->
+<link rel="stylesheet" href="./css/bootstrap-ui.css">
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
 <script>
@@ -43,8 +46,11 @@ Don't remove this if you intent to use this page for your website.
 
         }
     }
+    body, * {
+        color: #000;
+    }
 </style>
-<style>
+<!-- <style>
     table {
         border-collapse: collapse;
         width: 100%;
@@ -76,7 +82,7 @@ Don't remove this if you intent to use this page for your website.
         color: #212112;
         display: flex;
         flex-direction: column;
-        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+        /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg'); */
         background-position: center;
         background-repeat: repeat;
         background-size: 7%;
@@ -112,143 +118,145 @@ Don't remove this if you intent to use this page for your website.
         justify-content: center;
         height: 100vh;
     }
-</style>
+</style> -->
 
 <body>
-    <div id="loading">
+    <!-- <div id="loading">
         <div class="loader_animation">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player src="image/7646-loading-project3.json" background="transparent" speed="1"
                 style="width: 250px; height: 250px;" loop autoplay></lottie-player>
         </div>
-    </div>
-    <div class="page">
+    </div> -->
+    <div class="jumbotron">
         <div>
             <!-- Header -->
             <header class="container ">
-                <h1 style="text-align:center; color:white;">SAKURA STATS &#169;</h1>
+                <h1 style="text-align:center;">SAKURA STATS &#169;</h1>
             </header>
             <!-- Grid -->
             <center>
-                <div class="container" style="margin-top:40px">
-                    <!-- Blog entry -->
+                <div class="card text-white bg-primary mb-3" >
+                    <div class="card-body">
+                      <h3 class="card-title">Project Sakura got downloaded <span class="totaldownload"></span> times.</h3></h3>
+                      <p class="card-text">Note: These stats are only for official downloads, unofficial numbers are unknown.</div>
+                </div>
+                
+                <!--<div class="container" style="margin-top:40px">
+                    
                     <div class="card-container w3-margin w3&#169;-dark-grey" style="align-items: center">
-                        <h3 class="summary" style="text-align:center; color:white;">Project Sakura got downloaded <span
+                        <h3 class="summary" style="text-align:center;">Project Sakura got downloaded <span
                                 class="totaldownload"></span> times.</h3><br>
                         <h6>Note: These stats are only for official downloads, unofficial numbers are unknown.</h6>
                         <br>
                     </div>
-                </div>
+                </div> -->
             </center>
             <!-- Blog entries -->
 
             <center>
-                <div style="margin-top:60px">
-                    <div class="container">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <!-- horizontal-sakura-unit3 -->
-                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-                            data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                        <h3 style="color: white; font-weight: 600">SUPPORTED DEVICES</h3>
-                        <br>
-                        <table class="table table-striped" style="color: white; font-weight: 600">
-                            <thead>
-                                <th>
-                                    <center>DEVICES</center>
-                                </th>
-                                <th>
-                                    <center>DOWNLOADS</center>
-                                </th>
-                                <th>Percentage</th>
-                            </thead>
-                            <tbody class="table_device_2">
+                <div class="container">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- horizontal-sakura-unit3 -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
+                        data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <h3 style=" font-weight: 600">SUPPORTED DEVICES</h3>
+                    <br>
+                    <table class="table table-striped " style=" font-weight: 600">
+                        <thead class="table-primary">
+                            <th>
+                                <center>DEVICES</center>
+                            </th>
+                            <th>DOWNLOADS</th>
+                            <th>Percentage</th>
+                        </thead>
+                        <tbody class="table_device_2">
 
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="container">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- horizontal-sakura-unit3 -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
+                        data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <h3 style=" font-weight: 600">UNSUPPORTED DEVICES</h3>
+                    <br>
+                    <table class="table table-striped" style="font-weight: 600">
+                        <thead>
+                            <th>
+                                <center>DEVICES</center>
+                            </th>
+                            <th>
+                                <center>DOWNLOADS</center>
+                            </th>
+                            <th>Percentage</th>
+                        </thead>
+                        <tbody class="table_device">
+
+                        </tbody>
+                    </table>
+                </div>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- sakura-horizontal-unit-2 -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
+                    data-ad-slot="8931146882" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <div class="container">
+                    <!-- Blog entry -->
+                    <div style="align-items: center; ; font-weight: 600">
+                        <h2 style="font-weight: 600">TOP COUNTRIES</h2>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th style="text-align:center">SNo</th>
+                                    <th style="text-align:center">Country Name</th>
+                                    <th style="text-align:center">Downloads</th>
+                                </tr>
+                            </thead>
+                            <tbody class="countries">
                             </tbody>
                         </table>
                     </div>
-                <div style="margin-top:40px">
-                    <div class="container">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <!-- horizontal-sakura-unit3 -->
-                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-                            data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                        <h3 style="color: white; font-weight: 600">UNSUPPORTED DEVICES</h3>
-                        <br>
-                        <table class="table table-striped" style="color: white; font-weight: 600">
+                </div>
+                
+                <!-- Blog entry -->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- sakura-horizontal-display-ad -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
+                    data-ad-slot="8448641591" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <div class="container">
+                    <div style="align-items: center;  font-weight: 600">
+                        <h2>OS USED TO DOWNLOAD SAKURA</h2>
+                        <table class="table table-striped">
                             <thead>
-                                <th>
-                                    <center>DEVICES</center>
-                                </th>
-                                <th>
-                                    <center>DOWNLOADS</center>
-                                </th>
-                                <th>Percentage</th>
+                                <tr class="table-primary">
+                                    <th style="text-align:center">SNo</th>
+                                    <th style="text-align:center">Country Name</th>
+                                    <th style="text-align:center">Downloads</th>
+                                </tr>
                             </thead>
-                            <tbody class="table_device">
-
+                            <tbody class="oses">
                             </tbody>
                         </table>
                     </div>
-                    <div style="margin-top:40px">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <!-- sakura-horizontal-unit-2 -->
-                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-                            data-ad-slot="8931146882" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                        <div class="container">
-                            <!-- Blog entry -->
-                            <div style="align-items: center; color:white; font-weight: 600">
-                                <h2 style="font-weight: 600">TOP COUNTRIES</h2>
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th style="text-align:center">SNo</th>
-                                            <th style="text-align:center">Country Name</th>
-                                            <th style="text-align:center">Downloads</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="countries">
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div style="margin-top:40px">
-                            <!-- Blog entry -->
-                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                            <!-- sakura-horizontal-display-ad -->
-                            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-                                data-ad-slot="8448641591" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                            <script>
-                                (adsbygoogle = window.adsbygoogle || []).push({});
-                            </script>
-                            <div class="container">
-                                <div style="align-items: center; color:white; font-weight: 600">
-                                    <h2>OS USED TO DOWNLOAD SAKURA</h2>
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th style="text-align:center">SNo</th>
-                                                <th style="text-align:center">Country Name</th>
-                                                <th style="text-align:center">Downloads</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="oses">
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+            
             </center>
             <!-- END GRID -->
-            </><br>
+            
         </div>
         <footer class="page-footer font-small special-color-dark pt-4">
             <div class="container">
@@ -265,7 +273,7 @@ Don't remove this if you intent to use this page for your website.
                     </li>
                 </ul>
             </div>
-            <div class="footer-copyright text-center py-3" style="color:white;">Designed by Sakura Team
+            <div class="footer-copyright text-center py-3" >Designed by Sakura Team
                 <p>Supported by XSLTEL OU</p>
                 <p>Stats are fetched from Sourceforge.</p>
             </div>
