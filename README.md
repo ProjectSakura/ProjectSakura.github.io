@@ -1,6 +1,6 @@
 <div align="center">
   <h1>🌸 Project Sakura 🌸</h1>
-  <img src="image\sakura.png"> </img>
+  <img src="image\banner_for_readme.png"> </img>
 </div>
 <details open="open">
   <summary>Table of Contents</summary>
@@ -54,17 +54,16 @@ The website is fully responsive and is maintained regularly.
 ### **Snapshots of the website**
 
 The Homepage :
-
-![Homepage](image\snapshots\homepage.PNG)
-![Homepage_2](image\snapshots\homepage_2.PNG)
+<img src="image\snapshots\homepage.PNG"> </img>
+<img src="image\snapshots\homepage_2.PNG"> </img>
 
 Blog Page :
 
-![Homepage](image\snapshots\blogpage.PNG)
+<img src="image\snapshots\blogpage.PNG"> </img>
 
 Stats Page :
 
-![Homepage](image\snapshots\statspage.PNG)
+<img src="image\snapshots\statspage.PNG"> </img>
 
 [Watch the Demo](https://www.youtube.com/watch?v=7k7nnAVBh9Y) 🎥
 
