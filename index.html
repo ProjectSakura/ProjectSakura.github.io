@@ -29,7 +29,7 @@
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <!-- Styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Google Web fonts -->
@@ -39,7 +39,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+ 
     <!-- Favicon -->
     <link href="image/logo.png" rel="shortcut icon">
     <!-- JQuery -->
@@ -67,36 +67,7 @@
 
         gtag('config', 'UA-173637831-1');
     </script>
-    <style>
-        body {
-            padding-top: 35px;
-            /* 60px to make the container go all the way to the bottom of the topbar */
-        }
-
-
-        .mask2 img {
-            opacity: 1;
-        }
-
-        @media (max-width: 580px) {
-            body {
-                padding-right: 0px;
-                padding-left: 0px;
-                padding-top: 0px;
-
-            }
-
-            .navbar-inner {
-                min-height: 0em;
-            }
-        }
-        @media (max-width: 979px){
-            .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
-                padding: 25px;
-                padding-bottom: 0px;
-            }
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -118,15 +89,15 @@
                     </a>
                     <h1 class="brand">
                         <a class = "scrolltolink" href="#top">
-                            <b style="font-weight: 400">
+                            <b id= "TitleProjectHeading">
                                 PROJECT</b>
-                            <b style="font-weight: 1000; color:#64b1f3;" class="color_animation">SAKURA
+                            <b id="TitleSakuraHeading" class="color_animation">SAKURA
                             </b>
                         </a>
                     </h1>
                     <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
                     <nav class="pull-right nav-collapse collapse">
-                        <ul class="nav" id="menu-main" style="font-weight: 1000">
+                        <ul class="nav" id="menu-main">
                             <li>
                                 <a class = "scrolltolink" href="#screenshots" title="screenshots">
                                     SCREENSHOTS
@@ -165,7 +136,7 @@
     <div id="top">
     </div>
     <!-- ******************** HeaderWrap ********************-->
-    <div id="headerwrap" style="margin-top:50px;">
+    <div id="headerwrap">
         <header class="clearfix">
             <h1>
                 <img src="image/sakura.png" class="color_animation"/>
