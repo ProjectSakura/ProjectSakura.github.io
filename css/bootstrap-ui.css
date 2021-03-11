@@ -69,12 +69,13 @@ body {
   line-height: 1.5;
   color: #888;
   text-align: left;
-  background-color: #fff;
+  background-color: #f7f7f9;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
+
 
 hr {
   box-sizing: content-box;
@@ -559,8 +560,7 @@ pre code {
 .container-xl {
   width: 100%;
   padding:2em;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 @media (min-width: 576px) {
@@ -4758,7 +4758,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
-
+/* card CSS */
 .card {
   position: relative;
   display: -ms-flexbox;
@@ -4767,7 +4767,6 @@ input[type="button"].btn-block {
   flex-direction: column;
   width: 80%;
   max-width: 1000px;
-  height: 10em;
   justify-content: center;
   align-items: center;
   word-wrap: break-word;

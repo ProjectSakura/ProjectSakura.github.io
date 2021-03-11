@@ -4,290 +4,235 @@ This page is designed by members of Project Sakura and all the code belongs to t
 Don't remove this if you intent to use this page for your website.
 -->
 <html>
-<title>Sakura Stats</title>
-<meta charset="UTF-8">
-<meta name="description" content="You can see all the stats related to project sakura here :)">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" sizes="32x32" href="image/logo.png">
-<link rel="icon" type="image/png" sizes="96x96" href="image/logo.png">
-<link rel="icon" type="image/png" sizes="16x16" href="image/logo.png">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+    <title>Sakura Stats</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="You can see all the stats related to project sakura here :)">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="image/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<!-- New UI -->
-<link rel="stylesheet" href="./css/bootstrap-ui.css">
+    <!-- New UI -->
+    <link rel="stylesheet" href="./css/bootstrap-ui.css">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-173637831-1');
+    </script>
 
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-173637831-1');
-</script>
-<style>
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        font-family: "Raleway", sans-serif;
-        align-items: center;
-        margin: auto;
-    }
-
-    @media (min-width: 993px) {
-        .w3-col.l8 {
-            width: 100.%;
-
+    <style>
+        * {
+            box-sizing: border-box;
         }
-    }
-    body, * {
-        color: #000;
-    }
-</style>
-<!-- <style>
-    table {
-        border-collapse: collapse;
-        width: 100%;
-    }
 
-    th,
-    td {
-        text-align: center;
-        padding: 8px;
-        font-weight: 500;
-    }
+        body {
+            margin: 0;
+            color: #000;
+            background-color: #f7f7f9;
+        }
 
-    tr:nth-child(even) {
-        background-color: #2196f3;
-    }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Raleway", sans-serif;
+            align-items: center;
+            margin: auto;
+        }
+        /*
+        =======================================
+        ============= ADDED CSS ===============
+        =======================================
+        */
+        .text-center{
+            text-align: center;
+        }
 
-    th {
-        font-family: 'Poppins', sans-serif;
-        color: #fff;
-        background-color: #2d2d2d;
-        overflow-x: hidden;
-        transition: all 200ms linear;
-    }
+        /* Table Styling */
+        th, td{
+            border: 1px solid #56cc9d;
+        }
 
-    body {
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        line-height: 24px;
-        color: #212112;
+        .table-heading {
+            margin-bottom: 1em;
+            font-weight: 700;
+        }
+
+        /* Footer Styling */
+        footer {
+        margin: 0;
+        padding: 2em 0;
+        background-color: var(--success);
+        }
+
+
+        .footer-text h3,
+        .footer-text p {
+        color: #FFF;
+        margin: 1em;
+        }
+
+        .icon-list {
+        margin: 0px;
+        padding: 0px;
         display: flex;
-        flex-direction: column;
-        /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg'); */
-        background-position: center;
-        background-repeat: repeat;
-        background-size: 7%;
-        background-color: #2d2d2d;
-        overflow-x: hidden;
-        transition: all 200ms linear;
-    }
-
-    .card-container {
-        background-color: #2196f3;
-        border-radius: 20px;
-        box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
-        color: #fff;
-        padding-top: 30px;
-        position: relative;
-        width: 80%;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    #loading {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: black;
-
-        z-index: 9999;
-    }
-
-    .loader_animation {
-        display: flex;
-        align-items: center;
         justify-content: center;
-        height: 100vh;
-    }
-</style> -->
+        list-style: none;
+        }
 
+        .icon-list li {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        margin: 0 2em;
+        }
+
+        .icon-list li a {
+        font-size: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        color: #000 !important;
+        }
+
+        .icon-list li a:hover {
+        cursor: pointer;
+        color: #FFF ;
+        filter: invert(100);
+        }
+
+    </style>
+</head>
 <body>
-    <!-- <div id="loading">
-        <div class="loader_animation">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="image/7646-loading-project3.json" background="transparent" speed="1"
-                style="width: 250px; height: 250px;" loop autoplay></lottie-player>
-        </div>
-    </div> -->
-    <div class="jumbotron">
-        <div>
-            <!-- Header -->
-            <header class="container ">
-                <h1 style="text-align:center;">SAKURA STATS &#169;</h1>
-            </header>
-            <!-- Grid -->
-            <center>
-                <div class="card text-white bg-primary mb-3" >
-                    <div class="card-body">
-                      <h3 class="card-title">Project Sakura got downloaded <span class="totaldownload"></span> times.</h3></h3>
-                      <p class="card-text">Note: These stats are only for official downloads, unofficial numbers are unknown.</div>
-                </div>
-                
-                <!--<div class="container" style="margin-top:40px">
-                    
-                    <div class="card-container w3-margin w3&#169;-dark-grey" style="align-items: center">
-                        <h3 class="summary" style="text-align:center;">Project Sakura got downloaded <span
-                                class="totaldownload"></span> times.</h3><br>
-                        <h6>Note: These stats are only for official downloads, unofficial numbers are unknown.</h6>
-                        <br>
-                    </div>
-                </div> -->
-            </center>
-            <!-- Blog entries -->
-
-            <center>
-                <div class="container">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- horizontal-sakura-unit3 -->
-                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-                        data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                    <h3 style=" font-weight: 600">SUPPORTED DEVICES</h3>
-                    <br>
-                    <table class="table table-striped " style=" font-weight: 600">
-                        <thead class="table-primary">
-                            <th>
-                                <center>DEVICES</center>
-                            </th>
-                            <th>DOWNLOADS</th>
-                            <th>Percentage</th>
-                        </thead>
-                        <tbody class="table_device_2">
-
-                        </tbody>
-                    </table>
-                </div>
-                
-                <div class="container">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- horizontal-sakura-unit3 -->
-                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-                        data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                    <h3 style=" font-weight: 600">UNSUPPORTED DEVICES</h3>
-                    <br>
-                    <table class="table table-striped" style="font-weight: 600">
-                        <thead>
-                            <th>
-                                <center>DEVICES</center>
-                            </th>
-                            <th>
-                                <center>DOWNLOADS</center>
-                            </th>
-                            <th>Percentage</th>
-                        </thead>
-                        <tbody class="table_device">
-
-                        </tbody>
-                    </table>
-                </div>
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- sakura-horizontal-unit-2 -->
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-                    data-ad-slot="8931146882" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-                <div class="container">
-                    <!-- Blog entry -->
-                    <div style="align-items: center; ; font-weight: 600">
-                        <h2 style="font-weight: 600">TOP COUNTRIES</h2>
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th style="text-align:center">SNo</th>
-                                    <th style="text-align:center">Country Name</th>
-                                    <th style="text-align:center">Downloads</th>
-                                </tr>
-                            </thead>
-                            <tbody class="countries">
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                
-                <!-- Blog entry -->
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- sakura-horizontal-display-ad -->
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-                    data-ad-slot="8448641591" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-                <div class="container">
-                    <div style="align-items: center;  font-weight: 600">
-                        <h2>OS USED TO DOWNLOAD SAKURA</h2>
-                        <table class="table table-striped">
-                            <thead>
-                                <tr class="table-primary">
-                                    <th style="text-align:center">SNo</th>
-                                    <th style="text-align:center">Country Name</th>
-                                    <th style="text-align:center">Downloads</th>
-                                </tr>
-                            </thead>
-                            <tbody class="oses">
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            
-            </center>
-            <!-- END GRID -->
-            
-        </div>
-        <footer class="page-footer font-small special-color-dark pt-4">
-            <div class="container">
-                <ul class="list-unstyled list-inline text-center">
-                    <li class="list-inline-item">
-                        <a href="https://twitter.com/ProjectSakura_" class="btn-floating btn-fb mx-1">
-                            <i class="fa fa-twitter"> </i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.github.com/ProjectSakura" class="btn-floating btn-tw mx-1">
-                            <i class="fa fa-github"> </i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-copyright text-center py-3" >Designed by Sakura Team
-                <p>Supported by XSLTEL OU</p>
-                <p>Stats are fetched from Sourceforge.</p>
-            </div>
-        </footer>
+    <!-- Header -->
+    <header class="container text-center">
+        <h1>SAKURA STATS &#169;</h1>
+    </header>
+    
+    <!-- Intro Card -->
+    <div class="container card bg-success mb-3" >
+        <h3 class="card-title">Project Sakura got downloaded <span class="totaldownload"></span> times.</h3></h3>
+        <p class="card-text">Note: These stats are only for official downloads, unofficial numbers are unknown.</p>
     </div>
+
+    <!-- TABLE ENTRIES >> Supported Devices -->
+    <div class="container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- horizontal-sakura-unit3 -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032" data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        
+        <h3 class="text-center table-heading">SUPPORTED DEVICES</h3>
+        
+        <table class="table table-striped " style=" font-weight: 600">
+            <thead class="table-success">
+                <th>DEVICES</th>
+                <th>DOWNLOADS</th>
+                <th>Percentage</th>
+            </thead>
+            <tbody class="table_device_2">
+
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- TABLE ENTRIES >> Unsupported Devices -->
+    <div class="container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- horizontal-sakura-unit3 -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032" data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <h3 class="text-center table-heading">UNSUPPORTED DEVICES</h3>
+        
+        <table class="table table-striped" style="font-weight: 600">
+            <thead class="table-success">
+                <th>DEVICES</th>
+                <th>DOWNLOADS</th>
+                <th>Percentage</th>
+            </thead>
+            <tbody class="table_device">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- TABLE ENTRIES >> Countries -->
+    <div class="container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- sakura-horizontal-unit-2 -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032" data-ad-slot="8931146882" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+            <!-- Blog entry -->
+        <h3 class="text-center table-heading">TOP COUNTRIES</h3>
+            <table class="table table-striped">
+                <thead class="table-success">
+                    <th>SERIAL NUMBER</th>
+                    <th>COUNTRY NAME</th>
+                    <th>DOWNLOADS</th>
+                </thead>
+                <tbody class="countries">
+                    
+                </tbody>
+            </table>
+        </div>
+
+    <!-- TABLE ENTRIES >> Operating Systems -->
+    <div class="container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- sakura-horizontal-display-ad -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032" data-ad-slot="8448641591" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        
+        <h3 class="text-center table-heading">OS USED TO DOWNLOAD SAKURA</h3>
+        <table class="table table-striped">
+            <thead class="table-success">
+                <th>SERIAL NUMBER</th>
+                <th>COUNTRY NAME</th>
+                <th>DOWNLOADS</th>
+            </thead>
+            <tbody class="oses">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <ul class="icon-list">
+                <li><a class="fa fa-twitter" href="https://twitter.com/ProjectSakura_" target="_blank"></a></li>
+                <li><a class="fa fa-github" href="https://www.github.com/ProjectSakura" target="_blank"></a></li>
+            </ul>
+        </div>
+        <div class="footer-text text-center">
+            <h3>Designed by Sakura Team</h3>
+            <p>Supported by XSLTEL OU</p>
+            <p>Stats are fetched from Sourceforge.</p>
+        </div>
+    </footer>
+
     <script type="text/javascript" src="mantainers.js"></script>
     <script type="text/javascript" src="mantainers2.js"></script>
     <script type="text/javascript" src="js/stat.js"></script>
-    <script>
-        var preloader = document.getElementById('loading');
-        const myFunction23 = setInterval(() => {
-            preloader.style.display = "none";
-        }, 8000) 
-    </script>
 </body>
 
 </html>
