@@ -185,3 +185,7 @@ Promise.allSettled(fetched)
     })
   )
   .then();
+  var preloader = document.getElementById('loading');
+  const myFunction23 = setInterval(() => {
+      preloader.style.display = "none";
+  }, 8000) 

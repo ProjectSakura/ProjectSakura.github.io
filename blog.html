@@ -630,54 +630,8 @@
         </div>
     </footer>
     <script type="text/javascript" src="filter.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('.sidenav').sidenav();
-        $('.fixed-action-btn').floatingActionButton();
-        $('.collapsible').collapsible();
-        $('.tooltipped').tooltip();
-        $('.parallax').parallax();
-        // $('.modal').modal();
-    });
-    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-    (function($) {
-        "use strict";
-
-        $(function() {
-            var header = $(".start-style");
-            $(window).scroll(function() {
-                var scroll = $(window).scrollTop();
-
-                if (scroll >= 10) {
-                    header.removeClass('start-style').addClass("scroll-on");
-                } else {
-                    header.removeClass("scroll-on").addClass('start-style');
-                }
-            });
-        });
-
-        //Animation
-
-        $(document).ready(function() {
-            $('body.hero-anime').removeClass('hero-anime');
-        });
-
-        //Menu On Hover
-
-        $('body').on('mouseenter mouseleave', '.nav-item', function(e) {
-            if ($(window).width() > 750) {
-                var _d = $(e.target).closest('.nav-item');
-                _d.addClass('show');
-                setTimeout(function() {
-                    _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
-                }, 1);
-            }
-        });
-
-    })(jQuery);
-    </script>
+    <script type="text/javascript" src="js/blog.js"></script>
 </body>
 
 </html>
