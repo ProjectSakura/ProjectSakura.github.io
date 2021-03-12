@@ -344,3 +344,7 @@ body.no-max-width .site-content {
     margin: 0 0 1.5em;
     overflow: hidden
 }
+input {
+    color: white;
+    text-align: center
+}
