@@ -49,7 +49,7 @@ The website is fully responsive and is maintained regularly.
 
 ## **Style Guide**
 
-<img src="image/StyleGuideby-DevrajDC.PNG"> </img>
+<img src="image\StyleGuideby-DevrajDC.PNG"> </img>
 
 ### **Snapshots of the website**
 
