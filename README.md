@@ -1,6 +1,5 @@
 <div align="center">
   <h1>🌸 Project Sakura 🌸</h1>
-  <img src="image\banner_for_readme.png"> </img>
 </div>
 <details open="open">
   <summary>Table of Contents</summary>
