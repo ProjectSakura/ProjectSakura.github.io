@@ -81,12 +81,6 @@ The website link : [Project Sakura](https://projectsakura.xyz)
   Founder, Lead Developer
 </td>
 
- <td align="center"> <img src="image\maintainers\mittal.jpeg" width="100px"> 
-  <br>
-  <sub><b>Chaitanaya</b> <br>
-  Developer, X00T Co-Maintainer
-</td>
-
  <td align="center"> <img src="image\maintainers\arun.jpeg" width="100px"> 
   <br>
   <sub><b>Arun</b> <br>
