@@ -317,21 +317,6 @@ section#screenshots h1 {
   margin-top: 0.5em;
 }
 
-section#screenshots hgroup h2 {
-  margin-top: 1em;
-  text-transform: capitalize;
-  text-align: center;
-}
-
-section#screenshots hgroup h3 {
-  margin-top: 0.35em;
-  font-family: "Roboto Condensed", monospace;
-}
-
-section#screenshots .entry-content {
-  margin: 1em 0 5.5em;
-}
-
 section#screenshots .align {
   text-align: center;
   margin-top: 10px;
@@ -339,28 +324,9 @@ section#screenshots .align {
 }
 section#screenshots .container .screenshots-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px !important;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-/*
-.mask2 img {
-  margin: 0 auto;
-  max-width: 100%;
-  display: block;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80);
-  opacity: 1;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.mask2 img:hover {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
-  filter: alpha(opacity=99);
-  opacity: 1;
-}*/
 
 /* Features */
 

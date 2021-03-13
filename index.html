@@ -32,6 +32,19 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Owl carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+
     <!-- Google Web fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet" type="text/css">
@@ -226,31 +239,38 @@
     </div>
     <!--******************** Screenshots Section ********************-->
     <section class="single-page scrollblock" id="screenshots">
-        <div class="container">
+        <div class="">
             <div class="align">
                 <img alt="download-icon" style="size:10%" src="image/screenshot.png"></img>
             </div>
             <h1 id="folio-headline">
                 SCREENSHOTS
             </h1>
-            <div class="screenshots-container">
-                <div class="image-container">
+            
+            <div class="container screenshots-container owl-carousel owl-theme">
+                <div class="image-container item">
                     <img src="./image/mockup/lockscreen.png" alt="">
+                    <p class="text-center">Lockscreen</p>
                 </div>
-                <div class="image-container">
+                <div class="image-container item">
                     <img src="./image/mockup/home.png" alt="">
+                    <p class="text-center">Volume Panel</p>
                 </div>
-                <div class="image-container">
+                <div class="image-container item">
                     <img src="./image/mockup/statusbar.png" alt="">
+                    <p class="text-center">QuickSettings</p>
                 </div>
-                <div class="image-container">
+                <div class="image-container item">
                     <img src="./image/mockup/about.png" alt="">
+                    <p class="text-center">About Phone</p>
                 </div>
-                <div class="image-container">
+                <div class="image-container item">
                     <img src="./image/mockup/battery.png" alt="">
+                    <p class="text-center">Battery Settings</p>
                 </div>
-                <div class="image-container">
+                <div class="image-container item">
                     <img src="./image/mockup/themes.png" alt="">
+                    <p class="text-center">Themes</p>
                 </div>
             </div>
             <div class="container" style="width:100%">
@@ -861,11 +881,47 @@
         </div>
         <!-- ./container -->
     </div>
+    <!-- jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Carousel Script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
     <!-- Loading the javaScript at the end of the page -->
     <script src="js/bootstrap.js" type="text/javascript">
     </script>
     <script src = "js/navScroll.js" type = "text/javaScript"></script>
 
+    <!-- OWl Carousel -->
+    <script type="text/javascript">
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: false,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          // responsiveClass: true,
+          // autoHeight: true,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            900: {
+              items: 2,
+            },
+            1200: {
+              items: 3,
+            },
+          },
+        });
+      </script>
 </body>
 
 </html>
