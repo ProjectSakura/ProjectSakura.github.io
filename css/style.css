@@ -378,7 +378,7 @@ section#features .span3 {
 section#features .span3:hover {
   color: #ffffff;
   background: #212121;
-  -webkit-box-shadow: 2px 5px 10px -7px #fff, -6px 1px 6px 8px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 2px 5px 10px -7px #FFF, -6px 1px 6px 8px rgba(0,0,0,0); 
   box-shadow: 2px 5px 8px -7px #fff, -6px 1px 6px 8px rgb(0 0 0 / 0%);
   cursor: pointer;
 }
@@ -707,7 +707,6 @@ footer p {
   #downloads h1 {
     background: transparent;
   }
-
   #screenshots .container {
     top: 0 !important;
   }
@@ -728,7 +727,6 @@ footer p {
   #features h1 {
     background: transparent;
   }
-
   section#features h2 {
     margin-bottom: 0.25em;
   }
