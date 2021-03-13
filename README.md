@@ -1,6 +1,5 @@
 <div align="center">
   <h1>🌸 Project Sakura 🌸</h1>
-  <img src="image\banner_for_readme.png"> </img>
 </div>
 <details open="open">
   <summary>Table of Contents</summary>
@@ -12,8 +11,7 @@
  </ol>
 </details>
 
- ## **Overview** 
-
+## **Overview**
 
 Sakura provides quick timely updates and a great deal of customization with the same stability as Lineage OS.
 
@@ -21,35 +19,37 @@ It is an Open Source custom ROM building website that is being used by thousands
 
 The project is originally based on android and there are 35 mobiles that are being maintained by 20 maintainers
 
- For more information regarding new updates and features as well as to download Project Sakura please visit the official website here : [Project Sakura](https://projectsakura.xyz)
+For more information regarding new updates and features as well as to download Project Sakura please visit the official website here : [Project Sakura](https://projectsakura.xyz)
 
+### **Features**
 
-### **Features**  
+- **Secure** ⚙️
+  : Project Sakura have all the security measures from Lineage OS.
+- **Customizable** 🔧 :Project Sakura comes with a beautiful interface and allows a lot of customization and personalization for the user.
+- **Open Source** 🌍 : Any kind of contribution to Project Sakura is welcome and much appreciated. [Fork us](https://github.com/ProjectSakura)!
 
-* **Secure** ⚙️
-: Project Sakura have all the security measures from Lineage OS.
-* **Customizable** 🔧 :Project Sakura comes with a beautiful interface and allows a lot of customization and personalization for the user.
-* **Open Source** 🌍 : Any kind of contribution to Project Sakura is welcome and much appreciated. [Fork us](https://github.com/ProjectSakura)!
+  It is also one of the projects in the open source event, GirlScript Summer of Code 2021
 
-   It is also one of the projects in the open source event, GirlScript Summer of Code 2021
-
-* **Community Support** 🙌 : Project Sakura community is growing, come join us on [Telegram](https://t.me/ProjectSakura).
-
+- **Community Support** 🙌 : Project Sakura community is growing, come join us on [Telegram](https://t.me/ProjectSakura).
 
 If you like Project Sakura, please drop a ⭐ on the GitHub repository
 
-___
+---
 
 ## **About**
 
 ### Tech Stack used in the website are :
-* HTML
-* CSS
-* Bootsrap
-* Javacript
+
+- HTML
+- CSS
+- Bootsrap
+- Javacript
 
 The website is fully responsive and is maintained regularly.
 
+## **Style Guide**
+
+<img src="image\StyleGuideby-DevrajDC.png"> </img>
 
 ### **Snapshots of the website**
 
@@ -69,9 +69,9 @@ Stats Page :
 
 The website link : [Project Sakura](https://projectsakura.xyz)
 
-___
+---
 
-## **Meet The Team** 
+## **Meet The Team**
 
 <table>
 <tr>
@@ -95,23 +95,19 @@ ___
 </tr> 
 </table>
 
-
 ### **Contributors**
- 
- Project Sakura Team would like to thank all the users, maintainers and developers who contributed to this project.
 
- [Our Contributors 🌟](https://github.com/ProjectSakura/ProjectSakura.github.io/graphs/contributors) 
-___
-## **Credits** 
+Project Sakura Team would like to thank all the users, maintainers and developers who contributed to this project.
 
+[Our Contributors 🌟](https://github.com/ProjectSakura/ProjectSakura.github.io/graphs/contributors)
 
-* [Resurrecton Remix for the Homepage](https://codepen.io/ig_design/pen/omQXoQ)
-* [Ig Design for the download page design](https://codepen.io/ig_design/pen/omQXoQ)
-* [FlorinPop17 for the Card design and Footer design](https://codepen.io/FlorinPop17/pen/EJKgKB)
-* [Danaabhi7719 for Blog posts card design](https://codepen.io/danaabhi7119/pen/NWxjyby)
-* [Resurrecton Remix for the Homepage](https://codepen.io/ig_design/pen/omQXoQ)
-* [mograph.ix for dowload animation](https://lottiefiles.com/25923-download-arrow)
+---
 
+## **Credits**
 
-
-
+- [Resurrecton Remix for the Homepage](https://codepen.io/ig_design/pen/omQXoQ)
+- [Ig Design for the download page design](https://codepen.io/ig_design/pen/omQXoQ)
+- [FlorinPop17 for the Card design and Footer design](https://codepen.io/FlorinPop17/pen/EJKgKB)
+- [Danaabhi7719 for Blog posts card design](https://codepen.io/danaabhi7119/pen/NWxjyby)
+- [Resurrecton Remix for the Homepage](https://codepen.io/ig_design/pen/omQXoQ)
+- [mograph.ix for dowload animation](https://lottiefiles.com/25923-download-arrow)
