@@ -337,9 +337,11 @@ section#screenshots .align {
   margin-top: 10px;
   font-size: 6em;
 }
-
-/* Screenshots Image Hover */
-
+section#screenshots .container .screenshots-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+/*
 .mask2 img {
   margin: 0 auto;
   max-width: 100%;
@@ -358,7 +360,7 @@ section#screenshots .align {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
   filter: alpha(opacity=99);
   opacity: 1;
-}
+}*/
 
 /* Features */
 
@@ -410,7 +412,7 @@ section#features .span3 {
 section#features .span3:hover {
   color: #ffffff;
   background: #212121;
-  -webkit-box-shadow: 2px 5px 10px -7px #FFF, -6px 1px 6px 8px rgba(0,0,0,0); 
+  -webkit-box-shadow: 2px 5px 10px -7px #fff, -6px 1px 6px 8px rgba(0, 0, 0, 0);
   box-shadow: 2px 5px 8px -7px #fff, -6px 1px 6px 8px rgb(0 0 0 / 0%);
   cursor: pointer;
 }
@@ -631,7 +633,6 @@ footer p {
 }
 
 @media (max-width: 568px) {
-
   .row1 {
     display: flex;
     justify-content: center;
@@ -669,7 +670,6 @@ footer p {
     height: auto;
     padding: 0;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -732,7 +732,6 @@ footer p {
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  
   section.single-page {
     padding: 1em 0;
   }
@@ -742,7 +741,7 @@ footer p {
   #downloads h1 {
     background: transparent;
   }
- 
+
   #screenshots .container {
     top: 0 !important;
   }
@@ -763,7 +762,7 @@ footer p {
   #features h1 {
     background: transparent;
   }
- 
+
   section#features h2 {
     margin-bottom: 0.25em;
   }
@@ -795,7 +794,6 @@ footer p {
 /* Smartphones (portrait) ----------- */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
- 
   #feature p {
     font-family: "Roboto Condensed", monospace;
     font-size: 26px;
