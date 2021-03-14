@@ -96,10 +96,24 @@ body.no-max-width .site-content {
     }
 }
 
+
 .hentry {
     margin: 0 0 1.5em;
     padding: 2.5em 3.375em;
-    background-color: #1c1c24
+    background-color: #1c1c24;
+    
+}
+
+.hentry h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.hentry p
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }
 
 .hentry p:last-child {
@@ -111,6 +125,35 @@ body.no-max-width .site-content {
     display: table;
     table-layout: fixed;
     clear: both
+}
+
+.hentry span i
+{
+    vertical-align: bottom;
+    font-size: 16px;
+}
+.footer-copyright 
+{
+    color: #64b1f3 !important;
+}
+.footer-copyright a
+{
+    color:#64F3A6 !important;
+}
+
+.author-link
+{
+    color: #64F3A6 !important;
+}
+
+.entry-meta
+{
+    letter-spacing: 1px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 @media only screen and (min-width:40.063em) and (max-width:61.063em) {
