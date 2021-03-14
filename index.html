@@ -32,6 +32,15 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Owl carousel -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
     <!-- Google Web fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet" type="text/css">
@@ -90,8 +99,11 @@
                 min-height: 0em;
             }
         }
-        @media (max-width: 979px){
-            .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+
+        @media (max-width: 979px) {
+
+            .navbar-fixed-top .navbar-inner,
+            .navbar-fixed-bottom .navbar-inner {
                 padding: 25px;
                 padding-bottom: 0px;
             }
@@ -117,7 +129,7 @@
                         </span>
                     </a>
                     <h1 class="brand">
-                        <a class = "scrolltolink" href="#top">
+                        <a class="scrolltolink" href="#top">
                             <b style="font-weight: 400">
                                 PROJECT</b>
                             <b style="font-weight: 1000; color:#64b1f3;" class="color_animation">SAKURA
@@ -128,27 +140,32 @@
                     <nav class="pull-right nav-collapse collapse">
                         <ul class="nav" id="menu-main" style="font-weight: 1000">
                             <li>
-                                <a class = "scrolltolink" href="#screenshots" title="screenshots">
+                                <a class="scrolltolink" href="#screenshots" title="screenshots">
                                     SCREENSHOTS
                                 </a>
                             </li>
                             <li>
-                                <a class = "scrolltolink" href="#features" title="features">
+                                <a class="scrolltolink" href="#features" title="features">
                                     FEATURES
                                 </a>
                             </li>
                             <li>
-                                <a class = "scrolltolink" href="#downloads" title="downloads">
+                                <a class="scrolltolink" href="#downloads" title="downloads">
                                     DOWNLOADS
                                 </a>
                             </li>
                             <li>
-                                <a class = "scrolltolink" href="#team" title="team">
+                                <a class="scrolltolink" href="#contact" title="contact">
+                                    CONTACT US
+                                </a>
+                            </li>
+                            <li>
+                                <a class="scrolltolink" href="#team" title="team">
                                     TEAM
                                 </a>
                             </li>
                             <li>
-                                <a class = "scrolltolink" href="#credits" title="credits">
+                                <a class="scrolltolink" href="#credits" title="credits">
                                     CREDITS
                                 </a>
                             </li>
@@ -168,7 +185,7 @@
     <div id="headerwrap" style="margin-top:50px;">
         <header class="clearfix">
             <h1>
-                <img src="image/sakura.png" class="color_animation"/>
+                <img src="image/sakura.png" class="color_animation" />
             </h1>
             <div class="container">
                 <div class="row">
@@ -226,56 +243,39 @@
     </div>
     <!--******************** Screenshots Section ********************-->
     <section class="single-page scrollblock" id="screenshots">
-        <div class="container">
+        <div class="">
             <div class="align">
                 <img alt="download-icon" style="size:10%" src="image/screenshot.png"></img>
             </div>
             <h1 id="folio-headline">
                 SCREENSHOTS
             </h1>
-            <div class="row">
-                <div class="span4">
-                    <div class="mask2">
-                        <a href="image/mockup/lockscreen.png"><img alt="" src="image/mockup/lockscreen.png"/></a>
-                    </div>
-                    <div class="inside">
-                        <hgroup>
-                            <h2>
-                                LockScreen
-                            </h2>
-                        </hgroup>
-                    </div>
-                    <!-- /.inside -->
+
+            <div class="container screenshots-container owl-carousel owl-theme">
+                <div class="image-container item">
+                    <img src="./image/mockup/lockscreen.png" alt="">
+                    <p class="text-center">Lockscreen</p>
                 </div>
-                <!-- /.span4 -->
-                <div class="span4">
-                    <div class="mask2">
-                        <a href="image/mockup/statusbar.png"><img alt="" src="image/mockup/statusbar.png" /></a>
-                    </div>
-                    <div class="inside">
-                        <hgroup>
-                            <h2>
-                                QuickSettings
-                            </h2>
-                        </hgroup>
-                    </div>
-                    <!-- /.inside -->
+                <div class="image-container item">
+                    <img src="./image/mockup/home.png" alt="">
+                    <p class="text-center">Volume Panel</p>
                 </div>
-                <!-- /.span4 -->
-                <div class="span4">
-                    <div class="mask2">
-                        <a href="image/mockup/home.png"><img alt="" src="image/mockup/home.png" /></a>
-                    </div>
-                    <div class="inside">
-                        <hgroup>
-                            <h2>
-                                VolumePanel
-                            </h2>
-                        </hgroup>
-                    </div>
-                    <!-- /.inside -->
+                <div class="image-container item">
+                    <img src="./image/mockup/statusbar.png" alt="">
+                    <p class="text-center">QuickSettings</p>
                 </div>
-                <!-- /.span4 -->
+                <div class="image-container item">
+                    <img src="./image/mockup/about.png" alt="">
+                    <p class="text-center">About Phone</p>
+                </div>
+                <div class="image-container item">
+                    <img src="./image/mockup/battery.png" alt="">
+                    <p class="text-center">Battery Settings</p>
+                </div>
+                <div class="image-container item">
+                    <img src="./image/mockup/themes.png" alt="">
+                    <p class="text-center">Themes</p>
+                </div>
             </div>
             <div class="container" style="width:100%">
                 <center>
@@ -288,51 +288,7 @@
                     </script>
                 </center>
             </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="span4">
-                    <div class="mask2">
-                        <a href="image/mockup/battery.png"><img alt="" src="image/mockup/battery.png" /></a>
-                    </div>
-                    <div class="inside">
-                        <hgroup>
-                            <h2>
-                                BatterySettings
-                            </h2>
-                        </hgroup>
-                    </div>
-                    <!-- /.inside -->
-                </div>
-                <!-- /.span4 -->
-                <div class="span4">
-                    <div class="mask2">
-                        <a href="image/mockup/about.png"><img alt="" src="image/mockup/about.png" /></a>
-                    </div>
-                    <div class="inside">
-                        <hgroup>
-                            <h2>
-                                About Phone
-                            </h2>
-                        </hgroup>
-                    </div>
-                    <!-- /.inside -->
-                </div>
-                <!-- /.span4 -->
-                <div class="span4">
-                    <div class="mask2">
-                        <a href="image/mockup/themes.png"><img alt="" src="image/mockup/themes.png" /></a>
-                    </div>
-                    <div class="inside">
-                        <hgroup>
-                            <h2>
-                                Themes
-                            </h2>
-                        </hgroup>
-                    </div>
-                    <!-- /.inside -->
-                </div>
-                <!-- /.span4 -->
-            </div>
+
         </div>
         <!-- /.container -->
     </section>
@@ -506,6 +462,87 @@
             </center>
         </div>
     </section>
+    <!--******************** Contact Section ********************-->
+    <section style="margin-top: -10%" class="single-page scrollblock" id="contact">
+        <div class="container">
+            <h1>
+                CONTACT US!
+            </h1>
+            <div class="row">
+                <article class="span4 post">
+                    <center>
+                        <img alt="" src="image/email.png">
+                    </center>
+                    <div class="inside">
+                        <p class="post-date">
+                        </p>
+                        <center>
+                            <h2>
+                                EMAIL US
+                            </h2>
+                            <div class="entry-content">
+                                <p>
+                                    Ping us a query!
+                                </p>
+                                <a class="more-link" href="mailto:shen.priyanshu@gmail.com" target="_blank">
+                                    GET IN TOUCH
+                                </a>
+                            </div>
+                        </center>
+                    </div>
+                </article>
+                <article class="span4 post">
+                    <center>
+                        <img alt="" src="image/telegram.png">
+                    </center>
+                    <div class="inside">
+                        <p class="post-date">
+
+                        </p>
+                        <center>
+                            <h2>
+                                TELEGRAM
+                            </h2>
+                            <div class="entry-content">
+                                <p>
+                                     Join us on telegram!
+                                </p>
+                                <a class="more-link" href="https://telegram.me/ProjectSakura" target="_blank">
+                                    JOIN
+
+                                </a>
+                            </div>
+                        </center>
+                    </div>
+                </article>
+
+                <article class="span4 post">
+                    <center>
+                        <img alt="" src="image/twitter.png">
+                    </center>
+                    <div class="inside">
+                        <p class="post-date">
+                        </p>
+                        <center>
+                            <h2>
+                                TWITTER
+                            </h2>
+                            <div class="entry-content">
+                                <p>
+
+                                    Find us on twitter!
+                                </p>
+                                <a class="more-link" href="https://twitter.com/ProjectSakura" target="_blank">
+                                    TWEET
+                                </a>
+                            </div>
+                        </center>
+                    </div>
+
+                </article>
+            </div>
+        </div>
+    </section>
     <!--******************** Team Section ********************-->
     <section class="single-page scrollblock " id="team">
         <div class="container">
@@ -583,7 +620,7 @@
                             Whyred Maintainer
                         </div>
                     </div>
-                    
+
                     <div class="span2">
                         <div class="align">
                             <img alt="" class="team-thumb img-circle" src="/image/maintainers/hari.jpeg">
@@ -647,6 +684,19 @@
                         </h3>
                         <div class="job-position">
                             Phoenix Maintainer
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="align">
+                            <img alt="" class="team-thumb img-circle" src="/image/maintainers/tanmay.png">
+                        </div>
+                        <h3>
+                            <b>
+                                Tanmay
+                            </b>
+                        </h3>
+                        <div class="job-position">
+                            RMX2001 Maintainer
                         </div>
                     </div>
                 </div>
@@ -730,8 +780,21 @@
                             Sakura Maintainer
                         </div>
                     </div>
+                    <div class="span2">
+                        <div class="align">
+                            <img alt="" class="team-thumb img-circle" src="/image/maintainers/fernando.png">
+                        </div>
+                        <h3>
+                            <b>
+                                Fernando Sánchez
+                            </b>
+                        </h3>
+                        <div class="job-position">
+                            Ginkgo Maintainer
+                        </div>
+                    </div>
                 </div>
-                <div class="row3">                   
+                <div class="row3">
                     <div class="span2 ">
                         <div class="align ">
                             <img alt="" class="team-thumb img-circle" src="/image/maintainers/cakes.jpeg">
@@ -794,7 +857,7 @@
                             </b>
                         </h3>
                         <div class="job-position">
-                            Miatoll & Former Joyeuse Maintainer 
+                            Miatoll & Former Joyeuse Maintainer
                         </div>
                     </div>
                     <div class="span2">
@@ -810,8 +873,8 @@
                             Rosy Maintainer
                         </div>
                     </div>
-                 </div>
-                <div class="row1">                   
+                </div>
+                <div class="row1">
                     <div class="span2 ">
                         <div class="align ">
                             <img alt="" class="team-thumb img-circle" src="/image/maintainers/alex.jpeg">
@@ -823,6 +886,19 @@
                         </h3>
                         <div class="job-position">
                             Meizu 16X Maintainer
+                        </div>
+                    </div>
+                    <div class="span2 ">
+                        <div class="align ">
+                            <img alt="" class="team-thumb img-circle" src="/image/maintainers/agus.jfif">
+                        </div>
+                        <h3>
+                            <b>
+                                Agus
+                            </b>
+                        </h3>
+                        <div class="job-position">
+                            SURYA Maintainer
                         </div>
                     </div>
                     <div class="span2 ">
@@ -876,12 +952,12 @@
                         <div class="job-position">
                             Former Ginkgo/Willow Maintainer
                         </div>
-                    </div>                    
+                    </div>
                 </div>
 
             </div>
-            </div>
-            <!-- /.container -->
+        </div>
+        <!-- /.container -->
     </section>
     <!--******************** credits Section ********************-->
     <section class="single-page scrollblock" id="credits">
@@ -929,11 +1005,43 @@
         </div>
         <!-- ./container -->
     </div>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <!-- Carousel Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
     <!-- Loading the javaScript at the end of the page -->
     <script src="js/bootstrap.js" type="text/javascript">
     </script>
-    <script src = "js/navScroll.js" type = "text/javaScript"></script>
+    <script src="js/navScroll.js" type="text/javaScript"></script>
 
+    <!-- OWl Carousel -->
+    <script type="text/javascript">
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            // responsiveClass: true,
+            // autoHeight: true,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                900: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
