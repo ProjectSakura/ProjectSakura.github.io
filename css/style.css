@@ -28,6 +28,60 @@ body {
 .color_animation {
   animation: animate 6s linear infinite;
 }
+.nav-btn-1:hover{
+  border: solid #64B1F3 !important;
+  border-radius: 6px !important;
+  color: #64B1F3 !important;
+  background-color: #0F111A !important;
+  padding: 9px 8px !important;
+  margin: 0px 3px !important;
+
+}
+.nav-btn-1:active{
+  border: solid #64B1F3 !important;
+  border-radius: 6px !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  color: #F2F2F2 !important;
+  background-color: #64B1F3 !important;
+  padding: 9px 8px !important;
+
+
+}
+.nav-btn-1:focus{
+  border: solid #64B1F3 !important;
+  border-radius: 6px !important;
+  color: #F2F2F2 !important;
+  background-color: #64B1F3 !important;
+  padding: 9px 8px !important;
+
+}
+.nav-btn-2:hover{
+  border: solid#56cc9d !important;
+  border-radius: 6px !important;
+  color: #56cc9d !important;
+  background-color: #0F111A !important;
+  padding: 9px 8px !important;
+  margin: 0px 3px !important;
+
+}
+.nav-btn-2:active{
+  border: solid #56cc9d !important;
+  border-radius: 6px !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  color: #F2F2F2 !important;
+  background-color: #56cc9d !important;
+  padding: 9px 8px !important;
+
+}
+.nav-btn-2:focus{
+  border: solid #56cc9d !important;
+  border-radius: 6px;
+  color: #F2F2F2 !important;
+  background-color: #56cc9d !important;
+  padding: 9px 8px !important;
+}
 
 /*---------- FORMS ----------*/
 
