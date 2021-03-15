@@ -55,6 +55,14 @@
 
         gtag('config', 'UA-173637831-1');
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173637831-1');
+    </script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
@@ -245,13 +253,46 @@
             </div>
         </div>
     </footer>
+    <script>
+    function myFunc1() {
+        var android10 = document.getElementById("myDIV");
+        var android11 = document.getElementById("myDIV1");
+        if (android10.style.display === "none") {
+            android10.style.display = "block";
+            android11.style.display = "none";
+        } else {
+            android10.style.display = "none";
+            android11.style.display = "none";
+        }
+    }
+    function myFunc5() {
+        var android10 = document.getElementById("myDIV");
+        var android11 = document.getElementById("myDIV1");
+        if (android11.style.display === "none") {
+            android11.style.display = "block";
+            android10.style.display = "none";
+        } else {
+            android11.style.display = "none";
+            android10.style.display = "none";
+        }
+    }
+    myFunc1();
+    </script>
     <script type="text/javascript" src="js/filter.js"></script>
-   
-    <sc src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></sc>
-    <!-- <sc src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></sc> -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.fixed-action-btn').floatingActionButton();
+            $('.collapsible').collapsible();
+            $('.tooltipped').tooltip();
+            $('.parallax').parallax();
+        });
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
-    <sc type="text/javascript" src="mantainers.js"></sc>
-    <script type="text/javascript" src="mantainers2.js"></sc>
+    <script type="text/javascript" src="mantainers.js"></script>
+    <script type="text/javascript" src="mantainers2.js"></script>
     <script type="text/javascript" src="js/test.js"></script>
     <script type="text/javascript" src="js/test2.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
