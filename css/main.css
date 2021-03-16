@@ -79,31 +79,69 @@
   font-family: "Roboto Condensed", sans-serif !important;
 }
 
-button.primary {
+/* button.primary {
   background-color: transparent;
-  border: 1px solid #03bfcb;
+  border: 1px solid #56cc9d;
   border-radius: 10px;
-  color: #00ff15;
+  color: #56cc9d;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
-  padding: 10px 30px;
+  padding: 10px 30px;    
+} */
+button.primary, .changelog{
+    background-color: transparent;
+    border: 1px solid #64B1F3;
+    border-radius: 5px;
+    color: #64B1F3;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    padding: 10px 10px;
+
+}
+button.primary:hover{
+  background-color: #64B1F3;
+  color: white !important;
+  border: 1px solid #64B1F3;
+  cursor: pointer;
+}
+button.primary>a{
+  color: #64B1F3;
+}
+button.primary>a:hover{
+  color:white;
 }
 
-button.primary.ghost {
-  /* background-color: transparent; */
-  color: #02899c;
-}
-
-.primary:hover {
-  background-color: #121217;
-  color: white;
-  border: 1px solid #231e39;
+.primary.ghost {
+  background-color: transparent;
+  border: 1px solid #64B1F3;
+  border-radius: 10px;
+  color: #64B1F3;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 10px;
 }
 
 .ghost:hover {
-  background-color: #121217;
-  color: white;
-  border: 1px solid #231e39;
+  background-color: #64B1F3;
+  color: white !important;
+  border: 1px solid #64B1F3;
+  cursor: pointer;
+}
+.show-modal,.show-modal1{
+  margin-left:5px;
+  background-color: transparent;
+  border: 1px solid #56cc9d !important;
+  border-radius: 5px;
+  color: #56cc9d !important;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 10px;
+}
+.show-modal:hover,.show-modal1:hover{
+  background-color: #56cc9d !important;
+  color: white !important;
+  border: 1px solid #56cc9d !important;
+  cursor: pointer;
 }
 
 .skills {
@@ -154,9 +192,9 @@ button.primary.ghost {
   color: #64b1f3 !important;
 }
 
-a {
+/* a {
   color: #64b1f3 !important;
-}
+} */
 
 .sakura-accent-btn {
   color: #64b1f3 !important;

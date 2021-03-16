@@ -66,6 +66,30 @@ ol {
   /* 24px */
   margin: 0 0 1.5em 0;
 }
+.ui-btn-1
+{
+  text-decoration: none;
+  color: #64B1F3;
+  font-size: 1.2em;
+}
+.ui-btn-1:hover:focus:active{
+  color: #56cc9d;
+  background-color: #0F111A;
+  border: 2px solid #56cc9d;
+  padding: 2px 2px;
+}
+.ui-btn-2{
+  text-decoration: none;
+  color: #56cc9d;
+  font-size: 1.2em;
+}
+.ui-btn-2:hover:focus:active{
+  color: #64B1F3;
+  background-color: #0F111A;
+  border: 2px solid #64B1F3;
+  padding: 2px 2px;
+}
+
 
 a:link,
 a:visited {
