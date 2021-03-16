@@ -3,7 +3,25 @@
     margin: 0 0 1.5em;
     overflow: hidden
 }
-
+.button{
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #64B1F3;
+    border-radius: 5px;
+    color: #64B1F3;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    padding: 10px 10px;
+}
+.button:hover{
+    background-color: #64B1F3;
+    color: white;
+    border: 1px solid #64B1F3;
+    cursor: pointer;
+}
+.author-link{
+    
+}
 .site-content {
     max-width: 1100px;
     margin-left: auto;
@@ -138,12 +156,12 @@ body.no-max-width .site-content {
 }
 .footer-copyright a
 {
-    color:#64F3A6 !important;
+    color:#56cc9d !important;
 }
 
 .author-link
 {
-    color: #64F3A6 !important;
+    color: #56cc9d;
 }
 
 .entry-meta
