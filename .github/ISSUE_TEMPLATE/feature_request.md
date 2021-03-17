@@ -2,7 +2,7 @@
 name: Feature request
 about: Suggest an idea for this project
 title: ''
-labels: "Type: Feature, Needs: Triage, Needs: gssoc21"
+labels: "triage, gssoc21"
 assignees: ''
 ---
 

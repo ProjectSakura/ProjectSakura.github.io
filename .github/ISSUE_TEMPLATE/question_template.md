@@ -1,7 +1,7 @@
 ---
 name: Question & Discussion
 about: Propose an answerable question
-labels: "Type: Question, Needs: Triage, Needs: gssoc21"
+labels: "question, triage, gssoc21"
 assignees: ''
 ---
 
