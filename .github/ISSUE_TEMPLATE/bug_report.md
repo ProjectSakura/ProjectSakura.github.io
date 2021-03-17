@@ -2,7 +2,7 @@
 name: Bug report
 about: Create a report to help us improve
 title: ''
-labels: "Type: Bug, Needs: Triage, Needs: gssoc21"
+labels: " bug, triage, gssoc21"
 assignees: ''
 ---
 
