@@ -26,31 +26,34 @@
   color: #ffffff !important;
 }
 
-#testmodal {
-  border-radius: 20px;
+/* #testmodal {
+  border-radius: 15px;
 }
 #testmodal1 {
-  border-radius: 20px;
-}
-.around {
-  margin-top: 10px;
-  margin-left: 10px;
-}
+  border-radius: 15px;
+} */
 
 .mobile_name {
-  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #56cc9d;
+  font-size: 40px;
 }
 .mobile_name1 {
-  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #56cc9d;
+  font-size: 40px;
 }
 .data-modal {
-  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 115px;
+  color: #c1c1c1;
 }
 
 .modal {
   /* padding: 50px; */
+  text-align: center;
   border-right: 20px;
-  width: 60%;
+  width: 70%;
   height: 500px;
   background-color: #121217 !important;
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
@@ -60,14 +63,14 @@
   font: 25px;
   /* left: 0; */
   /* right: 0; */
-  margin: -300px auto;
+  /* margin: -300px auto; */
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .modal {
     width: 80%;
   }
-}
+} */
 
 .sakura {
   background-color: #121217 !important;
@@ -305,11 +308,11 @@ input {
   align-items: center;
   padding: 10px;
   margin-bottom: 40px;
-  width: 60%;
+  width: 70%;
   z-index: 1;
   background-color: black;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .mobile_rating {
   width: 90%;
@@ -318,10 +321,35 @@ input {
   width: 90%;
 }
 .button-X {
+  background-color: transparent;
+  border: 1px solid #56cc9d;
+  color: #56cc9d;
+  padding: 1px 1px;
+  margin-left: 20px;
   width: 5%;
 }
+.button-X:hover{
+  background-color: #56cc9d;
+  color: white;
+  border: 1px solid #56cc9d;
+}
 @media (max-width: 767px) {
+  .modal{
+    width: 80%;
+    height:300px;
+  }
+  .mobile_name,.mobile_name1{
+    margin-left: 70px;
+    font-size:20px;
+  }
+  .data-modal{
+    margin-top:10px;
+    font-size: 10px;
+  }
   .close-button {
+    
+    padding: 10px;
+    text-align: center;
     width: 80%;
   }
   .mobile_rating {
@@ -331,13 +359,13 @@ input {
     width: 80%;
   }
   .button-X {
-    width: 20%;
+    margin-left: 40px;
+    padding:2px 2px;
+    width: 4%;
   }
 }
 
-.modal_body {
-  margin-top: 90px;
-}
+
 #containerDiv {
   position: absolute;
   display: grid;
