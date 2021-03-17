@@ -111,6 +111,12 @@ button.primary>a:hover{
   color:white;
 }
 
+.my-nav > li:hover {
+  padding-bottom: .2em;
+  border-bottom: 0.2em solid #A5FECB;
+}
+
+
 .primary.ghost {
   background-color: transparent;
   border: 1px solid #64B1F3;
