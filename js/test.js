@@ -103,6 +103,7 @@ const fifty = data.devices.map(async (device) => {
   }
 });
 
+
 Promise.allSettled =
   Promise.allSettled ||
   ((promises) =>
@@ -156,3 +157,5 @@ const myFunction = setInterval(() => {
     });
   });
 }, 5000);
+
+
