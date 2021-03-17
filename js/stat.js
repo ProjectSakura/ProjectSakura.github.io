@@ -110,7 +110,6 @@ const data123 = [];
 Promise.allSettled(fifty)
   .then((results) =>
     results.forEach((result) => {
-      console.log(result.value);
       if (result.value[1] == 0) {
         try {
           data123.push(result.value[0]);
@@ -123,7 +122,6 @@ Promise.allSettled(fifty)
               tbody.appendChild(data123[i]);
             }
           }
-          console.log(data123);
         } catch (e) {
           console.log(e);
         }
