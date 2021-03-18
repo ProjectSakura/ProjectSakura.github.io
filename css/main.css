@@ -37,33 +37,52 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #56cc9d;
   font-size: 40px;
+  margin-left: 15px;
+  text-align: center;
 }
+
 .mobile_name1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #56cc9d;
   font-size: 40px;
+  margin-left: 15px;
+  text-align: center;
 }
-.data-modal {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 115px;
-  color: #c1c1c1;
+
+.data-modal, .data-modal1{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #121217;
+  word-spacing: 2px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  font-size:medium;
+  word-wrap: break-word;
+  word-break: keep-all;
+  /* background-color: #56cc9d; */
+
 }
+/*77-1267*/
 
 .modal {
   /* padding: 50px; */
-  text-align: center;
+  text-align:justify;
   border-right: 20px;
-  width: 70%;
+  width: 50%;
   height: 500px;
-  background-color: #121217 !important;
+  overflow-y: scroll;
+  background-color: #56cc9d !important;
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
   background-position: center;
   background-repeat: repeat;
   background-size: 7%;
-  font: 25px;
-  /* left: 0; */
-  /* right: 0; */
-  /* margin: -300px auto; */
+}
+
+.modal_body, .modal_body1{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  align-items: center;
 }
 
 /* @media (max-width: 767px) {
@@ -152,6 +171,7 @@ button.primary>a:hover{
   border: 1px solid #56cc9d !important;
   cursor: pointer;
 }
+
 
 .skills {
   text-align: left;
@@ -308,7 +328,7 @@ input {
   align-items: center;
   padding: 10px;
   margin-bottom: 40px;
-  width: 70%;
+  width: 50%;
   z-index: 1;
   background-color: black;
   border-top-left-radius: 5px;
@@ -321,11 +341,12 @@ input {
   width: 90%;
 }
 .button-X {
+  float: right;
   background-color: transparent;
   border: 1px solid #56cc9d;
   color: #56cc9d;
   padding: 1px 1px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   width: 5%;
 }
 .button-X:hover{
@@ -333,28 +354,80 @@ input {
   color: white;
   border: 1px solid #56cc9d;
 }
-@media (max-width: 767px) {
+@media (max-width: 1270px)
+{
+  .modal{
+    width: 60%;
+    height:300px;
+    position: fixed;
+    overflow-y: scroll;
+    text-align:center;      
+  }
+
+  .mobile_name,.mobile_name1{
+    /* margin-left: 70px; */
+    font-size:20px;
+  }
+
+  .data-modal, .data-modal1{
+    margin-top:10px;
+    font-size: 15px;
+    word-wrap: break-word;
+  }
+
+  .close-button { 
+    padding: 10px;
+    text-align: center;
+    width: 60%;
+  }
+
+  .mobile_rating {
+    width: 80%;
+  }
+
+  .mobile_rating1 {
+    width: 80%;
+  }
+  .button-X {
+    margin-left: 40px;
+    padding:2px 2px;
+    width: 4%;
+  }
+
+}
+@media (max-width: 993px) {
+
   .modal{
     width: 80%;
     height:300px;
+    position: fixed;
+    overflow-y: scroll;
+    text-align:center;
+   
+    
   }
+
   .mobile_name,.mobile_name1{
-    margin-left: 70px;
+    /* margin-left: 70px; */
     font-size:20px;
   }
-  .data-modal{
+
+  .data-modal, .data-modal1{
     margin-top:10px;
     font-size: 10px;
+    word-wrap: break-word;
   }
-  .close-button {
-    
+
+  .close-button { 
     padding: 10px;
     text-align: center;
     width: 80%;
   }
+
   .mobile_rating {
     width: 80%;
   }
+
   .mobile_rating1 {
     width: 80%;
   }
@@ -395,16 +468,17 @@ td {
   /* padding: 10px; */
 }
 @media (max-width: 567px) {
+
   .modal_body {
     margin-top: 160px;
   }
   .modal {
+    overflow-y: scroll;
     margin: -400px auto;
   }
-  .mobile_name {
+
+  .mobile_name, .mobile_name1 {
     font-size: 20px;
   }
-  .mobile_name1 {
-    font-size: 20px;
-  }
+ 
 }
