@@ -848,15 +848,20 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align:center;
     color: #1dc8cd;
     margin: 0 auto;
-    &:before {
+    
+}
+.devices-search:before {
     content: '';
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
     z-index: -1;
-    margin: -$border; /* !importanté */
+    margin: border; /* !importanté */
     border-radius: inherit; /* !importanté */
-    background: linear-gradient(to right, #00b4db, #0083b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  }
-}
+    background: linear-gradient(to right, #00b4db, #0083b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  }
 .devices .device-list {
     display: -webkit-box;
     display: -moz-box;
@@ -1004,7 +1009,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .footer-links a:hover {
   color: #1dc8cd;
 }
-}
+
 
 @media (min-width: 769px) {
   #features .features-img {

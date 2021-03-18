@@ -66,6 +66,30 @@ ol {
   /* 24px */
   margin: 0 0 1.5em 0;
 }
+.ui-btn-1
+{
+  text-decoration: none;
+  color: #64B1F3;
+  font-size: 1.2em;
+}
+.ui-btn-1:hover:focus:active{
+  color: #56cc9d;
+  background-color: #0F111A;
+  border: 2px solid #56cc9d;
+  padding: 2px 2px;
+}
+.ui-btn-2{
+  text-decoration: none;
+  color: #56cc9d;
+  font-size: 1.2em;
+}
+.ui-btn-2:hover:focus:active{
+  color: #64B1F3;
+  background-color: #0F111A;
+  border: 2px solid #64B1F3;
+  padding: 2px 2px;
+}
+
 
 a:link,
 a:visited {
@@ -224,6 +248,11 @@ ul#menu-main > li > a:hover {
   text-shadow: none;
 }
 
+.my-nav > li:hover {
+  padding-bottom: .2em;
+  border-bottom: 0.2em solid #A5FECB;
+}
+
 /* ----------------------------------------------------------------------------------------------------------
 05 Single-Page Sections ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
@@ -317,47 +346,15 @@ section#screenshots h1 {
   margin-top: 0.5em;
 }
 
-section#screenshots hgroup h2 {
-  margin-top: 1em;
-  text-transform: capitalize;
-  text-align: center;
-}
-
-section#screenshots hgroup h3 {
-  margin-top: 0.35em;
-  font-family: "Roboto Condensed", monospace;
-}
-
-section#screenshots .entry-content {
-  margin: 1em 0 5.5em;
-}
-
 section#screenshots .align {
   text-align: center;
   margin-top: 10px;
   font-size: 6em;
 }
-
-/* Screenshots Image Hover */
-
-.mask2 img {
-  margin: 0 auto;
-  max-width: 100%;
-  display: block;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80);
-  opacity: 1;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.mask2 img:hover {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
-  filter: alpha(opacity=99);
-  opacity: 1;
+section#screenshots .container .screenshots-container {
+  display: grid;
+  max-width: 1200px !important;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* Features */
@@ -410,7 +407,9 @@ section#features .span3 {
 section#features .span3:hover {
   color: #ffffff;
   background: #212121;
-  box-shadow: 1px 1px 6px #000000;
+  -webkit-box-shadow: 2px 5px 10px -7px #FFF, -6px 1px 6px 8px rgba(0,0,0,0); 
+  box-shadow: 2px 5px 8px -7px #fff, -6px 1px 6px 8px rgb(0 0 0 / 0%);
+  cursor: pointer;
 }
 
 /* Downloads */
@@ -629,7 +628,6 @@ footer p {
 }
 
 @media (max-width: 568px) {
-
   .row1 {
     display: flex;
     justify-content: center;
@@ -667,7 +665,6 @@ footer p {
     height: auto;
     padding: 0;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -730,7 +727,6 @@ footer p {
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  
   section.single-page {
     padding: 1em 0;
   }
@@ -740,7 +736,6 @@ footer p {
   #downloads h1 {
     background: transparent;
   }
- 
   #screenshots .container {
     top: 0 !important;
   }
@@ -761,7 +756,6 @@ footer p {
   #features h1 {
     background: transparent;
   }
- 
   section#features h2 {
     margin-bottom: 0.25em;
   }
@@ -793,7 +787,6 @@ footer p {
 /* Smartphones (portrait) ----------- */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
- 
   #feature p {
     font-family: "Roboto Condensed", monospace;
     font-size: 26px;

@@ -194,6 +194,14 @@ const data2 = {
       droppedMessage: "",
       isSupported: 1,
     },
+    {
+      name: "Fernando Sánchez",
+      device_name: "XIAOMI REDMI NOTE 8",
+      alternate_name: "ginkgo",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
 
     {
       name: "A9ito",

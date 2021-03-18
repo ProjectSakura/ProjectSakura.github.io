@@ -3,7 +3,6 @@ ul1.innerHTML = "";
 
 var mainbutton1 = $(".mainbutton123");
 mainbutton1.click(async () => {
-  console.log(123);
   async function showmodal12() {
     $("#testmodal1").modal("show");
     const rating = document.querySelector(".rating1");
@@ -157,3 +156,5 @@ const myFunction2 = setInterval(() => {
     });
   });
 }, 5000);
+
+
