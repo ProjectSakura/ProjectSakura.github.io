@@ -35,7 +35,7 @@
 
 .mobile_name {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #56cc9d;
+  color: #64B1F3;
   font-size: 40px;
   margin-left: 15px;
   text-align: center;
@@ -43,7 +43,7 @@
 
 .mobile_name1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #56cc9d;
+  color: #64B1F3;
   font-size: 40px;
   margin-left: 15px;
   text-align: center;
@@ -52,14 +52,15 @@
 .data-modal, .data-modal1{
   font-family:Arial, Helvetica, sans-serif;
   font-size: 15px;
-  color: #121217;
+  color: #c1c1c1;
   word-spacing: 2px;
   line-height: 1.4;
-  text-align: center;
+  /* text-align: center; */
   text-transform: uppercase;
   font-size:medium;
   word-wrap: break-word;
   word-break: keep-all;
+  margin-top: 100px;
   /* background-color: #56cc9d; */
 
 }
@@ -72,7 +73,7 @@
   width: 50%;
   height: 500px;
   overflow-y: scroll;
-  background-color: #56cc9d !important;
+  background-color: #121217 !important;
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
   background-position: center;
   background-repeat: repeat;
@@ -82,7 +83,7 @@
 .modal_body, .modal_body1{
   margin-top: 40px;
   margin-bottom: 40px;
-  align-items: center;
+
 }
 
 /* @media (max-width: 767px) {
@@ -343,16 +344,16 @@ input {
 .button-X {
   float: right;
   background-color: transparent;
-  border: 1px solid #56cc9d;
-  color: #56cc9d;
+  border: 1px solid #64B1F3;
+  color: #64B1F3;
   padding: 1px 1px;
   /* margin-left: 20px; */
   width: 5%;
 }
 .button-X:hover{
-  background-color: #56cc9d;
+  background-color: #64B1F3;
   color: white;
-  border: 1px solid #56cc9d;
+  border: 1px solid #64B1F3;
 }
 @media (max-width: 1270px)
 {
@@ -361,7 +362,7 @@ input {
     height:300px;
     position: fixed;
     overflow-y: scroll;
-    text-align:center;      
+    /* text-align:center;       */
   }
 
   .mobile_name,.mobile_name1{
@@ -402,7 +403,7 @@ input {
     height:300px;
     position: fixed;
     overflow-y: scroll;
-    text-align:center;
+    /* text-align:center; */
    
     
   }
@@ -480,5 +481,11 @@ td {
   .mobile_name, .mobile_name1 {
     font-size: 20px;
   }
+
+ .button-x{
+   width: 5%;
+   padding: -2px 2px -2px 2px;
  
+
+ }
 }
