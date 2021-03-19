@@ -17,6 +17,14 @@ const data2 = {
       isSupported: 1,
     },
     {
+      name: "CakesTwix",
+      device_name: "Lenovo Z5s",
+      alternate_name: "jd2019",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
       name: "Abdibekov Dauren",
       device_name: "MEIZU 16TH",
       alternate_name: "m1882",
