@@ -422,6 +422,10 @@ section#features .span3:hover {
   cursor: pointer;
 }
 
+.features-homepage {
+  text-align : center;
+}
+
 /* Downloads */
 
 section#downloads .align {
@@ -480,31 +484,36 @@ article .inside {
 /* Team and Credits */
 
 section#team,
-section#credits {
+section#credits,
+section#maintainers-team {
   color: #ffffff;
   background: #010101;
 }
 
 section#team .align,
-section#credits .align {
+section#credits .align,
+section#maintainers-team .align {
   font-size: 6em;
   margin-top: 10px;
   text-align: center;
 }
 
 #team h1,
-#credits h1 {
+#credits h1,
+#maintainers-team h1 {
   font-size: 3em;
   margin-bottom: 1em;
   margin-top: 0.5em;
 }
 
 #credits,
-#team {
+#team,
+#maintainers-team {
   padding-top: 4.75em;
 }
 
-#team {
+#team,
+#maintainers-team {
   padding-bottom: 0;
 }
 
@@ -514,13 +523,15 @@ section#credits .align {
 
 /* team */
 
-#team h3 {
+#team h3,
+#maintainers-team h3 {
   font-size: 26px;
   margin-top: 24px;
   margin-bottom: 0px;
 }
 
 #team h3,
+#maintainers-team h3,
 .job-position {
   text-align: center;
 }
