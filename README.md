@@ -92,5 +92,4 @@ Project Sakura Team would like to thank all the users, maintainers and developer
 - [Ig Design for the download page design](https://codepen.io/ig_design/pen/omQXoQ)
 - [FlorinPop17 for the Card design and Footer design](https://codepen.io/FlorinPop17/pen/EJKgKB)
 - [Danaabhi7719 for Blog posts card design](https://codepen.io/danaabhi7119/pen/NWxjyby)
-- [Resurrecton Remix for the Homepage](https://codepen.io/ig_design/pen/omQXoQ)
 - [mograph.ix for dowload animation](https://lottiefiles.com/25923-download-arrow)
