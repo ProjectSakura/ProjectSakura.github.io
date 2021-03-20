@@ -91,15 +91,25 @@ ol {
 }
 
 
-a:link,
-a:visited {
-  color: #f1505a;
+.more-link:link,
+.more-link:visited {
+    background-color: transparent;
+    border: 1px solid #64B1F3;
+    border-radius: 5px;
+    color: #64B1F3;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    padding: 10px 10px;
+    font-size: 14px;
 }
 
-a:hover,
-a:active {
-  color: #f1505a;
-  text-decoration: underline;
+.more-link:hover,
+.more-link:active {
+  background-color: #64B1F3;
+  color: white !important;
+  border: 1px solid #64B1F3;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 h1,
