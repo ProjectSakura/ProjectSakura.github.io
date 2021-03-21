@@ -18,7 +18,7 @@ const data2 = {
     },
     {
       name: "CakesTwix",
-      device_name: "Lenovo Z5s",
+      device_name: "LENOVO Z5S",
       alternate_name: "jd2019",
       IsDropped: "",
       droppedMessage: "",
@@ -155,7 +155,7 @@ const data2 = {
     },
     {
       name: "Prajwal & Nitish",
-      device_name: "Xiaomi MI 10i 5G | 10T Lite",
+      device_name: "Xiaomi MI 10I 5G | 10T LITE",
       alternate_name: "gauguin",
       IsDropped: "",
       droppedMessage: "",
