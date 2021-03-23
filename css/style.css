@@ -266,7 +266,7 @@ ul#menu-main > li > a:hover {
 /* ----------------------------------------------------------------------------------------------------------
 05 Single-Page Sections ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
-/* 
+/*
 #headerwrap{
     background:url(../image/bg4.jpg) #000000 no-repeat center center;
 }
@@ -417,7 +417,7 @@ section#features .span3 {
 section#features .span3:hover {
   color: #ffffff;
   background: #212121;
-  -webkit-box-shadow: 2px 5px 10px -7px #FFF, -6px 1px 6px 8px rgba(0,0,0,0); 
+  -webkit-box-shadow: 2px 5px 10px -7px #FFF, -6px 1px 6px 8px rgba(0,0,0,0);
   box-shadow: 2px 5px 8px -7px #fff, -6px 1px 6px 8px rgb(0 0 0 / 0%);
   cursor: pointer;
 }
@@ -826,4 +826,14 @@ footer p {
   100% {
     filter: hue-rotate(360deg);
   }
+}
+
+/* CSS will be required after complete upgrade from v2.3 to v4.5 Bootstrap */
+
+.img-circle {
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    height: 50%;
+    width: 50%;
 }
