@@ -992,3 +992,36 @@
  overflow: visible !important;
 }
 }
+ /*************************** Index.html internal css command ****************************************************************/
+        body {
+            padding-top: 35px;
+            /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+
+
+        .mask2 img {
+            opacity: 1;
+        }
+
+        @media (max-width: 580px) {
+            body {
+                padding-right: 0px;
+                padding-left: 0px;
+                padding-top: 0px;
+
+            }
+
+            .navbar-inner {
+                min-height: 0em;
+            }
+        }
+
+        @media (max-width: 979px) {
+
+            .navbar-fixed-top .navbar-inner,
+            .navbar-fixed-bottom .navbar-inner {
+                padding: 25px;
+                padding-bottom: 0px;
+            }
+        }
+/****************************************************************************************************************************************************/
