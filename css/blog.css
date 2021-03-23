@@ -395,3 +395,8 @@ body.no-max-width .site-content {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
+/*************** Added internal css of blog.html************************************/
+input {
+  color: white;
+  text-align: center
+}
