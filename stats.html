@@ -13,7 +13,8 @@ Don't remove this if you intent to use this page for your website.
     <link rel="icon" type="image/png" sizes="96x96" href="image/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="image/logo.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -36,10 +37,60 @@ Don't remove this if you intent to use this page for your website.
             box-sizing: border-box;
         }
 
+        /* theme */
         body {
-            margin: 0;
+
+            --background-color: #0F111A;
+            --accent-color :#64B1F3; 
+            --text-color: #f2f2f2;
+            --container-color: #212433;
+            --table-text-color: #c9d1d9;
+            --table-body-color: #212433;
+            --btn-toggle-color: #56cc9d;
+            --icon-color: #56cc9d;
+            --transition-delay: 0.5s;
+            
+            
+            margin: 0;       
+            background-color: var(--background-color);
+            transition: var(--transition-delay);
+        }
+
+        body.light { 
+            
+            --background-color: #f7f7f9;
+            --accent-color :#56cc9d;
+            --text-color: #5A5A5A;
+            --container-color: #56cc9d;
+            --table-text-color: #5A5A5A;
+            --table-body-color: #f7f7f7;
+            --btn-toggle-color: #0F111A;
+            --icon-color: #000;
+
             color: #000;
-            background-color: #f7f7f9;
+            
+        }
+
+        .btn-toggle
+        {
+             background-color: var(--btn-toggle-color);
+             color: #FFF;
+             height: 33px;
+             width: 33px;
+             padding: 3px;
+             border-radius: 50%;
+             cursor: pointer;
+             border: 0;
+             transition: var(--transition-delay);
+             position: absolute;
+             top: 2.5rem;
+             right:2.5rem;
+             z-index: 999;
+        }
+
+        .btn-toggle:hover,
+        .btn-toggle:focus{
+            transform: scale(1.1);
         }
 
         h1,
@@ -47,10 +98,22 @@ Don't remove this if you intent to use this page for your website.
         h3,
         h4,
         h5 {
-            font-family: "Raleway", sans-serif;
+            font-family: 'Poppins', sans-serif;
             align-items: center;
             margin: auto;
+            color: var(--text-color);
         }
+
+        h1 {
+            color: var(--accent-color);
+            font-weight: 300;
+        }
+      
+        .header-card  {
+            background-color: var(--container-color);
+            color: #f2f2f2;
+        }
+
         /*
         =======================================
         ============= ADDED CSS ===============
@@ -62,7 +125,7 @@ Don't remove this if you intent to use this page for your website.
 
         /* Table Styling */
         th, td{
-            border: 1px solid #56cc9d;
+            border: 1px solid var(--accent-color);
         }
 
         .table-heading {
@@ -70,11 +133,27 @@ Don't remove this if you intent to use this page for your website.
             font-weight: 700;
         }
 
+        .table 
+        {
+            color: var(--table-text-color);
+            background-color: var(--table-body-color);
+            border: 1px solid var(--accent-color);
+        }
+
+        .table-success,.thread
+        {
+            background-color: var(--accent-color);
+        }
+        .table-success th
+        {
+            border-color: var(--accent-color);
+        }
+
         /* Footer Styling */
         footer {
         margin: 0;
         padding: 2em 0;
-        background-color: var(--success);
+        background-color: var(--container-color)
         }
 
 
@@ -103,7 +182,7 @@ Don't remove this if you intent to use this page for your website.
         font-size: 50px;
         line-height: 50px;
         text-decoration: none;
-        color: #000 !important;
+        color: var(--icon-color) !important;
         }
 
         .icon-list li a:hover {
@@ -116,12 +195,16 @@ Don't remove this if you intent to use this page for your website.
 </head>
 <body>
     <!-- Header -->
+    <div class="container btn-container"> 
+        <button class="btn-toggle"><i class="fa fa-adjust" style="font-size: 21px;"></i></button>
+    </div>
+    
     <header class="container text-center">
         <h1>SAKURA STATS &#169;</h1>
     </header>
     
     <!-- Intro Card -->
-    <div class="container card bg-success mb-3" >
+    <div class="container card header-card mb-3" >
         <h3 class="card-title">Project Sakura got downloaded <span class="totaldownload"></span> times.</h3></h3>
         <p class="card-text">Note: These stats are only for official downloads, unofficial numbers are unknown.</p>
     </div>
@@ -137,7 +220,7 @@ Don't remove this if you intent to use this page for your website.
         
         <h3 class="text-center table-heading">SUPPORTED DEVICES</h3>
         
-        <table class="table table-striped " style=" font-weight: 600">
+        <table class="table table-striped" style=" font-weight: 600;">
             <thead class="table-success">
                 <th>DEVICES</th>
                 <th>DOWNLOADS</th>
@@ -233,6 +316,15 @@ Don't remove this if you intent to use this page for your website.
     <script type="text/javascript" src="mantainers.js"></script>
     <script type="text/javascript" src="mantainers2.js"></script>
     <script type="text/javascript" src="js/stat.js"></script>
+
+    <!-- TOGGLE THEME -->
+    <script>
+        document.querySelector(".btn-toggle").addEventListener('click', ()=>{
+         document.querySelector("body").classList.toggle("light");  
+        });
+
+    </script>
+
 </body>
 
 </html>

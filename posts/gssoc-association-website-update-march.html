@@ -1,0 +1,538 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta content="Newer Faceunlock, FOD animations and more.." name="description">
+    <meta property="twitter:description"
+        content="Project sakura's official blog where you can remain updated with everything.">
+    <meta content="Arunteltia" name="author">
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token"
+        content="XX30bJnIFltL8pol27GFYQ/gTxwgK3zX7kfBYDq5lokSChjRf4V3gdaeHgSKmYbC20AwcVfEXKukZZz6g8JTlA==" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Sakura</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
+    <link rel="alternate" type="application/json+oembed"
+        href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2FBooligoosh%2Fpen%2FmKPpQp&format=json"
+        title="Blog Posts Card Layout - Code The Web" />
+    <link rel="apple-touch-icon" type="image/png" href="" />
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <link rel="mask-icon" type="" href="" color="#111" />
+    <script>
+        /* Firefox needs this to prevent FOUC. Wow. */
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173637831-1');
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #212112;
+            display: flex;
+            flex-direction: column;
+            background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+            background-position: center;
+            background-repeat: repeat;
+            background-size: 7%;
+            background-color: #0F111A;
+            overflow-x: hidden;
+            transition: all 200ms linear;
+        }
+
+        h2 {
+            color: #64b1f3;
+        }
+
+        a {
+            color: #64F3A6;
+            text-decoration: none;
+        }
+
+        .course {
+            background-color: #212433;
+            color: #fff;
+            border-radius: 10px;
+
+            display: flex;
+            max-width: 100%;
+            /* margin: 20px; */
+            overflow: hidden;
+            width: 700px;
+        }
+
+        .course h6 {
+            opacity: 0.6;
+            margin: 0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .course h2 {
+            letter-spacing: 1px;
+            margin: 10px 0;
+        }
+
+        .course-preview {
+            background-color: #2A265F;
+            color: #fff;
+            padding: 30px;
+            max-width: 250px;
+        }
+
+        .course-preview a {
+            color: #fff;
+            display: inline-block;
+            font-size: 12px;
+            opacity: 0.6;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+
+        .course-info {
+            padding: 30px;
+            position: relative;
+            width: 100%;
+        }
+
+        .progress-container {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            text-align: right;
+            width: 150px;
+        }
+
+        .progress {
+            background-color: #ddd;
+            border-radius: 3px;
+            height: 5px;
+            width: 100%;
+        }
+
+        .progress::after {
+            border-radius: 3px;
+            background-color: #2A265F;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 5px;
+            width: 66%;
+        }
+
+        .progress-text {
+            font-size: 10px;
+            opacity: 0.6;
+            letter-spacing: 1px;
+        }
+
+        .btn {
+            background-color: #2A265F;
+            border: 0;
+            border-radius: 50px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-size: 16px;
+            padding: 12px 25px;
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            letter-spacing: 1px;
+        }
+
+        /* SOCIAL PANEL CSS */
+        .social-panel-container {
+            position: fixed;
+            right: 0;
+            bottom: 80px;
+            transform: translateX(100%);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .social-panel-container.visible {
+            transform: translateX(-10px);
+        }
+
+        .social-panel {
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6);
+            border: 5px solid #001F61;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Muli';
+            position: relative;
+            height: 169px;
+            width: 370px;
+            max-width: calc(100% - 10px);
+        }
+
+        .social-panel button.close-btn {
+            border: 0;
+            color: #97A5CE;
+            cursor: pointer;
+            font-size: 20px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        .social-panel button.close-btn:focus {
+            outline: none;
+        }
+
+        .social-panel p {
+            background-color: #001F61;
+            border-radius: 0 0 10px 10px;
+            color: #fff;
+            font-size: 14px;
+            line-height: 18px;
+            padding: 2px 17px 6px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin: 0;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 235px;
+        }
+
+        .social-panel p i {
+            margin: 0 5px;
+        }
+
+        .social-panel p a {
+            color: #FF7500;
+            text-decoration: none;
+        }
+
+        .social-panel h4 {
+            margin: 20px 0;
+            color: #97A5CE;
+            font-family: 'Muli';
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+        }
+
+        .social-panel ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-panel ul li {
+            margin: 0 10px;
+        }
+
+        .social-panel ul li a {
+            border: 1px solid #DCE1F2;
+            border-radius: 50%;
+            color: #001F61;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            text-decoration: none;
+        }
+
+        .social-panel ul li a:hover {
+            border-color: #FF6A00;
+            box-shadow: 0 9px 12px -9px #FF6A00;
+        }
+
+        .floating-btn {
+            border-radius: 26.5px;
+            background-color: #001F61;
+            border: 1px solid #001F61;
+            box-shadow: 0 16px 22px -17px #03153B;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 12px 20px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        .floating-btn:hover {
+            background-color: #ffffff;
+            color: #001F61;
+        }
+
+        .floating-btn:focus {
+            outline: none;
+        }
+
+        .floating-text {
+            background-color: #001F61;
+            border-radius: 10px 10px 0 0;
+            color: #fff;
+            font-family: 'Muli';
+            padding: 7px 15px;
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 998;
+        }
+
+        .floating-text a {
+            color: #FF7500;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 480px) {
+
+            .social-panel-container.visible {
+                transform: translateX(0px);
+            }
+
+            .floating-btn {
+                right: 10px;
+            }
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            font-size: 14px;
+            bottom: 0;
+            position: fixed;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 999;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer i {
+            color: red;
+        }
+
+        footer a {
+            color: #3c97bf;
+            text-decoration: none;
+        }
+
+        .container2 {
+            grid-template-columns: 1fr 1fr;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            margin-left: 55%;
+
+        }
+
+        @media (max-width: 940px) {
+            .container2 {
+                margin-left: 0%;
+            }
+
+            .bottton {
+                width: 100px;
+                height: 40px;
+
+            }
+        }
+
+        /*@media (max-width: 940px) {
+            .container2 {
+                grid-template-columns: 1fr;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .info {
+                font-size: 1.2em;
+                display: flex;
+                padding: 1em 3em;
+                height: 3em;
+            }
+
+            .info img {
+                height: 3em;
+                margin-right: 0.5em;
+            }
+
+            .info h1 {
+                font-size: 1em;
+                font-weight: normal;
+            }
+
+            .container2 {
+                /* CHANGE TO GRID 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        grid-gap: 50px;
+        width: 100vw;
+        max-width: 100%;
+        margin: auto;
+        }
+
+        */
+    </style>
+</head>
+
+<body>
+    <center>
+        <section class="info">
+            <img src="../image/logo.png" style="width: 40px;">
+            <h1 style="color: #fff"> <a style="color: #64b1f3" href="https://Projectsakura.github.io"
+                    target="_blank">Project Sakura</a></h1>
+        </section>
+    </center>
+    <div class="container2" style=" width:100%; align-self: center;">
+        <!-- <center> -->
+        <div class="course">
+            <div style="width: 100%;" class="course-info">
+                <h6>21 March 2021</h6>
+                <h2>Project Sakura is now associated with GSSOC'21</h2>
+                <hr style="border:0.5px solid #f2f2f2;">
+                <p>
+                    It's me, the web developer of project sakura, You might have seen some website changes in this past
+                    month and about those changes I want you to inform that our project got selected as GSSOC'21 and
+                    many of the contributors all around the world are coming and
+                    working on our website.
+                </p>
+                <center>
+                    <img style="width:280px;" src="https://gssoc.girlscript.tech/images/type-logo.png" />
+                </center>
+                <p>
+                    All have the same goal in mind to make user
+                    experience and user interface better, We are planning to create some new things which I am sure ,you
+                    gonna like it, For Now I want to thank the GSSOC community and
+                    all the contributors who are contributing to our project
+                </p>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"
+                    data-ad-format="fluid" data-ad-client="ca-pub-1277633863266032" data-ad-slot="6196833028"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <p>Okay good, so what are the change log in the website </p>
+                <ul>
+                    <li>The stats page is much more faster and now have 2 theme. </li>
+                    <li>The buttons and the theme in the stats/blog website is changed and all website are adopting
+                        homogenous design </li>
+                </ul>
+
+
+                <p>So, That was everything for this website update and hopefully see ya all in April. Also, If you like
+                    how hard We
+                    work to bring you awesome and absolutely free software, you can go ahead and gift me some coffee, <a
+                        style="color: cyan" href="https://ko-fi.com/lordshen">Buy me a coffee.</a>
+                </p>
+                <p>
+                    Well, this was it for this update and if you find any bugs in the website do report it to me on
+                    official telegram group by tagging me( <a href="https://t.me/C0un13rT3rr0r1st">@C0un13rT3rr0r1st</a>
+                    )
+                    . As always do follow us on twitter <a style="color: cyan"
+                        href="https://twitter.com/ProjectSakura_">@ProjectSakura_</a> coz we keep posting fun stuff on
+                    it ;) </p>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"
+                    data-ad-format="fluid" data-ad-client="ca-pub-1277633863266032" data-ad-slot="6196833028"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <div id="disqus_thread"></div>
+
+                <script type="application/javascript">
+                    var disqus_config = function () {
+
+
+
+                    };
+                    (function () {
+                        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+                            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+                            return;
+                        }
+                        var d = document,
+                            s = d.createElement('script');
+                        s.async = true;
+                        s.src = '//' + "direwolf-tech" + '.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                        powered by Disqus.</a></noscript>
+                <a href="https://disqus.com" class="dsq-brlink">comments powered by <span
+                        class="logo-disqus">Disqus</span></a>
+            </div>
+        </div>
+        <div class="courses-container" style="margin-top:80px;">
+            <div class="course" style="margin-bottom: 100px">
+                <div class="course-info">
+                    <h6>About Author</h6>
+                    <hr style="border:0.5px solid #f2f2f2;">
+                    <a href="https://arunteltia.github.io">
+                        <h2>Arun Teltia</h2>
+                    </a>
+                    <p>Arun Teltia is the lead web developer of the project. He is a passionate web developer and loves
+                        to watch anime is his spare time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </center> -->
+    <div>
+        <center>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- horizontal-sakura-unit2 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
+                data-ad-slot="8931146882" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </center>
+    </div>
+    <footer style="width:100vw">
+        <p>
+            Created with <3 by <a target="_blank" href="https://github.com/ProjectSakura">Project Sakura</a>
+                - Sponsored by XSLTEL OU. Read about the credits
+                <a target="_blank"
+                    href="https://github.com/ProjectSakura/ProjectSakura.github.io/blob/master/README.md">here</a>
+        </p>
+    </footer>
+</body>
+
+</html>

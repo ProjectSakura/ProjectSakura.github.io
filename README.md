@@ -17,14 +17,13 @@ Sakura provides quick timely updates and a great deal of customization with the 
 
 It is an Open Source custom ROM building website that is being used by thousands of people and has more than 70k downloads.
 
-The project is originally based on android and there are 35 mobiles that are being maintained by 20 maintainers
+The project is originally based on android and there are 35 mobiles that are being maintained by 20 maintainers.
 
 For more information regarding new updates and features as well as to download Project Sakura please visit the official website here : [Project Sakura](https://projectsakura.xyz)
 
 ### **Features**
 
-- **Secure** ⚙️
-  : Project Sakura have all the security measures from Lineage OS.
+- **Secure** ⚙️ : Project Sakura has all the security measures from Lineage OS.
 - **Customizable** 🔧 :Project Sakura comes with a beautiful interface and allows a lot of customization and personalization for the user.
 - **Open Source** 🌍 : Any kind of contribution to Project Sakura is welcome and much appreciated. [Fork us](https://github.com/ProjectSakura)!
 
@@ -42,8 +41,8 @@ If you like Project Sakura, please drop a ⭐ on the GitHub repository
 
 - HTML
 - CSS
-- Bootsrap
-- Javacript
+- Bootstrap
+- Javascript
 
 The website is fully responsive and is maintained regularly.
 
@@ -51,21 +50,11 @@ The website is fully responsive and is maintained regularly.
 
 <img src="image\StyleGuideby-DevrajDC.png"> </img>
 
-### **Snapshots of the website**
+### **Demo**
 
-The Homepage :
-<img src="image\snapshots\homepage.PNG"> </img>
-<img src="image\snapshots\homepage_2.PNG"> </img>
+<img src="image\snapshots\project_sakura_gif.gif"> </img>
 
-Blog Page :
-
-<img src="image\snapshots\blogpage.PNG"> </img>
-
-Stats Page :
-
-<img src="image\snapshots\statspage.PNG"> </img>
-
-[Watch the Demo](https://www.youtube.com/watch?v=7k7nnAVBh9Y) 🎥
+[For more info watch](https://www.youtube.com/watch?v=7k7nnAVBh9Y) 🎥
 
 The website link : [Project Sakura](https://projectsakura.xyz)
 
@@ -77,13 +66,13 @@ The website link : [Project Sakura](https://projectsakura.xyz)
 <tr>
   <td align="center"> <img src="image\maintainers\shen.jpeg" width="100px"> 
   <br>
-  <sub><b>Priyanshu</b> <br>
+  <sub><b> <a href="https://github.com/LordShenron">Priyanshu </a></b> <br>
   Founder, Lead Developer
 </td>
 
  <td align="center"> <img src="image\maintainers\arun.jpeg" width="100px"> 
   <br>
-  <sub><b>Arun</b> <br>
+  <sub><b> <a href="https://github.com/ArunTeltia">Arun</a></b> <br>
   Web Developer
 </td>
 </tr> 
@@ -103,5 +92,4 @@ Project Sakura Team would like to thank all the users, maintainers and developer
 - [Ig Design for the download page design](https://codepen.io/ig_design/pen/omQXoQ)
 - [FlorinPop17 for the Card design and Footer design](https://codepen.io/FlorinPop17/pen/EJKgKB)
 - [Danaabhi7719 for Blog posts card design](https://codepen.io/danaabhi7119/pen/NWxjyby)
-- [Resurrecton Remix for the Homepage](https://codepen.io/ig_design/pen/omQXoQ)
 - [mograph.ix for dowload animation](https://lottiefiles.com/25923-download-arrow)

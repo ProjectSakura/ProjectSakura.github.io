@@ -17,6 +17,14 @@ const data2 = {
       isSupported: 1,
     },
     {
+      name: "CakesTwix",
+      device_name: "LENOVO Z5S",
+      alternate_name: "jd2019",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
       name: "Abdibekov Dauren",
       device_name: "MEIZU 16TH",
       alternate_name: "m1882",
@@ -122,6 +130,14 @@ const data2 = {
       isSupported: 1,
     },
     {
+      name: "MarkDarknessK",
+      device_name: "XIAOMI MI A2",
+      alternate_name: "jasmine_sprout",
+      IsDropped: "",
+      droppedMessage: "",
+      isSupported: 1,
+    },
+    {
       name: "Marcos Almeida",
       device_name: "XIAOMI MI 6X",
       alternate_name: "wayne",
@@ -139,7 +155,7 @@ const data2 = {
     },
     {
       name: "Prajwal & Nitish",
-      device_name: "Xiaomi MI 10i 5G | 10T Lite",
+      device_name: "Xiaomi MI 10I 5G | 10T LITE",
       alternate_name: "gauguin",
       IsDropped: "",
       droppedMessage: "",

@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         media="screen,projection">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -146,8 +148,7 @@
                 margin: 0 auto;
             }
         }
-    </style>
-    <style>
+
         .neon_button {
             position: relative;
             display: inline-block;
@@ -306,12 +307,17 @@
         #testmodal {
             margin: 0 auto;
         }
+
     </style>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-173637831-1');
@@ -364,7 +370,8 @@
                                     style="width: 250px; height: 250px;" loop autoplay></lottie-player>
                             </center>
                             <h3>
-                                <a href="https://projectsakura.xyz/download" target ="_blank">Click to try our new Download Center(Beta)</a>
+                                <a href="https://projectsakura.xyz/download" target="_blank">Click to try our new
+                                    Download Center(Beta)</a>
                             </h3>
                         </div>
 
@@ -394,7 +401,7 @@
                     <div class="official-devices">
                         <span class="card-title" style="margin-bottom:0px;">OFFICIAL DEVICES</span>
                         <button class="primary download changelog">
-                            CHANGE LOG >>
+                            CHANGE LOG
                         </button>
                     </div>
                     <!--Modal -->
@@ -408,17 +415,20 @@
 
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-default button-X" data-dismiss="modal">X</button>
+                                <button type="button" class="close-btn-x" data-dismiss="modal">
+                                    <i class="material-icons">close</i>
+                                </button>
                             </div>
                             <div class="around">
                                 <div class="modal_body">
-                                    <div class="data-modal" style="font-size:17px">
+                                    <div class="data-modal">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <input onkeyup="filter()" id="search123" type="text" placeholder="Search ...">
+                    <i class="material-icons search-icon">search</i>
+                    <input onkeyup="filter()" id="search123" type="text" placeholder="Search" class="search-input">
                     <ul id="search-ul" class="collapsible sakura-lighter-bg collapsible-noborder">
                     </ul>
                 </div>
@@ -427,8 +437,8 @@
                 <div class="card-content">
                     <div class="official-devices">
                         <span class="card-title" style="margin-bottom:0px;">OFFICIAL DEVICES</span>
-                        <button class="primary download changelog" style="border:0px;">
-                            CHANGE LOG >>
+                        <button class="primary download changelog">
+                            CHANGE LOG
                         </button>
                     </div>
                     <!--Modal -->
@@ -442,19 +452,25 @@
 
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-default button-X" data-dismiss="modal">X</button>
+                                <button type="button" class="close-btn-x" data-dismiss="modal">
+                                    <i class="material-icons">close</i>
+                                </button>
                             </div>
                             <div class="around">
                                 <div class="modal_body1">
-                                    <div class="data-modal1" style="font-size:17px">
+                                    <div class="data-modal1">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <input onkeyup="filter1()" id="search1234" type="text" placeholder="Search ...">
+
+                    <i class="material-icons search-icon">search</i>
+                    <input onkeyup="filter1()" id="search1234" type="text" placeholder="Search" class="search-input">
+
                     <ul id="search-ul1" class="collapsible sakura-lighter-bg collapsible-noborder">
                     </ul>
+
                 </div>
             </div>
 
@@ -507,7 +523,6 @@
         </div>
     </footer>
     <script>
-
         function myFunc1() {
             var android10 = document.getElementById("myDIV");
             var android11 = document.getElementById("myDIV1");
@@ -519,6 +534,7 @@
                 android11.style.display = "none";
             }
         }
+
         function myFunc5() {
             var android10 = document.getElementById("myDIV");
             var android11 = document.getElementById("myDIV1");
