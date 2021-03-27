@@ -49,6 +49,9 @@ Don't remove this if you intent to use this page for your website.
             --btn-toggle-color: #56cc9d;
             --icon-color: #56cc9d;
             --transition-delay: 0.5s;
+            --footer-background-color: #212433;
+            --footer-color: #157a6e;
+            --footer-social-icon-color: #78c2ad;
 
 
             margin: 0;
@@ -66,6 +69,9 @@ Don't remove this if you intent to use this page for your website.
             --table-body-color: #f7f7f7;
             --btn-toggle-color: #0F111A;
             --icon-color: #000;
+            --footer-background-color: #56cc9d;
+            --footer-color: #5d1518;
+            --footer-social-icon-color: #7f1416;
 
             color: #000;
 
@@ -215,7 +221,7 @@ Don't remove this if you intent to use this page for your website.
         footer {
             padding: 40px 0 0 0;
             margin: 80px 0 0 0;
-            background-color: #212433;
+            background-color: var(--footer-background-color);
         }
 
         footer .footer-copyright p {
@@ -225,7 +231,7 @@ Don't remove this if you intent to use this page for your website.
         }
 
         footer .footer-copyright a {
-            color: #157a6e;
+            color: var(--footer-color);
             list-style: none;
             text-decoration: none;
             font-weight: 700;
@@ -266,6 +272,7 @@ Don't remove this if you intent to use this page for your website.
             vertical-align: middle;
             position: relative;
             margin: 22px 4px 10px 4px;
+            color: var(--footer-social-icon-color);
         }
 
         .social-icon li a:hover {
