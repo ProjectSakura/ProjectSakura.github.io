@@ -108,11 +108,69 @@
                 padding-bottom: 0px;
             }
         }
+
+        /*css for back to top*/
+        html
+        {
+        scroll-behavior: smooth;
+    }
+    a
+    {
+      text-decoration: none !important;
+    }
+    #button {
+      display: inline-block;
+      background-color: #FF9800;
+      width: 52px;
+      height: 52px;
+      text-align: center;
+      border-radius: 25px;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1000;
+    }
+    #button::after {
+      content: "\f077";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 2em;
+      line-height: 50px;
+      color: #fff;
+    }
+    #button:hover {
+      cursor: pointer;
+      background-color:green;
+    }
+    #button:active {
+      background-color:green;
+    }
+    #button.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    /* Styles for the content section */
+    
+    
+    @media (min-width: 500px) {
+      
+      #button {
+        margin: 30px;
+      }
+    }
+    /* css back to top end    */
     </style>
 </head>
 
 <body>
-
+        <!-- Back to top button -->
+    <a id="button"></a>
     <!-- TODO: Check and fix CSS indenting -->
     <!--******************** NAVBAR ********************-->
     <div class="navbar-wrapper">
@@ -1041,6 +1099,25 @@
                 },
             },
         });
+    </script>
+    <script>
+    //code for back to top button
+      var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
     </script>
 </body>
 
