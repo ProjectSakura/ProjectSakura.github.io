@@ -497,3 +497,23 @@ td {
 ::-webkit-scrollbar-thumb:hover {
   background: #333;
 }
+
+h5.white-text{
+  color: #64B1F3 !important;
+  cursor: default;
+}
+
+h5{
+  cursor: default;
+}
+
+a.grey-text:hover{
+  color: #A5FECB !important;
+  cursor: pointer;
+  transform: scaleY(1.2);
+}
+
+.grey-text:hover{
+  color: #A5FECB !important;
+  cursor: default;
+}
