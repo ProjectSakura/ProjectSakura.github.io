@@ -490,6 +490,18 @@ section#maintainers-team {
   background: #010101;
 }
 
+.flat:hover{
+  color: #A5FECB;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.pixel:hover{
+  color: #64B1F3;
+  cursor: pointer;
+  text-decoration:none;
+}
+
 section#team .align,
 section#credits .align,
 section#maintainers-team .align {
@@ -504,6 +516,10 @@ section#maintainers-team .align {
   font-size: 3em;
   margin-bottom: 1em;
   margin-top: 0.5em;
+}
+
+.sponsor:hover{
+  filter: hue-rotate(85deg);
 }
 
 #credits,
