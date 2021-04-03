@@ -1,0 +1,490 @@
+<html>
+
+<head>
+    <!-- Page related info -->
+    <title>Project Sakura | Downloads</title>
+    <meta charset="UTF-8" />
+    <meta name="title" content="ProjectSakura | Downloads">
+    <meta property="og:title" content="ProjectSakura | Downloads">
+    <meta property="twitter:title" content="ProjectSakura | Downloads">
+    <!-- Descriptions -->
+    <meta name="description"
+        content="This is the download page for all officially supported devices by Project Sakura.">
+    <meta property="og:description" content="Get the build for your officially supported device by Project Sakura.">
+    <meta property="twitter:description"
+        content="This is the download page for all officially supported devices by Project Sakura.">
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <!-- Extra props -->
+    <meta property="og:site_name" content="ProjectSakura | Downloads">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="twitter:url" content="">
+    <meta name="theme-color" content="#1c1c24">
+
+    <!-- favicon data generated on favicon-generator.org -->
+    <link rel="icon" type="image/png" sizes="16x16" href="image/logo.png">
+    <meta name="msapplication-TileColor" content="#1c1c24">
+    <meta name="msapplication-TileImage" content="/img/icon/ms-icon-144x144.png">
+    <!-- Style importing -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        media="screen,projection">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Adding Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        .collapsible-header {
+            display: inline-block;
+        }
+
+
+
+        .paypal_us {
+            width: 150px;
+            outline: 0;
+            border-radius: 20px;
+            height: 40px;
+            cursor: pointer;
+            /* background-color: yellow; */
+        }
+
+        .paypal_us:active {
+            background-color: white;
+        }
+
+        .paypal_us:visited {
+            background-color: white;
+        }
+
+        .paypal_us:focus {
+            background-color: white;
+        }
+
+        .progressbar {
+            display: flex;
+            /* position: relative; */
+            height: 10px;
+            width: 30%;
+            background: linear-gradient(90deg, red 37%, #e7edf4 0%);
+            border-radius: 20px;
+            margin: 0 0;
+            gap: 0px;
+        }
+
+        .reached {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0px;
+        }
+
+        .target_box {
+            /* z-index: 1000; */
+            display: flex;
+            height: 40px;
+            width: 60px;
+            border-radius: 5px;
+            background-color: #525961;
+            gap: 0px;
+            margin-left: -10px;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        @media (max-width: 568px) {
+            .progressbar {
+                width: 80%;
+            }
+        }
+
+        #loading {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: black;
+            z-index: 9999;
+        }
+
+        .donation_div {
+            display: flex;
+            width: 350px;
+            margin: 0 auto;
+
+        }
+
+        .donation_or {
+            /* width: 1%; */
+            display: flex;
+            align-items: center;
+            padding-left: 7px
+        }
+
+        @media (max-width: 568px) {
+            .donation_div {
+                width: 175px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .donation_or {
+                text-align: center;
+                display: flex;
+                margin: 0 auto;
+            }
+        }
+
+        .neon_button {
+            position: relative;
+            display: inline-block;
+            padding: 25px 30px;
+            margin: 40px 30px;
+            ;
+            color: #03e9f4;
+            font-size: 24px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 0.5s;
+            letter-spacing: 4px;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+        }
+
+        .neon_button:hover {
+            background-color: #03e9f4;
+            color: #050801;
+            box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+        }
+
+        .neon_button span {
+            position: absolute;
+            display: block;
+        }
+
+        .neon_button:nth-child(1) {
+            filter: hue-rotate(29deg);
+        }
+
+        .neon_button:nth-child(3) {
+            filter: hue-rotate(110deg);
+        }
+
+        .neon_button span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #03e9f4);
+            animation: animate1 1s linear infinite;
+        }
+
+        @keyframes animate1 {
+            0% {
+                left: -100%;
+            }
+
+            50%,
+            100% {
+                left: 100%;
+            }
+        }
+
+        .neon_button span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #03e9f4);
+            animation: animate2 1s linear infinite;
+            animation-delay: 0.25s;
+        }
+
+        @keyframes animate2 {
+            0% {
+                top: -100%;
+            }
+
+            50%,
+            100% {
+                top: 100%;
+            }
+        }
+
+        .neon_button span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #03e9f4);
+            animation: animate3 1s linear infinite;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes animate3 {
+            0% {
+                right: -100%;
+            }
+
+            50%,
+            100% {
+                right: 100%;
+            }
+        }
+
+        .neon_button span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #03e9f4);
+            animation: animate4 1s linear infinite;
+            animation-delay: 0.75s;
+        }
+
+        @keyframes animate4 {
+            0% {
+                bottom: -100%;
+            }
+
+            50%,
+            100% {
+                bottom: 100%;
+            }
+        }
+
+        .button_card {
+            background-color: rgb(28, 28, 36, 0.7) !important;
+        }
+
+        .neon_button {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+
+        .modal {
+            margin: -50px auto !important;
+        }
+
+        @media (max-width: 568px) {
+            .modal {
+                margin: -80px auto !important;
+            }
+        }
+
+        .loader_animation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #testmodal {
+            margin: 0 auto;
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173637831-1');
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body class="sakura" onload="myFunction23()">
+    <div id="loading">
+        <div class="loader_animation">
+
+            <lottie-player src="image/7646-loading-project3.json" background="transparent" speed="1"
+                style="width: 250px; height: 250px;" loop autoplay></lottie-player>
+        </div>
+    </div>
+
+    <div class=" navbar-fixed">
+        <nav>
+            <div class="nav-wrapper sakura-light-bg">
+                <a href="https://ProjectSakura.github.io/" class="brand-logo"><img src="image/logo.png"
+                        style="color: #64b1f3" class="responsive-img circle avatar" alt="SAKURA"></a>
+                <a href="#" data-target="btlg-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down my-nav">
+                    <li class="text-uppercase"><a href="https://ProjectSakura.github.io/">Home</a></li>
+                    <li class="text-uppercase"><a href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
+                    <li class="text-uppercase"><a href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
+                    <li class="text-uppercase"><a href="https://twitter.com/ProjectSakura_">Twitter</a></li>
+                    <li class="text-uppercase"><a href="https://t.me/ProjectSakura">Telegram</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="sakura-midlight-bg sidenav my-nav" id="btlg-menu">
+        <li class="text-uppercase"><a href="https://ProjectSakura.github.io/">Home</a></li>
+        <li class="text-uppercase"><a href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
+        <li class="text-uppercase"><a href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
+        <li class="text-uppercase"><a href="https://twitter.com/ProjectSakura_">Twitter</a></li>
+        <li class="text-uppercase"><a href="https://t.me/ProjectSakura">Telegram</a></li>
+    </ul>
+
+
+    <div class="container" style="margin-top:10px;">
+        <div class="row">
+            <div class="card sakura-light-bg z-depth-3 ">
+                <div class="card-content">
+                    <div class="official-devices">
+                        <span class="card-title" style="margin-bottom:0px;">OFFICIAL DEVICES</span>
+                        <button class="primary download changelog">
+                            CHANGE LOG
+                        </button>
+                    </div>
+                    <!--Modal -->
+                    <div class="main_modal123">
+                        <div id="testmodal" class="modal fade">
+                            <div class="close-button ">
+                                <div class="mobile_rating">
+                                    <div class="mobile_name">
+                                    </div>
+                                    <div class="rating">
+
+                                    </div>
+                                </div>
+                                <button type="button" class="close-btn-x" data-dismiss="modal">
+                                    <i class="material-icons">close</i>
+                                </button>
+                            </div>
+                            <div class="around">
+                                <div class="modal_body">
+                                    <div class="data-modal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="material-icons search-icon">search</i>
+                    <input onkeyup="filter()" id="search123" type="text" placeholder="Search" class="search-input">
+                    <ul id="search-ul" class="collapsible sakura-lighter-bg collapsible-noborder">
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container" style="width:100%">
+        <center>
+            <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- sakura-horizontal-unit-2 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
+                data-ad-slot="8931146882" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </center>
+    </div>
+    <footer class="page-footer sakura-light-bg">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">PROJECT SAKURA</h5>
+                    <p class="grey-text text-lighten-4">Feels Like Spring</p>
+                    <h5>SPONSORED BY XSLTEL OU</h5>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://ProjectSakura.github.io/">Home</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://ProjectSakura.github.io/blog.html">Blog</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://ProjectSakura.github.io/stats.html">Stats</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://twitter.com/ProjectSakura_">Twitter</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3" href="https://t.me/ProjectSakura">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 | Project Sakura
+                <a class="grey-text text-lighten-4 right" href="https://materializecss.com">Made with Materialize</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/filter.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.fixed-action-btn').floatingActionButton();
+            $('.collapsible').collapsible();
+            $('.tooltipped').tooltip();
+            $('.parallax').parallax();
+        });
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="mantainers.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script>
+        var preloader = document.getElementById('loading');
+        const myFunction23 = setInterval(() => {
+            preloader.style.display = "none";
+        }, 3000)
+    </script>
+    <script>
+        async function helllo() {
+            async function showmodal1() {
+                $("#testmodal").modal('show');
+                const mobile_name = document.querySelector(".mobile_name");
+                mobile_name.innerText = "We are fetching the build data ,Please Wait ...";
+
+
+                const para = document.querySelector(".data-modal");
+                const rating = document.querySelector(".rating");
+                rating.innerHTML = `<div class="rating">Please dont forget to leave 5 star rating at sourceforge</div>`;
+                para.innerHTML = `	
+                <center>
+
+                    <lottie-player src="image/download.json" background="transparent" speed="1"
+                        style="width: 250px; height: 250px;" loop autoplay></lottie-player>
+                </center>	
+                `
+
+            }
+            await showmodal1()
+        }
+    </script>
+
+
+</body>
+
+</html>
