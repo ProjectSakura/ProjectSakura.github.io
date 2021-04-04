@@ -29,6 +29,24 @@ body {
   animation: animate 6s linear infinite;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center:nth-child(){
+  margin: 0 0.25em;
+}
+
+.center-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
 /*---------- FORMS ----------*/
 
 input[type="text"],
