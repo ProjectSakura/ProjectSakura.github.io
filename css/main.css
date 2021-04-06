@@ -517,3 +517,9 @@ a.grey-text:hover{
   color: #A5FECB !important;
   cursor: default;
 }
+
+.center-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
