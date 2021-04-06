@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Copyright By Project Sakura 
+<!--Copyright By Project Sakura
 This page is designed by members of Project Sakura and all the code belongs to them, thanks to W3schools for CSS.
 Don't remove this if you intent to use this page for your website.
 -->
@@ -25,10 +25,10 @@ Don't remove this if you intent to use this page for your website.
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        
+
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        
+
         gtag('config', 'UA-173637831-1');
     </script>
 
@@ -41,7 +41,7 @@ Don't remove this if you intent to use this page for your website.
         body {
 
             --background-color: #0F111A;
-            --accent-color :#64B1F3; 
+            --accent-color :#64B1F3;
             --text-color: #f2f2f2;
             --container-color: #212433;
             --table-text-color: #c9d1d9;
@@ -49,15 +49,18 @@ Don't remove this if you intent to use this page for your website.
             --btn-toggle-color: #56cc9d;
             --icon-color: #56cc9d;
             --transition-delay: 0.5s;
-            
-            
-            margin: 0;       
+            --footer-background-color: #212433;
+            --footer-color: #157a6e;
+            --footer-social-icon-color: #78c2ad;
+
+
+            margin: 0;
             background-color: var(--background-color);
             transition: var(--transition-delay);
         }
 
-        body.light { 
-            
+        body.light {
+
             --background-color: #f7f7f9;
             --accent-color :#56cc9d;
             --text-color: #5A5A5A;
@@ -66,9 +69,12 @@ Don't remove this if you intent to use this page for your website.
             --table-body-color: #f7f7f7;
             --btn-toggle-color: #0F111A;
             --icon-color: #000;
+            --footer-background-color: #56cc9d;
+            --footer-color: #1a3b8f;
+            --footer-social-icon-color: #0349ff;
 
             color: #000;
-            
+
         }
 
         .btn-toggle
@@ -108,7 +114,7 @@ Don't remove this if you intent to use this page for your website.
             color: var(--accent-color);
             font-weight: 300;
         }
-      
+
         .header-card  {
             background-color: var(--container-color);
             color: #f2f2f2;
@@ -133,7 +139,7 @@ Don't remove this if you intent to use this page for your website.
             font-weight: 700;
         }
 
-        .table 
+        .table
         {
             color: var(--table-text-color);
             background-color: var(--table-body-color);
@@ -150,7 +156,7 @@ Don't remove this if you intent to use this page for your website.
         }
 
         /* Footer Styling */
-        footer {
+        /* footer {
         margin: 0;
         padding: 2em 0;
         background-color: var(--container-color)
@@ -189,20 +195,106 @@ Don't remove this if you intent to use this page for your website.
         cursor: pointer;
         color: #FFF ;
         filter: invert(100);
+        } */
+
+        /*---------------------------------------
+           Color Animation
+        -----------------------------------------*/
+
+        @keyframes animate {
+          0% {
+            filter: hue-rotate(0deg);
+          }
+          100% {
+            filter: hue-rotate(360deg);
+          }
         }
+
+        .color_animation {
+          animation: animate 6s linear infinite;
+        }
+
+        /*---------------------------------------
+           Footer
+        -----------------------------------------*/
+
+        footer {
+            padding: 40px 0 0 0;
+            margin: 80px 0 0 0;
+            background-color: var(--footer-background-color);
+        }
+
+        footer .footer-copyright p {
+            /* color: rgba(0, 0, 0, .8); */
+            font-size: 20px;
+            text-align: center;
+        }
+
+        footer .footer-copyright a {
+            color: var(--footer-color);
+            list-style: none;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        footer .footer-copyright a:hover {
+            animation: animate 6s linear infinite;
+        }
+
+
+        /*---------------------------------------
+           Social icon
+        -----------------------------------------*/
+
+        .social-icon {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            text-align: center
+        }
+
+        .social-icon li {
+            display: inline-block;
+            list-style: none
+        }
+
+        .social-icon li a {
+            border: 2px solid transparent;
+            border-radius: 100px;
+            cursor: pointer;
+            font-size: 40px;
+            text-decoration: none;
+            transition: all .4s ease-in-out;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+            margin: 22px 4px 10px 4px;
+            color: var(--footer-social-icon-color);
+        }
+
+        .social-icon li a:hover {
+            color: rgba(0, 0, 0, .9);
+            background: #4aa48a;
+            transform: scale(1.1);
+            animation: animate 6s linear infinite;
+        }
+
 
     </style>
 </head>
 <body>
     <!-- Header -->
-    <div class="container btn-container"> 
+    <div class="container btn-container">
         <button class="btn-toggle"><i class="fa fa-adjust" style="font-size: 21px;"></i></button>
     </div>
-    
+
     <header class="container text-center">
         <h1>SAKURA STATS &#169;</h1>
     </header>
-    
+
     <!-- Intro Card -->
     <div class="container card header-card mb-3" >
         <h3 class="card-title">Project Sakura got downloaded <span class="totaldownload"></span> times.</h3>
@@ -217,9 +309,9 @@ Don't remove this if you intent to use this page for your website.
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-        
+
         <h3 class="text-center table-heading">SUPPORTED DEVICES</h3>
-        
+
         <table class="table table-striped" style=" font-weight: 600;">
             <thead class="table-success">
                 <tr>
@@ -234,7 +326,7 @@ Don't remove this if you intent to use this page for your website.
             </tbody>
         </table>
     </div>
-    
+
     <!-- TABLE ENTRIES >> Unsupported Devices -->
     <div class="container">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -245,7 +337,7 @@ Don't remove this if you intent to use this page for your website.
         </script>
 
         <h3 class="text-center table-heading">UNSUPPORTED DEVICES</h3>
-        
+
         <table class="table table-striped" style="font-weight: 600">
             <thead class="table-success">
                 <tr>
@@ -281,7 +373,7 @@ Don't remove this if you intent to use this page for your website.
                     
                 </thead>
                 <tbody class="countries">
-                    
+
                 </tbody>
             </table>
         </div>
@@ -294,7 +386,7 @@ Don't remove this if you intent to use this page for your website.
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-        
+
         <h3 class="text-center table-heading">OS USED TO DOWNLOAD SAKURA</h3>
         <table class="table table-striped">
             <thead class="table-success">
@@ -311,7 +403,7 @@ Don't remove this if you intent to use this page for your website.
     </div>
 
     <!-- FOOTER -->
-    <footer>
+    <!-- <footer>
         <div class="container">
             <ul class="icon-list">
                 <li><a class="fa fa-twitter" href="https://twitter.com/ProjectSakura_" target="_blank"></a></li>
@@ -323,6 +415,26 @@ Don't remove this if you intent to use this page for your website.
             <p>Supported by XSLTEL OU</p>
             <p>Stats are fetched from Sourceforge.</p>
         </div>
+    </footer> -->
+
+    <!-- Footer Section -->
+    <footer id="footer-stickey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="footer-copyright">
+                        <p>Sponser: <a href="#">XSLTEL OU</a>
+                            | Design: <a href="#home" target="_parent">SAKURA TEAM</a>
+                        </p>
+                        <p>Stats are fetched from Sourceforge.</p>
+                    </div>
+                    <ul class="social-icon" data-wow-delay="1s">
+                        <li><a href="https://twitter.com/ProjectSakura_" target="_blank" class="fa fa-twitter"></a></li>
+                        <li><a href=href="https://www.github.com/ProjectSakura" target="_blank" class="fa fa-github"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="mantainers.js"></script>
@@ -332,7 +444,7 @@ Don't remove this if you intent to use this page for your website.
     <!-- TOGGLE THEME -->
     <script>
         document.querySelector(".btn-toggle").addEventListener('click', ()=>{
-         document.querySelector("body").classList.toggle("light");  
+         document.querySelector("body").classList.toggle("light");
         });
 
     </script>
