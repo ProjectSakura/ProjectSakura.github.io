@@ -1,8 +1,8 @@
 /*
-This script is referenced in following files:-
-1.archive .html
-2.blog.html
-3.download.html
+This script is referenced in download.html
+*/
+
+/*
 
 Lines of codes:- 30(excluding spaces)
 */
