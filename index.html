@@ -81,40 +81,6 @@
             /* 60px to make the container go all the way to the bottom of the topbar */
         }
 
-
-        .mask2 img {
-            opacity: 1;
-        }
-
-        @media (max-width: 580px) {
-           
-           .navbar-inner {
-               min-height: 0em;
-           }
-       }
-
-       @media (max-width: 979px) {
-
-            body {
-               padding-left: 0;
-               padding-right: 0;
-               padding-top: 0;
-            
-           }
-
-           .navbar-fixed-top .navbar-inner,
-           .navbar-fixed-bottom .navbar-inner {
-               padding: 25px;
-               padding-bottom: 0;
-     
-           }
-
-           .pull-right.nav-collapse.collapse {     
-               float: none;
-           }
-
-       }
-
        /*css for back to top*/
         a
         {
@@ -167,6 +133,10 @@
             scroll-behavior: smooth;
         }
 
+        .mask2 img {
+            opacity: 1;
+        }
+
         .scrolltolink:hover {
             color: #ffffff !important;
         }   
@@ -180,6 +150,34 @@
             }
         }
         /* css back to top end    */
+
+        @media (max-width: 580px) {
+           
+           .navbar-inner {
+               min-height: 0em;
+           }
+       }
+
+        @media (max-width: 979px) {
+
+            body {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+
+            }
+
+            .navbar-fixed-top .navbar-inner,
+            .navbar-fixed-bottom .navbar-inner {
+            padding: 25px;
+            padding-bottom: 0;
+
+            }
+
+            .pull-right.nav-collapse.collapse {     
+            float: none;
+            }
+        }
     </style>
 </head>
 
