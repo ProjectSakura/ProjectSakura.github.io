@@ -34,7 +34,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.center:nth-child(){
+.center:nth-child() {
   margin: 0 0.25em;
 }
 
@@ -84,48 +84,50 @@ ol {
   /* 24px */
   margin: 0 0 1.5em 0;
 }
-.ui-btn-1
-{
-  text-decoration: none;
-  color: #64B1F3;
-  font-size: 1.2em;
+.ui-btn-1 {
+  text-decoration: none;
+  color: #64b1f3;
+  font-size: 1.2em;
 }
-.ui-btn-1:hover:focus:active{
-  color: #56cc9d;
-  background-color: #0F111A;
-  border: 2px solid #56cc9d;
-  padding: 2px 2px;
+.ui-btn-1:hover:focus:active {
+  color: #56cc9d;
+  background-color: #0f111a;
+  border: 2px solid #56cc9d;
+  padding: 2px 2px;
 }
-.ui-btn-2{
-  text-decoration: none;
-  color: #56cc9d;
-  font-size: 1.2em;
+.ui-btn-2 {
+  text-decoration: none;
+  color: #56cc9d;
+  font-size: 1.2em;
 }
-.ui-btn-2:hover:focus:active{
-  color: #64B1F3;
-  background-color: #0F111A;
-  border: 2px solid #64B1F3;
-  padding: 2px 2px;
+.ui-btn-2:hover:focus:active {
+  color: #64b1f3;
+  background-color: #0f111a;
+  border: 2px solid #64B1F3;
+  padding: 2px 2px;
 }
 
+.more-link {
+  transition: all 300ms ease-in-out;
+}
 
 .more-link:link,
 .more-link:visited {
-    background-color: transparent;
-    border: 1px solid #64B1F3;
-    border-radius: 5px;
-    color: #64B1F3;
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
-    padding: 10px 10px;
-    font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #64b1f3;
+  border-radius: 5px;
+  color: #64b1f3;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 10px;
+  font-size: 14px;
 }
 
 .more-link:hover,
 .more-link:active {
-  background-color: #64B1F3;
+  background-color: #64b1f3;
   color: white !important;
-  border: 1px solid #64B1F3;
+  border: 1px solid #64b1f3;
   cursor: pointer;
   text-decoration: none;
 }
@@ -261,6 +263,8 @@ ul#menu-main > li > a {
   font-family: "Roboto Condensed", monospace;
   font-size: 1em;
   color: #fff;
+  background-color: transparent;
+  transition: all 300ms ease-in-out;
 }
 
 ul#menu-main > li > a:hover {
@@ -276,9 +280,24 @@ ul#menu-main > li > a:hover {
   text-shadow: none;
 }
 
-.my-nav > li:hover {
-  padding-bottom: .2em;
-  border-bottom: 0.2em solid #A5FECB;
+.my-nav > li {
+  position: relative;
+}
+
+.my-nav > li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  height: 0.2em;
+  background-color: #a5fecb;
+  transition: all 300ms ease-in-out;
+}
+
+.my-nav > li:hover::after {
+  left: 0;
+  right: 0;
 }
 
 /* ----------------------------------------------------------------------------------------------------------
@@ -436,13 +455,13 @@ section#features .span3 {
 section#features .span3:hover {
   color: #ffffff;
   background: #212121;
-  -webkit-box-shadow: 2px 5px 10px -7px #FFF, -6px 1px 6px 8px rgba(0,0,0,0);
+  -webkit-box-shadow: 2px 5px 10px -7px #fff, -6px 1px 6px 8px rgba(0, 0, 0, 0);
   box-shadow: 2px 5px 8px -7px #fff, -6px 1px 6px 8px rgb(0 0 0 / 0%);
   cursor: pointer;
 }
 
 .features-homepage {
-  text-align : center;
+  text-align: center;
 }
 
 /* Downloads */
@@ -509,16 +528,16 @@ section#maintainers-team {
   background: #010101;
 }
 
-.flat:hover{
-  color: #A5FECB;
+.flat:hover {
+  color: #a5fecb;
   cursor: pointer;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-.pixel:hover{
-  color: #64B1F3;
+.pixel:hover {
+  color: #64b1f3;
   cursor: pointer;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 section#team .align,
@@ -537,7 +556,7 @@ section#maintainers-team .align {
   margin-top: 0.5em;
 }
 
-.sponsor:hover{
+.sponsor:hover {
   filter: hue-rotate(85deg);
 }
 
@@ -783,7 +802,6 @@ footer p {
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  
   section.single-page {
     padding: 1em 0;
   }
@@ -793,7 +811,7 @@ footer p {
   #downloads h1 {
     background: transparent;
   }
- 
+
   #screenshots .container {
     top: 0 !important;
   }
@@ -814,7 +832,7 @@ footer p {
   #features h1 {
     background: transparent;
   }
- 
+
   section#features h2 {
     margin-bottom: 0.25em;
   }
@@ -846,7 +864,6 @@ footer p {
 /* Smartphones (portrait) ----------- */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
- 
   #feature p {
     font-family: "Roboto Condensed", monospace;
     font-size: 26px;
@@ -870,9 +887,9 @@ footer p {
 /* CSS will be required after complete upgrade from v2.3 to v4.5 Bootstrap */
 
 .img-circle {
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
-    border-radius: 500px;
-    height: 50%;
-    width: 50%;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+  height: 50%;
+  width: 50%;
 }
