@@ -215,7 +215,7 @@ em {
 ---------------------------------------------------------------------------------------------------------- */
 
 .navbar .brand {
-  margin-left: 0;
+  margin-left: -10%;
   padding: 0;
   margin-top: 1.05em;
 }
@@ -254,7 +254,9 @@ em {
 }
 
 #menu-main {
-  margin-top: 1.125em;
+ margin-top: 1.125em;
+    margin-right: -20%;
+    float: right;
 }
 
 ul#menu-main > li > a {
