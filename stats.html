@@ -40,57 +40,55 @@ Don't remove this if you intent to use this page for your website.
         /* theme */
         body {
 
-            --background-color: #0F111A;
             --accent-color :#64B1F3;
-            --text-color: #f2f2f2;
-            --container-color: #212433;
-            --table-text-color: #c9d1d9;
-            --table-body-color: #212433;
+            --background-color: #0F111A;
             --btn-toggle-color: #56cc9d;
-            --icon-color: #56cc9d;
-            --transition-delay: 0.5s;
+            --container-color: #212433;
             --footer-background-color: #212433;
             --footer-color: #157a6e;
             --footer-social-icon-color: #78c2ad;
+            --icon-color: #56cc9d;
+            --table-body-color: #212433;
+            --table-text-color: #c9d1d9;
+            --text-color: #f2f2f2;
+            --transition-delay: 0.5s;
 
-
-            margin: 0;
             background-color: var(--background-color);
+            margin: 0;
             transition: var(--transition-delay);
         }
 
         body.light {
 
-            --background-color: #f7f7f9;
             --accent-color :#56cc9d;
-            --text-color: #5A5A5A;
-            --container-color: #56cc9d;
-            --table-text-color: #5A5A5A;
-            --table-body-color: #f7f7f7;
+            --background-color: #f7f7f9;
             --btn-toggle-color: #0F111A;
-            --icon-color: #000;
+            --container-color: #56cc9d;
             --footer-background-color: #56cc9d;
             --footer-color: #1a3b8f;
             --footer-social-icon-color: #0349ff;
+            --icon-color: #000;
+            --table-body-color: #f7f7f7;
+            --table-text-color: #5A5A5A;
+            --text-color: #5A5A5A;
 
             color: #000;
-
         }
 
         .btn-toggle
         {
              background-color: var(--btn-toggle-color);
-             color: #FFF;
-             height: 33px;
-             width: 33px;
-             padding: 3px;
-             border-radius: 50%;
-             cursor: pointer;
              border: 0;
-             transition: var(--transition-delay);
+             border-radius: 50%;
+             color: #FFF;
+             cursor: pointer;
+             height: 33px;
+             padding: 3px;
              position: absolute;
-             top: 2.5rem;
              right:2.5rem;
+             transition: var(--transition-delay);
+             top: 2.5rem;
+             width: 33px;
              z-index: 999;
         }
 
@@ -104,10 +102,10 @@ Don't remove this if you intent to use this page for your website.
         h3,
         h4,
         h5 {
-            font-family: 'Poppins', sans-serif;
             align-items: center;
-            margin: auto;
             color: var(--text-color);
+            font-family: 'Poppins', sans-serif;
+            margin: auto;
         }
 
         h1 {
@@ -130,29 +128,30 @@ Don't remove this if you intent to use this page for your website.
         }
 
         /* Table Styling */
-        th, td{
+        .table
+        {
+            background-color: var(--table-body-color);
             border: 1px solid var(--accent-color);
+            color: var(--table-text-color);
         }
 
         .table-heading {
-            margin-bottom: 1em;
             font-weight: 700;
+            margin-bottom: 1em;
         }
 
-        .table
+        .table-success th
         {
-            color: var(--table-text-color);
-            background-color: var(--table-body-color);
-            border: 1px solid var(--accent-color);
+            border-color: var(--accent-color);
         }
 
         .table-success,.thread
         {
             background-color: var(--accent-color);
         }
-        .table-success th
-        {
-            border-color: var(--accent-color);
+
+        th, td{
+            border: 1px solid var(--accent-color);
         }
 
         /* Footer Styling */
@@ -201,17 +200,17 @@ Don't remove this if you intent to use this page for your website.
            Color Animation
         -----------------------------------------*/
 
-        @keyframes animate {
-          0% {
-            filter: hue-rotate(0deg);
-          }
-          100% {
-            filter: hue-rotate(360deg);
-          }
+        .color_animation {
+            animation: animate 6s linear infinite;
         }
 
-        .color_animation {
-          animation: animate 6s linear infinite;
+        @keyframes animate {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+            100% {
+                filter: hue-rotate(360deg);
+            }
         }
 
         /*---------------------------------------
@@ -219,9 +218,20 @@ Don't remove this if you intent to use this page for your website.
         -----------------------------------------*/
 
         footer {
-            padding: 40px 0 0 0;
-            margin: 80px 0 0 0;
             background-color: var(--footer-background-color);
+            margin: 80px 0 0 0;
+            padding: 40px 0 0 0;
+        }
+
+        footer .footer-copyright a {
+            color: var(--footer-color);
+            font-weight: 700;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        footer .footer-copyright a:hover {
+            animation: animate 6s linear infinite;
         }
 
         footer .footer-copyright p {
@@ -230,26 +240,14 @@ Don't remove this if you intent to use this page for your website.
             text-align: center;
         }
 
-        footer .footer-copyright a {
-            color: var(--footer-color);
-            list-style: none;
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        footer .footer-copyright a:hover {
-            animation: animate 6s linear infinite;
-        }
-
-
         /*---------------------------------------
            Social icon
         -----------------------------------------*/
 
         .social-icon {
-            position: relative;
-            padding: 0;
             margin: 0;
+            padding: 0;
+            position: relative;
             text-align: center
         }
 
@@ -261,25 +259,25 @@ Don't remove this if you intent to use this page for your website.
         .social-icon li a {
             border: 2px solid transparent;
             border-radius: 100px;
+            color: var(--footer-social-icon-color);
             cursor: pointer;
             font-size: 40px;
-            text-decoration: none;
-            transition: all .4s ease-in-out;
-            width: 60px;
             height: 60px;
             line-height: 60px;
-            text-align: center;
-            vertical-align: middle;
-            position: relative;
             margin: 22px 4px 10px 4px;
-            color: var(--footer-social-icon-color);
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            transition: all .4s ease-in-out;
+            vertical-align: middle;
+            width: 60px;
         }
 
         .social-icon li a:hover {
-            color: rgba(0, 0, 0, .9);
-            background: #4aa48a;
-            transform: scale(1.1);
             animation: animate 6s linear infinite;
+            background: #4aa48a;
+            color: rgba(0, 0, 0, .9);
+            transform: scale(1.1);
         }
 
 
