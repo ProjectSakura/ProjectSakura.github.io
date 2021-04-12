@@ -9,77 +9,122 @@
 
 <url>
   <loc>https://projectsakura.xyz/</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/download.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/blog.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/stats.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://projectsakura.xyz/download/</loc>
+  <lastmod>2021-04-09T05:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectsakura.xyz/index.html</loc>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectsakura.xyz/posts/5.R-April-2021-update.html</loc>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectsakura.xyz/posts/gssoc-association-website-update-march.html</loc>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectsakura.xyz/posts/5.R-android-11-second-update-march.html</loc>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectsakura.xyz/posts/5.R-android-11-initial-release.html</loc>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectsakura.xyz/posts/4.R-february-2021-update.html</loc>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectsakura.xyz/posts/4.R-january-2021-update.html</loc>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectsakura.xyz/posts/4.R-android-11-update.html</loc>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://projectsakura.xyz/posts/3.R-android-11-beta-3.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/3-R-android-11-beta-2.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/android-11-beta-1.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/september-2020-update.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/second-update-of-august-2020.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/august-2020-update.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/july-2020-update.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/second-update-of-june-2020.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/maintainership.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/may-2020-update.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectsakura.xyz/posts/oursponsor.html</loc>
-  <lastmod>2020-12-11T09:42:50+00:00</lastmod>
+  <lastmod>2021-04-12T04:54:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
