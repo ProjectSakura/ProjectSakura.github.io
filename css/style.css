@@ -9,7 +9,8 @@ li {
 }
 
 body {
-  background: #000;
+ background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
   color: #ffffff;
   font-size: 100%;
   font-family: "Roboto Condensed", monospace;
@@ -506,7 +507,7 @@ section#team,
 section#credits,
 section#maintainers-team {
   color: #ffffff;
-  background: #010101;
+  
 }
 
 .flat:hover{
@@ -610,8 +611,8 @@ hr.featurette-divider {
   padding:40px 0;
  text-align: center;
   color:#4b4c4d;
-    background-color: #2d3436;
-background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    background-color: #000;
+
 }
 .footer-basic img{
     width: 50px;
