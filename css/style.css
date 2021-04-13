@@ -7,7 +7,9 @@ nav,
 li {
   position: relative;
 }
-
+html{
+  overflow-x: hidden;
+}
 body {
   background: #0f111a;
   color: #ffffff;
@@ -494,6 +496,9 @@ article .inside {
   padding-bottom: 1em;
   /* background: url("../img/dot-row-2.png") repeat-x scroll 0 0 transparent !important; */
 }
+.inside p{
+  font-size: 0.9rem;
+}
 
 .post-date {
   color: #c82328;
@@ -892,4 +897,12 @@ footer p {
   border-radius: 500px;
   height: 50%;
   width: 50%;
+}
+.shift article{
+  padding:1rem 0;
+}
+@media only screen and (min-width:975px) {
+  .shift{
+  margin: auto 1rem;
+} 
 }
