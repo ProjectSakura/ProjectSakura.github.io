@@ -1,324 +1,322 @@
-body{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    height: 100vh;
-    background: black;
-    cursor: default;
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+  background: black;
+  cursor: default;
 }
 
-body::-webkit-scrollbar{
-    width: 0;
-    background: transparent;
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
 
 .noSelect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.tab-bar{
-    position: sticky;
-    top: 0;
-    padding: 26px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: rgba(3, 3, 3, 0.4);
+.tab-bar {
+  position: sticky;
+  top: 0;
+  padding: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(3, 3, 3, 0.4);
 }
 
-.header{
-    position: relative;
-    width: auto;
-    overflow: hidden;
-    z-index: 3;
+.header {
+  position: relative;
+  width: auto;
+  overflow: hidden;
+  z-index: 3;
 }
 
-.branding{
-    width: 50px;
-    height: 20px;
+.branding {
+  width: 50px;
+  height: 20px;
 }
 
-.menu-icon{
-    display: none;
+.menu-icon {
+  display: none;
 }
 
-.menu-btn{
-    display: none;
+.menu-btn {
+  display: none;
 }
 
-.tabs{
-    display: flex;
-    flex-direction: row;
-    width: 300px;
-    padding: 0;
-    margin: 0;
-    justify-content: space-between;
-    font-family: sans-serif;
-    font-size: medium;
-    color: white;
-    list-style-type: none;
+.tabs {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  font-family: sans-serif;
+  font-size: medium;
+  color: white;
+  list-style-type: none;
 }
 
-.tabs > li >a{
-    text-decoration: none;
-    color: white;
-    transition: color 0.4s ease-in-out;
+.tabs > li > a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.4s ease-in-out;
 }
 
-.tabs > li > a:hover{
-    color: #72BBFF;
+.tabs > li > a:hover {
+  color: #72bbff;
 }
 
-#home{
-    color: #72BBFF;
+#home {
+  color: #72bbff;
 }
 
-.landing-page{
-    margin: 0;
-    background-color: #121212;
-    border-radius: 0 0 30px 30px;
+.landing-page {
+  margin: 0;
+  background-color: #121212;
+  border-radius: 0 0 30px 30px;
 }
 
-.landing-info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 85vh;
+.landing-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 85vh;
 }
 
-.lander-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 180px;
-    justify-content: space-between;
+.lander-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 180px;
+  justify-content: space-between;
 }
 
-.lander-text > img{
-    width: 300px;
-    height: 200px;
+.lander-text > img {
+  width: 300px;
 }
 
-.subheader{
-    font-family: sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-    color: white;
+.subheader {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: white;
 }
 
-.download-button{
-    padding: 12px;
-    background-color: rgba(114, 187, 255, 0.2);
-    text-align: center;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 18px;
-    color: #66ffcc;
-    border: 3px solid #66ffcc;
-    box-sizing: border-box;
-    border-radius: 12px;
-    transition: background-color 0.4s ease-in-out;
+.download-button {
+  padding: 12px;
+  background-color: rgba(114, 187, 255, 0.2);
+  text-align: center;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #66ffcc;
+  border: 3px solid #66ffcc;
+  box-sizing: border-box;
+  border-radius: 12px;
+  transition: background-color 0.4s ease-in-out;
 }
 
-.download-button:hover{
-    background-color:  rgba(114, 187, 255, 0.4);
+.download-button:hover {
+  background-color: rgba(114, 187, 255, 0.4);
 }
 
-.footer{
-    width: 100%;
-    font-family: sans-serif;
-    color: white;
+.footer {
+  width: 100%;
+  font-family: sans-serif;
+  color: white;
 }
 
-.footer-holder{
-    margin: 40px 10% 40px 10%;
+.footer-holder {
+  margin: 40px 10% 40px 10%;
 }
 
-.footer-holder > svg{
-    width: 65px;
-    height: 25px;
+.footer-holder > svg {
+  width: 65px;
+  height: 25px;
 }
 
-.info{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-.sources-info{
-    display: inline-block;
-    width: 50%;
+.sources-info {
+  display: inline-block;
+  width: 50%;
 }
 
-.sources-info > ul{
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
+.sources-info > ul {
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
-.sources-info > ul > li{
-    padding-top: 10px;
+.sources-info > ul > li {
+  padding-top: 10px;
 }
 
-.sources-info > ul > li > a{
-    text-decoration: none;
-    color: #72BBFF;
+.sources-info > ul > li > a {
+  text-decoration: none;
+  color: #72bbff;
 }
 
 /* Media Query */
 
-@media (max-width: 560px){
+@media (max-width: 560px) {
+  .branding {
+    display: none;
+  }
 
-    .branding{
-        display: none;
-    }
+  .menu-icon {
+    visibility: visible;
+  }
 
-    .menu-icon{
-        visibility: visible;
-    }
+  .menu-btn {
+    visibility: visible;
+  }
 
-    .menu-btn{
-        visibility: visible;
-    }
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
 
-    .header li a{
-        display: block;
-        padding: 20px 20px;
-        text-decoration: none;
-    }
+  .header {
+    position: relative;
+    display: grid;
+    align-content: center;
+  }
 
-    .header{
-        position: relative;
-        display: grid;
-        align-content: center;
-    }
+  .tab-bar {
+    width: 100%;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    padding: 0;
+  }
 
-    .tab-bar{
-        width: 100%;
-        top: 0;
-        right: 0;
-        flex-direction: column;
-        padding: 0;
-    }
+  .branding {
+    display: none;
+  }
 
-    .branding{
-        display: none;
-    }
+  /* Hamborger menu */
 
-    /* Hamborger menu */
+  .header .tabs {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    font-size: small;
+    width: 100%;
+  }
 
-    .header .tabs{
-        display: flex;
-        flex-direction: column;
-        float: right;
-        clear: both;
-        max-height: 0;
-        transition: max-height .2s ease-out;
-        font-size: small;
-        width: 100%;
-    }
+  /* Menu icon */
 
-    /* Menu icon */
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 30px 22px;
+    position: relative;
+    user-select: none;
+  }
 
-    .header .menu-icon{
-        cursor: pointer;
-        display: inline-block;
-        padding: 30px 22px;
-        position: relative;
-        user-select: none;
-    }
+  .header .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
 
-    .header .menu-icon .navicon{
-        background: #fff;
-        display: block;
-        height: 2px;
-        position: relative;
-        transition: background .2s ease-out;
-        width: 18px;
-    }
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
 
-    .header .menu-icon .navicon:before,
-    .header .menu-icon .navicon:after{
-        background: #fff;
-        content: '';
-        display: block;
-        height: 100%;
-        position: absolute;
-        transition: all .2s ease-out;
-        width: 100%;
-    }
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
 
-    .header .menu-icon .navicon:before{
-        top: 5px;
-    }
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
 
-    .header .menu-icon .navicon:after{
-        top: -5px;
-    }
+  /* Menu btn */
 
-    /* Menu btn */
+  .header .menu-btn {
+    display: none;
+  }
 
-    .header .menu-btn{
-        display: none;
-    }
+  .header .menu-btn:checked ~ .tabs {
+    max-height: 340px;
+  }
 
-    .header .menu-btn:checked ~ .tabs{
-        max-height: 340px;
-    }
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
 
-    .header .menu-btn:checked ~ .menu-icon .navicon{
-        background: transparent;
-      }
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
 
-    .header .menu-btn:checked ~ .menu-icon .navicon:before{
-        transform: rotate(-45deg);
-    }
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
 
-    .header .menu-btn:checked ~ .menu-icon .navicon:after{
-        transform: rotate(45deg);
-    }
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
 
-    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after{
-        top: 0;
-    }
+  .landing-page {
+    border-radius: 0 0 20px 20px;
+  }
 
-    .landing-page{
-        border-radius: 0 0 20px 20px;
-    }
+  .lander-text {
+    height: 145px;
+  }
 
-    .lander-text{
-        height: 145px;
-    }
+  .lander-text > svg {
+    width: 155px;
+    height: 60px;
+  }
 
-    .lander-text > svg{
-        width: 155px;
-        height: 60px;
-    }
+  .download-button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
 
-    .download-button{
-        padding: 10px;
-        font-size: 15px;
-        border-radius: 10px;
-    }
+  .footer {
+    font-size: 15px;
+  }
 
-    .footer{
-        font-size: 15px;
-    }
+  .sources-info {
+    width: auto;
+  }
 
-    .sources-info{
-        width: auto;
-    }
-
-    .info{
-        flex-direction: column;
-        justify-content: center;
-    }
+  .info {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
