@@ -893,3 +893,20 @@ footer p {
   height: 50%;
   width: 50%;
 }
+
+
+/*-------------================ Page Scrollbar =================------*/
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #0F111A;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #FFFFFF;
+}
+
