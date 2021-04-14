@@ -898,6 +898,7 @@ footer p {
   height: 50%;
   width: 50%;
 }
+
 .shift article{
   padding:1rem 0;
 }
@@ -905,4 +906,20 @@ footer p {
   .shift{
   margin: auto 1rem;
 } 
+}
+
+
+/*-------------================ Page Scrollbar =================------*/
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #0F111A;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #FFFFFF;
 }
