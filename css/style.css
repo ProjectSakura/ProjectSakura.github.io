@@ -453,7 +453,12 @@ section#downloads .align {
   text-align: center;
   color: #ffffff;
 }
-
+article img{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
 article.post {
   background: #151515;
   border-bottom-left-radius: 6px;
