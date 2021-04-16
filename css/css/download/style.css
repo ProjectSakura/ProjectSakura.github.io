@@ -136,7 +136,15 @@ body::-webkit-scrollbar {
   color: white;
 }
 
+footer a {
+  text-decoration: none;
+  color: #72bbff;
+}
+
 .footer-holder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   margin: 40px 10% 40px 10%;
 }
 
@@ -145,11 +153,6 @@ body::-webkit-scrollbar {
   height: 25px;
 }
 
-.info {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
 
 .sources-info {
   display: inline-block;
@@ -158,12 +161,17 @@ body::-webkit-scrollbar {
 
 .sources-info > ul {
   padding: 0;
+  margin: 6px 0;
   text-decoration: none;
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  
 }
 
 .sources-info > ul > li {
-  padding-top: 10px;
+  padding-right: 15px;
 }
 
 .sources-info > ul > li > a {
@@ -171,6 +179,52 @@ body::-webkit-scrollbar {
   color: #72bbff;
 }
 
+.info-span {
+  font-size: 15px;
+  display: block;
+  margin: 12px 0;
+  max-width: 330px;
+}
+
+.team-info img {
+  width: 165px;
+  height: auto;
+}
+
+.footer-section-2 ul, .footer-section-2 ul > li > a {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer-section-2 ul > li {
+  padding-bottom: 9px;
+}
+
+@media screen and (max-width: 1130px) {
+.footer-holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-section-1 {
+  flex: 100%;
+}
+
+.footer-section-2 {
+  margin-top: 12px;
+  flex: 60%;
+}
+
+.footer-section-3 {
+  margin-top: 12px;
+  flex: 40%;
+}
+
+.footer-section-3 img {
+  width: 145px;
+  height: auto;
+}
+  
+}
 /* Media Query */
 
 @media (max-width: 560px) {
