@@ -462,6 +462,21 @@ section#features .span3:hover {
   cursor: pointer;
 }
 
+section#downloads .span4:hover {
+  color: #ffffff;
+  background: #212121;
+  -webkit-box-shadow: 2px 5px 10px -7px #fff, -6px 1px 6px 8px rgba(0, 0, 0, 0);
+  box-shadow: 2px 5px 8px -7px #fff, -6px 1px 6px 8px rgb(0 0 0 / 0%);
+  cursor: pointer;
+}
+section#contact .span4:hover {
+  color: #ffffff;
+  background: #212121;
+  -webkit-box-shadow: 2px 5px 10px -7px #fff, -6px 1px 6px 8px rgba(0, 0, 0, 0);
+  box-shadow: 2px 5px 8px -7px #fff, -6px 1px 6px 8px rgb(0 0 0 / 0%);
+  cursor: pointer;
+}
+
 .features-homepage {
   text-align: center;
 }
@@ -482,6 +497,7 @@ article img{
 }
 article.post {
   background: #151515;
+    margin-left: 20px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
@@ -491,12 +507,10 @@ article.post {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-article.post:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
+
 
 article .inside {
-  margin: 18px 24px 24px;
+  margin: 18px 0px 24px;
   padding-top: 16px;
   padding-bottom: 16px;
   /* background: url("../img/dot-row-2.png") repeat-x scroll 0 0 transparent !important; */
