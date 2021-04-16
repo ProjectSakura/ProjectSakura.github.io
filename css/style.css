@@ -448,8 +448,8 @@ section#features .span3:hover {
 /* Downloads */
 
 section#downloads .align {
-  font-size: 6em;
-  margin-top: 10px;
+  font-size: 112px;
+  margin-top: 12px;
   text-align: center;
   color: #ffffff;
 }
@@ -471,8 +471,8 @@ article.post:hover {
 
 article .inside {
   margin: 18px 24px 24px;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 16px;
+  padding-bottom: 16px;
   /* background: url("../img/dot-row-2.png") repeat-x scroll 0 0 transparent !important; */
 }
 
@@ -487,9 +487,9 @@ article .inside {
 }
 
 #downloads h1 {
-  font-size: 3em;
-  margin-bottom: 1em;
-  margin-top: 0.5em;
+  font-size: 50px;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 #downloads h2 {
