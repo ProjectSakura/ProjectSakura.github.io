@@ -49,65 +49,6 @@ body {
   margin: 0 auto;
 }
 
-/*---------- FORMS ----------*/
-
-input[type="text"],
-input[type="submit"],
-textarea {
-  width: 100%;
-  padding: 0.5em;
-  font-size: 1em;
-  margin-bottom: 1.5em;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-input,
-button,
-select,
-textarea {
-  font-family: "Roboto Condensed", monospace;
-}
-
-p {
-  font-size: 1em;
-  /* 16px */
-  line-height: 1.5;
-  /* 24px */
-  margin: 0 0 1.5em 0;
-}
-
-ul,
-ol {
-  font-size: 1em;
-  /* 16px */
-  line-height: 1.5;
-  /* 24px */
-  margin: 0 0 1.5em 0;
-}
-.ui-btn-1 {
-  text-decoration: none;
-  color: #64b1f3;
-  font-size: 1.2em;
-}
-.ui-btn-1:hover:focus:active {
-  color: #56cc9d;
-  background-color: #0f111a;
-  border: 2px solid #56cc9d;
-  padding: 2px 2px;
-}
-.ui-btn-2 {
-  text-decoration: none;
-  color: #56cc9d;
-  font-size: 1.2em;
-}
-.ui-btn-2:hover:focus:active {
-  color: #64b1f3;
-  background-color: #0f111a;
-  border: 2px solid #64B1F3;
-  padding: 2px 2px;
-}
 
 .more-link {
   transition: all 300ms ease-in-out;
@@ -344,7 +285,7 @@ section.single-page h1 {
 }
 
 #feature {
-  /* background: url("../img/yellow.png") repeat-x 0 0; */
+  
   height: 406px;
   z-index: 500;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
@@ -482,6 +423,7 @@ article img{
 }
 article.post {
   background: #151515;
+    margin-left: 20px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
@@ -499,7 +441,7 @@ article .inside {
   margin: 18px 24px 24px;
   padding-top: 16px;
   padding-bottom: 16px;
-  /* background: url("../img/dot-row-2.png") repeat-x scroll 0 0 transparent !important; */
+  
 }
 .inside p{
   font-size: 0.9rem;
@@ -646,52 +588,13 @@ footer p {
   margin-top: -130px;
 }
 
-/* ----------------------------------------------------------------------------------------------------------
-07 Bootstrap Carousel ------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
+
 
 /* ----------------------------------------------------------------------------------------------------------
 08 Buttons ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
-.btn {
-  font-family: "Roboto Condensed", monospace;
-  color: #fff;
-  width: 225px;
-  height: 20px;
-  text-shadow: none;
-  letter-spacing: 3px;
-  font-size: 1.3125em;
-  /* 21px */
-  padding: 1em 0.25em;
-  /*letter-spacing: 0.05em;*/
-  margin: 1.5em auto 1.5em;
-  display: block;
-  border: 0;
-  text-transform: none;
-  background: #151515 !important;
-  border-radius: 36px;
-  -moz-border-radius: 36px;
-  -webkit-border-radius: 36px;
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-}
 
-.btn:link,
-.btn:visited {
-  color: #c82428;
-  font-style: bold;
-}
-
-.btn:hover {
-  background: #212121 !important;
-}
-
-.navbar-inverse .btn-navbar {
-  width: auto;
-  height: auto;
-}
 
 .row123 {
   display: grid;
