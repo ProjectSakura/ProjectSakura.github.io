@@ -19,13 +19,7 @@
 .clearfix:after {
 	clear: both;
 }
-.hide-text {
-	font: 0/0 a;
-	color: transparent;
-	text-shadow: none;
-	background-color: transparent;
-	border: 0;
-}
+
 .input-block-level {
 	display: block;
 	width: 100%;
