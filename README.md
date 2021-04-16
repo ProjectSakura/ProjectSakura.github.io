@@ -15,7 +15,7 @@
 
 Sakura provides quick timely updates and a great deal of customization with the same stability as Lineage OS.
 
-It is an Open Source custom ROM building website that is being used by thousands of people and has more than 70k downloads.
+It is an Open Source custom ROM building website that is being used by thousands of people and has more than 100k downloads.
 
 The project is originally based on android and there are 35 mobiles that are being maintained by 20 maintainers.
 
