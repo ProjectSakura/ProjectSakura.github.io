@@ -474,6 +474,7 @@ section#downloads .align {
   text-align: center;
   color: #ffffff;
 }
+
 article img{
     margin-top: 10px;
     width: 100px;
@@ -482,6 +483,7 @@ article img{
 }
 article.post {
   background: #151515;
+    margin-left: 20px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
