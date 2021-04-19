@@ -20,11 +20,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
     />
+    <!-- Owl carousel -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -65,7 +64,7 @@
             <a href="https://projectsakura.xyz/stats.html" class="navbar-item nav-links" target="_blank">Stats</a>
             <a href="https://projectsakura.xyz/download" class="navbar-item nav-links" target="_blank">Download</a>
             <a href="https://projectsakura.xyz/maintainers" class="navbar-item nav-links" target="_blank">Maintainers</a>
-            <a href="" class="navbar-item nav-links" target="_blank">Twitter</a>                        
+            <a href="" class="navbar-item nav-links" target="_blank">Twitter</a>
           </div>
         </div>
       </div>
@@ -80,7 +79,7 @@
             </h4>
             <button
               onclick="location.href='download.html';"
-              class="button is-danger is-rounded"
+              class="button is-danger"
             >
               Download
             </button>
@@ -147,6 +146,36 @@
         </div>
       </div>
     </div>
+
+    <!-- screenshots -->
+    <section class="features container" id="screenshots">
+        <div class="">
+          <div class="heading">
+            <h1 class="title is-4 has-text-centered has-text-white">Screenshots</h1>
+            <hr />
+          </div>
+            <div class="container screenshots-container owl-carousel owl-theme">
+                <div class="image-container item">
+                    <img src="./image/mockup/lockscreen.png" alt="">
+                </div>
+                <div class="image-container item">
+                    <img src="./image/mockup/home.png" alt="">
+                </div>
+                <div class="image-container item">
+                    <img src="./image/mockup/statusbar.png" alt="">
+                </div>
+                <div class="image-container item">
+                    <img src="./image/mockup/about.png" alt="">
+                </div>
+                <div class="image-container item">
+                    <img src="./image/mockup/battery.png" alt="">
+                </div>
+                <div class="image-container item">
+                    <img src="./image/mockup/themes.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="container team-section">
       <div class="heading">
@@ -226,17 +255,44 @@
         <a href="https://my.xsl.tel/"><img  class="sponsor" src="image/spon-white.png" alt="XSLTEL OU"></a>
       </div>
     </footer>
+
+    <!-- jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Carousel Script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- OWl Carousel -->
+    <script type="text/javascript">
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: false,
+          autoplay: true,
+          autoplayTimeout: 1500,
+          // responsiveClass: true,
+          // autoHeight: true,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            900: {
+              items: 2,
+            },
+            1200: {
+              items: 3,
+            },
+          },
+        });
+      </script>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous"
-  ></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // Get all "navbar-burger" elements
