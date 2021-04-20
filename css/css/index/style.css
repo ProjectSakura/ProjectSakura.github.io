@@ -519,7 +519,8 @@ body {
 }
 
 .android_img {
-  width: 400px;
+  height: 90%;
+  width: 40%;
 }
 
 .top_content_data {
