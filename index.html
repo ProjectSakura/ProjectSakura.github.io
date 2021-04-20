@@ -1,1164 +1,346 @@
-<!DOCTYPE HTML>
-<!--
-        Project Sakura Website && Resurrection Remix Website
-        Copyright (C) 2014-2019 Shubhang Rathore
-        Copyright (C) 2020 Project Sakura
-        This program is free software: you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-        the Free Software Foundation, either version 3 of the License, or
-        any later version.
-        This program is distributed in the hope that it will be useful,
-        but WITHOUT ANY WARRANTY; without even the implied warranty of
-        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-        GNU General Public License for more details.
-        You should have received a copy of the GNU General Public License
-        along with this program.  If not, see <http://www.gnu.org/licenses/>.
-    -->
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="theme-color" content="#000000">
-    <title>
-        Project Sakura | Feels like spring
-    </title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Project Sakura is a customized Lineage OS with more functionality." name="description">
-    <meta content="LordShenron" name="author">
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <!-- Styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Owl carousel -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" />
+  <!--meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content="Project Sakura is a customized Lineage OS with more functionality." name="description">
+  <meta content="LordShenron" name="author">
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+  <title>Project Sakura | Feels Like Spring</title>
+  <!-- Favicon -->
+  <link href="./image/logo.png" rel="shortcut icon">
 
-    <!-- Google Web fonts -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <!-- css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/css/index/style.css" />
 
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <!-- Bootstrap v5.5.0 Animate css Font Awesome v4.5-->
-    <!-- <link href="css/all-minified.css" rel="stylesheet"> -->
-    <!-- Favicon -->
-    <link href="image/logo.png" rel="shortcut icon">
-    <!-- JQuery -->
-    <script src="js/jquery.js"></script>
-    <script data-ad-client="ca-pub-1277633863266032" async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Load ScrollTo -->
-    <script src="js/jquery.scrollTo.min.js">
-    </script>
-    <!-- Load LocalScroll -->
-    <script src="js/jquery.localScroll.min.js">
-    </script>
-    <!-- prettyPhoto Initialization -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <!-- adsense and google Analytics integeration -->
+  <script data-ad-client="ca-pub-1277633863266032" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-173637831-1');
+  </script>
 
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-173637831-1');
-    </script>
-    <style>
-        body {
-            padding-top: 35px;
-            /* 60px to make the container go all the way to the bottom of the topbar */
-        }
-
-       /*css for back to top*/
-        a
-        {
-            text-decoration: none !important;
-        }
-
-        #button {
-            background-color: #FF9800;
-            border-radius: 25px;
-            bottom: 10px;
-            display: inline-block;
-            height: 52px;
-            opacity: 0;
-            position: fixed;
-            right: 10px;
-            text-align: center;
-            transition: background-color .3s, 
-                opacity .5s, visibility .5s;
-            visibility: hidden;
-            width: 52px;
-            z-index: 1000;
-        }
-
-        #button:active {
-            background-color:green;
-        }
-
-        #button::after {
-            color: #fff;
-            content: "\f077";
-            font-family: FontAwesome;
-            font-size: 2em;
-            font-style: normal;
-            font-weight: normal;
-            line-height: 50px;
-        }
-
-        #button:hover {
-            background-color:green;
-            cursor: pointer;
-        }
-
-        #button.show {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        html
-        {
-            scroll-behavior: smooth;
-        }
-
-        .mask2 img {
-            opacity: 1;
-        }
-
-        .scrolltolink:hover {
-            color: #ffffff !important;
-        }   
-
-        /* Brand Name */
-
-        .brand:hover { 
-            transform: scale(1.12); 
-            transition: transform 1s ; 
-        }
-
-        .brand { 
-            transform: scale(1.0); 
-            transition: transform 1s; 
-        }
-
-        /* Styles for the content section */
-            
-            
-        @media (min-width: 500px) {
-            
-            #button {
-                margin: 42px;
-            }
-        }
-        /* css back to top end    */
-
-        @media (max-width: 580px) {
-           
-           .navbar-inner {
-               min-height: 0em;
-           }
-       }
-
-        @media (max-width: 979px) {
-
-            body {
-            padding-left: 0;
-            padding-right: 0;
-            padding-top: 0;
-
-            }
-
-            .navbar-fixed-top .navbar-inner,
-            .navbar-fixed-bottom .navbar-inner {
-            padding: 25px;
-            padding-bottom: 0;
-
-            }
-
-            .pull-right.nav-collapse.collapse {     
-            float: none;
-            }
-        }
-    </style>
 </head>
 
 <body>
-        <!-- Back to top button -->
-    <a id="button"></a>
-    <!-- TODO: Check and fix CSS indenting -->
-    <!--******************** NAVBAR ********************-->
-    <div class="navbar-wrapper">
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container align_nav">
-                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-                    <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-                        <span class="icon-bar">
-                        </span>
-                        <span class="icon-bar">
-                        </span>
-                        <span class="icon-bar">
-                        </span>
-                    </a>
-                    <h1 class="brand">
-                        <a class="scrolltolink" href="#top">
-                            <b style="font-weight: 900">
-                                PROJECT</b>
-                            <b style="font-weight: 900; color:#64b1f3;" class="color_animation">SAKURA
-                            </b>
-                        </a>
-                    </h1>
-                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-                    <nav class="pull-right nav-collapse collapse">
-                        <ul class="nav my-nav" id="menu-main" style="font-weight: 900">
-                            <li>
-                                <a class="scrolltolink" href="#screenshots" title="screenshots">
-                                    SCREENSHOTS
-                                </a>
-                            </li>
-                            <li>
-                                <a class="scrolltolink" href="#features" title="features">
-                                    FEATURES
-                                </a>
-                            </li>
-                            <li>
-                                <a class="scrolltolink" href="#downloads" title="downloads">
-                                    DOWNLOADS
-                                </a>
-                            </li>
-                            <li>
-                                <a class="scrolltolink" href="#contact" title="contact">
-                                    CONTACT US
-                                </a>
-                            </li>
-                            <li>
-                                <a class="scrolltolink" href="#team" title="team">
-                                    TEAM
-                                </a>
-                            </li>
-                            <li>
-                                <a class="scrolltolink" href="#credits" title="credits">
-                                    CREDITS
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- /.container -->
-            </div>
-            <!-- /.navbar-inner -->
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container is-widescreen">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img class="navbar-logo" src="./image/logo_banner.png" />
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="https://projectsakura.xyz/blog.html" class="navbar-item nav-links" target="_blank">Blog</a>
+          <a href="https://projectsakura.xyz/stats.html" class="navbar-item nav-links" target="_blank">Stats</a>
+          <a href="https://projectsakura.xyz/download" class="navbar-item nav-links" target="_blank">Download</a>
+          <a href="https://projectsakura.xyz/maintainers" class="navbar-item nav-links" target="_blank">Maintainers</a>
+          <a href="" class="navbar-item nav-links" target="_blank">Twitter</a>
         </div>
-        <!-- /.navbar -->
+      </div>
     </div>
-    <!-- /.navbar-wrapper -->
-    <div id="top">
+  </nav>
+  <div class="top_content">
+
+    <div class="top_content_img">
+      <img class="android_img" src="./image/mockup/home-page.webp" />
     </div>
-    <!-- ******************** HeaderWrap ********************-->
-    <div id="headerwrap" style="margin-top:50px;">
-        <header class="clearfix">
-            <h1>
-                <img src="image/sakura.png" alt="Brand-Image" class="color_animation" />
-            </h1>
-            <div class="container">
-                <div class="row">
-                    <div class="span12">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="span12 center">
-                        <ul class="icon color_animation">
-                            <li>
-                                <a href="https://t.me/ProjectSakura" target="_blank">
-                                    <i class="fa fa-telegram">
-                                    </i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/ProjectSakura_" target="_blank">
-                                    <i class="fa fa-twitter">
-                                    </i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/ProjectSakura" target="_blank">
-                                    <i class="fa fa-github">
-                                    </i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
+    <div class="top_content_data">
+      <h1 class="h1-data">Project Sakura</h1>
+      <h3 class="h3-data">Sakura provides quick timely updates and more customizations
+        with the same stability as Lineage OS.
+      </h3>
+      <a href="#learnmore">
+        <button class="button is-danger scrolltolink">
+          Learn More
+        </button>
+      </a>
     </div>
-    <!--******************** Feature ********************-->
-    <div class="scrollblock">
-        <section id="feature">
-            <div class="container">
-                <div class="row">
-                    <div class="span12">
-                        <article>
-                            <p>
-                                Sakura provides quick timely updates and more customizations with the same stability as
-                                Lineage OS.
-                            </p>
-                        </article>
-                    </div>
-                    <!-- ./span12 -->
-                </div>
-                <!-- .row -->
-            </div>
-            <!-- ./container -->
-        </section>
+  </div>
+  <section id="learnmore">
+    <div class=" container features-section">
+      <div class="heading">
+        <h1 class="title is-4 has-text-centered has-text-white">Features</h1>
+        <hr />
+      </div>
+      <div class="columns has-text-white has-text-centered">
+        <div class="column">
+          <div class="card feature-card has-text-white">
+            <i class="fa fa-android" style="font-size:400%"></i>
+            <h3 class="feature-title">Customizable</h3>
+            <p class="feature-desc">
+              Project Sakura got almost all useful features that anybody would need.
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card feature-card has-text-white">
+            <i class="fa fa-shield" style="font-size:400%"></i>
+            <h3 class="feature-title">Secure</h3>
+            <p class="feature-desc">
+              Project Sakura have all the security measures from Lineage OS and more.
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card feature-card has-text-white">
+            <i class="fa fa-code-fork" style="font-size:400%"></i>
+            <h3 class="feature-title">OpenSource</h3>
+            <p class="feature-desc">
+              ProjectSakura is fully OpenSource and free to use. Check our
+              <a class="features-link" href="https://github.com/ProjectSakura" target="_blank">
+                Github</a>. Fork us!
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card feature-card has-text-white">
+            <i class="fa fa-comments-o" style="font-size:400%"></i>
+            <h3 class="feature-title">Community</h3>
+            <p class="feature-desc">
+              Project Sakura community is growing, come join us on <a class="features-link"
+                href="https://t.me/ProjectSakura" target="_blank"> Telegram.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- sakura-horizontal-unit-2 -->
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032" data-ad-slot="8931146882"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
-    <!--******************** Screenshots Section ********************-->
-    <section class="single-page scrollblock" id="screenshots">
-        <div class="">
-            <div class="align">
-                <img alt="download-icon" src="image/screenshot.png">
-            </div>
-            <h1 id="folio-headline">
-                SCREENSHOTS
-            </h1>
+  </section>
 
-            <div class="container screenshots-container owl-carousel owl-theme">
-                <div class="image-container item">
-                    <img src="./image/mockup/lockscreen.png" alt="">
-                    <p class="text-center">Lockscreen</p>
-                </div>
-                <div class="image-container item">
-                    <img src="./image/mockup/home.png" alt="">
-                    <p class="text-center">Volume Panel</p>
-                </div>
-                <div class="image-container item">
-                    <img src="./image/mockup/statusbar.png" alt="">
-                    <p class="text-center">QuickSettings</p>
-                </div>
-                <div class="image-container item">
-                    <img src="./image/mockup/about.png" alt="">
-                    <p class="text-center">About Phone</p>
-                </div>
-                <div class="image-container item">
-                    <img src="./image/mockup/battery.png" alt="">
-                    <p class="text-center">Battery Settings</p>
-                </div>
-                <div class="image-container item">
-                    <img src="./image/mockup/themes.png" alt="">
-                    <p class="text-center">Themes</p>
-                </div>
-            </div>
-            <div class="container center" style="width:100%">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- sakura-horizontal-unit-2 -->
-                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-                        data-ad-slot="8931146882" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-            </div>
+  <!-- screenshots -->
+  <section class="features container" id="screenshots">
+    <div class="">
+      <div class="heading">
+        <h1 class="title is-4 has-text-centered has-text-white">Screenshots</h1>
+        <hr />
+      </div>
+      <div class="container screenshots-container owl-carousel owl-theme">
 
+        <div class="carousel-item">
+          <img src="./image/mockup/device-mock.png" alt="Mockup" />
+          <div class="feature-ss">
+            <img src="./image/mockup/1.webp" alt="SS" />
+          </div>
         </div>
-        <!-- /.container -->
-    </section>
-    <!--******************** Features Section ********************-->
-    <section class="single-page scrollblock" id="features">
-        <div class="container">
-            <div class="align">
-                <img alt="download-icon" src="image/feature.png">
-            </div>
-            <h1>
-                FEATURES
-            </h1>
-            <!-- Four columns -->
-            <div class="row">
-                <div class="span3">
-                    <div class="align">
-                        <i class="fa fa-android">
-                        </i>
-                    </div>
-                    <h2>
-                        Customizable
-                    </h2>
-                    <p class="features-homepage">
-                        Project Sakura got almost all useful features that anybody would need.
-                    </p>
-                </div>
-                <!-- /.span3 -->
-                <div class="span3">
-                    <div class="align">
-                        <i class="fa fa-shield">
-                        </i>
-                    </div>
-                    <h2>
-                        Secure
-                    </h2>
-                    <p class="features-homepage">
-                        Project Sakura has all the security measures from Lineage OS.
-                    </p>
-                </div>
-                <!-- /.span3 -->
-                <div class="span3">
-                    <div class="align">
-                        <i class="fa fa-code-fork">
-                        </i>
-                    </div>
-                    <h2>
-                        Open Source
-                    </h2>
-                    <p class="features-homepage">
-                        You can contribute to Project Sakura. Check our
-                        <a class="features-link" href="https://github.com/ProjectSakura" target="_blank">
-                            Github</a>. Fork us!
-                    </p>
-                </div>
-                <!-- /.span3 -->
-                <div class="span3">
-                    <div class="align">
-                        <i class="fa fa-comments-o">
-                        </i>
-                    </div>
-                    <h2>
-                        Community
-                    </h2>
-                    <p class="features-homepage">
-                        Project Sakura community is growing, come join us on <a class="features-link"
-                            href="https://t.me/ProjectSakura" target="_blank"> Telegram.</a>
-                    </p>
-                </div>
-            </div>
-            <!-- /.span3 -->
+        <div class="carousel-item">
+          <img src="./image/mockup/device-mock.png" alt="Mockup" />
+          <div class="feature-ss">
+            <img src="./image/mockup/2.webp" alt="SS" />
+          </div>
         </div>
-        <!-- /.row -->
-        <!-- /.container -->
-    </section>
-    <!--******************** Downloads Section ********************-->
-    <section style="margin-top: -10%" class="single-page scrollblock" id="downloads">
-        <div class="container">
-            <div class="align">
-                <img alt="download-icon" src="image/download.png">
-            </div>
-            <h1>
-                GET SAKURA!
-            </h1>
-            <!-- Three columns -->
-            <div class="row shift">
-                <article class="span4 post center-post">
-                    <img alt="" src="image/download2.png">
-                    <div class="inside">
-                        <p class="post-date"></p>
-                        <h2>
-                            DOWNLOAD
-                        </h2>
-                        <div class="entry-content">
-                            <p>
-                                Get Project Sakura for your device
-                            </p>
-                            <a class="more-link" href="download.html" target="_blank">
-                                DOWNLOAD NOW!
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /.inside -->
-                </article>
-
-                <article class="span4 post center-post">
-                    <img alt="" src="image/blog.png">
-                    <div class="inside">
-                        <p class="post-date">
-                            <i class="icon-calendar"></i>
-                        </p>
-                        <h2>
-                            BLOG
-                        </h2>
-                        <div class="entry-content">
-                            <p>
-                                See what's going on with the development
-                            </p>
-                            <a class="more-link" href="blog.html" target="_blank">
-                                READ NOW!
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /.inside -->
-                </article>
-                <!-- /.span4 -->
-
-                <article class="span4 post center-post">
-                    <img alt="" src="image/stats.png">
-                    <div class="inside">
-                        <p class="post-date"></p>
-                        <h2>
-                            STATISTICS
-                        </h2>
-                        <div class="entry-content">
-                            <p>
-                                All the Stats related to Project Sakura!
-                            </p>
-                            <a class="more-link" href="stats.html" target="_blank">
-                                STATS
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /.inside -->
-                </article>
-            </div>
+        <div class="carousel-item">
+          <img src="./image/mockup/device-mock.png" alt="Mockup" />
+          <div class="feature-ss">
+            <img src="./image/mockup/3.webp" alt="SS" />
+          </div>
         </div>
-        <div class="container center" style="width:100%">
-            <!-- /.container -->
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- horizontal-sakura-unit3 -->
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-                data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+        <div class="carousel-item">
+          <img src="./image/mockup/device-mock.png" alt="Mockup" />
+          <div class="feature-ss">
+            <img src="./image/mockup/4.webp" alt="SS" />
+          </div>
         </div>
-    </section>
-    <!--******************** Contact Section ********************-->
-    <section style="margin-top: -10%" class="single-page scrollblock" id="contact">
-        <div class="container">
-            <h1>
-                CONTACT US!
-            </h1>
-            <div class="row shift">
-                <article class="span4 post center-post">
-                    <img alt="" src="image/gmail_02.png" style="width: 130px;">
-                    <div class="inside">
-                        <p class="post-date"></p>
-                        <h2>
-                            EMAIL US
-                        </h2>
-                        <div class="entry-content">
-                            <p>
-                                Ping us a query!
-                            </p>
-                            <a class="more-link" href="mailto:shen.priyanshu@gmail.com" target="_blank">
-                                GET IN TOUCH
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class="span4 post center-post">
-                    <img alt="" src="image/telegram_02.png">
-                    <div class="inside">
-                        <p class="post-date"></p>
-                        <h2>
-                            TELEGRAM
-                        </h2>
-                        <div class="entry-content">
-                            <p>
-                                 Join us on telegram!
-                            </p>
-                            <a class="more-link" href="https://telegram.me/ProjectSakura" target="_blank">
-                                JOIN
-
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="span4 post center-post">
-                    <img alt="" src="image/twitter_02.png">
-                    <div class="inside">
-                        <p class="post-date"></p>
-                        <h2>
-                            TWITTER
-                        </h2>
-                        <div class="entry-content">
-                            <p>
-
-                                Find us on twitter!
-                            </p>
-                            <a class="more-link" href="https://twitter.com/ProjectSakura_" target="_blank">
-                                TWEET
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
+        <div class="carousel-item">
+          <img src="./image/mockup/device-mock.png" alt="Mockup" />
+          <div class="feature-ss">
+            <img src="./image/mockup/5.webp" alt="SS" />
+          </div>
         </div>
-    </section>
-    <!--******************** Team Section ********************-->
-    <section class="single-page scrollblock" id="team">
-        <div class="container">
-            <div class="align">
-                <img alt="download-icon" src="image/team.png">
-            </div>
-            <h1>
-                Meet the team
-            </h1>
-            <!-- Five columns -->
-            <div class="row">
-                <!-- ./span2 -->
-                <div class="span4">
-                    <div class="align">
-                        <img alt="" class="team-thumb img-circle" src="./image/maintainers/shen.jpeg">
-                    </div>
-                    <h3>
-                        <b>
-                            Priyanshu
-                        </b>
-                    </h3>
-                    <div class="job-position">
-                        Founder, Lead Developer
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="align">
-                        <img alt="" class="team-thumb img-circle" src="./image/maintainers/mittal.jpeg">
-                    </div>
-                    <h3>
-                        <b>
-                            Chaitanaya
-                        </b>
-                    </h3>
-                    <div class="job-position">
-                        Developer, X00T Co-Maintainer
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="align">
-                        <img alt="" class="team-thumb img-circle" src="./image/maintainers/arun.jpeg">
-                    </div>
-                    <h3>
-                        <b>
-                            Arun
-                        </b>
-                    </h3>
-                    <div class="job-position">
-                        Web Developer
-                    </div>
-                </div>
-            </div>
+        <div class="carousel-item">
+          <img src="./image/mockup/device-mock.png" alt="Mockup" />
+          <div class="feature-ss">
+            <img src="./image/mockup/6.webp" alt="SS" />
+          </div>
         </div>
-        <!-- /.container -->
-    </section>
-    <!--******************** Team Section ********************-->
-    <section class="single-page scrollblock" id="maintainers-team">
-        <div class="container">
-            <h1>
-                Device Maintainers
-            </h1>
-            <div class="row123">
-                <!-- ./span2 -->
-                <div class="row1">
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/dark.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                Sipun Ki Mahanta
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Whyred Maintainer
-                        </div>
-                    </div>
-
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/hari.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                Haridhayal
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Dreamlte, Dream2lte,M20lte and Greatlte Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/cyber.jpg">
-                        </div>
-                        <h3>
-                            <b>
-                                JAISHNAV
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Realme 1 Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/sunny.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                SunnyRaj
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Riva Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/jigen.png">
-                        </div>
-                        <h3>
-                            <b>
-                                Jigen
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Mido Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/shivam.jpg">
-                        </div>
-                        <h3>
-                            <b>
-                                Shivam
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Phoenix Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/tanmay.png">
-                        </div>
-                        <h3>
-                            <b>
-                                Tanmay
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            RMX2001 Maintainer
-                        </div>
-                    </div>
-                </div>
-                <div class="row2">
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/prajwal.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                Prajwal
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            GAUGUIN Co-Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/nitish.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                Nitish
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            GAUGUIN Co-Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/andrzej.png">
-                        </div>
-                        <h3>
-                            <b>
-                                Andrzej
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Sailfish,Marlin Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/alexander.jpg">
-                        </div>
-                        <h3>
-                            <b>
-                                Alexander
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Tucana Maintainer
-                        </div>
-                    </div>
-
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/roger.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                Roger W.
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Tissot & Former Wayne Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/AlexT.jpg">
-                        </div>
-                        <h3>
-                            <b>
-                                Alex T.
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Sakura Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/fernando.png">
-                        </div>
-                        <h3>
-                            <b>
-                                Fernando Sánchez
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Ginkgo Maintainer
-                        </div>
-                    </div>
-                </div>
-                <div class="row3">
-                    <div class="span2 ">
-                        <div class="align ">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/cakes.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                CakesTwix
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            LeEco Le 2 Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/armsm.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                ArmSM
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Sanders Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/dauke.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                thedauke
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Meizu 16TH and 16T Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/deepak.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                DeepakJr
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            OnePlus3/3T Maintainer
-                        </div>
-                    </div>
-                    <div class="span2 ">
-                        <div class="align ">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/a9ito.png">
-                        </div>
-                        <h3>
-                            <b>
-                                A9ito
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Miatoll & Former Joyeuse Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/shriya.jpg">
-                        </div>
-                        <h3>
-                            <b>
-                                Shriiyansh
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Rosy Maintainer
-                        </div>
-                    </div>
-                </div>
-                <div class="row1">
-                    <div class="span2 ">
-                        <div class="align ">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/alex.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                Alex
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Meizu 16X Maintainer
-                        </div>
-                    </div>
-                    <div class="span2 ">
-                        <div class="align ">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/agus.jfif">
-                        </div>
-                        <h3>
-                            <b>
-                                Agus
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            SURYA Maintainer
-                        </div>
-                    </div>
-                    <div class="span2 ">
-                        <div class="align ">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/himanshu.png">
-                        </div>
-                        <h3>
-                            <b>
-                                Himanshu
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Begonia Maintainer
-                        </div>
-                    </div>
-                    <div class="span2 ">
-                        <div class="align ">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/charlie.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                Charlie
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Former Moto G3 turbo Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/glitch.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                Human Glitch
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Former Beryllium Maintainer
-                        </div>
-                    </div>
-                    <div class="span2">
-                        <div class="align">
-                            <img alt="" class="team-thumb img-circle" src="./image/maintainers/amar.jpeg">
-                        </div>
-                        <h3>
-                            <b>
-                                Amartya
-                            </b>
-                        </h3>
-                        <div class="job-position">
-                            Former Ginkgo/Willow Maintainer
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="carousel-item">
+          <img src="./image/mockup/device-mock.png" alt="Mockup" />
+          <div class="feature-ss">
+            <img src="./image/mockup/7.webp" alt="SS" />
+          </div>
         </div>
-        <!-- /.container -->
-    </section>
-    <section class="single-page scrollblock" id="team">
-        <div class="container">
-            <h1>
-                Meet the Contributors
-            </h1>
-            <!-- Five columns -->
-            <div class="row">
-                <!-- ./span2 -->
-                <div class="span4">
-                    <div class="align">
-                        <img alt="" class="team-thumb img-circle" src="./image/developers/dikshaB.PNG">
-                    </div>
-                    <h3>
-                        <b>
-                            Diksha Patro B.
-                        </b>
-                    </h3>
-                    <div class="job-position">
-                        Web Developer
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="align">
-                        <img alt="" class="team-thumb img-circle" src="https://avatars.githubusercontent.com/u/64403591?v=4">
-                    </div>
-                    <h3>
-                        <b>
-                            CryptoFox
-                        </b>
-                    </h3>
-                    <div class="job-position">
-                        Designer and Web developer
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="align">
-                        <img alt="" class="team-thumb img-circle" src="https://avatars.githubusercontent.com/u/77333275?v=4">
-                    </div>
-                    <h3>
-                        <b>
-                            Tanishq Arya 
-                        </b>
-                    </h3>
-                    <div class="job-position">
-                        Web Developer
-                    </div>
-                </div>
-            </div>
+        <div class="carousel-item">
+          <img src="./image/mockup/device-mock.png" alt="Mockup" />
+          <div class="feature-ss">
+            <img src="./image/mockup/8.webp" alt="SS" />
+          </div>
         </div>
-        <!-- /.container -->
-    </section>
-    <!--******************** credits Section ********************-->
-    <section class="single-page scrollblock" id="credits">
-        <div class="container">
-            <div class="align">
-                <img alt="credit-icon" src="image/heart.png">
-            </div>
-            <h1>
-                Credits
-            </h1>
-            <div class="row" style="margin-top: -10%">
-                <div class="span10 offset1">
-                    <hr class="featurette-divider">
-                    <div class="featurette">
-                        <p>
-                            Project Sakura Team would like to thank all the users, maintainers and developers who
-                            make Custom ROMs. Without their contributions Sakura wouldn't have been possible. We are
-                            grateful to everyone.
-                        </p>
-                        <p>
-                            SPONSORED BY<br>
-                            <a href="https://my.xsl.tel/"><img  class="sponsor" src="image/spon-white.png" alt="XSLTEL OU"></a>
-                        </p>
-                        <p>
-                            Some icons made by <a class="pixel" href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a>
-                            from <a class="flat" href="https://www.flaticon.com/" title="Flaticon">flaticon</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- .span10 -->
-            </div>
-        </div>
-        <!-- ./span12 -->
-        <!-- /.row -->
-        <!-- /.container -->
-    </section>
-    <div class="footer-wrapper">
-        <div class="container">
-            <footer><small>
-                    2021 Project Sakura | Maintained by Sakura Team
-                </small>
-            </footer>
-        </div>
-        <!-- ./container -->
+      </div>
     </div>
-    <!-- Jquery v3.5.1, Bootstrap v4.5.0 WOW v1.0.2 -->
-    <!-- <script src="js/all-minified.js">
-</script> -->
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-        crossorigin="anonymous"></script>
-    <!-- Carousel Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous"></script>
-    <!-- Loading the javaScript at the end of the page -->
-    <script src="js/bootstrap.js"></script>
-    <script src="js/navScroll.js"></script>
+  </section>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- sakura-horizontal-unit-2 -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032" data-ad-slot="8931146882"
+    data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <div class="container team-section">
+    <div class="heading">
+      <h1 class="title is-4 has-text-centered has-text-white">Team</h1>
+      <hr />
+    </div>
+    <div class="columns has-text-white has-text-centered">
+      <div class="column">
+        <div class="card feature-card has-text-white">
+          <img class="team-avatar" src="https://avatars.githubusercontent.com/u/30292727?v=4" alt="avatar" />
+          <h3 class="feature-title">LordShenron</h3>
+          <p class="feature-desc">Lead Developer</p>
+          <a href="https://github.com/LordShenron" target="_blank"><i class="fa fa-github"
+              style="font-size:40px;"></i></a>
+          <a href="https://t.me/LordShenron" target="_blank"><i class="fa fa-telegram" style="font-size:40px"></i></a>
+        </div>
+      </div>
 
-    <!-- OWl Carousel -->
-    <script>
-        $(".owl-carousel").owlCarousel({
-            loop: true,
-            margin: 20,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            // responsiveClass: true,
-            // autoHeight: true,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                900: {
-                    items: 2,
-                },
-                1200: {
-                    items: 3,
-                },
-            },
-        });
-    </script>
-    <script>
-    //code for back to top button
-      var btn = $('#button');
+      <div class="column">
+        <div class="card feature-card has-text-white">
+          <img class="team-avatar" src="https://avatars.githubusercontent.com/u/43555219?v=4" alt="avatar" />
+          <h3 class="feature-title">ArunTeltia</h3>
+          <p class="feature-desc">Lead WebDeveloper</p>
+          <a href="https://github.com/ArunTeltia" target="_blank"><i class="fa fa-github"
+              style="font-size:40px;"></i></a>
+          <a href="https://t.me/C0un13rT3rr0r1st" target="_blank"><i class="fa fa-telegram"
+              style="font-size:40px"></i></a>
+        </div>
+      </div>
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
+      <div class="column">
+        <div class="card feature-card has-text-white">
+          <img class="team-avatar" src="https://avatars.githubusercontent.com/u/64403591?v=4" alt="avatar" />
+          <h3 class="feature-title">CryptoFox17</h3>
+          <p class="feature-desc">Designer</p>
+          <a href="https://github.com/cryptofox17" target="_blank"><i class="fa fa-github"
+              style="font-size:40px;"></i></a>
+          <a href="https://t.me/cryptofox17" target="_blank"><i class="fa fa-telegram" style="font-size:40px"></i></a>
+        </div>
+      </div>
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
+    </div>
+  </div>
+  <div class="meet_the_team"
+    style="display:flex; margin-top:50px; width:100%; align-items:center; justify-content:center">
+    <button onclick="location.href='maintainers';" class="button is-danger">
+      Click to Meet our full Team
+    </button>
+  </div>
+  <br /><br /><br />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- sakura-horizontal-unit-2 -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032" data-ad-slot="8931146882"
+    data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <footer class="footer">
+    <div class="content has-text-centered has-text-white">
+      <img class="navbar-logo" src="./image/logo_banner.png" />
+      <p>
+        Project Maintained by
+        <a class="footer-link" href="https://github.com/LordShenron"><b>LordShenron</b></a>
+        and
+        <a class="footer-link" href="https://github.com/ArunTeltia"><b>ArunTeltia</b></a>
+        <br />
+      </p>
+      <div class="footer-buttons-list">
+        <a href="https://github.com/ProjectSakura"><i class="fa fa-github" style="font-size:40px;"></i></a>
+        <a href="https://telegram.me/ProjectSakura"><i class="fa fa-telegram" style="font-size:40px;"></i></a>
+        <a href="https://twitter.com/ProjectSakura_"><i class="fa fa-twitter" style="font-size:40px;"></i></a>
+      </div>
+      <br>
+      SPONSORED BY<br>
+      <a href="https://my.xsl.tel/"><img class="sponsor" src="image/spon-white.png" alt="XSLTEL OU"></a>
+    </div>
+  </footer>
 
-
-    </script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <!-- Carousel Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+  <!-- OWl Carousel -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 1500,
+      // responsiveClass: true,
+      // autoHeight: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        900: {
+          items: 2,
+        },
+        1200: {
+          items: 3,
+        },
+      },
+    });
+  </script>
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll('.navbar-burger'),
+      0
+    );
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+      // Add a click event on each of them
+      $navbarBurgers.forEach((el) => {
+        el.addEventListener('click', () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    }
+  });
+</script>
 
 </html>
