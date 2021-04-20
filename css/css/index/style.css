@@ -76,6 +76,8 @@ body {
   height: 100vh;
   background: #010101;
   position: relative;
+  background: url(../../../image/background.svg) no-repeat center;
+  background-size: 200% 200%;
 }
 
 .hero-img {
@@ -420,7 +422,7 @@ body {
 /*Footer*/
 
 .footer {
-  background-color: #0F111A;
+  background-color: #0f111a;
   margin-bottom: -3.5rem;
 }
 
@@ -451,9 +453,9 @@ body {
   text-align: center;
 }
 
-body:nth-child(2) {
+/* body:nth-child(2) {
   background: #010101 !important;
-}
+} */
 
 @media (min-width: 1000px) {
   .hero-content {
