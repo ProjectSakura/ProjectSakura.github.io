@@ -82,8 +82,6 @@ body {
 
 .hero-img {
   position: absolute;
-  bottom: 0;
-  right: 0;
   max-height: 88vh;
 }
 
@@ -354,21 +352,6 @@ body {
   flex: 3;
 }
 
-.device-info {
-  display: flex;
-  align-items: flex-start;
-}
-
-.device-info h1 {
-  color: #f14668;
-  font-size: 1.75rem;
-}
-
-.device-info h4 {
-  color: #c2c2c2;
-  font-size: 1.25rem;
-}
-
 .build-info {
   padding: 1.5rem;
   border: 4px solid #f14668;
@@ -442,17 +425,6 @@ body {
   border-radius: 80%;
 }
 
-#turn {
-  display: none !important;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #f14668;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
 /* body:nth-child(2) {
   background: #010101 !important;
 } */
@@ -511,9 +483,6 @@ body {
 }
 
 @media (max-width: 1030px) and (orientation: landscape) {
-  #turn {
-    display: flex !important;
-  }
   body > *:not(:nth-child(1)) {
     opacity: 0;
   }
@@ -523,7 +492,71 @@ body {
 }
 
 @media only screen and (orientation: portrait) {
-  #turn {
-    display: none;
+}
+.top_content {
+  display: flex;
+  background: url(../../../image/background.svg) no-repeat center;
+  height: 100vh;
+  width: 100%;
+  background-size: 200% 200%;
+  margin-top: 50px;
+}
+
+.top_content_img {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.top_content_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.android_img {
+  width: 400px;
+}
+
+.top_content_data {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.h1-data {
+  font-size: 60px;
+}
+
+.h3-data {
+  font-size: 30px;
+}
+
+@media (max-width: 490px) {
+  .android_img {
+    width: 300px;
+  }
+
+  .top_content {
+    background-size: 300% 300%;
+    flex-direction: column;
+    height: 120vh;
+  }
+
+  .h1-data {
+    font-size: 30px;
+  }
+
+  .h3-data {
+    font-size: 15px;
+  }
+
+  .top_content_data {
+    gap: 20px;
   }
 }
