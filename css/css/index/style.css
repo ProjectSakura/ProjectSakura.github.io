@@ -538,7 +538,7 @@ body {
   font-size: 30px;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 720px) {
   .android_img {
     width: 300px;
   }
@@ -546,7 +546,7 @@ body {
   .top_content {
     background-size: 300% 300%;
     flex-direction: column;
-    height: 120vh;
+    height: 100%;
   }
 
   .h1-data {
