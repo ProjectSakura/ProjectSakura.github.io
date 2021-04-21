@@ -60,6 +60,12 @@ Don't remove this if you intent to use this page for your website.
             transition: var(--transition-delay);
         }
 
+        p.card-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         body.light {
 
             --accent-color: #56cc9d;
@@ -280,6 +286,10 @@ Don't remove this if you intent to use this page for your website.
             color: rgba(0, 0, 0, .9);
             transform: scale(1.1);
         }
+
+        .header-card {
+            padding: 20px;
+        }
     </style>
 </head>
 
@@ -289,7 +299,7 @@ Don't remove this if you intent to use this page for your website.
         <button class="btn-toggle"><i class="fa fa-adjust" style="font-size: 21px;"></i></button>
     </div>
 
-    <header class="container text-center">
+    <header class="container text-center" style="padding:20px;">
         <h1>SAKURA STATS &#169;</h1>
     </header>
 
