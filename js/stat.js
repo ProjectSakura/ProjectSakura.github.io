@@ -57,67 +57,47 @@ async function getData() {
   Total__Download = total;
 }
 getData();
+const OTA_Function = async () => {
+  let count = 0;
+  const tbody = document.querySelector(".table_device_2");
 
-const tbody = document.querySelector(".table_device");
-const tbody2 = document.querySelector(".table_device_2");
-tbody.innerHTML = "";
-let count = 0;
-const fulldata = data.devices.concat(data2.devices);
-const fifty = fulldata.map(async (device) => {
-  var tr = createNode("tr");
-  // li.setAttribute("class", "search-li");
-  try {
-    const response = await fetch(
-      "https://sourceforge.net/projects/projectsakura/files/" +
-        device.alternate_name +
-        "/stats/json?start_date=2020-01-01&end_date=2022-01-01"
-    );
-    const jsonData = await response.json();
-    const percent = ((jsonData.total * 100) / Total__Download).toFixed(3);
-    tr.innerHTML = `
+  const data = await fetch(
+    "https://raw.githubusercontent.com/ProjectSakura/OTA/11/devices.json"
+  );
+  response = await data.json();
+  const fifty = response.map(async (device) => {
+    var tr = createNode("tr");
+    try {
+      const response = await fetch(
+        "https://sourceforge.net/projects/projectsakura/files/" +
+          device.codename +
+          "/stats/json?start_date=2020-01-01&end_date=2022-01-01"
+      );
+      const jsonData = await response.json();
+      const percent = ((jsonData.total * 100) / Total__Download).toFixed(3);
+      tr.innerHTML = `
         <tr>
-            <td>${device.device_name}</td>
-            <td class="${device.alternate_name}download">${jsonData.total}</td>
-            <td class="percentage${device.alternate_name}">${percent}</td>
+            <td>${device.name}</td>
+            <td class="${device.codename}download">${jsonData.total}</td>
+            <td class="percentage${device.codename}">${percent}</td>
         </tr>
     `;
-
-    const isSupported = device.isSupported;
-    if (isSupported == 0) {
       count = count + 1;
+      return tr;
+    } catch (e) {
+      console.log(e);
     }
-    returndata = [tr, isSupported];
-    return returndata;
-  } catch (e) {
-    console.log(e.message);
-    tr.innerHTML = `
-        <tr>
-            <td>${device.device_name}</td>
-            <td class="${device.alternate_name}download">Loading...</td>
-            <td class="percentage${device.alternate_name}">Percentage</td>
-        </tr>
-        `;
-    const isSupported = device.isSupported;
-    if (isSupported == 0) {
-      count = count + 1;
-    }
-    returndata = [tr, isSupported];
-    return returndata;
-  }
-});
-
-const data123 = [];
-Promise.allSettled(fifty)
-  .then((results) =>
-    results.forEach((result) => {
-      if (result.value[1] == 0) {
+  });
+  const data123 = [];
+  Promise.allSettled(fifty)
+    .then((results) =>
+      results.forEach((result) => {
         try {
-          data123.push(result.value[0]);
+          data123.push(result.value);
           if (count == data123.length) {
             data123.sort((a, b) => {
               return +b.childNodes[3].innerHTML - +a.childNodes[3].innerHTML;
             });
-
             for (let i = 0; i < data123.length; i++) {
               tbody.appendChild(data123[i]);
             }
@@ -125,61 +105,8 @@ Promise.allSettled(fifty)
         } catch (e) {
           console.log(e);
         }
-      }
-    })
-  )
-  .then();
-
-const fetched = data2.devices.map(async (device) => {
-  var tr = createNode("tr");
-  // li.setAttribute("class", "search-li");
-  try {
-    const response = await fetch(
-      "https://sourceforge.net/projects/projectsakura/files/" +
-        device.alternate_name +
-        "/stats/json?start_date=2020-01-01&end_date=2022-01-01"
-    );
-    const jsonData = await response.json();
-    const percent = ((jsonData.total * 100) / Total__Download).toFixed(3);
-    tr.innerHTML = `
-            <tr>
-                <td>${device.device_name}</td>
-                <td class="${device.alternate_name}download">${jsonData.total}</td>
-                <td class="percentage${device.alternate_name}">${percent}</td>
-            </tr>
-        `;
-
-    return tr;
-  } catch (e) {
-    console.log(e.message);
-    tr.innerHTML = `
-            <tr>
-                <td>${device.device_name}</td>
-                <td class="${device.alternate_name}download">Loading...</td>
-                <td class="percentage${device.alternate_name}">Percentage</td>
-            </tr>
-            `;
-    return tr;
-  }
-});
-
-const data1234 = [];
-Promise.allSettled(fetched)
-  .then((results) =>
-    results.forEach((result) => {
-      try {
-        data1234.push(result.value);
-        if (fetched.length == data1234.length) {
-          data1234.sort((a, b) => {
-            return +b.childNodes[3].innerHTML - +a.childNodes[3].innerHTML;
-          });
-          for (let i = 0; i < data1234.length; i++) {
-            tbody2.appendChild(data1234[i]);
-          }
-        }
-      } catch (e) {
-        console.log(e);
-      }
-    })
-  )
-  .then();
+      })
+    )
+    .then();
+};
+OTA_Function();
