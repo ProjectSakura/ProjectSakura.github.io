@@ -4,6 +4,7 @@ This page is designed by members of Project Sakura and all the code belongs to t
 Don't remove this if you intent to use this page for your website.
 -->
 <html lang="en">
+
 <head>
     <title>Sakura Stats</title>
     <meta charset="UTF-8">
@@ -16,7 +17,8 @@ Don't remove this if you intent to use this page for your website.
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- New UI -->
     <link rel="stylesheet" href="./css/bootstrap-ui.css">
@@ -40,7 +42,7 @@ Don't remove this if you intent to use this page for your website.
         /* theme */
         body {
 
-            --accent-color :#64B1F3;
+            --accent-color: #64B1F3;
             --background-color: #0F111A;
             --btn-toggle-color: #56cc9d;
             --container-color: #212433;
@@ -58,9 +60,15 @@ Don't remove this if you intent to use this page for your website.
             transition: var(--transition-delay);
         }
 
+        p.card-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         body.light {
 
-            --accent-color :#56cc9d;
+            --accent-color: #56cc9d;
             --background-color: #f7f7f9;
             --btn-toggle-color: #0F111A;
             --container-color: #56cc9d;
@@ -75,25 +83,24 @@ Don't remove this if you intent to use this page for your website.
             color: #000;
         }
 
-        .btn-toggle
-        {
-             background-color: var(--btn-toggle-color);
-             border: 0;
-             border-radius: 50%;
-             color: #FFF;
-             cursor: pointer;
-             height: 33px;
-             padding: 3px;
-             position: absolute;
-             right:2.5rem;
-             transition: var(--transition-delay);
-             top: 2.5rem;
-             width: 33px;
-             z-index: 999;
+        .btn-toggle {
+            background-color: var(--btn-toggle-color);
+            border: 0;
+            border-radius: 50%;
+            color: #FFF;
+            cursor: pointer;
+            height: 33px;
+            padding: 3px;
+            position: absolute;
+            right: 2.5rem;
+            transition: var(--transition-delay);
+            top: 2.5rem;
+            width: 33px;
+            z-index: 999;
         }
 
         .btn-toggle:hover,
-        .btn-toggle:focus{
+        .btn-toggle:focus {
             transform: scale(1.1);
         }
 
@@ -113,7 +120,7 @@ Don't remove this if you intent to use this page for your website.
             font-weight: 300;
         }
 
-        .header-card  {
+        .header-card {
             background-color: var(--container-color);
             color: #f2f2f2;
         }
@@ -123,13 +130,12 @@ Don't remove this if you intent to use this page for your website.
         ============= ADDED CSS ===============
         =======================================
         */
-        .text-center{
+        .text-center {
             text-align: center;
         }
 
         /* Table Styling */
-        .table
-        {
+        .table {
             background-color: var(--table-body-color);
             border: 1px solid var(--accent-color);
             color: var(--table-text-color);
@@ -140,17 +146,17 @@ Don't remove this if you intent to use this page for your website.
             margin-bottom: 1em;
         }
 
-        .table-success th
-        {
+        .table-success th {
             border-color: var(--accent-color);
         }
 
-        .table-success,.thread
-        {
+        .table-success,
+        .thread {
             background-color: var(--accent-color);
         }
 
-        th, td{
+        th,
+        td {
             border: 1px solid var(--accent-color);
         }
 
@@ -208,6 +214,7 @@ Don't remove this if you intent to use this page for your website.
             0% {
                 filter: hue-rotate(0deg);
             }
+
             100% {
                 filter: hue-rotate(360deg);
             }
@@ -280,21 +287,24 @@ Don't remove this if you intent to use this page for your website.
             transform: scale(1.1);
         }
 
-
+        .header-card {
+            padding: 20px;
+        }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <div class="container btn-container">
         <button class="btn-toggle"><i class="fa fa-adjust" style="font-size: 21px;"></i></button>
     </div>
 
-    <header class="container text-center">
+    <header class="container text-center" style="padding:20px;">
         <h1>SAKURA STATS &#169;</h1>
     </header>
 
     <!-- Intro Card -->
-    <div class="container card header-card mb-3" >
+    <div class="container card header-card mb-3">
         <h3 class="card-title">Project Sakura got downloaded <span class="totaldownload"></span> times.</h3>
         <p class="card-text">Note: These stats are only for official downloads, unofficial numbers are unknown.</p>
     </div>
@@ -303,7 +313,8 @@ Don't remove this if you intent to use this page for your website.
     <div class="container">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- horizontal-sakura-unit3 -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032" data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
+            data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
@@ -317,7 +328,7 @@ Don't remove this if you intent to use this page for your website.
                     <th>DOWNLOADS</th>
                     <th>Percentage</th>
                 </tr>
-               
+
             </thead>
             <tbody class="table_device_2">
 
@@ -329,60 +340,48 @@ Don't remove this if you intent to use this page for your website.
     <div class="container">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- horizontal-sakura-unit3 -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032" data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
+            data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
 
-        <h3 class="text-center table-heading">UNSUPPORTED DEVICES</h3>
-
-        <table class="table table-striped" style="font-weight: 600">
-            <thead class="table-success">
-                <tr>
-                    <th>DEVICES</th>
-                    <th>DOWNLOADS</th>
-                    <th>Percentage</th>
-                </tr>
-                
-            </thead>
-            <tbody class="table_device">
-
-            </tbody>
-        </table>
     </div>
 
     <!-- TABLE ENTRIES >> Countries -->
     <div class="container">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- sakura-horizontal-unit-2 -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032" data-ad-slot="8931146882" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
+            data-ad-slot="8931146882" data-ad-format="auto" data-full-width-responsive="true"></ins>
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-            <!-- Blog entry -->
+        <!-- Blog entry -->
         <h3 class="text-center table-heading">TOP COUNTRIES</h3>
-            <table class="table table-striped">
-                <thead class="table-success">
-                    <tr>
-                        <th>SERIAL NUMBER</th>
-                        <th>COUNTRY NAME</th>
-                        <th>DOWNLOADS</th>
-                    </tr>
-                    
-                </thead>
-                <tbody class="countries">
+        <table class="table table-striped">
+            <thead class="table-success">
+                <tr>
+                    <th>SERIAL NUMBER</th>
+                    <th>COUNTRY NAME</th>
+                    <th>DOWNLOADS</th>
+                </tr>
 
-                </tbody>
-            </table>
-        </div>
+            </thead>
+            <tbody class="countries">
+
+            </tbody>
+        </table>
+    </div>
 
     <!-- TABLE ENTRIES >> Operating Systems -->
     <div class="container">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- sakura-horizontal-display-ad -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032" data-ad-slot="8448641591" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
+            data-ad-slot="8448641591" data-ad-format="auto" data-full-width-responsive="true"></ins>
         <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
 
         <h3 class="text-center table-heading">OS USED TO DOWNLOAD SAKURA</h3>
@@ -393,7 +392,7 @@ Don't remove this if you intent to use this page for your website.
                     <th>COUNTRY NAME</th>
                     <th>DOWNLOADS</th>
                 </tr>
-               
+
             </thead>
             <tbody class="oses">
             </tbody>
@@ -428,21 +427,19 @@ Don't remove this if you intent to use this page for your website.
                     </div>
                     <ul class="social-icon" data-wow-delay="1s">
                         <li><a href="https://twitter.com/ProjectSakura_" target="_blank" class="fa fa-twitter"></a></li>
-                        <li><a href="https://www.github.com/ProjectSakura" target="_blank" class="fa fa-github"></a></li>
+                        <li><a href="https://www.github.com/ProjectSakura" target="_blank" class="fa fa-github"></a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="mantainers.js"></script>
-    <script src="mantainers2.js"></script>
     <script src="js/stat.js"></script>
-
     <!-- TOGGLE THEME -->
     <script>
-        document.querySelector(".btn-toggle").addEventListener('click', ()=>{
-         document.querySelector("body").classList.toggle("light");
+        document.querySelector(".btn-toggle").addEventListener('click', () => {
+            document.querySelector("body").classList.toggle("light");
         });
 
     </script>
