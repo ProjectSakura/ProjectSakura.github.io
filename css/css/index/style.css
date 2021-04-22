@@ -406,24 +406,22 @@ body {
 
 .footer {
   background-color: #0f111a;
-  margin-bottom: -3.5rem;
+  padding: 3rem 1.5rem;
+}
+
+.footer p {
+  margin-top: 0.375rem;
 }
 
 .footer-link {
   color: #f14668 !important;
 }
 
-.footer-buttons-list {
-  padding-top: 0.5rem;
+.footer-buttons-list a {
+  padding: 0.625rem;
+  font-size: 2rem;
 }
 
-.footer-button {
-  border: 0px;
-  margin-left: 0.45rem;
-  margin-right: 0.45rem;
-  background-color: #f1466821;
-  border-radius: 80%;
-}
 
 /* body:nth-child(2) {
   background: #010101 !important;
