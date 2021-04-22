@@ -406,20 +406,117 @@ body {
 
 .footer {
   background-color: #0f111a;
-  padding: 3rem 1.5rem;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.75rem;
 }
 
-.footer p {
-  margin-top: 0.375rem;
+footer a {
+  text-decoration: none;
 }
 
-.footer-link {
-  color: #f14668 !important;
+.footer-holder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 2.5rem 5% 2.5rem 5%;
 }
 
-.footer-buttons-list a {
-  padding: 0.625rem;
+.footer-holder>svg {
+  width: 4rem;
+  height: 1.5rem;
+}
+
+
+.sources-info {
+  display: inline-block;
+  width: 50%;
+}
+
+.sources-info>ul {
+  padding: 0;
+  margin: 0.375rem 0;
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
   font-size: 2rem;
+
+}
+
+.sources-info>ul>li {
+  padding-right: 1rem;
+}
+
+.sources-info>ul>li>a {
+  text-decoration: none;
+}
+
+.info-span {
+  font-size: 1rem;
+  display: block;
+  margin: 0.75rem 0;
+  max-width: 20.625rem;
+}
+
+.team-info img {
+  width: 10rem;
+  height: auto;
+}
+
+.footer-section-2 ul,
+.footer-section-2 ul>li>a {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-section-2 ul {
+  padding-top: 0.75rem;
+}
+
+.footer-section-2 ul>li {
+  padding-bottom: 0.5rem;
+}
+
+.footer-section-3 {
+  line-height: 2.8;
+}
+
+@media screen and (max-width: 1130px) {
+  
+  .footer-holder {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-section-1 {
+    flex: 100%;
+  }
+
+  .footer-section-2 {
+    margin-top: 0.75rem;
+    flex: 60%;
+  }
+
+  .footer-section-3 {
+    margin-top: 0.75rem;
+    flex: 40%;
+}
+
+  .footer-section-3 img {
+    width: 9rem;
+    height: auto;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .footer-section-1,
+  .footer-section-2,
+  .footer-section-3 {
+    flex: 100%;
+  }
 }
 
 
