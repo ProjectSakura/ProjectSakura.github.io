@@ -43,6 +43,12 @@
 <style>
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
   @import url(https://weloveiconfonts.com/api/?family=entypo);
+
+  @media screen and (max-width:900px) {
+  #social-sidebar{
+    display: none;
+  }
+}
   
   [class^="entypo-"]:before {
     font-family: 'entypo', sans-serif;
@@ -51,7 +57,7 @@
     background: #e6e6e6;
   }
   #social-sidebar {
-    left: 0;
+    right: 0;
     position: fixed;
     top: 30%;
   }
@@ -72,7 +78,7 @@
       cursor: pointer;
   }
   #social-sidebar a:hover span {
-    left: 120%;
+    right: 120%;
     opacity: 1;
   }
   #social-sidebar a span {
@@ -80,12 +86,12 @@
     text-transform: uppercase;
     border-radius: 3px;
     line-height: 24px;
-    left: -100%;
+    right: -100%;
     margin-top: -16px;
     opacity: 0;
     padding: 4px 8px;
     position: absolute;
-    transition: opacity .3s, left .4s;
+    transition: opacity .3s, right .4s;
     top: 50%;
     z-index: -1;
   }
@@ -95,7 +101,7 @@
     display: block;
     height: 8px;
     width: 8px;
-    left: -4px;
+    right: -4px;
     margin-top: -4px;
     position: absolute;
     top: 50%;
