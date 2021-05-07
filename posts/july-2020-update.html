@@ -4,382 +4,19 @@
     <meta charset="utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="csrf-param" content="authenticity_token" />
-    <meta name="csrf-token"
-        content="XX30bJnIFltL8pol27GFYQ/gTxwgK3zX7kfBYDq5lokSChjRf4V3gdaeHgSKmYbC20AwcVfEXKukZZz6g8JTlA==" />
+    <meta name="csrf-token" content="XX30bJnIFltL8pol27GFYQ/gTxwgK3zX7kfBYDq5lokSChjRf4V3gdaeHgSKmYbC20AwcVfEXKukZZz6g8JTlA==" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project Sakura</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic"
-        rel="stylesheet" />
-    <link rel="alternate" type="application/json+oembed"
-        href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2FBooligoosh%2Fpen%2FmKPpQp&format=json"
-        title="Blog Posts Card Layout - Code The Web" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2FBooligoosh%2Fpen%2FmKPpQp&format=json" title="Blog Posts Card Layout - Code The Web" />
     <link rel="apple-touch-icon" type="image/png" href="" />
     <meta name="apple-mobile-web-app-title" content="CodePen">
     <link rel="shortcut icon" type="image/x-icon" href="" />
     <link rel="mask-icon" type="" href="" color="#111" />
+    <link rel="stylesheet" href="../css/post.css">
     <script>
         /* Firefox needs this to prevent FOUC. Wow. */
     </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 400;
-            color: #212112;
-            display: flex;
-            flex-direction: column;
-            background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
-            background-position: center;
-            background-repeat: repeat;
-            background-size: 7%;
-            background-color: #000;
-            overflow-x: hidden;
-            transition: all 200ms linear;
-        }
-
-        .course {
-            background-color: #1c1c24;
-            color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 10px 10px #ffffff;
-            display: flex;
-            max-width: 100%;
-            /* margin: 20px; */
-            overflow: hidden;
-            width: 700px;
-        }
-
-        .course h6 {
-            opacity: 0.6;
-            margin: 0;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .course h2 {
-            letter-spacing: 1px;
-            margin: 10px 0;
-        }
-
-        .course-preview {
-            background-color: #2A265F;
-            color: #fff;
-            padding: 30px;
-            max-width: 250px;
-        }
-
-        .course-preview a {
-            color: #fff;
-            display: inline-block;
-            font-size: 12px;
-            opacity: 0.6;
-            margin-top: 30px;
-            text-decoration: none;
-        }
-
-        .course-info {
-            padding: 30px;
-            position: relative;
-            width: 100%;
-        }
-
-        .progress-container {
-            position: absolute;
-            top: 30px;
-            right: 30px;
-            text-align: right;
-            width: 150px;
-        }
-
-        .progress {
-            background-color: #ddd;
-            border-radius: 3px;
-            height: 5px;
-            width: 100%;
-        }
-
-        .progress::after {
-            border-radius: 3px;
-            background-color: #2A265F;
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 5px;
-            width: 66%;
-        }
-
-        .progress-text {
-            font-size: 10px;
-            opacity: 0.6;
-            letter-spacing: 1px;
-        }
-
-        .btn {
-            background-color: #2A265F;
-            border: 0;
-            border-radius: 50px;
-            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-            color: #fff;
-            font-size: 16px;
-            padding: 12px 25px;
-            position: absolute;
-            bottom: 30px;
-            right: 30px;
-            letter-spacing: 1px;
-        }
-
-        /* SOCIAL PANEL CSS */
-        .social-panel-container {
-            position: fixed;
-            right: 0;
-            bottom: 80px;
-            transform: translateX(100%);
-            transition: transform 0.4s ease-in-out;
-        }
-
-        .social-panel-container.visible {
-            transform: translateX(-10px);
-        }
-
-        .social-panel {
-            background-color: #fff;
-            border-radius: 16px;
-            box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6);
-            border: 5px solid #001F61;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Muli';
-            position: relative;
-            height: 169px;
-            width: 370px;
-            max-width: calc(100% - 10px);
-        }
-
-        .social-panel button.close-btn {
-            border: 0;
-            color: #97A5CE;
-            cursor: pointer;
-            font-size: 20px;
-            position: absolute;
-            top: 5px;
-            right: 5px;
-        }
-
-        .social-panel button.close-btn:focus {
-            outline: none;
-        }
-
-        .social-panel p {
-            background-color: #001F61;
-            border-radius: 0 0 10px 10px;
-            color: #fff;
-            font-size: 14px;
-            line-height: 18px;
-            padding: 2px 17px 6px;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            margin: 0;
-            transform: translateX(-50%);
-            text-align: center;
-            width: 235px;
-        }
-
-        .social-panel p i {
-            margin: 0 5px;
-        }
-
-        .social-panel p a {
-            color: #FF7500;
-            text-decoration: none;
-        }
-
-        .social-panel h4 {
-            margin: 20px 0;
-            color: #97A5CE;
-            font-family: 'Muli';
-            font-size: 14px;
-            line-height: 18px;
-            text-transform: uppercase;
-        }
-
-        .social-panel ul {
-            display: flex;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .social-panel ul li {
-            margin: 0 10px;
-        }
-
-        .social-panel ul li a {
-            border: 1px solid #DCE1F2;
-            border-radius: 50%;
-            color: #001F61;
-            font-size: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50px;
-            width: 50px;
-            text-decoration: none;
-        }
-
-        .social-panel ul li a:hover {
-            border-color: #FF6A00;
-            box-shadow: 0 9px 12px -9px #FF6A00;
-        }
-
-        .floating-btn {
-            border-radius: 26.5px;
-            background-color: #001F61;
-            border: 1px solid #001F61;
-            box-shadow: 0 16px 22px -17px #03153B;
-            color: #fff;
-            cursor: pointer;
-            font-size: 16px;
-            line-height: 20px;
-            padding: 12px 20px;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 999;
-        }
-
-        .floating-btn:hover {
-            background-color: #ffffff;
-            color: #001F61;
-        }
-
-        .floating-btn:focus {
-            outline: none;
-        }
-
-        .floating-text {
-            background-color: #001F61;
-            border-radius: 10px 10px 0 0;
-            color: #fff;
-            font-family: 'Muli';
-            padding: 7px 15px;
-            position: fixed;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            z-index: 998;
-        }
-
-        .floating-text a {
-            color: #FF7500;
-            text-decoration: none;
-        }
-
-        @media screen and (max-width: 480px) {
-
-            .social-panel-container.visible {
-                transform: translateX(0px);
-            }
-
-            .floating-btn {
-                right: 10px;
-            }
-        }
-
-        footer {
-            background-color: #222;
-            color: #fff;
-            font-size: 14px;
-            bottom: 0;
-            position: fixed;
-            left: 0;
-            right: 0;
-            text-align: center;
-            z-index: 999;
-        }
-
-        footer p {
-            margin: 10px 0;
-        }
-
-        footer i {
-            color: red;
-        }
-
-        footer a {
-            color: #3c97bf;
-            text-decoration: none;
-        }
-
-        .container2 {
-            grid-template-columns: 1fr 1fr;
-            align-self: center;
-            align-items: center;
-            justify-content: center;
-            margin-left: 55%;
-
-        }
-
-        @media (max-width: 940px) {
-            .container2 {
-                margin-left: 0%;
-            }
-
-            .bottton {
-                width: 100px;
-                height: 40px;
-
-            }
-        }
-
-        /*@media (max-width: 940px) {
-            .container2 {
-                grid-template-columns: 1fr;
-                flex-direction: column;
-                justify-content: center;
-            }
-
-            .info {
-                font-size: 1.2em;
-                display: flex;
-                padding: 1em 3em;
-                height: 3em;
-            }
-
-            .info img {
-                height: 3em;
-                margin-right: 0.5em;
-            }
-
-            .info h1 {
-                font-size: 1em;
-                font-weight: normal;
-            }
-
-            .container2 {
-                /* CHANGE TO GRID 
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        grid-gap: 50px;
-        width: 100vw;
-        max-width: 100%;
-        margin: auto;
-        }
-
-        */
-    </style>
 </head>
 
 <body>
@@ -399,8 +36,7 @@
                 <p>
                     So a lot of you guys have been getting impatient asking "WEN OTA?" or "WEN JULY SECURITY PATCH"
                 </p>
-                <p> Well before I get into that I hope all the readers are doing well mentally and physically, safe in
-                    their home, if not its always good to talk to someone about it. It will make you feel way better.
+                <p> Well before I get into that I hope all the readers are doing well mentally and physically, safe in their home, if not its always good to talk to someone about it. It will make you feel way better.
                 </p>
                 <p>
                     This blog post will talk about two things
@@ -411,32 +47,27 @@
                 </ul>
                 <p>Let's start with OUR BRAND NEW BUG TRACKER REPO</p>
                 <p>
-                    Well, the idea behind this is to make the reporting of bugs easier. It helps us a lot because we can
-                    just go to the repo and check out what's wrong and work towards fixing it "SO TELL ME HOW CAN I HELP
-                    YOU GUYS BY REPORTING BUGS SAR" So this is what you'll have to:
+                    Well, the idea behind this is to make the reporting of bugs easier. It helps us a lot because we can just go to the repo and check out what's wrong and work towards fixing it "SO TELL ME HOW CAN I HELP YOU GUYS BY REPORTING BUGS SAR" So this is what you'll
+                    have to:
                 </p>
                 <ul>
                     <li>MAKE SURE ITS A BUG IN THE ROM AND NOT THE DEVICE</li>
                 </ul>
                 <p>"but sar what do I do when its a bug in the device"</p>
-                <p> Well then contact your device maintainer(You can find their telegram via Sakura Settings > About
-                    Project)</p>
+                <p> Well then contact your device maintainer(You can find their telegram via Sakura Settings > About Project)
+                </p>
                 <ul>
                     <li>Now that you know its a bug in the rom and not the device, grab a logcat.</li>
                 </ul>
                 <p>"how do I do that sar?"</p>
-                <p>Refer to <a href="https://forum.xda-developers.com/showthread.php?t=2774386" target="_blank">this</a>
-                    while you're taking a logcat</p>
+                <p>Refer to <a href="https://forum.xda-developers.com/showthread.php?t=2774386" target="_blank">this</a> while you're taking a logcat</p>
                 <ul>
-                    <li>Once you've got the logcat, go over to our bug tracker <a
-                            href="https://github.com/ProjectSakura/Bug_Tracker" target="_blank">repo</a> and you see
-                        that button that says "Issues"? Click on that and create a new issue</li>
+                    <li>Once you've got the logcat, go over to our bug tracker <a href="https://github.com/ProjectSakura/Bug_Tracker" target="_blank">repo</a> and you see that button that says "Issues"? Click on that and create a new issue</li>
                 </ul>
                 <p>Now that I've finished explaining how to report bugs lets move to the fun part</p>
                 <p>Whats changes have been made in the ROM</p>
                 <ul>
-                    <li>That annoying bug where the navbar buttons stop working in gesture navigation has been fixed(thx
-                        to Raj from posp)</li>
+                    <li>That annoying bug where the navbar buttons stop working in gesture navigation has been fixed(thx to Raj from posp)</li>
                     <li>The gesture pill is now THICC. Why? BECAUSE THICC🍑 = BEST</li>
                     <li>A BRAND NEW BOOTANIMATION (thx to glitch 💛)</li>
                     <li>Add new icon shapes from Android R</li>
@@ -444,37 +75,37 @@
                     <li>Moved the battery icon to header</li>
                 </ul>
                 <p>I'd like to end this post by telling you that Project Sakura is now officially supporting:
-                <ul>
-                    <li>Violet, Co-Maintained by Nitish & Prajwal</li>
-                    <li>Beryllium, Maintained by Human Glitch</li>
-                    <li>LeEco Le 2, Maintained by CakesTwix</li>
-                    <li>Sanders, Maintained by ArmSM</li>
-                    <li>Meizu 16TH and 16T, Maintained by thedauke</li>
-                    <li>Realme 1, Maintained by CyberJalagam</li>
-                </ul>
-                <div id="disqus_thread"></div>
-                <script type="application/javascript">
-                    var disqus_config = function () {
+                    <ul>
+                        <li>Violet, Co-Maintained by Nitish & Prajwal</li>
+                        <li>Beryllium, Maintained by Human Glitch</li>
+                        <li>LeEco Le 2, Maintained by CakesTwix</li>
+                        <li>Sanders, Maintained by ArmSM</li>
+                        <li>Meizu 16TH and 16T, Maintained by thedauke</li>
+                        <li>Realme 1, Maintained by CyberJalagam</li>
+                    </ul>
+                    <div id="disqus_thread"></div>
+                    <script type="application/javascript">
+                        var disqus_config = function() {
 
 
 
-                    };
-                    (function () {
-                        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-                            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-                            return;
-                        }
-                        var d = document,
-                            s = d.createElement('script');
-                        s.async = true;
-                        s.src = '//' + "direwolf-tech" + '.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                        };
+                        (function() {
+                            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+                                document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+                                return;
+                            }
+                            var d = document,
+                                s = d.createElement('script');
+                            s.async = true;
+                            s.src = '//' + "direwolf-tech" + '.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
                         powered by Disqus.</a></noscript>
-                <a href="https://disqus.com" class="dsq-brlink">comments powered by <span
+                    <a href="https://disqus.com" class="dsq-brlink">comments powered by <span
                         class="logo-disqus">Disqus</span></a>
             </div>
         </div>
@@ -483,8 +114,7 @@
                 <div class="course-info">
                     <h6>About Author</h6>
                     <h2>Amartya</h2>
-                    <p>Amartya is the maintainer for Huawei Nexus 6P for Project Sakura. He loves watching Anime. He
-                        designs in his free time and aspires to be a Product Designer.</p>
+                    <p>Amartya is the maintainer for Huawei Nexus 6P for Project Sakura. He loves watching Anime. He designs in his free time and aspires to be a Product Designer.</p>
                     <br> <button class="btn bottton" href="https://github.com/xmxrtyx">Follow</button>
                 </div>
             </div>
@@ -494,10 +124,10 @@
     </div>
     <footer style="width:100vw">
         <p>
-            Created with <3 by <a target="_blank" href="https://github.com/ProjectSakura">Project Sakura</a>
+            Created with
+            <3 by <a target="_blank" href="https://github.com/ProjectSakura">Project Sakura</a>
                 - Sponsored by XSLTEL OU. Read about the credits
-                <a target="_blank"
-                    href="https://github.com/ProjectSakura/ProjectSakura.github.io/blob/master/README.md">here</a>
+                <a target="_blank" href="https://github.com/ProjectSakura/ProjectSakura.github.io/blob/master/README.md">here</a>
         </p>
     </footer>
 </body>
