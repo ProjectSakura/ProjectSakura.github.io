@@ -7,7 +7,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* Remove scrollbar */
+/* For Chrome */
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;
@@ -16,7 +17,11 @@
 ::-webkit-scrollbar-thumb {
   background: #ffffff;
 }
-
+/* For Firefox */
+:root {
+	scrollbar-width: none;
+} 
+/*  */
 html {
   overflow: scroll;
   overflow-x: hidden;
@@ -34,6 +39,7 @@ body {
   background: #192542;
   overflow: hidden;
   overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 .navbar {
