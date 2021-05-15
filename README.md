@@ -88,7 +88,8 @@ Project Sakura Team would like to thank all the users, maintainers and developer
 
 ## **Credits**
 
-- [Resurrecton Remix for the Homepage](https://codepen.io/ig_design/pen/omQXoQ)
+- [Resurrecton Remix for the Homepage](https://resurrectionremix.com/)
+- [HarshV23 and NitinR for the new Homepage](https://legionos.org/)
 - [Ig Design for the download page design](https://codepen.io/ig_design/pen/omQXoQ)
 - [FlorinPop17 for the Card design and Footer design](https://codepen.io/FlorinPop17/pen/EJKgKB)
 - [Danaabhi7719 for Blog posts card design](https://codepen.io/danaabhi7119/pen/NWxjyby)
