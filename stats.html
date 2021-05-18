@@ -164,7 +164,7 @@ Don't remove this if you intent to use this page for your website.
         th,
         td {
             border: 1px solid var(--accent-color);
-            border-top:none !important;
+            border-top: none !important;
         }
 
         .table thead th {
@@ -172,21 +172,21 @@ Don't remove this if you intent to use this page for your website.
             vertical-align: middle;
         }
 
-         /* Footer Styling */
-      
+        /* Footer Styling */
+
 
         .footer {
-        background-color: var(--container-color);
-        width: 100%;
-        padding: 3px 0;
-        margin-top: 18px;
-        font-family: sans-serif;
-        color: #ffffff;
+            background-color: var(--container-color);
+            width: 100%;
+            padding: 3px 0;
+            margin-top: 18px;
+            font-family: sans-serif;
+            color: #ffffff;
         }
 
         footer a {
-        text-decoration: none;
-        color: var(--footer-link-color);
+            text-decoration: none;
+            color: var(--footer-link-color);
         }
 
         footer a:hover {
@@ -195,65 +195,67 @@ Don't remove this if you intent to use this page for your website.
         }
 
         .footer-holder {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        margin: 27px 12%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: 27px 12%;
         }
 
-        .footer-holder > svg {
-        width: 65px;
-        height: 25px;
+        .footer-holder>svg {
+            width: 65px;
+            height: 25px;
         }
 
 
         .sources-info {
-        display: inline-block;
-        width: 50%;
+            display: inline-block;
+            width: 50%;
         }
 
-        .sources-info > ul {
-        padding: 0;
-        margin: 6px 0;
-        text-decoration: none;
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        font-size: 27px;
-        
+        .sources-info>ul {
+            padding: 0;
+            margin: 6px 0;
+            text-decoration: none;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            font-size: 27px;
+
         }
 
-        .sources-info > ul > li {
-        padding-right: 15px;
+        .sources-info>ul>li {
+            padding-right: 15px;
         }
 
-        .sources-info > ul > li > a {
-        text-decoration: none;
-        color: var(--footer-link-color);
+        .sources-info>ul>li>a {
+            text-decoration: none;
+            color: var(--footer-link-color);
         }
 
         .info-span {
-        font-size: 15px;
-        display: block;
-        margin: 6px 0;
-        max-width: 330px;
+            font-size: 15px;
+            display: block;
+            margin: 6px 0;
+            max-width: 330px;
         }
 
         .team-info img {
-        width: 165px;
-        height: auto;
+            width: 165px;
+            height: auto;
         }
 
         .footer-section-2 ul {
-        margin-top: 6px;
+            margin-top: 6px;
         }
 
-        .footer-section-2 ul, .footer-section-2 ul > li > a {
-        list-style-type: none;
-        padding-left: 0;
+        .footer-section-2 ul,
+        .footer-section-2 ul>li>a {
+            list-style-type: none;
+            padding-left: 0;
         }
-        .footer-section-2 ul > li {
-        padding-bottom: 5px;
+
+        .footer-section-2 ul>li {
+            padding-bottom: 5px;
         }
 
         .stats-info {
@@ -266,28 +268,28 @@ Don't remove this if you intent to use this page for your website.
 
         @media screen and (max-width: 1130px) {
             .footer-holder {
-            display: flex;
-            flex-wrap: wrap;
+                display: flex;
+                flex-wrap: wrap;
             }
 
             .footer-section-1 {
-            flex: 100%;
+                flex: 100%;
             }
 
             .footer-section-2 {
-            margin-top: 12px;
-            flex: 60%;
+                margin-top: 12px;
+                flex: 60%;
             }
 
-            .footer-section-3 { 
-            flex: 40%;
+            .footer-section-3 {
+                flex: 40%;
             }
 
             .footer-section-3 img {
-            width: 135px;
-            height: auto;
+                width: 135px;
+                height: auto;
             }
-        
+
         }
 
         @media screen and (max-width: 575px) {
@@ -311,7 +313,7 @@ Don't remove this if you intent to use this page for your website.
                 margin: 5% 24px 5% 24px;
             }
 
-            header > h1 {             
+            header>h1 {
                 margin-top: 24px;
             }
 
@@ -324,30 +326,46 @@ Don't remove this if you intent to use this page for your website.
             }
 
         }
-            #myBtn {
-                display: none; 
-                position: fixed; 
-                bottom: 20px;
-                right: 30px; 
-                z-index: 99; 
-                border: none;
-                outline: none; 
-                background-color:#0F111A; 
-                color: white; 
-                cursor: pointer; 
-                padding: 15px; 
-                border-radius: 10px; 
-                font-size: 18px; 
-             }
-                #myBtn:hover {
-                background-color: #0F111A;
-                }
 
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #0F111A;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        #myBtn:hover {
+            background-color: #0F111A;
+        }
+
+        .mobile_view {
+            display: none;
+        }
+
+        @media (max-width: 468px) {
+            .pc_view {
+                display: none;
+            }
+
+            .mobile_view {
+                display: block;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up fa-2x"
+            aria-hidden="true"></i></button>
     <!-- Header -->
     <div class="container btn-container">
         <button class="btn-toggle"><i class="fa fa-adjust" style="font-size: 21px;"></i></button>
@@ -365,14 +383,19 @@ Don't remove this if you intent to use this page for your website.
 
     <!-- TABLE ENTRIES >> Supported Devices -->
     <div class="container">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- horizontal-sakura-unit3 -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-            data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-
+        <div>
+            <a href="https://www.codingninjas.com/courses/online-android-Development-kotlin?utm_source=projectsakura&utm_medium=referral&utm_campaign=android-development"
+                target="_blank">
+                <center>
+                    <div class="mobile_view">
+                        <img src="./image/ninjas/mobilead.png">
+                    </div>
+                    <div class="pc_view">
+                        <img src="./image/ninjas/pcad.png">
+                    </div>
+                </center>
+            </a>
+        </div>
         <h3 class="text-center table-heading">SUPPORTED DEVICES</h3>
 
         <table class="table table-striped" style=" font-weight: 600;">
@@ -391,26 +414,22 @@ Don't remove this if you intent to use this page for your website.
     </div>
 
     <!-- TABLE ENTRIES >> Unsupported Devices -->
-    <div class="container">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- horizontal-sakura-unit3 -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-            data-ad-slot="5690616310" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-
+    <div>
+        <a href="https://www.codingninjas.com/courses/online-android-Development-kotlin?utm_source=projectsakura&utm_medium=referral&utm_campaign=android-development"
+            target="_blank">
+            <center>
+                <div class="mobile_view">
+                    <img src="./image/ninjas/mobilead.png">
+                </div>
+                <div class="pc_view">
+                    <img src="./image/ninjas/pcad.png">
+                </div>
+            </center>
+        </a>
     </div>
 
     <!-- TABLE ENTRIES >> Countries -->
     <div class="container">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- sakura-horizontal-unit-2 -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-            data-ad-slot="8931146882" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
         <!-- Blog entry -->
         <h3 class="text-center table-heading">TOP COUNTRIES</h3>
         <table class="table table-striped">
@@ -454,11 +473,11 @@ Don't remove this if you intent to use this page for your website.
     </div>
 
     <!-- FOOTER -->
-   
+
     <footer class="footer">
         <div class="footer-holder">
             <div class="footer-section-1">
-                <img src="image/sakura_footer.svg" alt="project sakura logo"/>
+                <img src="image/sakura_footer.svg" alt="project sakura logo" />
                 <span class="info-span">
                     Project Sakura is a fully free and Opensource Custom ROM built around LineageOS.
                 </span>
@@ -489,8 +508,8 @@ Don't remove this if you intent to use this page for your website.
                 <div class="info">
                     <div class="team-info">
                         Sponsored by: <br>
-                        <p><a href="https://xsl.tel"><img
-                                    src="https://projectsakura.xyz/image/spon-white.png" alt="sponsor logo"/></a></p>
+                        <p><a href="https://xsl.tel"><img src="https://projectsakura.xyz/image/spon-white.png"
+                                    alt="sponsor logo" /></a></p>
                         Project Maintained by <a href="https://github.com/LordShenron">Shen</a> & <a
                             href="https://github.com/ArunTeltia">ArunTeltia</a>
                     </div>
