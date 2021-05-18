@@ -19,8 +19,8 @@
 }
 /* For Firefox */
 :root {
-	scrollbar-width: none;
-} 
+  scrollbar-width: none;
+}
 /*  */
 html {
   overflow: scroll;
@@ -683,4 +683,18 @@ footer a {
   width: 60%;
   padding: 10px;
   margin-bottom: 15px;
+}
+
+.mobile_view {
+  display: none;
+}
+
+@media (max-width: 468px) {
+  .pc_view {
+    display: none;
+  }
+
+  .mobile_view {
+    display: block;
+  }
 }
