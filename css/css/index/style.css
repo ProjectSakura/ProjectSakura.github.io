@@ -43,11 +43,11 @@ body {
 }
 
 .navbar {
-  background: #010102;
+  background: #0F111A;
 }
 
 .navbar-menu {
-  background-color: #010102;
+  background-color: #0F111A;
 }
 
 .navbar-brand {
@@ -64,12 +64,12 @@ body {
 }
 
 .navbar-item:hover {
-  background: #010102 !important;
+  background: #0F111A !important;
   color: #c6447b !important;
 }
 
 .navbar-item:focus {
-  background: #010102 !important;
+  background: #0F111A !important;
   color: #c6447b !important;
 }
 
@@ -697,4 +697,7 @@ footer a {
   .mobile_view {
     display: block;
   }
+}
+.fa:hover,.footer-link:hover{
+  color: #C2D6D7;
 }
