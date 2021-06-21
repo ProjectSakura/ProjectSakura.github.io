@@ -17,8 +17,7 @@ Don't remove this if you intent to use this page for your website.
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- New UI -->
     <link rel="stylesheet" href="./css/bootstrap-ui.css">
@@ -28,7 +27,9 @@ Don't remove this if you intent to use this page for your website.
     <script>
         window.dataLayer = window.dataLayer || [];
 
-        function gtag() { dataLayer.push(arguments); }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-173637831-1');
@@ -38,10 +39,9 @@ Don't remove this if you intent to use this page for your website.
         * {
             box-sizing: border-box;
         }
-
         /* theme */
+        
         body {
-
             --accent-color: #64B1F3;
             --background-color: #0F111A;
             --btn-toggle-color: #56cc9d;
@@ -52,29 +52,27 @@ Don't remove this if you intent to use this page for your website.
             --text-color: #f2f2f2;
             --footer-link-color: #64B1F3;
             --transition-delay: 0.5s;
-
             background-color: var(--background-color);
             margin: 0;
             transition: var(--transition-delay);
         }
-
+        
         p.card-text {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
+        
         header {
             margin-top: 12px;
             padding: 21px;
         }
-
+        
         .header-card {
             padding: 18px;
         }
-
+        
         body.light {
-
             --accent-color: #56cc9d;
             --background-color: #f7f7f9;
             --btn-toggle-color: #0F111A;
@@ -84,10 +82,9 @@ Don't remove this if you intent to use this page for your website.
             --table-body-color: #f7f7f7;
             --table-text-color: #5A5A5A;
             --text-color: #5A5A5A;
-
             color: #000;
         }
-
+        
         .btn-toggle {
             background-color: var(--btn-toggle-color);
             border: 0;
@@ -104,12 +101,12 @@ Don't remove this if you intent to use this page for your website.
             z-index: 999;
             outline: 0 !important;
         }
-
+        
         .btn-toggle:hover,
         .btn-toggle:focus {
             transform: scale(1.1);
         }
-
+        
         h1,
         h2,
         h3,
@@ -120,61 +117,59 @@ Don't remove this if you intent to use this page for your website.
             font-family: 'Poppins', sans-serif;
             margin: auto;
         }
-
+        
         h1 {
             color: var(--accent-color);
             font-weight: 300;
         }
-
+        
         .header-card {
             background-color: var(--container-color);
             color: #f2f2f2;
         }
-
         /*
         =======================================
         ============= ADDED CSS ===============
         =======================================
         */
+        
         .text-center {
             text-align: center;
         }
-
         /* Table Styling */
+        
         .table {
             background-color: var(--table-body-color);
             border: 1px solid var(--accent-color);
             color: var(--table-text-color);
         }
-
+        
         .table-heading {
             font-weight: 700;
             margin: 0.7em auto;
         }
-
+        
         .table-success th {
             border-color: var(--accent-color);
         }
-
+        
         .table-success,
         .thread {
             background-color: var(--accent-color);
         }
-
+        
         th,
         td {
             border: 1px solid var(--accent-color);
             border-top: none !important;
         }
-
+        
         .table thead th {
             border-bottom: none;
             vertical-align: middle;
         }
-
         /* Footer Styling */
-
-
+        
         .footer {
             background-color: var(--container-color);
             width: 100%;
@@ -183,35 +178,34 @@ Don't remove this if you intent to use this page for your website.
             font-family: sans-serif;
             color: #ffffff;
         }
-
+        
         footer a {
             text-decoration: none;
             color: var(--footer-link-color);
         }
-
+        
         footer a:hover {
             text-decoration: none;
             color: var(--footer-link-color);
         }
-
+        
         .footer-holder {
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
             margin: 27px 12%;
         }
-
+        
         .footer-holder>svg {
             width: 65px;
             height: 25px;
         }
-
-
+        
         .sources-info {
             display: inline-block;
             width: 50%;
         }
-
+        
         .sources-info>ul {
             padding: 0;
             margin: 6px 0;
@@ -220,44 +214,43 @@ Don't remove this if you intent to use this page for your website.
             display: flex;
             align-items: center;
             font-size: 27px;
-
         }
-
+        
         .sources-info>ul>li {
             padding-right: 15px;
         }
-
+        
         .sources-info>ul>li>a {
             text-decoration: none;
             color: var(--footer-link-color);
         }
-
+        
         .info-span {
             font-size: 15px;
             display: block;
             margin: 6px 0;
             max-width: 330px;
         }
-
+        
         .team-info img {
             width: 165px;
             height: auto;
         }
-
+        
         .footer-section-2 ul {
             margin-top: 6px;
         }
-
+        
         .footer-section-2 ul,
         .footer-section-2 ul>li>a {
             list-style-type: none;
             padding-left: 0;
         }
-
+        
         .footer-section-2 ul>li {
             padding-bottom: 5px;
         }
-
+        
         .stats-info {
             text-align: center;
             border-top: 2.1px solid var(--footer-link-color);
@@ -265,68 +258,56 @@ Don't remove this if you intent to use this page for your website.
             width: 93%;
             padding: 9px 0;
         }
-
+        
         @media screen and (max-width: 1130px) {
             .footer-holder {
                 display: flex;
                 flex-wrap: wrap;
             }
-
             .footer-section-1 {
                 flex: 100%;
             }
-
             .footer-section-2 {
                 margin-top: 12px;
                 flex: 60%;
             }
-
             .footer-section-3 {
                 flex: 40%;
             }
-
             .footer-section-3 img {
                 width: 135px;
                 height: auto;
             }
-
         }
-
+        
         @media screen and (max-width: 575px) {
             .header-card {
                 padding: 12px 9px;
                 width: 95%;
                 text-align: center;
             }
-
             .header-card h3 {
                 font-size: 24px;
             }
-
             .container table {
                 width: 95% !important;
                 margin: auto;
                 font-size: 12px;
             }
-
             .footer-holder {
                 margin: 5% 24px 5% 24px;
             }
-
             header>h1 {
                 margin-top: 24px;
             }
-
             .team-info {
                 margin-top: 12px;
             }
-
             .footer-holder {
                 margin: 25px 5%;
             }
-
         }
-
+        
         #myBtn {
             display: none;
             position: fixed;
@@ -342,20 +323,19 @@ Don't remove this if you intent to use this page for your website.
             border-radius: 10px;
             font-size: 18px;
         }
-
+        
         #myBtn:hover {
             background-color: #0F111A;
         }
-
+        
         .mobile_view {
             display: none;
         }
-
+        
         @media (max-width: 468px) {
             .pc_view {
                 display: none;
             }
-
             .mobile_view {
                 display: block;
             }
@@ -383,19 +363,6 @@ Don't remove this if you intent to use this page for your website.
 
     <!-- TABLE ENTRIES >> Supported Devices -->
     <div class="container">
-        <div>
-            <a href="https://www.codingninjas.com/courses/online-android-Development-kotlin?utm_source=projectsakura&utm_medium=referral&utm_campaign=android-development"
-                target="_blank">
-                <center>
-                    <div class="mobile_view">
-                        <img src="./image/ninjas/mobilead.png">
-                    </div>
-                    <div class="pc_view">
-                        <img src="./image/ninjas/pcad.png">
-                    </div>
-                </center>
-            </a>
-        </div>
         <h3 class="text-center table-heading">SUPPORTED DEVICES</h3>
 
         <table class="table table-striped" style=" font-weight: 600;">
@@ -414,20 +381,6 @@ Don't remove this if you intent to use this page for your website.
     </div>
 
     <!-- TABLE ENTRIES >> Unsupported Devices -->
-    <div>
-        <a href="https://www.codingninjas.com/courses/online-android-Development-kotlin?utm_source=projectsakura&utm_medium=referral&utm_campaign=android-development"
-            target="_blank">
-            <center>
-                <div class="mobile_view">
-                    <img src="./image/ninjas/mobilead.png">
-                </div>
-                <div class="pc_view">
-                    <img src="./image/ninjas/pcad.png">
-                </div>
-            </center>
-        </a>
-    </div>
-
     <!-- TABLE ENTRIES >> Countries -->
     <div class="container">
         <!-- Blog entry -->
@@ -451,8 +404,7 @@ Don't remove this if you intent to use this page for your website.
     <div class="container">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- sakura-horizontal-display-ad -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032"
-            data-ad-slot="8448641591" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1277633863266032" data-ad-slot="8448641591" data-ad-format="auto" data-full-width-responsive="true"></ins>
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
@@ -499,7 +451,7 @@ Don't remove this if you intent to use this page for your website.
                 NAVIGATION
                 <ul>
                     <li><a href="https://projectsakura.xyz">Home</a></li>
-                    <li><a href="https://projectsakura.xyz/blog.html">Blog</a></li>
+                    <li><a href="https://projectsakura.xyz/blog">Blog</a></li>
                     <li><a href="https://projectsakura.xyz/download/">Download Now</a></li>
                     <li><a href="https://projectsakura.xyz/stats.html">Stats</a></li>
                 </ul>
@@ -508,10 +460,10 @@ Don't remove this if you intent to use this page for your website.
                 <div class="info">
                     <div class="team-info">
                         Sponsored by: <br>
-                        <p><a href="https://xsl.tel"><img src="https://projectsakura.xyz/image/spon-white.png"
-                                    alt="sponsor logo" /></a></p>
-                        Project Maintained by <a href="https://github.com/LordShenron">Shen</a> & <a
-                            href="https://github.com/ArunTeltia">ArunTeltia</a>
+                        <p>
+                            <a href="https://xsl.tel"><img src="https://projectsakura.xyz/image/spon-white.png" alt="sponsor logo" /></a>
+                        </p>
+                        Project Maintained by <a href="https://github.com/LordShenron">Shen</a> & <a href="https://github.com/ArunTeltia">ArunTeltia</a>
                     </div>
                 </div>
             </div>
@@ -527,7 +479,6 @@ Don't remove this if you intent to use this page for your website.
         document.querySelector(".btn-toggle").addEventListener('click', () => {
             document.querySelector("body").classList.toggle("light");
         });
-
     </script>
 
 </body>
