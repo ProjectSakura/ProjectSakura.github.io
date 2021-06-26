@@ -598,6 +598,7 @@ footer a {
 }
 
 .top_content_img {
+  flex: 1;
   display: flex;
   width: 100%;
   align-items: center;
@@ -614,11 +615,13 @@ footer a {
 }
 
 .android_img {
+  width: 90%;
   height: 90%;
-  width: 40%;
+  object-fit: contain;
 }
 
 .top_content_data {
+  flex: 1;
   display: flex;
   width: 100%;
   flex-direction: column;
