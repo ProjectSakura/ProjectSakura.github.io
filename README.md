@@ -29,7 +29,7 @@ For more information regarding new updates and features as well as to download P
 
   It is also one of the projects in the open source event, GirlScript Summer of Code 2021
 
-- **Community Support** 🙌 : Project Sakura community is growing, come join us on [Telegram](https://t.me/ProjectSakura).
+- **Community Support** 🙌 : Project Sakura community is growing, come join us on [Telegram](https://t.me/ProjectSakuraChat).
 
 If you like Project Sakura, please drop a ⭐ on the GitHub repository
 
@@ -56,7 +56,7 @@ The website is fully responsive and is maintained regularly.
 
 [For more info watch](https://www.youtube.com/watch?v=7k7nnAVBh9Y) 🎥
 
-The website link : [Project Sakura](https://projectsakura.xyz)
+The website link : [Project Sakura](https://projectsakura.me)
 
 ---
 
@@ -64,16 +64,46 @@ The website link : [Project Sakura](https://projectsakura.xyz)
 
 <table>
 <tr>
-  <td align="center"> <img src="image\maintainers\shen.jpeg" width="100px"> 
+  <td align="center"> <img src="https://avatars.githubusercontent.com/u/30292727?v=4" width="100px"> 
   <br>
   <sub><b> <a href="https://github.com/LordShenron">Priyanshu </a></b> <br>
   Founder, Lead Developer
 </td>
 
- <td align="center"> <img src="image\maintainers\arun.jpeg" width="100px"> 
+ <td align="center"> <img src="https://avatars.githubusercontent.com/u/43555219?v=4" width="100px"> 
   <br>
   <sub><b> <a href="https://github.com/ArunTeltia">Arun</a></b> <br>
   Web Developer
+</td>
+
+  <td align="center"> <img src="https://avatars.githubusercontent.com/u/64403591?v=4" width="100px"> 
+  <br>
+  <sub><b> <a href="https://github.com/cryptofox17">CryptoFox17</a></b> <br>
+  Designer
+</td>
+
+ <td align="center"> <img src="https://avatars.githubusercontent.com/u/54466041?v=4" width="100px"> 
+  <br>
+  <sub><b> <a href="https://github.com/Samridhi-98">Samriddhi</a></b> <br>
+  Web Developer
+</td>
+
+ <td align="center"> <img src="https://avatars.githubusercontent.com/u/22374829?v=4" width="100px"> 
+  <br>
+  <sub><b> <a href="https://github.com/ritik307">Ritik</a></b> <br>
+  Web Developer
+</td>
+
+ <td align="center"> <img src="https://avatars.githubusercontent.com/u/91870357?v=4" width="100px"> 
+  <br>
+  <sub><b> <a href="https://github.com/ReveRTX">S B Harsha Vardhan</a></b> <br>
+  Core Developer
+</td>
+
+ <td align="center"> <img src="https://avatars.githubusercontent.com/u/60157798?v=4" width="100px"> 
+  <br>
+  <sub><b> <a href="https://github.com/ArmSM">ArmSM</a></b> <br>
+  Core Team
 </td>
 </tr> 
 </table>
