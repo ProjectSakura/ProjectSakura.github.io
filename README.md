@@ -19,7 +19,7 @@ It is an Open Source custom ROM building website that is being used by thousands
 
 The project is originally based on android and there are 35 mobiles that are being maintained by 20 maintainers.
 
-For more information regarding new updates and features as well as to download Project Sakura please visit the official website here : [Project Sakura](https://projectsakura.xyz)
+For more information regarding new updates and features as well as to download Project Sakura please visit the official website here : [Project Sakura](https://projectsakura.me)
 
 ### **Features**
 

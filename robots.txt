@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://projectsakura.xyz/sitemap.xml
+Sitemap: https://projectsakura.me/sitemap.xml
