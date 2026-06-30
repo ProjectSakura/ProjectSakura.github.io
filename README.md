@@ -64,46 +64,46 @@ The website link : [Project Sakura](https://projectsakura.github.io)
 
 <table>
 <tr>
+  <td align="center"> <img src="https://avatars.githubusercontent.com/u/60157798?v=4" width="100px"> 
+  <br>
+  <sub><b> <a href="https://github.com/ArmSM">ArmSM</a></b> <br>
+  Lead Dev </sub>
+</td>
+
   <td align="center"> <img src="https://avatars.githubusercontent.com/u/30292727?v=4" width="100px"> 
   <br>
-  <sub><b> <a href="https://github.com/LordShenron">Priyanshu </a></b> <br>
-  Founder, Lead Developer
+  <sub><b> <a href="https://github.com/LordShenron">Priyanshu (LordShenron)</a></b> <br>
+  Founder, EX Developer </sub>
 </td>
 
  <td align="center"> <img src="https://avatars.githubusercontent.com/u/43555219?v=4" width="100px"> 
   <br>
   <sub><b> <a href="https://github.com/ArunTeltia">Arun</a></b> <br>
-  Web Developer
+  Web Developer </sub>
 </td>
 
   <td align="center"> <img src="https://avatars.githubusercontent.com/u/64403591?v=4" width="100px"> 
   <br>
   <sub><b> <a href="https://github.com/cryptofox17">CryptoFox17</a></b> <br>
-  Designer
+  Designer </sub>
 </td>
 
  <td align="center"> <img src="https://avatars.githubusercontent.com/u/54466041?v=4" width="100px"> 
   <br>
   <sub><b> <a href="https://github.com/Samridhi-98">Samriddhi</a></b> <br>
-  Web Developer
+  Web Developer </sub>
 </td>
 
  <td align="center"> <img src="https://avatars.githubusercontent.com/u/22374829?v=4" width="100px"> 
   <br>
   <sub><b> <a href="https://github.com/ritik307">Ritik</a></b> <br>
-  Web Developer
+  Web Developer </sub>
 </td>
 
  <td align="center"> <img src="https://avatars.githubusercontent.com/u/91870357?v=4" width="100px"> 
   <br>
   <sub><b> <a href="https://github.com/ReveRTX">S B Harsha Vardhan</a></b> <br>
-  Core Developer
-</td>
-
- <td align="center"> <img src="https://avatars.githubusercontent.com/u/60157798?v=4" width="100px"> 
-  <br>
-  <sub><b> <a href="https://github.com/ArmSM">ArmSM</a></b> <br>
-  Core Team
+  Ex Team Developer </sub>
 </td>
 </tr> 
 </table>
