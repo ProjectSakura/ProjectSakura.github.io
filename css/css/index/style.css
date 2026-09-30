@@ -704,3 +704,108 @@ footer a {
 .fa:hover,.footer-link:hover{
   color: #C2D6D7;
 }
+
+/* PROJECT SAKURA — theme refresh */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --sk-bg: #100a14;
+  --sk-glass: rgba(248,180,196,0.05);
+  --sk-glass-hover: rgba(248,180,196,0.09);
+  --sk-border: rgba(248,180,196,0.14);
+  --sk-border-hi: rgba(248,180,196,0.32);
+  --sk-text: #f5e8ee;
+  --sk-text-dim: #a895a5;
+  --sk-petal: #f8b4c4;
+  --sk-blossom: #e87da0;
+  --sk-magenta: #c94a8c;
+  --sk-radius: 16px;
+  --sk-shadow: 0 4px 24px rgba(0,0,0,0.4);
+  --sk-shadow-lg: 0 12px 48px rgba(201,74,140,0.18);
+  --sk-glow: 0 0 24px rgba(248,180,196,0.25);
+}
+
+html, body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--sk-text);
+  background: var(--sk-bg);
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background:
+    radial-gradient(ellipse 1200px 600px at 50% -10%, rgba(232,125,160,0.10), transparent 60%),
+    radial-gradient(ellipse 900px 500px at 90% 100%, rgba(201,74,140,0.06), transparent 55%),
+    var(--sk-bg);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, .title {
+  font-family: 'Fraunces', 'Inter', serif;
+  font-weight: 600;
+  color: var(--sk-text);
+  letter-spacing: -0.01em;
+}
+
+.navbar {
+  background: rgba(16,10,20,0.72) !important;
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  border-bottom: 1px solid var(--sk-border);
+}
+.navbar-item.nav-links {
+  font-weight: 500;
+  border-radius: 10px;
+  color: var(--sk-text-dim) !important;
+  transition: color .2s ease, background .2s ease;
+}
+.navbar-item.nav-links:hover {
+  color: var(--sk-petal) !important;
+  background: var(--sk-glass);
+}
+
+.card, .box {
+  background: var(--sk-glass) !important;
+  border: 1px solid var(--sk-border) !important;
+  border-radius: var(--sk-radius) !important;
+  box-shadow: var(--sk-shadow);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.card:hover, .box:hover {
+  transform: translateY(-4px);
+  border-color: var(--sk-border-hi) !important;
+  box-shadow: var(--sk-shadow-lg);
+}
+
+.button {
+  border-radius: 999px !important;
+  font-weight: 600;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sk-glow);
+}
+.button.is-danger {
+  background: linear-gradient(135deg, var(--sk-blossom), var(--sk-magenta)) !important;
+  border: none !important;
+  color: #fff !important;
+  box-shadow: 0 8px 24px rgba(201,74,140,0.35);
+}
+
+a { color: var(--sk-petal); }
+a:hover { color: var(--sk-blossom); }
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--sk-bg); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--sk-blossom), var(--sk-magenta));
+  border-radius: 8px;
+}
+
+@keyframes sk-fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+main, .section { animation: sk-fade-in .6s ease-out; }
