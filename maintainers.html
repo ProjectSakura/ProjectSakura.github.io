@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Sakura | Maintainers</title>
+  <link rel="shortcut icon" href="image/logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/css/index/style.css" />
+  <style>
+    body { background: #192542; color: #fff; font-family: "Open Sans", sans-serif; }
+    h1, h2, h3 { font-family: "Quattrocento", serif; font-weight: 700; }
+    .page-title { text-align: center; margin: 6rem 0 3rem; }
+    .page-title h1 { font-size: 3rem; color: #fff; }
+    .maint-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto 4rem;
+      padding: 0 1rem;
+    }
+    .maint-card {
+      background: #0F111A;
+      border-radius: 12px;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      transition: transform 0.15s ease;
+    }
+    .maint-card:hover { transform: translateY(-4px); }
+    .maint-card img {
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0.75rem;
+      border: 3px solid #c6447b;
+    }
+    .maint-name { font-weight: 700; font-size: 1.1rem; margin-bottom: 0.25rem; }
+    .maint-device { font-size: 0.85rem; color: #b0b0c0; margin-bottom: 0.75rem; }
+    .maint-links a { color: #48bfd4; margin: 0 0.4rem; font-size: 1.2rem; }
+    .maint-links a:hover { color: #c6447b; }
+    .loading { text-align: center; color: #888; padding: 3rem; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar is-fixed-top" role="navigation">
+  <div class="container is-widescreen">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img class="navbar-logo" src="image/logo_banner.png" />
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <a href="index.html" class="navbar-item nav-links">Home</a>
+        <a href="blog.html" class="navbar-item nav-links">Blog</a>
+        <a href="stats.html" class="navbar-item nav-links">Stats</a>
+        <a href="maintainers.html" class="navbar-item nav-links">Maintainers</a>
+        <a href="https://twitter.com/ProjectSakura_" class="navbar-item nav-links" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="page-title">
+  <h1>Meet the Maintainers</h1>
+</div>
+
+<div id="maint-container" class="maint-grid">
+  <div class="loading" style="grid-column: 1/-1;">Loading maintainers…</div>
+</div>
+
+<footer style="text-align:center; padding: 2rem; color:#888;">
+  <p>Project Sakura is a fully free and Opensource Custom ROM built around LineageOS.</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  const container = document.getElementById('maint-container');
+  try {
+    const res = await fetch('maintainers.json?t=' + Date.now());
+    if (!res.ok) throw new Error('maintainers.json ' + res.status);
+    const list = await res.json();
+    if (!list.length) throw new Error('empty list');
+
+    container.innerHTML = list
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map(m => `
+        <div class="maint-card">
+          <img src="${m.avatar}" alt="${m.name}" onerror="this.src='image/logo.png'">
+          <div class="maint-name">${m.name}</div>
+          <div class="maint-device">${m.device}</div>
+          <div class="maint-links">
+            ${m.github ? `<a href="https://github.com/${m.github}" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>` : ''}
+            ${m.telegram ? `<a href="https://t.me/${m.telegram}" target="_blank" title="Telegram"><i class="fa fa-telegram"></i></a>` : ''}
+          </div>
+        </div>
+      `).join('');
+  } catch (err) {
+    console.error('Maintainers load failed:', err);
+    container.innerHTML = '<div class="loading" style="grid-column:1/-1;">Could not load maintainers list.</div>';
+  }
+});
+</script>
+
+</body>
+</html>

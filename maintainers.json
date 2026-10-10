@@ -1,0 +1,8 @@
+[
+  { "name": "ArmSM",     "device": "Poco X3 Pro",           "codename": "vayu",   "avatar": "image/maintainers/armsm.jpeg",     "github": "ArmSM",       "telegram": "ArmSM" },
+  { "name": "Anoosragh", "device": "Moto G60 / Redmi 12 5G", "codename": "hanoip", "avatar": "image/maintainers/arun.jpeg",      "github": "Anoosragh",   "telegram": "Anoosragh" },
+  { "name": "Legofan",   "device": "Samsung Galaxy A71 4G", "codename": "a71",    "avatar": "image/maintainers/sunny.jpeg",     "github": "Legofan",     "telegram": "Legofan" },
+  { "name": "Aquariusjr10","device": "Google Pixel 6 Pro",  "codename": "raven",  "avatar": "image/maintainers/cakes.jpeg",     "github": "Aquariusjr10","telegram": "Aquariusjr10" },
+  { "name": "Eduardo",   "device": "OnePlus 9 Pro",         "codename": "lemonadep","avatar": "image/maintainers/fernando.png",  "github": "Eduardo",     "telegram": "Eduardo" },
+  { "name": "Neroki",    "device": "Samsung Galaxy S20 FE", "codename": "r8s",    "avatar": "image/maintainers/dark.jpeg",      "github": "Neroki",      "telegram": "Neroki" }
+]
