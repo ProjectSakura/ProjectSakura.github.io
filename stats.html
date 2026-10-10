@@ -359,7 +359,7 @@ Don't remove this if you intent to use this page for your website.
     <div class="container card header-card">
         <h3 class="card-title">Project Sakura got downloaded <span class="totaldownload"></span> times.</h3>
         <p class="card-text">Note: These stats are only for official downloads, unofficial numbers are unknown.</p>
-        <p class="card-text">Last Updated : 01-07-2024</p>
+        <p class="card-text">Last Updated : <span id="stats-updated">01-07-2024</span></p>
     </div>
 
     <!-- TABLE ENTRIES >> Supported Devices -->
@@ -478,6 +478,38 @@ Don't remove this if you intent to use this page for your website.
         });
     </script>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    const res = await fetch('stats.json?t=' + Date.now());
+    if (!res.ok) throw new Error('stats.json ' + res.status);
+    const data = await res.json();
+
+    const totalEl = document.getElementById('total-downloads');
+    if (totalEl) totalEl.textContent = data.total.toLocaleString();
+
+    const updEl = document.getElementById('stats-updated');
+    if (updEl) updEl.textContent = data.stats_updated;
+
+    const cTbody = document.getElementById('countries-tbody');
+    if (cTbody) {
+      cTbody.innerHTML = data.countries.slice(0, 20).map((c, i) =>
+        `<tr><td>#${i + 1}</td><td>${c[0]}</td><td>${c[1].toLocaleString()}</td></tr>`
+      ).join('');
+    }
+
+    const oTbody = document.getElementById('os-tbody');
+    if (oTbody) {
+      oTbody.innerHTML = data.oses.map((o, i) =>
+        `<tr><td>#${i + 1}</td><td>${o[0]}</td><td>${o[1].toLocaleString()}</td></tr>`
+      ).join('');
+    }
+  } catch (err) {
+    console.error('Stats load failed:', err);
+  }
+});
+</script>
 </body>
 
 </html>
