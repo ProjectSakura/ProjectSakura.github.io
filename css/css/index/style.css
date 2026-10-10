@@ -704,3 +704,31 @@ footer a {
 .fa:hover,.footer-link:hover{
   color: #C2D6D7;
 }
+/* ==== Restore original Project Sakura fonts ==== */
+body,
+.navbar-item,
+.nav-links,
+p,
+li,
+a,
+.footer-link,
+.feature-desc {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5,
+.title,
+.h1-data,
+.h3-data,
+.heading h1,
+.feature-title {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+}
+
+/* Sharpen text rendering on the dark background */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
