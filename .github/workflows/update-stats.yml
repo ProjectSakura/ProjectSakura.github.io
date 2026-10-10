@@ -25,6 +25,6 @@ jobs:
             echo "No change, skipping commit."
           else
             git add stats.json
-            git commit -m "chore: update download stats [skip ci]"
+            git commit -m "chore: update download stats"
             git push
           fi
