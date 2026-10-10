@@ -11,8 +11,9 @@ function append(parent, el) {
   return parent.appendChild(el);
 }
 
+const TODAY = new Date().toISOString().slice(0, 10);
 const url =
-  "https://sourceforge.net/projects/projectsakura/files/stats/json?start_date=2020-01-01&end_date=2024-03-01";
+  "https://sourceforge.net/projects/projectsakura/files/stats/json?start_date=2020-01-01&end_date=" + TODAY;
 async function getData() {
   const response = await fetch(url);
   const data = await response.json();
@@ -71,7 +72,7 @@ const OTA_Function = async () => {
       const response = await fetch(
         "https://sourceforge.net/projects/projectsakura/files/" +
           device.codename +
-          "/stats/json?start_date=2020-01-01&end_date=2024-07-01"
+          "/stats/json?start_date=2020-01-01&end_date=" + TODAY
       );
       const jsonData = await response.json();
       const percent = ((jsonData.total * 100) / Total__Download).toFixed(3);
