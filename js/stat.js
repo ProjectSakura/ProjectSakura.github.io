@@ -56,6 +56,13 @@ async function getData() {
   const span = document.querySelector(".totaldownload");
   span.innerHTML = `${total}`;
   Total__Download = total;
+
+  // Update the "Last Updated" line
+  document.querySelectorAll(".card-text").forEach(el => {
+    if (/Last Updated/i.test(el.textContent)) {
+      el.textContent = "Last Updated : " + new Date().toISOString().slice(0, 10);
+    }
+  });
 }
 getData();
 const OTA_Function = async () => {
