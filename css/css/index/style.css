@@ -732,17 +732,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-
-/* ==== Navbar and hero layout fixes ==== */
-.navbar.is-fixed-top {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 1000;
-}
-.top_content {
-  margin-top: 0 !important;
-  padding-top: 5rem !important;
-}
