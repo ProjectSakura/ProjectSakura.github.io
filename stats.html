@@ -478,6 +478,54 @@ Don't remove this if you intent to use this page for your website.
         });
     </script>
 
+
+<!-- Live stats loader -->
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    const res = await fetch('stats.txt?t=' + Date.now());
+    if (!res.ok) throw new Error('stats.txt ' + res.status);
+    const data = await res.json();
+
+    // Total downloads
+    const totalEl = document.querySelector('.totaldownload');
+    if (totalEl) totalEl.textContent = data.total.toLocaleString();
+
+    // Last updated (replace the hardcoded date)
+    document.querySelectorAll('.card-text').forEach(el => {
+      if (/Last Updated/i.test(el.textContent)) {
+        el.textContent = 'Last Updated : ' + data.stats_updated;
+      }
+    });
+
+    // Countries table
+    const cTbody = document.querySelector('tbody.countries');
+    if (cTbody) {
+      cTbody.innerHTML = data.countries.slice(0, 20).map((c, i) =>
+        `<tr><td>#${i + 1}</td><td>${c[0]}</td><td>${c[1].toLocaleString()}</td></tr>`
+      ).join('');
+    }
+
+    // OS table
+    const oTbody = document.querySelector('tbody.oses');
+    if (oTbody) {
+      oTbody.innerHTML = data.oses.map((o, i) =>
+        `<tr><td>#${i + 1}</td><td>${o[0]}</td><td>${o[1].toLocaleString()}</td></tr>`
+      ).join('');
+    }
+
+    // Devices table (per-file data not in stats.txt yet — leave empty or fill from another source)
+    const dTbody = document.querySelector('tbody.table_device_2');
+    if (dTbody && !dTbody.innerHTML.trim()) {
+      dTbody.innerHTML = '<tr><td colspan="3" style="text-align:center;color:#888;">Per-device stats coming soon</td></tr>';
+    }
+  } catch (err) {
+    console.error('Stats load failed:', err);
+    const totalEl = document.querySelector('.totaldownload');
+    if (totalEl) totalEl.textContent = '?';
+  }
+});
+</script>
 </body>
 
 </html>

@@ -1,10 +1,10 @@
 #!/bin/bash
-# Fetches SourceForge download stats and writes them to stats.json
+# Fetches SourceForge download stats and writes them to stats.txt
 set -euo pipefail
 
 START_DATE="2020-01-01"
 END_DATE="$(date -u +%Y-%m-%d)"
-OUT="stats.json"
+OUT="stats.txt"
 
 echo "Fetching SourceForge stats ${START_DATE} → ${END_DATE}"
 curl -sS "https://sourceforge.net/projects/projectsakura/files/stats/json?start_date=${START_DATE}&end_date=${END_DATE}" \
